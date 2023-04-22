@@ -552,6 +552,120 @@ body {
 	opacity: 100%;
 }
 
+.Grade {
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	opacity: 50%;
+	position: absolute;
+	margin-top: 235%;
+	padding: 4% 42.5% 4% 25%;
+}
+.Gradeicon {
+	position: absolute;
+	height: 18px;
+	margin-top: 3px;
+	margin-left: -30px;
+}
+.Grade:hover {
+	background-color: #4C0033;
+	color: white;
+	font-size: 16px;
+	opacity: 100%;
+}
+.Grading {
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	opacity: 50%;
+	position: absolute;
+	margin-top: 255%;
+	padding: 4% 42.5% 4% 25%;
+}
+.Gradingicon {
+	position: absolute;
+	height: 18px;
+	margin-top: 3px;
+	margin-left: -30px;
+}
+.Grading:hover {
+	background-color: #4C0033;
+	color: white;
+	font-size: 16px;
+	opacity: 100%;
+}
+.Subject {
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	opacity: 50%;
+	position: absolute;
+	margin-top: 275%;
+	padding: 4% 42.5% 4% 25%;
+}
+.Subjecticon {
+	position: absolute;
+	height: 18px;
+	margin-top: 3px;
+	margin-left: -30px;
+}
+.Subject:hover {
+	background-color: #4C0033;
+	color: white;
+	font-size: 16px;
+	opacity: 100%;
+}
+.Section {
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	opacity: 50%;
+	position: absolute;
+	margin-top: 295%;
+	padding: 4% 42.5% 4% 25%;
+}
+.Sectionicon {
+	position: absolute;
+	height: 18px;
+	margin-top: 3px;
+	margin-left: -30px;
+}
+.Section:hover {
+	background-color: #4C0033;
+	color: white;
+	font-size: 16px;
+	opacity: 100%;
+}.Restriction {
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	opacity: 50%;
+	position: absolute;
+	margin-top: 315%;
+	padding: 4% 42.5% 4% 25%;
+}
+.Restrictionicon {
+	position: absolute;
+	height: 18px;
+	margin-top: 3px;
+	margin-left: -30px;
+}
+.Restriction:hover {
+	background-color: #4C0033;
+	color: white;
+	font-size: 16px;
+	opacity: 100%;
+}
 
 .Accountstudent {
 	color: white;

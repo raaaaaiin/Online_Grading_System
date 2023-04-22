@@ -113,8 +113,11 @@ GROUP BY Teacher_Code, Grade_Level;
 			<a href="adchangepass.php" class="Changepassadmin"><img src="../Images/pass.png" class="archiveicon">Account</a>
 			<a href="audit.php" class="Audit"><img src="../Images/mag.png" class="auditicon">Audit Trail</a>
 			<a href="../Archive/archive.php" class="Archive"><img src="../Images/arc.png" class="archiveicon">Archive</a>
-			<a href="grade.php" class=""><img src="" class="">Grades</a>
-			<a href="grading.php" class=""><img src="" class="">Grading Policy</a>
+			<a href="grade.php" class="grade"><img src="../Images/mag.png" class="gradeicon">Grades</a>
+			<a href="grading.php" class="grading"><img src="../Images/mag.png" class="gradingicon">GradingPolicy</a>
+			<a href="subject.php" class="subject"><img src="../Images/mag.png" class="subjecticon">Subject</a>
+			<a href="section.php" class="section"><img src="../Images/mag.png" class="sectionicon">Section</a>
+			<a href="restriction.php" class="restriction"><img src="../Images/mag.png" class="restrictionicon">Restriction</a>
 		</div>
 <div class="announcementdiv">
 				<h1 id="announcemetfont">Restriction</h1>
