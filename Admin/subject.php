@@ -73,7 +73,7 @@ $sql = "Select * from tbl_subject";
 		</div>
 <div class="announcementdiv">
 				<h1 id="announcemetfont">Subjects</h1>
-				<a href="subject.php" name="addannouncement"><img src="../Images/add_icon.png" class="addannouncementbtn"></a>
+				<a href="subjectadd.php" name="addannouncement"><img src="../Images/add_icon.png" class="addannouncementbtn"></a>
 				<hr>
 				<p class="searchannouncement">Search:</p>
 				<input type=text name=search class="announcementtxt">

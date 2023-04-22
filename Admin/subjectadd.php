@@ -65,12 +65,12 @@
         </div>
 
         <div class="announceadddiv">
-            <h1 id="announceaddfont">ADD SECTION</h1>
+            <h1 id="announceaddfont">ADD Subject</h1>
             <hr class="announceaddline">
-            <input type="text" name="announce" placeholder="ANNOUNCEMENT" autocomplete="off" size="50"
+            <input type="text" name="subject" placeholder="Subject Name" autocomplete="off" size="50"
                 class="addannouncemntfield"><br>
 
-            <select name="date" class="adddatfield">
+            <select name="grade" class="adddatfield">
                 <option value="Grade 1">Grade 1</option>
 				<option value="Grade 2">Grade 2</option>
 				<option value="Grade 3">Grade 3</option>
@@ -81,14 +81,13 @@
 				<option value="Grade 8">Grade 8</option>
 				<option value="Grade 9">Grade 9</option>
 				<option value="Grade 10">Grade 10</option>
-                <!-- add more options as needed -->
             </select>
             <br>
 
             <br>
 
             <input type=submit name=sub value="Add" class="addannouncebtn">
-            <a href="announceview.php" class="addannounceback">Back</a>
+            <a href="subject.php" class="addannounceback">Back</a>
 
     </form>
 
@@ -100,61 +99,20 @@ include "../sepi_connect.php";
 
 
 
-if(isset($_POST['sub']) && isset($_FILES['fileToUpload'])){
-	echo "<pre>";
-	print_r($_FILES['fileToUpload']);
-	echo "</pre>";
-
-	$img_name = $_FILES['fileToUpload']['name'];
-	$img_size = $_FILES['fileToUpload']['size'];
-	$tmp_name = $_FILES['fileToUpload']['tmp_name'];
-	$error = $_FILES['fileToUpload']['error'];
-
-
-
-if ($error === 0) {
-	if ($img_size > 12500000) {
-		$em = "Sorry, your file is too large.";
-		header("Location: announceview?error=$em");
-	}else {
-		$img_ex = pathinfo($img_name, PATHINFO_EXTENSION);
-		$img_ex_lc = strtolower($img_ex);
-
-		$allowed_exs = array("jpg", "jpeg", "png"); 
-
-		if (in_array($img_ex_lc, $allowed_exs)) {
-			$new_img_name = uniqid("IMG-", true).'.'.$img_ex_lc;
-			$img_upload_path = '../uploads/'.$new_img_name;
-			move_uploaded_file($tmp_name, $img_upload_path);
-
-			// Insert into Database
-			$announcement = $_POST['announce'];
-			$date = $_POST['date'];
-			$sql = "Insert into tbl_announce (ANNOUNCEMENT,DATE,image) values  
-			('$announcement','$date','$new_img_name')";
-			$insert = $config->query($sql);
-			header("Location: announceview.php");
-		}else {
-			$em = "You can't upload files of this type";
-			header("Location: announceview.php?error=$em");
-		}
-	}
-
-// Display status message
-echo $statusMsg;
-if($insert == True){
-?>
-<script>
-alert("Successfully Added")
-</script>
-
-<?php
-header("refresh:0;url=announceview.php");
-}else{
-	echo $config->error;
-}
-  
-}
+if(isset($_POST['sub'])){
+	
+$subjectName = $_POST['subject'];
+$gradeLevel = $_POST['grade'];
+$subject_code = substr($subjectName, 0, 3) . substr($gradeLevel, 6);
+	$sql = "Insert into tbl_subject (Subject_name,Grade_Level,Subject_code) values  
+			('$subjectName','$gradeLevel','$subject_code')";
+			if ($config->query($sql)) {
+				// query successful
+				echo '<script>alert("Subject added successfully."); window.location.href = "subject.php";</script>';
+			  } else {
+				// query failed
+				echo '<script>alert("'.var_dump($sql).'Failed to add new subject. Please check the inputs and provide the correct details.");</script>';
+			  }
 }
 
 ?>
