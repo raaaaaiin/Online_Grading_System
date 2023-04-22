@@ -91,7 +91,7 @@
 				{
 					if($dbpassword == $password)
 						{
-							header("refresh:0;url=./Teacher/AP/apdashboard.php");
+							header("refresh:0;url=./Teacher/General/apdashboard.php");
 						}
 						else
 						{
