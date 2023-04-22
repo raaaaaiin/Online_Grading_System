@@ -19,39 +19,51 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true)
 	}
 			$sql1 = "Insert into tbl_audithistory (e_name,e_action,e_date) values ('$name','Viewing Admin Announcement',NOW())";
 			$result1 = $config->query($sql1);
-if(isset($_POST['search'])){
-$search = $_POST['search'];
-
-if ($search != NULL){
-	$sql = "SELECT
-	tbl_restriction.ID,
-	tbl_restriction.Teacher_Code,
-	tbl_restriction.Grade_Level,
-	GROUP_CONCAT(tbl_restriction.Subject_Code SEPARATOR ', ') AS Subject_Codes,
-	tbl_restriction.Sy,
-	CONCAT(tbl_teacherinfo.FNAMES, ' ', tbl_teacherinfo.MNAMES, ' ', tbl_teacherinfo.LNAMES) AS Teacher_Name
-	FROM
-	tbl_restriction
-	INNER JOIN tbl_teacherinfo ON tbl_restriction.Teacher_Code = tbl_teacherinfo.ID
-	WHERE tbl_restriction.ID LIKE '%$search%' OR tbl_restriction.Subject_Code LIKE '%$search%' OR  tbl_restriction.Grade_Level LIKE '%$search%'
-	GROUP BY Teacher_Code, Grade_Level;";										
-
-}else{
-
-$sql = "SELECT
-tbl_restriction.ID,
-tbl_restriction.Teacher_Code,
-tbl_restriction.Grade_Level,
-GROUP_CONCAT(tbl_restriction.Subject_Code SEPARATOR ', ') AS Subject_Codes,
-tbl_restriction.Sy,
-CONCAT(tbl_teacherinfo.FNAMES, ' ', tbl_teacherinfo.MNAMES, ' ', tbl_teacherinfo.LNAMES) AS Teacher_Name
-FROM
-tbl_restriction
-INNER JOIN tbl_teacherinfo ON tbl_restriction.Teacher_Code = tbl_teacherinfo.ID
-GROUP BY Teacher_Code, Grade_Level;
-";
-}
-}else{
+			if(isset($_POST['search']) || isset($_POST['grade']) ){
+				@$search = $_POST['search'];
+				@$grade = $_POST['grade'];
+				@$subject = $_POST['subject'];
+				
+				if ($search != NULL || $grade != "" || $subject != ""){
+					$sql = "SELECT
+						tbl_restriction.ID,
+						tbl_restriction.Teacher_Code,
+						tbl_restriction.Grade_Level,
+						GROUP_CONCAT(tbl_restriction.Subject_Code SEPARATOR ', ') AS Subject_Codes,
+						tbl_restriction.Sy,
+						CONCAT(tbl_teacherinfo.FNAMES, ' ', tbl_teacherinfo.MNAMES, ' ', tbl_teacherinfo.LNAMES) AS Teacher_Name
+					FROM
+						tbl_restriction
+						INNER JOIN tbl_teacherinfo ON tbl_restriction.Teacher_Code = tbl_teacherinfo.ID
+					WHERE 
+						(tbl_restriction.ID LIKE '%$search%' OR 
+						tbl_restriction.Subject_Code LIKE '%$search%' OR  
+						tbl_restriction.Grade_Level LIKE '%$search%' OR 
+						CONCAT(tbl_teacherinfo.FNAMES, ' ', tbl_teacherinfo.MNAMES, ' ', tbl_teacherinfo.LNAMES) LIKE '%$search%')";
+					
+					if ($grade != "") {
+						$sql .= " AND tbl_restriction.Grade_Level = '$grade'";
+					}
+					
+					if ($subject != "") {
+						$sql .= " AND tbl_restriction.Subject_Code = '$subject'";
+					}
+					
+					$sql .= " GROUP BY Teacher_Code, Grade_Level;";
+				} else {
+					$sql = "SELECT
+						tbl_restriction.ID,
+						tbl_restriction.Teacher_Code,
+						tbl_restriction.Grade_Level,
+						GROUP_CONCAT(tbl_restriction.Subject_Code SEPARATOR ', ') AS Subject_Codes,
+						tbl_restriction.Sy,
+						CONCAT(tbl_teacherinfo.FNAMES, ' ', tbl_teacherinfo.MNAMES, ' ', tbl_teacherinfo.LNAMES) AS Teacher_Name
+					FROM
+						tbl_restriction
+						INNER JOIN tbl_teacherinfo ON tbl_restriction.Teacher_Code = tbl_teacherinfo.ID
+					GROUP BY Teacher_Code, Grade_Level;";
+				}
+			}else{
 
 $sql = "SELECT
 tbl_restriction.ID,
@@ -110,7 +122,21 @@ GROUP BY Teacher_Code, Grade_Level;
 				<hr>
 				<p class="searchannouncement">Search:</p>
 				<input type=text name=search class="announcementtxt">
-				<input type=submit name=sub class="announcementbtn"> 
+				<select name=grade class="announcementtxt" style="margin-left: 21%;    width: 100;">
+				<option value="" disabled selected>Please select a grade level</option>
+				<option value="Grade 1">Grade 1</option>
+				<option value="Grade 2">Grade 2</option>
+				<option value="Grade 3">Grade 3</option>
+				<option value="Grade 4">Grade 4</option>
+				<option value="Grade 5">Grade 5</option>
+				<option value="Grade 6">Grade 6</option>
+				<option value="Grade 7">Grade 7</option>
+				<option value="Grade 8">Grade 8</option>
+				<option value="Grade 9">Grade 9</option>
+				<option value="Grade 10">Grade 10</option>
+            </select>
+			
+				<input type=submit name=sub class="announcementbtn" style="margin-left: 31%;"> 
 
 
 
@@ -153,4 +179,36 @@ echo "No Announcement Display";
 ?>
 </div>
 </body>
+
+<script>
+    // Get the "Grade" and "Subject" dropdown menus
+    var gradeDropdown = document.querySelector('select[name="grade"]');
+var subjectDropdown = document.querySelector('select[name="Subject"]');
+
+// Listen for changes in the "Grade" dropdown menu
+gradeDropdown.addEventListener('change', function() {
+    // Get the selected value in the "Grade" dropdown menu
+    var selectedGrade = this.value;
+    
+    // Construct the SQL query to retrieve the subjects for the selected grade
+    var query = "SELECT subject_Name, Subject_code FROM tbl_subject WHERE Grade_level = '" + selectedGrade + "'";
+    
+    // Clear the options in the "Subject" dropdown menu
+    subjectDropdown.innerHTML = '<option value="">Please Select Grade Level first</option>';
+    
+    // Fetch the subjects for the selected grade from the server
+    fetch('fetch.php?query=' + query)
+        .then(response => response.json())
+        .then(subjects => {
+            // Delete all existing options in the "Subject" dropdown menu
+            while (subjectDropdown.firstChild) {
+                subjectDropdown.removeChild(subjectDropdown.firstChild);
+            }
+            // Add the retrieved subjects to the "Subject" dropdown menu
+            subjects.forEach(subject => {
+                subjectDropdown.innerHTML += '<option value="' + subject.Subject_code + '">' + subject.subject_Name + '</option>';
+            });
+        });
+});
+</script>
 </html>
