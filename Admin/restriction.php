@@ -33,7 +33,7 @@ if ($search != NULL){
 	FROM
 	tbl_restriction
 	INNER JOIN tbl_teacherinfo ON tbl_restriction.Teacher_Code = tbl_teacherinfo.ID
-	WHERE tbl_restriction.ID LIKE '%$search%' OR tbl_restriction.Subject_Code LIKE '%$search%' OR tbl_subject.Subject_name LIKE '%$search%' OR tbl_restriction.Grade_Level LIKE '%$search%'
+	WHERE tbl_restriction.ID LIKE '%$search%' OR tbl_restriction.Subject_Code LIKE '%$search%' OR  tbl_restriction.Grade_Level LIKE '%$search%'
 	GROUP BY Teacher_Code, Grade_Level;";										
 
 }else{
@@ -120,7 +120,7 @@ include "../sepi_connect.php";
 
 
 $result = $config -> query($sql);
-if($result -> num_rows > 0){
+if(@$result -> num_rows > 0){
 	echo"<div class=announcementtbl style=overflow:auto;>";
 	echo"<table class=announcementtbl1>";
 	echo "<tr>";

@@ -108,7 +108,7 @@ $subject_code = substr($subjectName, 0, 3) . substr($gradeLevel, 6);
 			('$subjectName','$gradeLevel','$subject_code')";
 			if ($config->query($sql)) {
 				// query successful
-				echo '<script>alert("Subject added successfully."); window.location.href = "subject.php";</script>';
+				echo '<script>alert("Subject added successfully.");</script>';
 			  } else {
 				// query failed
 				echo '<script>alert("'.var_dump($sql).'Failed to add new subject. Please check the inputs and provide the correct details.");</script>';

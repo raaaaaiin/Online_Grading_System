@@ -158,10 +158,10 @@ $subject = $_POST['Subject'];
 			('$teacher','$subject','$grade')";
 			if ($config->query($sql)) {
 				// query successful
-				echo '<script>alert("Subject added successfully."); window.location.href = "restriction.php";</script>';
+				echo '<script>alert("Subject added successfully.");</script>';
 			  } else {
 				// query failed
-				echo '<script>alert("'.var_dump($sql).'Failed to add new subject. Please check the inputs and provide the correct details.");</script>';
+				echo '<script>alert("Failed to add new subject or already existing. Please check the inputs and provide the correct details.");</script>';
 			  }
 }
 

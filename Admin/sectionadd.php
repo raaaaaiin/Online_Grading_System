@@ -140,7 +140,7 @@ $sectionCode = substr($sectionName, 0, 3) . $year_suffix;
 			('$sectionName','$sectionCode','$gradeLevel','$sy')";
 			if ($config->query($sql)) {
 				// query successful
-				echo '<script>alert("Subject added successfully."); window.location.href = "section.php";</script>';
+				echo '<script>alert("Subject added successfully.");</script>';
 			  } else {
 				// query failed
 				echo '<script>alert("Failed to add new subject. Please check the inputs and provide the correct details.");</script>';
