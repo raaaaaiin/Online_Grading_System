@@ -103,7 +103,7 @@ GROUP BY Teacher_Code, Grade_Level;
 				<h6 id="footer">© 2022 SEPI Login Form. All Rights Reserved | Designed by Excel-erator</h6>
 			</div>
 <form method=POST action="restriction.php">
-		<div class="dashboard">
+		<!--<div class="dashboard">
 			<img src="../Images/logo.png" class="dashboardlogocvgs">
 			<a href="dashboard.php" class="Dashboardhome"><img src="../Images/homeicon.png" class="homeicon">Dashboard</a>
 			<a href="announceview.php" class="Announcement"><img src="../Images/announcement.png" class="announcementicon">Announcement</a>
@@ -118,7 +118,10 @@ GROUP BY Teacher_Code, Grade_Level;
 			<a href="subject.php" class="subject"><img src="../Images/subject.svg" class="subjecticon">Subject</a>
 			<a href="section.php" class="section"><img src="../Images/section.svg" class="sectionicon">Section</a>
 			<a href="restriction.php" class="restriction"><img src="../Images/restriction.svg" class="restrictionicon">Restriction</a>
-		</div>
+		</div>-->
+		<?php
+		include_once('SideNav.php');
+		?>
 <div class="announcementdiv">
 				<h1 id="announcemetfont">Restriction</h1>
 				<a href="restrictionadd.php" name="addannouncement"><img src="../Images/add_icon.png" class="addannouncementbtn"></a>

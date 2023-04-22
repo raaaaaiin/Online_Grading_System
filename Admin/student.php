@@ -69,20 +69,9 @@ $sql = "Select * from tbl_student";
 				<h6 id="footer">© 2022 SEPI Login Form. All Rights Reserved | Designed by Excel-erator</h6>
 			</div>
 <form method=POST action="student.php">
-
-		<div class="dashboard">
-			<img src="../Images/logo.png" class="dashboardlogocvgs">
-			<a href="dashboard.php" class="Dashboardhome"><img src="../Images/homeicon.png" class="homeicon">Dashboard</a>
-			<a href="announceview.php" class="Announcement"><img src="../Images/announcement.png" class="announcementicon">Announcement</a>
-			<a href="student.php" class="Student"><img src="../Images/studrecord.png" class="studenticon">Student</a>
-			<a href="teacher.php" class="Teacher"><img src="../Images/studrecord.png" class="teachericon">Teacher</a>
-			<a href="accounts.php" class="Accounts"><img src="../Images/account.png" class="accounticon">Admin</a>
-			<a href="adchangepass.php" class="Changepassadmin"><img src="../Images/pass.png" class="archiveicon">Account</a>
-			<a href="audit.php" class="Audit"><img src="../Images/mag.png" class="auditicon">Audit Trail</a>
-			<a href="../Archive/archive.php" class="Archive"><img src="../Images/arc.png" class="archiveicon">Archive</a>
-			<a href="grade.php" class=""><img src="" class="">Grades</a>
-			<a href="grading.php" class=""><img src="" class="">Grading Policy</a>
-		</div>
+<?php
+		include_once('SideNav.php');
+		?>
 
 <div class="studentdiv">
 				<h1 id="studentfont">STUDENT INFORMATION</h1>

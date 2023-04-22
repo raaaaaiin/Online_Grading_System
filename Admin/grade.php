@@ -35,7 +35,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true)
 		<title>Dashboard | S.E.P.I ONLINE GRADING SYSTEM</title> 
 	</head>
 <link rel="icon" href="../Images/logo.png">
-<link rel="stylesheet" href="">
+<link rel="stylesheet" href="../Css/sepi.css">
 <body style="background-color:#E5E4E2">
 		<div class="header">
 		<p class="displayname"><?php echo "$type" ?> | <?php echo "$name" ?></p>
