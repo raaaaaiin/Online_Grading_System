@@ -23,25 +23,48 @@ if(isset($_POST['search'])){
 $search = $_POST['search'];
 
 if ($search != NULL){
-	$sql = "SELECT * FROM `tbl_subject` WHERE `ID` LIKE '%$search%' OR `Subject_code` LIKE '%$search%' OR `Subject_name` LIKE '%$search%' OR `Grade_level` LIKE '%$search%'";										
+	$sql = "SELECT
+	tbl_restriction.ID,
+	tbl_restriction.Teacher_Code,
+	tbl_restriction.Grade_Level,
+	GROUP_CONCAT(tbl_restriction.Subject_Code SEPARATOR ', ') AS Subject_Codes,
+	tbl_restriction.Sy,
+	CONCAT(tbl_teacherinfo.FNAMES, ' ', tbl_teacherinfo.MNAMES, ' ', tbl_teacherinfo.LNAMES) AS Teacher_Name
+	FROM
+	tbl_restriction
+	INNER JOIN tbl_teacherinfo ON tbl_restriction.Teacher_Code = tbl_teacherinfo.ID
+	WHERE tbl_restriction.ID LIKE '%$search%' OR tbl_restriction.Subject_Code LIKE '%$search%' OR tbl_subject.Subject_name LIKE '%$search%' OR tbl_restriction.Grade_Level LIKE '%$search%'
+	GROUP BY Teacher_Code, Grade_Level;";										
 
 }else{
 
-$sql = "SELECT 
-ID,Teacher_Code, 
-GROUP_CONCAT(Subject_Code SEPARATOR ', ') as Subject_Codes, 
-Sy 
-FROM tbl_restriction 
-GROUP BY Teacher_Code, Sy;";
+$sql = "SELECT
+tbl_restriction.ID,
+tbl_restriction.Teacher_Code,
+tbl_restriction.Grade_Level,
+GROUP_CONCAT(tbl_restriction.Subject_Code SEPARATOR ', ') AS Subject_Codes,
+tbl_restriction.Sy,
+CONCAT(tbl_teacherinfo.FNAMES, ' ', tbl_teacherinfo.MNAMES, ' ', tbl_teacherinfo.LNAMES) AS Teacher_Name
+FROM
+tbl_restriction
+INNER JOIN tbl_teacherinfo ON tbl_restriction.Teacher_Code = tbl_teacherinfo.ID
+GROUP BY Teacher_Code, Grade_Level;
+";
 }
 }else{
 
-$sql = "SELECT 
-ID,Teacher_Code, 
-GROUP_CONCAT(Subject_Code SEPARATOR ', ') as Subject_Codes, 
-Sy 
-FROM tbl_restriction 
-GROUP BY Teacher_Code, Sy;";
+$sql = "SELECT
+tbl_restriction.ID,
+tbl_restriction.Teacher_Code,
+tbl_restriction.Grade_Level,
+GROUP_CONCAT(tbl_restriction.Subject_Code SEPARATOR ', ') AS Subject_Codes,
+tbl_restriction.Sy,
+CONCAT(tbl_teacherinfo.FNAMES, ' ', tbl_teacherinfo.MNAMES, ' ', tbl_teacherinfo.LNAMES) AS Teacher_Name
+FROM
+tbl_restriction
+INNER JOIN tbl_teacherinfo ON tbl_restriction.Teacher_Code = tbl_teacherinfo.ID
+GROUP BY Teacher_Code, Grade_Level;
+";
 }
 
 
@@ -101,17 +124,20 @@ if($result -> num_rows > 0){
 	echo"<div class=announcementtbl style=overflow:auto;>";
 	echo"<table class=announcementtbl1>";
 	echo "<tr>";
+	
+echo "<th Class=announcementheader1>Teacher Code";
 echo "<th Class=announcementheader>Teacher Name";
 echo "<th Class=announcementheader1>Subjects";
-echo "<th Class=announcementheader2>Sy";
+echo "<th Class=announcementheader2>Grade_level";
 echo "<th Class=announcementheader1>ACTION";
 
 
 while($row = $result -> fetch_assoc()){
 echo "<tr>";
 echo "<td class=announcementinfo rowspan=2>".$row['Teacher_Code'];
+echo "<td class=announcementinfo rowspan=2>".$row['Teacher_Name'];
 echo "<td class=announcementinfo rowspan=2>".$row['Subject_Codes'];
-echo "<td class=announcementinfo rowspan=2>".$row['Sy'];
+echo "<td class=announcementinfo rowspan=2>".$row['Grade_Level'];
 echo "<td class=announcementinfo> <a href='announceupdate.php?ID=".$row['ID']."'> Update </a>";
 echo "<tr>";
 echo "<td class=announcementinfo> <a href='deleteannounce.php?ID=".$row['ID']."'> Archive </a>";

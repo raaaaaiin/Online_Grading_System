@@ -154,8 +154,8 @@ if(isset($_POST['sub'])){
 $teacher = $_POST['Teacher'];
 $grade = $_POST['grade'];
 $subject = $_POST['Subject'];
-	$sql = "Insert into tbl_restriction (Teacher_Code,Subject_Code,Sy) values  
-			('$teacher','$grade','$subject')";
+	$sql = "Insert into tbl_restriction (Teacher_Code,Subject_Code,Grade_Level) values  
+			('$teacher','$subject','$grade')";
 			if ($config->query($sql)) {
 				// query successful
 				echo '<script>alert("Subject added successfully."); window.location.href = "restriction.php";</script>';
