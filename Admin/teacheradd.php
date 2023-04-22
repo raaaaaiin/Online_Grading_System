@@ -52,9 +52,9 @@
 			<a href="grade.php" class=""><img src="" class="">Grades</a>
 			<a href="grading.php" class=""><img src="" class="">Grading Policy</a>
 		</div>
-		<div class="teacheradddiv">
+		<div class="teacheradddiv" style="width: 30% !important;">
 			<h1 id="teacheraddfont">ADD TEACHER INFORMATION</h1>
-				<hr class="teacheraddline">
+				<hr class="teacheraddline" style="width: 30% !important;">
 					<input type="text" name="fnames" placeholder="FIRST NAME" autocomplete="off" size="50"  class="addtfnamefield">
 					<input type="text" name="mnames" placeholder="M.I." autocomplete="off" size="50"  class="addtmnamefield">
 					<input type="text" name="lnames" placeholder="LAST NAME" autocomplete="off" size="50"  class="addtlnamefield">
@@ -69,26 +69,7 @@
 					<input type="text" name="adds" placeholder="ADDRESS" autocomplete="off" size="50"  class="addtaddressfield">
 
 					<p class="tbdayfont">BIRTHDAY:</p><input type="date" name="bdays" value="BIRTHDAY" autocomplete="off" size="50"  class="addtbdayfield">
-					<p class="subjfont" style="margin-left:63%;margin-top:11%;">SUBJECT:</p>
-
-<input type="checkbox" id="" name="subject" value="Filipino" style="margin-left:63%;">
-<label for="subject"> Filipino</label><br>
-<input type="checkbox" id="" name="subjecto" value="English" style="margin-left:63%;">
-<label for="subjecto"> English</label><br>
-<input type="checkbox" id="" name="subjectt" value="Mathematics" style="margin-left:63%;">
-<label for="subjectt"> Mathematics</label><br>
-<input type="checkbox" id="" name="subjectth" value="Science" style="margin-left:63%;">
-<label for="subjectth"> Science</label><br>
-<input type="checkbox" id="" name="subjectf" value="Araling Panlipunan" style="margin-left:63%;">
-<label for="subjectf"> Araling Panlipunan</label><br>
-<input type="checkbox" id="" name="subjectfi" value="T.L.E." style="margin-left:63%;">
-<label for="subjectfi"> T.L.E</label><br>
-<input type="checkbox" id="" name="subjects" value="M.A.P.E.H" style="margin-left:63%;">
-<label for="subjects"> M.A.P.E.H</label><br>
-<input type="checkbox" id="" name="subjectse" value="Christian Education" style="margin-left:63%;">
-<label for="subjectse"> Christian Education</label><br>
-<input type="checkbox" id="" name="subjecte" value="Computer" style="margin-left:63%;">
-<label for="subjecte"> Computer</label><br>
+					
 
 
 
@@ -97,14 +78,16 @@
 					<select id="addaccrole" name="role" value="Teacher" hidden>
 						<option value="Teacher">Teacher</option>
 					</select>
-				<input type=submit name=subs value="Add Teacher" class="addteachbtn">
-				<a href="teacher.php" class="addteacherback">Back</a>	
+					<input type="submit" name="subs" value="Add Teacher" class="addteachbtn" style="width: 30%;margin-top: 60%;margin-left: 10% !important;">
+<a href="teacher.php" class="addteacherback" style="
+    margin-left: 15%;
+    margin-top: 19%;
+">Back</a>
 
 
 <?php
 include "../sepi_connect.php";
-
-if(isset($_POST['subs'])){
+/**if(isset($_POST['subs'])){
 $firsts = $_POST['fnames'];
 $middles = $_POST['mnames'];
 $lasts = $_POST['lnames'];
@@ -139,10 +122,10 @@ if($checkrows>0)
 	} 
 else
 	{  
-$sql = "Insert into tbl_teacher (FNAMES,MNAMES,LNAMES,USERNAME,ADDRESS,EMAIL,PASS,BDAYS,AGES,GENDERS,SUBJECT,SUBJECTO,
-SUBJECTT,SUBJECTTH,SUBJECTF,SUBJECTFI,SUBJECTS,SUBJECTSE,SUBJECTE,Role) values  
+$sql = "Insert into tbl_teacher (FNAMES,MNAMES,LNAMES,USERNAME,ADDRESS,EMAIL,PASS,BDAYS,AGES,GENDERS,Role) values  
 ('$firsts','$middles','$lasts','$username','$addres','$email','$yearss','$births',$aging,'$genders','$subject1','$subject2',
 '$subject3','$subject4','$subject5','$subject6','$subject7','$subject8','$subject9','$role')";
+
 $insert = $config->query($sql);
 if($insert == True){
 ?>
@@ -154,7 +137,49 @@ alert("Successfully Added")
 	echo $config->error;
 }
 }
-}
+}**/
+
+if(isset($_POST['subs'])){
+	$firsts = $_POST['fnames'];
+	$middles = $_POST['mnames'];
+	$lasts = $_POST['lnames'];
+	$addres = $_POST['adds'];
+	$births = $_POST['bdays'];
+	$aging = $_POST['ages'];
+	$genders = $_POST['genders'];
+	$role = $_POST['role'];
+	$email = $firsts."".$lasts."@gmail.com";
+	$username = $firsts."".$lasts;
+	$yearss = date("Y");
+	
+	
+	$check = mysqli_query($config,"select * from tbl_teacherinfo where FNAMES='$firsts' and MNAMES='$middles' and LNAMES='$lasts'");
+	$checkrows = mysqli_num_rows($check);
+	if($checkrows>0) 
+		{
+		?>
+		<script>
+		alert("Teacher already exists")
+		</script>
+		<?php
+		} 
+	else
+		{  
+	$sql = "Insert into tbl_teacherinfo (FNAMES,MNAMES,LNAMES,USERNAME,ADDRESS,EMAIL,PASS,BDAYS,AGES,GENDERS,Role) values  
+	('$firsts','$middles','$lasts','$username','$addres','$email','$yearss','$births',$aging,'$genders','$role')";
+	
+	$insert = $config->query($sql);
+	if($insert == True){
+	?>
+	<script>
+	alert("Successfully Added")
+	</script>
+	<?php
+	}else{
+		echo $config->error;
+	}
+	}
+	}
 ?>
 
 
