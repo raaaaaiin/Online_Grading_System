@@ -49,11 +49,11 @@
 
 <div class="dashboard">
 			<img src="../../Images/logo.png" class="dashboardlogocvgs">
-			<a href="apdashboard.php" class="Dashboardhome"><img src="../../Images/homeicon.png" class="homeicon">Dashboard</a>
-			<a href="apannounce.php" class="Announcement"><img src="../../Images/announcement.png" class="announcementicon">Announcement</a>
-			<a href="apfirst.php" class="BGradestudent"><img src="../../Images/studrecord.png" class="teachericon">Grades</a>
-			<a href="aplist.php" class="BStudentlist"><img src="../../Images/account.png" class="accounticon">Student List</a>
-			<a href="apchangepass.php"  class="Accounts"><img src="../../Images/account.png" class="accounticon">Accounts</a>
+						<a href="dashboard.php" class="Dashboardhome"><img src="../../Images/homeicon.png" class="homeicon">Dashboard</a>
+			<a href="announce.php" class="Announcement"><img src="../../Images/announcement.png" class="announcementicon">Announcement</a>
+			<a href="first.php" class="BGradestudent"><img src="../../Images/studrecord.png" class="teachericon">Grades</a>
+			<a href="list.php" class="BStudentlist"><img src="../../Images/account.png" class="accounticon">Student List</a>
+			<a href="changepass.php"  class="Accounts"><img src="../../Images/account.png" class="accounticon">Accounts</a>
 		</div>
 <div class="viewaccdiv">
 				<h1 id="announcemetfont">CHANGE PASSWORD</h1>

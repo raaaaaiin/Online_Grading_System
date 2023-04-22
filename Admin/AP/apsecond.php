@@ -73,10 +73,10 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true)
 <option>Grade 10 - Prosperity</option>
 </select>
 <input type=submit name=sub class="gradebtn"> 
-				<a href="apfirst.php" class="firstquarter">First Quarter</a>
-				<a href="apsecond.php" class="secondquarter">Second Quarter</a>
-				<a href="apthird.php" class="thirdquarter">Third Quarter</a>
-				<a href="apfourth.php" class="fourthquarter">Fourth Quarter</a>
+				<a href="first.php" class="firstquarter">First Quarter</a>
+				<a href="second.php" class="secondquarter">Second Quarter</a>
+				<a href="third.php" class="thirdquarter">Third Quarter</a>
+				<a href="fourth.php" class="fourthquarter">Fourth Quarter</a>
 
 
 </body>

@@ -45,11 +45,11 @@
 <form method=POST action="apsecond.php">
 		<div class="dashboard">
 			<img src="../../Images/logo.png" class="dashboardlogocvgs">
-			<a href="apdashboard.php" class="Dashboardhome"><img src="../../Images/homeicon.png" class="homeicon">Dashboard</a>
-			<a href="apannounce.php" class="Announcement"><img src="../../Images/announcement.png" class="announcementicon">Announcement</a>
-			<a href="apfirst.php" class="BGradestudent"><img src="../../Images/studrecord.png" class="teachericon">Grades</a>
-			<a href="aplist.php" class="BStudentlist"><img src="../../Images/account.png" class="accounticon">Student List</a>
-			<a href="apchangepass.php"  class="Accounts"><img src="../../Images/account.png" class="accounticon">Accounts</a>
+						<a href="dashboard.php" class="Dashboardhome"><img src="../../Images/homeicon.png" class="homeicon">Dashboard</a>
+			<a href="announce.php" class="Announcement"><img src="../../Images/announcement.png" class="announcementicon">Announcement</a>
+			<a href="first.php" class="BGradestudent"><img src="../../Images/studrecord.png" class="teachericon">Grades</a>
+			<a href="list.php" class="BStudentlist"><img src="../../Images/account.png" class="accounticon">Student List</a>
+			<a href="changepass.php"  class="Accounts"><img src="../../Images/account.png" class="accounticon">Accounts</a>
 		</div>
 <div class="announcementdiv">
 				<h1 id="announcemetfont">2ND QUARTER GRADES</h1>
@@ -72,10 +72,10 @@
 <option>Grade 10 - Prosperity</option>
 </select>
 <input type=submit name=sub class="gradebtn"> 
-				<a href="apfirst.php" class="firstquarter">First Quarter</a>
-				<a href="apsecond.php" class="secondquarter">Second Quarter</a>
-				<a href="apthird.php" class="thirdquarter">Third Quarter</a>
-				<a href="apfourth.php" class="fourthquarter">Fourth Quarter</a>
+				<a href="first.php" class="firstquarter">First Quarter</a>
+				<a href="second.php" class="secondquarter">Second Quarter</a>
+				<a href="third.php" class="thirdquarter">Third Quarter</a>
+				<a href="fourth.php" class="fourthquarter">Fourth Quarter</a>
 
 
 </body>

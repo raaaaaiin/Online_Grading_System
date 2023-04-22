@@ -27,7 +27,7 @@
 ?>
 <html>
 <head> 
-<title> First Quarter</title>
+<title> Fourth Quarter</title>
 </head>
 <link rel="icon" href="../../Images/logo.png">
 <link rel="stylesheet" href="../../Css/sepi.css">
@@ -42,17 +42,17 @@
 			<div class="footer">
 				<h6 id="footer">� 2022 SEPI Login Form. All Rights Reserved | Designed by Excel-erator</h6>
 			</div>
-<form method=POST action="apfirst.php">
+<form method=POST action="apfourth.php">
 		<div class="dashboard">
 			<img src="../../Images/logo.png" class="dashboardlogocvgs">
-			<a href="apdashboard.php" class="Dashboardhome"><img src="../../Images/homeicon.png" class="homeicon">Dashboard</a>
-			<a href="apannounce.php" class="Announcement"><img src="../../Images/announcement.png" class="announcementicon">Announcement</a>
-			<a href="apfirst.php" class="BGradestudent"><img src="../../Images/studrecord.png" class="teachericon">Grades</a>
-			<a href="aplist.php" class="BStudentlist"><img src="../../Images/account.png" class="accounticon">Student List</a>
-			<a href="apchangepass.php"  class="Accounts"><img src="../../Images/account.png" class="accounticon">Accounts</a>
+						<a href="dashboard.php" class="Dashboardhome"><img src="../../Images/homeicon.png" class="homeicon">Dashboard</a>
+			<a href="announce.php" class="Announcement"><img src="../../Images/announcement.png" class="announcementicon">Announcement</a>
+			<a href="first.php" class="BGradestudent"><img src="../../Images/studrecord.png" class="teachericon">Grades</a>
+			<a href="list.php" class="BStudentlist"><img src="../../Images/account.png" class="accounticon">Student List</a>
+			<a href="changepass.php"  class="Accounts"><img src="../../Images/account.png" class="accounticon">Accounts</a>
 		</div>
 <div class="announcementdiv">
-				<h1 id="announcemetfont">1ST QUARTER GRADES</h1>
+				<h1 id="announcemetfont">4TH QUARTER GRADES</h1>
 				<input type="button" onclick="printDiv('printableArea')" value="PRINT" />
 				<hr id=line>
 				<p class="searchannouncement">Search:</p>
@@ -72,10 +72,11 @@
 <option>Grade 10 - Prosperity</option>
 </select>
 <input type=submit name=sub class="gradebtn"> 
-				<a href="apfirst.php" class="firstquarter">First Quarter</a>
-				<a href="apsecond.php" class="secondquarter">Second Quarter</a>
-				<a href="apthird.php" class="thirdquarter">Third Quarter</a>
-				<a href="apfourth.php" class="fourthquarter">Fourth Quarter</a>
+				<a href="first.php" class="firstquarter">First Quarter</a>
+				<a href="second.php" class="secondquarter">Second Quarter</a>
+				<a href="third.php" class="thirdquarter">Third Quarter</a>
+				<a href="fourth.php" class="fourthquarter">Fourth Quarter</a>
+
 
 
 </body>
@@ -83,7 +84,6 @@
 <div id=printableArea>
 <?php
 			include "../../sepi_connect.php";
-
 			if(isset($_POST['sub'])){
 				$search = $_POST['search'];
 				$category = $_POST['category'];
@@ -112,13 +112,13 @@ if($result -> num_rows > 0){
 	echo"<div class=announcementtbl style=overflow:auto;>";
 	echo"<table class=announcementtbl1>";
 	echo "<tr>";
-	echo "<th Class=gradeheader>STUDENT ID ";
-	echo "<th Class=gradeheader>NAME";
-	echo "<th Class=gradeheader>GRADE LEVEL AND SECTION ";
-	echo "<th Class=gradeheader>GRADE ";
-	echo "<th Class=gradeheader>EMAIL: ";
-	echo "<th Class=gradeheader>ENTER GRADE";
-	echo "<th Class=gradeheader>SEND EMAIL ";
+	echo "<th Class=gradeheader>Student ID: ";
+	echo "<th Class=gradeheader>NAME: ";
+	echo "<th Class=gradeheader>Yr Level & Section: ";
+	echo "<th Class=gradeheader>Grade: ";
+	echo "<th Class=gradeheader>Email: ";
+	echo "<th Class=gradeheader>Enter Grade: ";
+	echo "<th Class=gradeheader>Send Email: ";
 while($row = $result -> fetch_assoc()){
 	$zero = 0;
 $zero1 = 0;
@@ -129,10 +129,10 @@ echo "<tr>";
 echo "<td class=gradeinfo>".$dateformat."-".$zero."".$zero1."".$zero2."-".$row['Stud_SID'];
 echo "<td class=gradeinfo>".$row['FNAME']."".$row['MNAME']."".$row['LNAME'];
 echo "<td class=gradeinfo>".$row['LEVEL'];
-echo "<td class=gradeinfo>".$row['AP'];
+echo "<td class=gradeinfo>".$row['APF'];
 echo "<td class=gradeinfo>".$row['EMAIL'];
-echo "<td class=gradeinfo> <a href='apfirstquarter.php?ID=".$row['Stud_SID']."'> INPUT GRADE </a>";
-echo "<td class=gradeinfo> <a href='index.php?ID=".$row['Stud_SID']."'> SEND EMAIL </a>";
+echo "<td class=gradeinfo> <a href='apfourthquarter.php?ID=".$row['Stud_SID']."'> Input Grade </a>";
+echo "<td class=gradeinfo> <a href='index.php?ID=".$row['Stud_SID']."'> Send Email </a>";
 
 
 
