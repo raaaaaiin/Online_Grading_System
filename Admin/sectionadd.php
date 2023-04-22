@@ -136,7 +136,7 @@ $sy = $_POST['sy'];
 $year_suffix = substr($sy, -9, 2) . substr($sy, -2);
 
 $sectionCode = substr($sectionName, 0, 3) . $year_suffix;
-	$sql = "Insert into tbl_section (Section_Name,Section_Code,Subject,SY) values  
+	$sql = "Insert into tbl_section (Section_Name,Section_Code,Grade_Level,SY) values  
 			('$sectionName','$sectionCode','$gradeLevel','$sy')";
 			if ($config->query($sql)) {
 				// query successful

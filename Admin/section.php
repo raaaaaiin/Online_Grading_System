@@ -23,16 +23,16 @@ if(isset($_POST['search'])){
 $search = $_POST['search'];
 
 if ($search != NULL){
-$sql = "Select * from tbl_announce where AID like '%$search%' or 
-										ANNOUNCEMENT like '%$search%'";
+	$sql = "SELECT * FROM `tbl_section` WHERE `ID` LIKE '%$search%' OR 
+	`Section_Name` LIKE '%$search%' OR `Section_Code` LIKE '%$search%' OR `Grade_Level` LIKE '%$search%' OR `SY` LIKE '%$search%'";
 
 }else{
 
-$sql = "Select * from tbl_announce";
+$sql = "Select * from tbl_section";
 }
 }else{
 
-$sql = "Select * from tbl_announce";
+$sql = "Select * from tbl_section";
 }
 
 
@@ -58,7 +58,7 @@ $sql = "Select * from tbl_announce";
 			<div class="footer">
 				<h6 id="footer">© 2022 SEPI Login Form. All Rights Reserved | Designed by Excel-erator</h6>
 			</div>
-<form method=POST action="announceview.php">
+<form method=POST action="section.php">
 		<div class="dashboard">
 			<img src="../Images/logo.png" class="dashboardlogocvgs">
 			<a href="dashboard.php" class="Dashboardhome"><img src="../Images/homeicon.png" class="homeicon">Dashboard</a>
@@ -74,7 +74,7 @@ $sql = "Select * from tbl_announce";
 		</div>
 <div class="announcementdiv">
 				<h1 id="announcemetfont">Sections</h1>
-				<a href="sectionadd.php" name="addannouncement"><img src="../Images/add_icon.png" class="addannouncementbtn"></a>
+				<a href="section.php" name="addannouncement"><img src="../Images/add_icon.png" class="addannouncementbtn"></a>
 				<hr>
 				<p class="searchannouncement">Search:</p>
 				<input type=text name=search class="announcementtxt">
@@ -88,6 +88,7 @@ include "../sepi_connect.php";
 
 
 $result = $config -> query($sql);
+
 if($result -> num_rows > 0){
 	echo"<div class=announcementtbl style=overflow:auto;>";
 	echo"<table class=announcementtbl1>";
@@ -95,26 +96,27 @@ if($result -> num_rows > 0){
 echo "<th Class=announcementheader>Section Name";
 echo "<th Class=announcementheader1>Grade Level";
 echo "<th Class=announcementheader2>Section Code";
+echo "<th Class=announcementheader2>School Year";
 echo "<th Class=announcementheader1>ACTION";
 
 
-/**while($row = $result -> fetch_assoc()){
+while($row = $result -> fetch_assoc()){
 echo "<tr>";
-echo "<td class=announcementinfo rowspan=2>".$row['ANNOUNCEMENT'];
-echo "<td class=announcementinfo rowspan=2>".$row['DATE'];
-$source = "../uploads/".$row['image'];
-	echo "<td class='td' rowspan=2><img src=$source width=100% heigth=60%/>";
-echo "<td class=announcementinfo> <a href='announceupdate.php?ID=".$row['AID']."'> Update </a>";
+echo "<td class=announcementinfo rowspan=2>".$row['Section_Name'];
+echo "<td class=announcementinfo rowspan=2>".$row['Grade_Level'];
+	echo "<td class='announcementinfo' rowspan=2>".$row['Section_Code'];
+	echo "<td class='announcementinfo' rowspan=2>".$row['SY'];
+echo "<td class=announcementinfo> <a href='announceupdate.php?ID=".$row['ID']."'> Update </a>";
 echo "<tr>";
-echo "<td class=announcementinfo> <a href='deleteannounce.php?ID=".$row['AID']."'> Archive </a>";
+echo "<td class=announcementinfo> <a href='deleteannounce.php?ID=".$row['ID']."'> Archive </a>";
 echo"<tr>";
 echo "<td class=announcementinfo1 colspan=4>";
 
 	
 
-}	**/
+}	
 }else{
-echo "No Announcement Display";
+echo "<br><br><br>No data found in section";
 }
 ?>
 </div>
