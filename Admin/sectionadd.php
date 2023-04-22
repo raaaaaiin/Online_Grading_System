@@ -45,7 +45,7 @@
     <div class="footer">
         <h6 id="footer">© 2022 SEPI Login Form. All Rights Reserved | Designed by Excel-erator</h6>
     </div>
-    <form method=POST action="subjectadd.php" enctype="multipart/form-data">
+    <form method=POST action="sectionadd.php" enctype="multipart/form-data">
         <div class="dashboard">
             <img src="../Images/logo.png" class="dashboardlogocvgs">
             <a href="dashboard.php" class="Dashboardhome"><img src="../Images/homeicon.png"
@@ -67,11 +67,42 @@
         <div class="announceadddiv">
             <h1 id="announceaddfont">ADD SECTION</h1>
             <hr class="announceaddline">
-            <input type="text" name="announce" placeholder="ANNOUNCEMENT" autocomplete="off" size="50"
-                class="addannouncemntfield"><br>
+            <input type="text" name="section" placeholder="Please Input Section Name" autocomplete="off" size="50"
+                class="addannouncemntfield"><br><br><br>
+				<select name="sy" placeholder="School year" 
+                class="addannouncemntfield">
+				<?php
+$current_year = date('Y');
+$options = array();
 
-            <select name="date" class="adddatfield">
-                <option value="Grade 1">Grade 1</option>
+// add options for 3 years before the current year
+for ($i = 3; $i >= 1; $i--) {
+  $year = $current_year - $i;
+  $option_value = $year . ' - ' . ($year + 1);
+  $option_label = $option_value;
+  $options[] = "<option value=\"$option_value\">$option_label</option>";
+}
+
+// add option for the current year
+$option_value = $current_year . ' - ' . ($current_year + 1);
+$option_label = $option_value;
+$options[] = "<option value=\"$option_value\" selected>$option_label</option>";
+
+// add options for 3 years after the current year
+for ($i = 1; $i <= 3; $i++) {
+  $year = $current_year + $i;
+  $option_value = $year . ' - ' . ($year + 1);
+  $option_label = $option_value;
+  $options[] = "<option value=\"$option_value\">$option_label</option>";
+}
+
+// output options only
+echo implode("\n", $options);
+?>
+            </select>
+			<br>
+            <select name="gradelevel" class="adddatfield">
+			<option value="Grade 1">Grade 1</option>
 				<option value="Grade 2">Grade 2</option>
 				<option value="Grade 3">Grade 3</option>
 				<option value="Grade 4">Grade 4</option>
@@ -81,14 +112,11 @@
 				<option value="Grade 8">Grade 8</option>
 				<option value="Grade 9">Grade 9</option>
 				<option value="Grade 10">Grade 10</option>
-                <!-- add more options as needed -->
             </select>
-            <br>
-
-            <br>
+			
 
             <input type=submit name=sub value="Add" class="addannouncebtn">
-            <a href="announceview.php" class="addannounceback">Back</a>
+            <a href="section.php" class="addannounceback">Back</a>
 
     </form>
 
@@ -100,61 +128,23 @@ include "../sepi_connect.php";
 
 
 
-if(isset($_POST['sub']) && isset($_FILES['fileToUpload'])){
-	echo "<pre>";
-	print_r($_FILES['fileToUpload']);
-	echo "</pre>";
+if(isset($_POST['sub'])){
 
-	$img_name = $_FILES['fileToUpload']['name'];
-	$img_size = $_FILES['fileToUpload']['size'];
-	$tmp_name = $_FILES['fileToUpload']['tmp_name'];
-	$error = $_FILES['fileToUpload']['error'];
+$sectionName = $_POST['section'];
+$gradeLevel = $_POST['gradelevel'];
+$sy = $_POST['sy'];
+$year_suffix = substr($sy, -2) . substr($sy, -6, 2);
 
-
-
-if ($error === 0) {
-	if ($img_size > 12500000) {
-		$em = "Sorry, your file is too large.";
-		header("Location: announceview?error=$em");
-	}else {
-		$img_ex = pathinfo($img_name, PATHINFO_EXTENSION);
-		$img_ex_lc = strtolower($img_ex);
-
-		$allowed_exs = array("jpg", "jpeg", "png"); 
-
-		if (in_array($img_ex_lc, $allowed_exs)) {
-			$new_img_name = uniqid("IMG-", true).'.'.$img_ex_lc;
-			$img_upload_path = '../uploads/'.$new_img_name;
-			move_uploaded_file($tmp_name, $img_upload_path);
-
-			// Insert into Database
-			$announcement = $_POST['announce'];
-			$date = $_POST['date'];
-			$sql = "Insert into tbl_announce (ANNOUNCEMENT,DATE,image) values  
-			('$announcement','$date','$new_img_name')";
-			$insert = $config->query($sql);
-			header("Location: announceview.php");
-		}else {
-			$em = "You can't upload files of this type";
-			header("Location: announceview.php?error=$em");
-		}
-	}
-
-// Display status message
-echo $statusMsg;
-if($insert == True){
-?>
-<script>
-alert("Successfully Added")
-</script>
-
-<?php
-header("refresh:0;url=announceview.php");
-}else{
-	echo $config->error;
-}
-  
-}
+$sectionCode = $sectionName . $year_suffix;
+	$sql = "Insert into tbl_section (Section_Name,Section_Code,Subject,SY) values  
+			('$sectionName','$sectionCode','$gradeLevel','$sy')";
+			if ($config->query($sql)) {
+				// query successful
+				echo '<script>alert("Subject added successfully."); window.location.href = "section.php";</script>';
+			  } else {
+				// query failed
+				echo '<script>alert("Failed to add new subject. Please check the inputs and provide the correct details.");</script>';
+			  }
 }
 
 ?>
