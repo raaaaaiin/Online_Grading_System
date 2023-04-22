@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Stylesheet, Font and Scripts-->
+        <link rel="icon" type="image/png" href="/img/logo.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/Mediko_Style.css"/>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+        <title> SEPI | Log In</title>
+    </head>
+    <style>
+        * {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+nav {
+    background: transparent;
+    padding: 5px 20px;
+    background-color: transparent;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight:bolder;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.menu li{
+    font-size: 17px;
+    padding: 15px 5px;
+}
+
+.menu li a {
+    display: block;
+    margin-left: 25px;
+}
+
+.logo a{
+    font-size: 20px;
+}
+
+/* Mobile Menu */
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.toggle {
+    order: 1;
+}
+.item{
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+}
+.item.active {
+    display: block;
+}
+.toggle {
+    cursor: pointer;
+}
+.bars {
+    background: black;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+
+.bars::before, .bars::after {
+    background: black;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 18px;
+}
+
+.bars::before {
+    top: 8px;
+}
+
+.bars::after {
+    top: -8px;
+}
+
+
+/* Tablet Menu */
+
+@media all and (min-width: 460px) {
+    .menu{
+        justify-content: center;
+    }
+    .logo{
+        flex: 1;
+    }
+    .item.button{
+        width: auto;
+        order: 1;
+        display: block;
+    }
+
+    .toggle {
+        order: 2;
+    }
+    .main{
+        flex: 3;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .item{
+        display: block;
+        width: auto;
+    }
+    .toggle{
+        display: none;
+    }
+    .logo{
+        order: 0;
+    }
+    .item{
+        order: 1;
+    }
+
+    .menu li {
+        padding: 15px 10px;
+    }
+
+}
+    </style>
+    <body class="bg-login-register">
+        <nav>
+            <ul class="menu">
+                <li class="logo"><a href="#"  style="color: green;"></a></li>
+                <li class="item"><a href="/admin/login">Admin</a></li>
+                <li class="item"><a href="/staff/login">Staff</a></li>
+                <li class="toggle"><span class="bars"></span></li>
+            </ul>   
+        </nav>
+        <div class="container" style="margin-top: -70px;">
+            <div class="row">
+
+                <div class="col-xl-6">
+                    <div class="cont-title">
+                        <br>
+                        <br>
+                        
+                        <h1><b>Welcome to <br><span style="color:#8e0050;">ONLINE GRADE MANAGEMENT SYSTEM </span> </b></h1>
+
+                        <br>
+
+                        <p>Stay Safe and Connected</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-6">
+                    <div class="cont-form" style="margin-top: 170px;">
+                        <h3><b>Student Log In</b></h3>
+                        <br>
+
+                        <% if(error && error.length > 0){ %>
+                            <div class="alert alert-danger" role="alert">
+                                <%= error %>
+                            </div>
+                        <% } %>
+                        <% if(success && success.length > 0){ %>
+                            <div class="alert alert-success" role="alert">
+                                <%= success %>
+                            </div>
+                        <% } %>
+                        <% if(info && info.length > 0){ %>
+                            <div class="alert alert-info" role="alert">
+                                <%= info %>
+                            </div>
+                        <% } %>
+                      
+                        <form id="appointment-form" role="form" method="post" action="/authenticate/user/login">
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" name="password" placeholder="Password" required>
+                            </div>
+
+                            <br>
+
+                            <button type="submit" class="btn bg-btn">Log In</button>
+                        </form>
+                        <br> 
+                        <div style="text-align: center;">
+                            <a href="/authenticate/user/register" class="lnk-text">Forgot Password?</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+    </body>
+    <script>
+
+    </script>
+</html>

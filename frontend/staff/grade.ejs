@@ -1,0 +1,168 @@
+<%- include('../partials/staff/header') %>
+
+    <!-- Main Body (content)-->
+    <main style="margin-top: 10px;" class="main users chart-page" id="skip-target">
+      <div class="container">
+        <div class="row stat-cards">
+          <div class="col-md-6 col-xl-6">
+
+          </div>
+
+          <div class="col-md-6 col-xl-6">
+            
+          </div>
+      </div>
+
+        <br>
+        <br>
+
+        <div>
+          <h3 style="color: #8e0050;"><b>Student Grade Management System</b></h3>
+          <br>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Add Student Grade
+          </button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModals">
+            Add Subject
+          </button>
+      
+          <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Student Info</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form enctype="multipart/form-data" method="post" action="/staff/grades">
+                <br>
+                <div class="horizontal-group">
+                  <div  class="form-group ">
+                    <label for="name">Student Name</label>
+                  <select name="student"required>
+                    <% rows1.forEach((user, i) => { %>
+                      <option value="<%=user.User_id%>"><%=user.Fname%><%=user.Lname%></option>
+                      
+                      <% }) %>
+                  </select>
+                  </div>
+              </div>
+              <div class="horizontal-group">
+                <div  class="form-group ">
+                  <label for="name">Select Subject</label>
+                <select name="subject"required>
+                  <% rows2.forEach((subject, i) => { %>
+                    <option value="<%=subject.Subject%>"><%=subject.Subject%></option>
+                    
+                    <% }) %>
+                </select>
+                </div>
+            </div>
+                <label for="grade">Grade</label>
+                <input type="number" name="grade" id="grade">
+                <br>
+                <br>
+                <button type="submit" class="btn btn-primary" style="margin-left: 140px; width: 40%;">Add Grade</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModals" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Subject Info</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <form enctype="multipart/form-data" method="post" action="/staff/subject">
+                          <br>
+                     
+                          <label for="subject">Subject Name</label>
+                          <input type="text" name="sub" id="subject">
+                          <br>
+                          <br>
+                          <label for="grade">Subject Description</label>
+                          <input type="text" name="desc" id="grade">
+                          <br>
+                          <br>
+                          <button type="submit" class="btn btn-primary" style="margin-left: 120px; width: 40%;">Add Subject</button>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          <br>
+          <br>
+
+          
+          <% if(error && error.length > 0){ %>
+            <div class="alert alert-danger" role="alert">
+                <%= error %>
+            </div>
+        <% } %>
+        <% if(success && success.length > 0){ %>
+            <div class="alert alert-success" role="alert">
+                <%= success %>
+            </div>
+        <% } %>
+        <% if(info && info.length > 0){ %>
+            <div class="alert alert-info" role="alert">
+                <%= info %>
+            </div>
+        <% } %>
+
+          <!-- Table -->
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th class="hidden-xs">#</th>
+                  <th><center>Student Name</center></th>
+                  <th><center>Subject</center></th>
+                  <th><center>Grades</center></th>
+                  <th><center>Action</center></th>
+              </tr> 
+              </thead>
+              <tbody>
+                <% row.forEach((appointment, i) => { %>
+                  <tr>
+                    <td class="hidden-xs"><%=i+1%></td>
+                    <td><center> <%=appointment.Pname%> </center></td>
+                    <td><center> <%=appointment.Subject%> </center></td>
+                    <td><center> <%=appointment.Grade%> </center></td>
+               
+                      <td align="center">
+
+                       <% id=appointment.Grade_id %>
+                    
+
+                        <a href="deletegrade/<%=id%>" class="btn btn-secondary" style="background-color: red;">Delete</a>
+
+                     </td>
+
+                  </tr>
+                <% }) %>
+
+
+        </tbody>
+            </table>
+        
+        </div>
+      </div>
+    </main>
+
+<%- include('../partials/admin/footer') %>

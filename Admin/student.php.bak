@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<title>Books </title>
+</head>
+<link rel=stylesheet href=style.css>
+<form method = POST action=student.php>
+<center>
+<h1>Add Student Information</h1>
+<table border=3>
+<th colspan=2>Add Student Information
+<tr>
+<td>Student ID:
+<td><input type=text name=studid>
+<tr>
+<td>Firstname:
+<td><input type=text name=fname>
+<tr>
+<td>Middle Initial:
+<td><input type=text name=mname>
+<tr>
+<td>Lastname:
+<td><input type=text name=lname>
+<tr>
+<td>Birthday:
+<td><input type=date name=bday>
+<tr>
+<td>Age:
+<td><input type=text name=ages>
+<tr>
+<td>Gender:
+<td><select name=gen>
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+<option value="Others">Others</option>
+</select>
+<tr>
+<td>Yr Level & Section:
+<td><select name=level>
+
+		 <option value="Grade 1 - Faith">Grade 1 - Faith</option>
+		<option value="Grade 2 - Hope"> Grade 2 - Hope</option>
+		<option value="Grade 3 - Humility">Grade 3 - Humility</option>
+		<option value="Grade 4 - Meekness">Grade 4 - Meekness</option>
+		<option value="Grade 5 - Gentleness">Grade 5 - Gentleness</option>
+		<option value="Grade 6 - Patience">Grade 6 - Patience</option>
+		<option value="Grade 7 - Perseverance">Grade 7 - Perseverance</option>
+		<option value="Grade 8 - Generous">Grade 8 - Generous</option>
+		<option value="Grade 9 - Industrious">Grade 9 - Industrious</option>
+		<option value="Grade 10 - Prosperous">Grade 10 - Prosperous</option>
+</select>
+<tr>
+
+<td>School Year:
+<td><input type=text name=year>
+<tr>
+
+<td>LRN:
+<td><input type=text name=number>
+<tr>
+
+<td colspan=2><center> <input type=submit name=subs value="Add Student">
+</table>
+</form>
+</center>
+</body>
+</html>
+
+<?php
+include "../sepi_connect.php";
+if($config->connect_error){
+	echo "Not Connected";
+}else{
+	echo " Connected";
+}
+if(isset($_POST['subs'])){
+$studentid = $_POST['studid'];
+$first = $_POST['fname'];
+$middle = $_POST['mname'];
+$last = $_POST['lname'];
+$birth = $_POST['bday'];
+$agess = $_POST['ages'];
+$gender = $_POST['gen'];
+$levels = $_POST['level'];
+$years = $_POST['year'];
+$numbers = $_POST['number'];
+$sql = "Insert into tbl_student (Stud_ID,FNAME,MNAME,LNAME,BDAY,AGE,GENDER,LEVEL,YEAR,LRN) values  
+($studentid,'$first','$middle','$last','$birth',$agess,'$gender','$levels','$years','$numbers')";
+$insert = $config->query($sql);
+if($insert == True){
+?>
+<script>
+alert("Successfully Added")
+</script>
+<?php
+}else{
+	echo $config->error;
+}
+}
+?>

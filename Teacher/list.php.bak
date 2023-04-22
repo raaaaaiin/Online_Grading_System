@@ -1,0 +1,72 @@
+<html>
+<head> 
+<title> Student List View</title>
+</head>
+<link rel=stylesheet href=style.css>
+<body>
+<center>
+<form method=POST action="list.php">
+
+
+</body>
+</html>
+
+<?php
+include "../sepi_connect.php";
+if($config->connect_error){
+echo "Not Connected";
+}else{
+echo " Connected";
+}
+if(isset($_POST['sub'])){
+$search = $_POST['search'];
+$category = $_POST['category'];
+if($category != NULL){
+$sql = "SELECT * FROM tbl_student where ANNOUNCEMENT = '$category'";
+}elseif($search !=NULL){
+$sql = "SELECT * FROM tbl_student where category LIKE '%$search%' or category LIKE '%$search%'";
+}
+}else{
+$sql = "SELECT * FROM tbl_student";
+}
+
+$result = $config -> query($sql);
+if($result -> num_rows > 0){
+echo "<table border =1>";
+echo "<tr>";
+echo "<th>ID: ";
+echo "<th>Student ID: ";
+echo "<th>Firstname: ";
+echo "<th>Middle Initial ID: ";
+echo "<th>Lastname ID: ";
+echo "<th>Birthday ID: ";
+echo "<th>Age ID: ";
+echo "<th>Gender ID: ";
+echo "<th>Yr Level & Section ID: ";
+echo "<th>School Year: ";
+echo "<th>LRN: ";
+
+
+while($row = $result -> fetch_assoc()){
+echo "<tr>";
+echo "<td>".$row['SID'];
+echo "<td>".$row['Stud_ID'];
+echo "<td>".$row['FNAME'];
+echo "<td>".$row['MNAME'];
+echo "<td>".$row['LNAME'];
+echo "<td>".$row['BDAY'];
+echo "<td>".$row['AGE'];
+echo "<td>".$row['GENDER'];
+echo "<td>".$row['LEVEL'];
+echo "<td>".$row['YEAR'];
+echo "<td>".$row['LRN'];
+
+
+
+	
+
+}	
+}else{
+echo "Empty";
+}
+?>

@@ -1,0 +1,4071 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+body
+{
+	height:100%;
+	width:100%;
+	margin:0% 0% 0% 0%;
+}
+.purifiedfield
+{
+	width:18%;
+	margin-top:7%;
+}
+
+/*------------------------------------------------------------class for Index.php----------------------------------------------------------*/
+.container
+{
+	width:350px;
+	height:400px;
+	background-color:#b20064;
+	position:fixed;
+	margin-left:350px;
+	margin-top:100px;
+	box-shadow: 5px 10px 40px 1px black;
+	border:1px;
+}
+.loginlogo
+{
+	width:250px;
+	height:250px;
+	background-color:white;
+	border-radius:100%;
+	margin:90px 70px 20px 45px
+}
+.container1
+{
+	width:300px;
+	height:360px;
+	background-color:white;
+	position:fixed;
+	margin-left:700px;
+	margin-top:100px;
+	padding-top:40px;
+	box-shadow: 20px 10px 40px 1px black;
+	border:1px;
+}
+.namefield
+{
+	width:250px;
+	height:35px;
+	font-size:15px;
+	position:fixed;
+	margin-top:70px;
+	margin-left:25px;
+}
+.passwordfield
+{
+	width:250px;
+	height:35px;
+	font-size:15px;
+	position:fixed;
+	margin-top:120px;
+	margin-left:25px;
+}
+.forgot
+{
+	text-decoration:none;
+	color:gray;
+	font-family: 'Lato', sans-serif;
+	position:fixed;
+	margin-top:160px;
+	margin-left:180px;
+}
+.forgot:hover
+{
+	color:black;
+}
+.login
+{
+	margin-top:30px;
+	width:200px;
+	height:35px;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#b20064;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+	margin-top:200px;
+	margin-left:50px;
+}
+.login:hover
+{
+	background-color:#8e0050;
+	color:white;
+}
+.logintitle
+{
+	font-size:35px;
+	color:white;
+	text-shadow: 1px 1px black;
+	margin-top:120px;
+	margin-left:390px;
+	position:fixed;
+	font-family:impact;
+	letter-spacing:3px;
+}
+.logintitleconnect
+{
+	font-size:35px;
+	color:#b20064;
+	text-shadow: 1px 1px black;
+	margin-top:120px;
+	margin-left:700px;
+	position:fixed;
+	font-family:impact;
+	letter-spacing:3px;
+}
+.rightslogin
+{
+	margin-top:520px;
+	margin-left:430px;
+	position:fixed;
+	font-size:17px;
+}
+/*------------------------------------------------------------id for Index.php----------------------------------------------------------*/
+#fonttitle
+{
+	font-size:18px;
+	font-family:Calibri;
+	font-weight:bold;
+	position:fixed;
+	margin-top:25px;
+	margin-left:115px;
+}
+/*------------------------------------------------------------class for dashboardmngr.php----------------------------------------------------------*/
+.Dashboardmngr
+{
+	color:white; 
+	text-decoration:none;
+	font-size:14px;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+	margin-top:65%;
+	padding:4% 36.5% 4% 25%;
+}
+.homeicon
+{
+	position:absolute;
+	height:18px;
+	margin-left:-30px;
+}
+.Dashboardmngr:hover
+{
+	background-color:#051075;
+	color:white;
+	font-size:15.3px;
+}
+.Accountsmngr
+{
+	color:white; 
+	text-decoration:none;
+	font-size:14px;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+	margin-top:85%;
+	padding:4% 43% 4% 25%;
+}
+.salesicon
+{
+	position:absolute;
+	height:18px;
+	margin-left:-30px;
+}
+.Accountsmngr:hover
+{
+	background-color:#051075;
+	color:white;
+	font-size:15.3px;
+}
+.Auditmngr
+{
+	color:white; 
+	text-decoration:none;
+	font-size:14px;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+	margin-top:105%;
+	padding:4% 40% 4% 25%;
+}
+.transactionicon
+{
+	position:absolute;
+	height:18px;
+	margin-left:-30px;
+}
+.Auditmngr:hover
+{
+	background-color:#051075;
+	color:white;
+	font-size:15.3px;
+}
+.Archivemngr
+{
+	color:white; 
+	text-decoration:none;
+	font-size:14px;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+	margin-top:125%;
+	padding:4% 49% 4% 25%;
+}
+.inventoryicon
+{
+	position:absolute;
+	height:18px;
+	margin-left:-30px;
+}
+.Archivemngr:hover
+{
+	background-color:#051075;
+	color:white;
+	font-size:15.3px;
+}
+/*------------------------------------------------------------class for dashboard.php----------------------------------------------------------*/
+.header
+{
+	position:absolute;
+	margin-top:0px;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	height:9%;
+	width:100%;
+	margin-bottom:0%;
+	padding:0%;
+}
+.footer
+{
+	position:absolute;
+	margin-top:41%;
+	background-color:#fbfbfb;
+	height:9%;
+	width:100%;
+
+}
+#footer
+{	
+	padding-left:39%;
+	margin-top:1.8%;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+	font-size:12px;
+	color:#8ea6b4;
+}
+.accname
+{
+	color:black;
+	position:absolute;
+	margin-left:1080px;
+	font-size:13px;
+	margin-top:20px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+}
+.logout
+{
+	padding:5px 20px 5px 20px;
+	text-decoration:none;
+	border-style:solid;
+	margin-left:1270px;
+	margin-top:15px;
+	border-color:#191970;
+	background-color:#191970;
+	font-weight:bold;
+	color:white;
+	border-radius:15px;
+}
+.logout:hover
+{
+	background-color:white;
+	color:black;
+	border-color:black;
+}
+.dashboard
+{
+	width:16%;
+	height:100%;
+	background-color:#8e0050;
+	position:absolute;
+	margin-top:0px;
+	margin-right:0%;
+}
+.dashboardlogocvgs
+{
+	width:70%;
+	height:18%;
+	background-color:white;
+	border-radius:100%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:13%;
+}
+.Dashboardhome
+{
+	color:white; 
+	text-decoration:none;
+	font-size:14px;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+	margin-top:65%;
+	padding:4% 36.5% 4% 25%;
+}
+.homeicon
+{
+	position:absolute;
+	height:18px;
+	margin-left:-30px;
+}
+.Dashboardhome:hover
+{
+	background-color:#051075;
+	color:white;
+	font-size:15.3px;
+}
+.Sales
+{
+	color:white; 
+	text-decoration:none;
+	font-size:14px;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+	margin-top:85%;
+	padding:4% 57% 4% 25%;
+}
+.salesicon
+{
+	position:absolute;
+	height:18px;
+	margin-left:-30px;
+}
+.Sales:hover
+{
+	background-color:#051075;
+	color:white;
+	font-size:15.3px;
+}
+.Transaction
+{
+	color:white; 
+	text-decoration:none;
+	font-size:14px;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+	margin-top:105%;
+	padding:4% 35% 4% 25%;
+}
+.transactionicon
+{
+	position:absolute;
+	height:18px;
+	margin-left:-30px;
+}
+.Transaction:hover
+{
+	background-color:#051075;
+	color:white;
+	font-size:15.3px;
+}
+.Inventory
+{
+	color:white; 
+	text-decoration:none;
+	font-size:14px;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+	margin-top:125%;
+	padding:4% 42% 4% 25%;
+}
+.inventoryicon
+{
+	position:absolute;
+	height:18px;
+	margin-left:-30px;
+}
+.Inventory:hover
+{
+	background-color:#051075;
+	color:white;
+	font-size:15.3px;
+}
+.Product
+{
+	color:white; 
+	text-decoration:none;
+	font-size:14px;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+	margin-top:145%;
+	padding:4% 47% 4% 25%;
+}
+.producticon
+{
+	position:absolute;
+	height:18px;
+	margin-left:-30px;
+}
+.Product:hover
+{
+	background-color:#051075;
+	color:white;
+	font-size:15.3px;
+}
+.Supplier
+{
+	color:white; 
+	text-decoration:none;
+	font-size:14px;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+	margin-top:165%;
+	padding:4% 46% 4% 25%;
+}
+.suppliericon
+{
+	position:absolute;
+	height:18px;
+	margin-left:-30px;
+}
+.Supplier:hover
+{
+	background-color:#051075;
+	color:white;
+	font-size:15.3px;
+}
+.Customer
+{
+	color:white; 
+	text-decoration:none;
+	font-size:14px;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+	margin-top:185%;
+	padding:4% 40.5% 4% 25%;
+}
+.customericon
+{
+	position:absolute;
+	height:18px;
+	margin-left:-30px;
+}
+.Customer:hover
+{
+	background-color:#051075;
+	color:white;
+	font-size:15.3px;
+}
+.Accounts
+{
+	color:white; 
+	text-decoration:none;
+	font-size:14px;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+	margin-top:205%;
+	padding:4% 43% 4% 25%;
+}
+.accounticon
+{
+	position:absolute;
+	height:18px;
+	margin-left:-30px;
+}
+.Accounts:hover
+{
+	background-color:#051075;
+	color:white;
+	font-size:15.3px;
+}
+.Audit
+{
+	color:white; 
+	text-decoration:none;
+	font-size:14px;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+	margin-top:225%;
+	padding:4% 40% 4% 25%;
+}
+.auditicon
+{
+	position:absolute;
+	height:18px;
+	margin-left:-30px;
+}
+.Audit:hover
+{
+	background-color:#051075;
+	color:white;
+	font-size:15.3px;
+}
+.Archive
+{
+	color:white; 
+	text-decoration:none;
+	font-size:14px;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+	margin-top:245%;
+	padding:4% 49% 4% 25%;
+}
+.archiveicon
+{
+	position:absolute;
+	height:18px;
+	margin-left:-30px;
+}
+.Archive:hover
+{
+	background-color:#051075;
+	color:white;
+	font-size:15.3px;
+}
+/*------------------------------------------------------------Boxes for dashboard.php----------------------------------------------------------*/
+.Accountbodymngr
+{
+	margin-left:18%;
+	margin-top:7%;
+    width:18%;
+    height:16%;
+    background-color:#4682B4;
+	text-decoration:none;
+	position:fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+.Accountbodylinkmngr
+{
+	text-decoration:none;
+	width:18%;
+    height:16%;
+	font-family:'Quicksand', Sans-serif;
+	font-weight:bold;	
+	color:white;
+	position:fixed;
+}
+.Accountbodylinkmngr:hover
+{
+	 background-color:#29C5F6;
+	 border-color:#29C5F6;
+	 border-left-color:white;
+}
+#Accountsmngr
+{
+	font-size:22px;
+	text-align:center;
+}
+#Accountstotalmngr
+{
+	background-color:black;
+	padding:10px 0px 10px 0px;
+	box-shadow: 5px 5px 10px grey;
+	text-align:center;
+}
+.Auditbodymngr
+{
+	margin-left:38%;
+	margin-top:7%;
+    width:18%;
+    height:16%;
+    background-color:#4682B4;
+	text-decoration:none;
+	position:fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+.Auditbodylinkmngr
+{
+	text-decoration:none;
+	width:18%;
+    height:16%;
+	font-family:'Quicksand', Sans-serif;
+	font-weight:bold;	
+	color:white;
+	position:fixed;
+}
+.Auditbodylinkmngr:hover
+{
+	 background-color:#29C5F6;
+	 border-color:#29C5F6;
+	 border-left-color:white;
+}
+#Auditmngr
+{
+	font-size:22px;
+	text-align:center;
+}
+#Audittotalmngr
+{
+	background-color:black;
+	padding:10px 0px 10px 0px;
+	box-shadow: 5px 5px 10px grey;
+	text-align:center;
+}
+/*------------------------------------------------------------Boxes for dashboard.php----------------------------------------------------------*/
+.salesbody
+{
+	margin-left:18%;
+	margin-top:7%;
+    width:18%;
+    height:16%;
+    background-color:#4682B4;
+	text-decoration:none;
+	position:fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+.saleslink
+{
+	text-decoration:none;
+	width:18%;
+    height:16%;
+	font-family:'Quicksand', Sans-serif;
+	font-weight:bold;	
+	color:white;
+	position:fixed;
+}
+.saleslink:hover
+{
+	 background-color:#29C5F6;
+	 border-color:#29C5F6;
+	 border-left-color:white;
+}
+#sales
+{
+	font-size:22px;
+	text-align:center;
+}
+#salestotal
+{
+	background-color:black;
+	padding:10px 0px 10px 0px;
+	box-shadow: 5px 5px 10px grey;
+	text-align:center;
+}
+.Transactionbody
+{
+	margin-left:38%;
+	margin-top:7%;
+    width:18%;
+    height:16%;
+    background-color:#4682B4;
+	text-decoration:none;
+	position:fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+.Transactionbodylink
+{
+	text-decoration:none;
+	width:18%;
+    height:16%;
+	font-family:'Quicksand', Sans-serif;
+	font-weight:bold;	
+	color:white;
+	position:fixed;
+}
+.Transactionbodylink:hover
+{
+	 background-color:#29C5F6;
+	 border-color:#29C5F6;
+	 border-left-color:white;
+}
+#Transaction
+{
+	font-size:22px;
+	text-align:center;
+}
+#Transactiontotal
+{
+	background-color:black;
+	padding:10px 0px 10px 0px;
+	box-shadow: 5px 5px 10px grey;
+	text-align:center;
+}
+.Inventorybody
+{
+	margin-left:58%;
+	margin-top:7%;
+    width:18%;
+    height:16%;
+    background-color:#4682B4;
+	text-decoration:none;
+	position:fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+.Inventorybodylink
+{
+	text-decoration:none;
+	width:18%;
+    height:16%;
+	font-family:'Quicksand', Sans-serif;
+	font-weight:bold;	
+	color:white;
+	position:fixed;
+}
+.Inventorybodylink:hover
+{
+	 background-color:#29C5F6;
+	 border-color:#29C5F6;
+	 border-left-color:white;
+}
+#Inventory
+{
+	font-size:22px;
+	text-align:center;
+}
+#Inventorytotal
+{
+	background-color:black;
+	padding:10px 0px 10px 0px;
+	box-shadow: 5px 5px 10px grey;
+	text-align:center;
+}
+.Productbody
+{
+	margin-left:78%;
+	margin-top:7%;
+    width:18%;
+    height:16%;
+    background-color:#4682B4;
+	text-decoration:none;
+	position:fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+.Productbodylink
+{
+	text-decoration:none;
+	width:18%;
+    height:16%;
+	font-family:'Quicksand', Sans-serif;
+	font-weight:bold;	
+	color:white;
+	position:fixed;
+}
+.Productbodylink:hover
+{
+	 background-color:#29C5F6;
+	 border-color:#29C5F6;
+	 border-left-color:white;
+}
+#Product
+{
+	font-size:22px;
+	text-align:center;
+}
+.Producttotal
+{
+	background-color:black;
+	padding:8px 0px 8px 0px;
+	text-align:center;
+}
+.Supplierbody
+{
+	margin-left:18%;
+	margin-top:20%;
+    width:18%;
+    height:16%;
+    background-color:#4682B4;
+	text-decoration:none;
+	position:fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+.Supplierbodylink
+{
+	text-decoration:none;
+	width:18%;
+    height:16%;
+	font-family:'Quicksand', Sans-serif;
+	font-weight:bold;	
+	color:white;
+	position:fixed;
+}
+.Supplierbodylink:hover
+{
+	 background-color:#29C5F6;
+	 border-color:#29C5F6;
+	 border-left-color:white;
+}
+#Supplier
+{
+	font-size:22px;
+	text-align:center;
+}
+#Suppliertotal
+{
+	background-color:black;
+	padding:10px 0px 10px 0px;
+	box-shadow: 5px 5px 10px grey;
+	text-align:center;
+}
+.Customerbody
+{
+	margin-left:18%;
+	margin-top:20%;
+    width:18%;
+    height:16%;
+    background-color:#4682B4;
+	text-decoration:none;
+	position:fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+.customerbodylink
+{
+	text-decoration:none;
+	width:18%;
+    height:16%;
+	font-family:'Quicksand', Sans-serif;
+	font-weight:bold;	
+	color:white;
+	position:fixed;
+}
+.customerbodylink:hover
+{
+	 background-color:#29C5F6;
+	 border-color:#29C5F6;
+	 border-left-color:white;
+}
+#customer
+{
+	font-size:22px;
+	text-align:center;
+}
+#customertotal
+{
+	background-color:black;
+	padding:10px 0px 10px 0px;
+	box-shadow: 5px 5px 10px grey;
+	text-align:center;
+}
+.Customerbody
+{
+	margin-left:38%;
+	margin-top:20%;
+    width:18%;
+    height:16%;
+    background-color:#4682B4;
+	text-decoration:none;
+	position:fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+.Customerbodylink
+{
+	text-decoration:none;
+	width:18%;
+    height:16%;
+	font-family:'Quicksand', Sans-serif;
+	font-weight:bold;	
+	color:white;
+	position:fixed;
+}
+.Customerbodylink:hover
+{
+	 background-color:#29C5F6;
+	 border-color:#29C5F6;
+	 border-left-color:white;
+}
+#Customer
+{
+	font-size:22px;
+	text-align:center;
+}
+#Customertotal
+{
+	background-color:black;
+	padding:10px 0px 10px 0px;
+	box-shadow: 5px 5px 10px grey;
+	text-align:center;
+}
+.Accountbody
+{
+	margin-left:58%;
+	margin-top:20%;
+    width:18%;
+    height:16%;
+    background-color:#8e0050;
+	text-decoration:none;
+	position:fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+.Accountbodylink
+{
+	text-decoration:none;
+	width:18%;
+    height:16%;
+	font-family:'Quicksand', Sans-serif;
+	font-weight:bold;	
+	color:white;
+	position:fixed;
+}
+.Accountbodylink:hover
+{
+	 background-color:#29C5F6;
+	 border-color:#29C5F6;
+	 border-left-color:white;
+}
+#Accounts
+{
+	font-size:22px;
+	text-align:center;
+}
+#Accountstotal
+{
+	background-color:black;
+	padding:10px 0px 10px 0px;
+	box-shadow: 5px 5px 10px grey;
+	text-align:center;
+}
+.Auditbody
+{
+	margin-left:78%;
+	margin-top:20%;
+    width:18%;
+    height:16%;
+    background-color:#4682B4;
+	text-decoration:none;
+	position:fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+.Auditbodylink
+{
+	text-decoration:none;
+	width:18%;
+    height:16%;
+	font-family:'Quicksand', Sans-serif;
+	font-weight:bold;	
+	color:white;
+	position:fixed;
+}
+.Auditbodylink:hover
+{
+	 background-color:#29C5F6;
+	 border-color:#29C5F6;
+	 border-left-color:white;
+}
+#Audit
+{
+	font-size:22px;
+	text-align:center;
+}
+#Audittotal
+{
+	background-color:black;
+	padding:10px 0px 10px 0px;
+	box-shadow: 5px 5px 10px grey;
+	text-align:center;
+}
+/*---------------------------------------------------------class for customer.php----------------------------------------------------------*/
+.customerdiv
+{
+	width:78%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:18%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.addcustomerbtn
+{
+	width:3%;
+	height:6%;
+	position:inline-block;
+	margin-left:17%;
+	margin-top:1.5%;
+	padding-bottom:1%;
+}
+.searchcustomer
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:0%;
+	margin-top:1%;
+	font-weight:bold;
+	position:absolute;
+}
+.custtxt
+{
+	margin-top:0.8%;
+	margin-left:4%;
+	height:20px;
+	width:150px;
+	position:absolute;
+}
+.custbtn
+{
+	padding:3px 30px 3px 30px;
+	text-decoration:none;
+	border-style:solid;
+	margin-left:20%;
+	margin-top:0.8%;
+	border-color:white;
+	background-color:#191970;
+	font-weight:bold;
+	color:white;
+	font-size:100%;
+}
+.custtbl
+{
+	position:absolute;
+	margin-top:1%;
+	margin-left:0%;
+	width:97%;
+	height:70%;
+
+}
+.custtbl1
+{
+	border-collapse:collapse;
+	border:1px solid;
+}
+.custheader
+{
+	padding:1% 67px 1% 67px;
+	border:1px solid black; 
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+}
+.custheader1
+{
+	padding:1% 52px 1% 52px;
+	border:1px solid black;  
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+}
+.custinfo
+{
+	padding:0.7% 0% 0.7% 0%;
+	border:1px solid;
+	background-color:#E5E4E2;
+	text-align:center;
+	font-size:12px;		
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+}
+/*---------------------------------------------------------id for customer.php------------------------------------------------------------*/
+#customerfont
+{
+	color:black;
+	margin-left:20px;
+	margin-top:10px;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+}
+/*---------------------------------------------------------class for addcustomer.php-------------------------------------------------------*/
+.custadddiv
+{
+	width:30%;
+	height:60%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:38%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.custaddline
+{
+	width:30%;
+	margin-top:5%;
+	position:fixed;
+}
+.addcustnamefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:7%;
+	margin-left:2%;
+}
+.addcustlocfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:10.5%;
+	margin-left:2%;
+}
+.addcustconperfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:14%;
+	margin-left:2%;
+}
+.addcustnumfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:17.5%;
+	margin-left:2%;
+}
+.addcustbtn
+{
+	margin-top:22%;
+	margin-left:2%;
+	width:14%;
+	height:5%;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+}
+.addcustbtn:hover
+{
+	background-color:#000080;
+	color:white;
+}
+.addcustback
+{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	font-size:15px;
+	font-family:Calibri;
+	position:fixed;
+	margin-top:22%;
+	margin-left:18.3%;
+	border:1px solid black;
+	padding:5px 50px 5px 50px;
+}
+.addcustback:hover
+{
+	border:1px solid black;
+	color:white;
+	background-color:black;
+}
+/*---------------------------------------------------------id for addcustomer.php----------------------------------------------------------*/
+#custaddfont
+{
+	color:black;
+	margin-left:6.5%;
+	margin-top:1%;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:fixed;
+}
+/*---------------------------------------------------------class for supplier.php----------------------------------------------------------*/
+.supplierdiv
+{
+	width:78%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:18%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.addsupplierbtn
+{
+	width:3%;
+	height:6%;
+	position:inline-block;
+	margin-left:17%;
+	margin-top:1.5%;
+	padding-bottom:1%;
+}
+.searchsupplier
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:0%;
+	margin-top:1%;
+	font-weight:bold;
+	position:absolute;
+}
+.suppliertxt
+{
+	margin-top:0.8%;
+	margin-left:5%;
+	height:20px;
+	width:150px;
+	position:absolute;
+}
+.supplierbtn
+{
+	padding:3px 30px 3px 30px;
+	text-decoration:none;
+	border-style:solid;
+	margin-left:20%;
+	margin-top:0.8%;
+	border-color:white;
+	background-color:#191970;
+	font-weight:bold;
+	color:white;
+	font-size:100%;
+}
+.suppliertbl
+{
+	position:absolute;
+	margin-top:1%;
+	margin-left:0%;
+	width:97%;
+	height:70%;
+
+}
+.suppliertbl1
+{
+	border-collapse:collapse;
+	border:1px solid;
+}
+.tblheadersupplier
+{
+	padding:0.5% 67px 0.5% 69px;
+	border:1px solid black; 
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+}
+.tbldatasupplier
+{
+	padding:0.7% 0% 0.7% 0%;
+	border:1px solid;
+	background-color:#E5E4E2;
+	text-align:center;
+	font-size:12px;		
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+}
+/*---------------------------------------------------------id for supplier.php------------------------------------------------------------*/
+#supplierfont
+{
+	color:black;
+	margin-left:20px;
+	margin-top:10px;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+}
+/*---------------------------------------------------------class for addsupplier.php-------------------------------------------------------*/
+.suppadddiv
+{
+	width:30%;
+	height:53%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:38%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.custaddline
+{
+	width:30%;
+	margin-top:5%;
+	position:fixed;
+}
+.CompanyName
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:7%;
+	margin-left:2%;
+}
+.CompanyAddress
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:10.5%;
+	margin-left:2%;
+}
+.CompanyContact
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:14%;
+	margin-left:2%;
+}
+.addsuppbtn
+{
+	margin-top:19%;
+	margin-left:2%;
+	width:14%;
+	height:5%;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+}
+.addsuppbtn:hover
+{
+	background-color:#000080;
+	color:white;
+}
+.addsuppback
+{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	font-size:15px;
+	font-family:Calibri;
+	position:fixed;
+	margin-top:19%;
+	margin-left:18.3%;
+	border:1px solid black;
+	padding:5px 50px 5px 50px;
+}
+.addsuppback:hover
+{
+	border:1px solid black;
+	color:white;
+	background-color:black;
+}
+/*---------------------------------------------------------id for addaupplier.php----------------------------------------------------------*/
+#suppaddfont
+{
+	color:black;
+	margin-left:8%;
+	margin-top:1%;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:fixed;
+}
+/*---------------------------------------------------------class for product.php----------------------------------------------------------*/
+.productdiv
+{
+	width:78%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:18%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.addproductbtn
+{
+	width:3%;
+	height:6%;
+	position:inline-block;
+	margin-left:17%;
+	margin-top:1.5%;
+	padding-bottom:1%;
+}
+.searchproduct
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:0%;
+	margin-top:1%;
+	font-weight:bold;
+	position:absolute;
+}
+.prodtxt
+{
+	margin-top:0.8%;
+	margin-left:4%;
+	height:20px;
+	width:150px;
+	position:absolute;
+}
+.prodbtn
+{
+	padding:3px 30px 3px 30px;
+	text-decoration:none;
+	border-style:solid;
+	margin-left:20%;
+	margin-top:0.8%;
+	border-color:white;
+	background-color:#191970;
+	font-weight:bold;
+	color:white;
+	font-size:100%;
+}
+.prodtbl
+{
+	position:absolute;
+	margin-top:1%;
+	margin-left:0%;
+	width:97%;
+	height:69%;
+}
+.prodtbl1
+{
+	border-collapse:collapse;
+	border:1px solid;
+}
+.prodheader1
+{
+	padding:1% 50px 1% 50px;
+	border:1px solid black; 
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+}
+.prodheader
+{
+	padding:1% 85px 1% 85px;
+	border:1px solid black; 
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+}
+.prodinfo
+{
+	padding:0.7% 0% 0.7% 0%;
+	border:1px solid;
+	background-color:#E5E4E2;
+	text-align:center;
+	font-size:12px;		
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+}
+/*---------------------------------------------------------id for product.php------------------------------------------------------------*/
+#productfont
+{
+	color:black;
+	margin-left:20px;
+	margin-top:10px;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+}
+/*---------------------------------------------------------class for productadd.php-------------------------------------------------------*/
+.prodadddiv
+{
+	width:30%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:38%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.prodaddline
+{
+	width:30%;
+	margin-top:3.5%;
+	position:fixed;
+}
+.addprodcodefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:5%;
+	margin-left:2%;
+}
+.addprodnamefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:8%;
+	margin-left:2%;
+}
+.adddescfield
+{
+	width:26%;
+	height:5%;
+	font-size:15px;
+	position:fixed;
+	font-weight:bold;
+	margin-top:10%;
+	margin-left:2%;
+}
+.addquantityfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:13%;
+	margin-left:2%;
+}
+.addonhandfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:16%;
+	margin-left:2%;
+}
+.addpricefield
+{
+	width:18%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:22%;
+	margin-left:10%;
+}
+.addprodcatfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:19%;
+	margin-left:2%;
+}
+.addprodsuppfield
+{
+	width:12%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:22%;
+	margin-left:2%;
+}
+.adddatestockfield
+{
+	width:13%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:22%;
+	margin-left:15%;
+}
+.addprodbtn
+{
+	margin-top:26%;
+	margin-left:2%;
+	width:14%;
+	height:5%;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+}
+.addprodbtn:hover
+{
+	background-color:#000080;
+	color:white;
+}
+.addprodback
+{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	font-size:15px;
+	font-family:Calibri;
+	position:fixed;
+	margin-top:26%;
+	margin-left:18.3%;
+	border:1px solid black;
+	padding:5px 50px 5px 50px;
+}
+.addprodback:hover
+{
+	border:1px solid black;
+	color:white;
+	background-color:black;
+}
+/*---------------------------------------------------------id for productadd.php------------------------------------------------------------*/
+#prodaddfont
+{
+	color:black;
+	margin-left:100px;
+	margin-top:5px;
+	font-size:30px;
+	font-weight:bold;
+	text-align:center;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+}
+#ppricetxt
+{
+	color:black;
+	margin-left:7%;
+	margin-top:70%;
+	font-size:15px;
+	font-weight:bold;
+	text-align:center;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+}
+/*---------------------------------------------------------class for inventory.php----------------------------------------------------------*/
+.inventorydiv
+{
+	width:78%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:18%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.inventoryline
+{
+	width:97%;
+	position:absolute;
+	margin-top:5%;
+	margin-left:0%;
+}
+.searchinventory
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:0%;
+	margin-top:7%;
+	font-weight:bold;
+	position:absolute;
+}
+.inventorytxt
+{
+	margin-top:6.8%;
+	margin-left:4.5%;
+	height:15px;
+	width:150px;
+	position:absolute;
+}
+.inventorybtn
+{
+	padding:3px 30px 3px 30px;
+	text-decoration:none;
+	border-style:solid;
+	margin-left:20%;
+	margin-top:6.9%;
+	border-color:white;
+	background-color:#191970;
+	font-weight:bold;
+	color:white;
+	font-size:100%;
+}
+.inventorytbl
+{
+	position:absolute;
+	margin-top:1%;
+	margin-left:0%;
+	width:97%;
+	height:68%;
+}
+.inventorytbl1
+{
+	border-collapse:collapse;
+	border:1px solid;
+}
+.tblheaderinventory
+{
+	padding:0.5% 58px 0.5% 58px;
+	border:1px solid black; 
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+}
+.tblheaderinventory1
+{
+	padding:0.5% 20px 0.5% 20px;
+	border:1px solid black; 
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+}
+.tbldatainventory
+{
+	padding:0.7% 0% 0.7% 0%;
+	border:1px solid;
+	background-color:#E5E4E2;
+	text-align:center;
+	font-size:12px;		
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+}
+/*---------------------------------------------------------id for inventory.php------------------------------------------------------------*/
+#inventoryfont
+{
+	color:black;
+	margin-left:20px;
+	margin-top:10px;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+}
+/*---------------------------------------------------------class for updatecustomer.php-------------------------------------------------------*/
+.custupddiv
+{
+	width:30%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:38%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.custupdline
+{
+	width:92%;
+	margin-top:12%;
+	position:absolute;
+}
+.updatecustidfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:7%;
+	margin-left:2%;
+}
+.updatecustnamefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:11%;
+	margin-left:2%;
+}
+.updatecustlocfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:15%;
+	margin-left:2%;
+}
+.updatecustcontactperfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:19%;
+	margin-left:2%;
+}
+.updatecustnumfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:23%;
+	margin-left:2%;
+}
+.updcustbtn
+{
+	margin-top:28%;
+	margin-left:2%;
+	width:14%;
+	height:5%;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+}
+.updcustbtn:hover
+{
+	background-color:#000080;
+	color:white;
+}
+.updcustback
+{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	font-size:15px;
+	font-family:Calibri;
+	position:fixed;
+	margin-top:28%;
+	margin-left:18.3%;
+	border:1px solid black;
+	padding:5px 50px 5px 50px;
+}
+.updcustback:hover
+{
+	border:1px solid black;
+	color:white;
+	background-color:black;
+}
+/*---------------------------------------------------------id for updatecustomer.php------------------------------------------------------------*/
+#updcustid
+{
+	color:black;
+	margin-left:7%;
+	margin-top:17.8%;
+	font-size:13px;
+	font-weight:bold;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+}
+#updcustname
+{
+	color:black;
+	margin-left:7%;
+	margin-top:30.5%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updcustloc
+{
+	color:black;
+	margin-left:7%;
+	margin-top:43.3%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updcustconper
+{
+	color:black;
+	margin-left:7%;
+	margin-top:55.8%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updcustnum
+{
+	color:black;
+	margin-left:7%;
+	margin-top:68%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+/*---------------------------------------------------------id for updatecustomer.php------------------------------------------------------------*/
+#custupdfont
+{
+	color:black;
+	margin-left:7px;
+	margin-top:10px;
+	font-size:25px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+}
+/*---------------------------------------------------------class for updateproduct.php-------------------------------------------------------*/
+.produpddiv
+{
+	width:30%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:38%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.produpdline
+{
+	width:92%;
+	margin-top:12%;
+	position:absolute;
+}
+.updateprodidfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:7%;
+	margin-left:2%;
+}
+.updateprodnamefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:11%;
+	margin-left:2%;
+}
+.updateprodlocfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:15%;
+	margin-left:2%;
+}
+.updateprodcontactperfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:19%;
+	margin-left:2%;
+}
+.updateprodnumfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:23%;
+	margin-left:2%;
+}
+.updprodbtn
+{
+	margin-top:28%;
+	margin-left:2%;
+	width:14%;
+	height:5%;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+}
+.updprodbtn:hover
+{
+	background-color:#000080;
+	color:white;
+}
+.updprodback
+{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	font-size:15px;
+	font-family:Calibri;
+	position:fixed;
+	margin-top:28%;
+	margin-left:18.3%;
+	border:1px solid black;
+	padding:5px 50px 5px 50px;
+}
+.updprodback:hover
+{
+	border:1px solid black;
+	color:white;
+	background-color:black;
+}
+/*---------------------------------------------------------id for updateproduct.php------------------------------------------------------------*/
+#produpdfont
+{
+	color:black;
+	margin-left:19%;
+	margin-top:2%;
+	font-size:25px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+}
+#updprodid
+{
+	color:black;
+	margin-left:7%;
+	margin-top:17.8%;
+	font-size:13px;
+	font-weight:bold;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+}
+#updprodcode
+{
+	color:black;
+	margin-left:7%;
+	margin-top:30.5%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updprodname
+{
+	color:black;
+	margin-left:7%;
+	margin-top:43.3%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updprodprice
+{
+	color:black;
+	margin-left:7%;
+	margin-top:55.8%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updprodcat
+{
+	color:black;
+	margin-left:7%;
+	margin-top:68%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+/*---------------------------------------------------------class for updateinventory.php-------------------------------------------------------*/
+.invupddiv
+{
+	width:30%;
+	height:74%;
+	position:absolute;
+	margin-top:5%;
+	margin-left:38%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.invupdline
+{
+	width:92%;
+	margin-top:12%;
+	position:absolute;
+}
+.updateinvcodefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:6.5%;
+	margin-left:2%;
+}
+.updateinvnamefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:10.7%;
+	margin-left:2%;
+}
+.updateprodquanfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:14.8%;
+	margin-left:2%;
+}
+.updateprodhandfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:18.8%;
+	margin-left:2%;
+}
+.updateprodstockfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:22.8%;
+	margin-left:2%;
+}
+.updateprodcatfield
+{
+	width:12%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:26.8%;
+	margin-left:2%;
+}
+.updateproddatefield
+{
+	width:12%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:26.8%;
+	margin-left:16%;
+}
+.updinvbtn
+{
+	margin-top:96%;
+	margin-left:6%;
+	width:43%;
+	height:6%;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+}
+.updinvbtn:hover
+{
+	background-color:#000080;
+	color:white;
+}
+.updinvback
+{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	font-size:15px;
+	font-family:Calibri;
+	position:absolute;
+	margin-top:96%;
+	margin-left:55%;
+	border:1px solid black;
+	padding:5px 55px 5px 55px;
+}
+.updinvback:hover
+{
+	border:1px solid black;
+	color:white;
+	background-color:black;
+}
+/*---------------------------------------------------------id for updateinventory.php------------------------------------------------------------*/
+#invupdfont
+{
+	color:black;
+	margin-left:19%;
+	margin-top:2%;
+	font-size:25px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+}
+#updinvcode
+{
+	color:black;
+	margin-left:7%;
+	margin-top:16%;
+	font-size:13px;
+	font-weight:bold;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+}
+#updinvname
+{
+	color:black;
+	margin-left:7%;
+	margin-top:29%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updinvquan
+{
+	color:black;
+	margin-left:7%;
+	margin-top:42%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updinvhand
+{
+	color:black;
+	margin-left:7%;
+	margin-top:54.3%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updinvstock
+{
+	color:black;
+	margin-left:7%;
+	margin-top:67.5%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updinvcat
+{
+	color:black;
+	margin-left:7%;
+	margin-top:80%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updinvdate
+{
+	color:black;
+	margin-left:50%;
+	margin-top:80%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+/*---------------------------------------------------------class for updatesupplier.php-------------------------------------------------------*/
+.suppupddiv
+{
+	width:30%;
+	height:60%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:38%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.suppupdline
+{
+	width:92%;
+	margin-top:12%;
+	position:absolute;
+}
+.updatesuppidfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:7%;
+	margin-left:2%;
+}
+.updatecompnamefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:11%;
+	margin-left:2%;
+}
+.updatesupplocfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:15%;
+	margin-left:2%;
+}
+.updatesuppnumfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:19%;
+	margin-left:2%;
+}
+.updsuppbtn
+{
+	margin-top:75%;
+	margin-left:6%;
+	width:43%;
+	height:7%;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+}
+.updsuppbtn:hover
+{
+	background-color:#000080;
+	color:white;
+}
+.updsuppback
+{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	font-size:15px;
+	font-family:Calibri;
+	position:absolute;
+	margin-top:75%;
+	margin-left:55%;
+	border:1px solid black;
+	padding:5px 55px 5px 55px;
+}
+.updsuppback:hover
+{
+	border:1px solid black;
+	color:white;
+	background-color:black;
+}
+/*---------------------------------------------------------id for updatesupplier.php------------------------------------------------------------*/
+#suppupdfont
+{
+	color:black;
+	margin-left:19%;
+	margin-top:2%;
+	font-size:25px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+}
+#updsuppid
+{
+	color:black;
+	margin-left:7%;
+	margin-top:17%;
+	font-size:13px;
+	font-weight:bold;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+}
+#updcompname
+{
+	color:black;
+	margin-left:7%;
+	margin-top:30%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updsupploc
+{
+	color:black;
+	margin-left:7%;
+	margin-top:43%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updsuppnum
+{
+	color:black;
+	margin-left:7%;
+	margin-top:55.5%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updinvstock
+{
+	color:black;
+	margin-left:7%;
+	margin-top:67.5%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updinvcat
+{
+	color:black;
+	margin-left:7%;
+	margin-top:80%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updinvdate
+{
+	color:black;
+	margin-left:50%;
+	margin-top:80%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+/*---------------------------------------------------------class for accounts.php----------------------------------------------------------*/
+.accountsdiv
+{
+	width:78%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:18%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.addaccountsbtn
+{
+	width:3%;
+	height:6%;
+	position:inline-block;
+	margin-left:17%;
+	margin-top:1.5%;
+	padding-bottom:1%;
+}
+.searchaccounts
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:0%;
+	margin-top:1%;
+	font-weight:bold;
+	position:absolute;
+}
+.accountstxt
+{
+	margin-top:0.8%;
+	margin-left:5%;
+	height:20px;
+	width:150px;
+	position:absolute;
+}
+.accountsbtn
+{
+	padding:3px 30px 3px 30px;
+	text-decoration:none;
+	border-style:solid;
+	margin-left:20%;
+	margin-top:0.8%;
+	border-color:white;
+	background-color:#191970;
+	font-weight:bold;
+	color:white;
+	font-size:100%;
+}
+.accountstbl
+{
+	position:absolute;
+	margin-top:1%;
+	margin-left:0%;
+	width:97%;
+	height:70%;
+
+}
+.accountstbl1
+{
+	border-collapse:collapse;
+	border:1px solid;
+}
+.accountsheader1
+{
+	padding:0.5% 25px 0.5% 25px;
+	border:1px solid black; 
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+}
+.accountsheader2
+{
+	padding:0.5% 40px 0.5% 40px;
+	border:1px solid black; 
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+}
+.accountsheader
+{
+	padding:0.5% 50px 0.5% 50px;
+	border:1px solid black; 
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+}
+.accountsinfo
+{
+	padding:0.7% 0% 0.7% 0%;
+	border:1px solid;
+	background-color:#E5E4E2;
+	text-align:center;
+	font-size:12px;		
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+}
+/*---------------------------------------------------------id for accounts.php------------------------------------------------------------*/
+#accountsfont
+{
+	color:black;
+	margin-left:20px;
+	margin-top:10px;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+}
+/*---------------------------------------------------------class for addaccounts.php-------------------------------------------------------*/
+.accadddiv
+{
+	width:30%;
+	height:71%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:38%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.accaddline
+{
+	width:30%;
+	margin-top:5%;
+	position:fixed;
+}
+.addaccfnamefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:6.5%;
+	margin-left:2%;
+}
+.addacclnamefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:9.5%;
+	margin-left:2%;
+}
+.addaccusernamefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:12.5%;
+	margin-left:2%;
+}
+.addaccpasswordfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:15.5%;
+	margin-left:2%;
+}
+.addacclocfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:19%;
+	margin-left:2%;
+}
+.addaccnumfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:22%;
+	margin-left:2%;
+}
+.addaccbtn
+{
+	margin-top:28.5%;
+	margin-left:2%;
+	width:14%;
+	height:5%;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+}
+.addaccbtn:hover
+{
+	background-color:#000080;
+	color:white;
+}
+.addaccback
+{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	font-size:15px;
+	font-family:Calibri;
+	position:fixed;
+	margin-top:28.5%;
+	margin-left:18.3%;
+	border:1px solid black;
+	padding:5px 50px 5px 50px;
+}
+.addaccback:hover
+{
+	border:1px solid black;
+	color:white;
+	background-color:black;
+}
+/*---------------------------------------------------------id for addaccounts.php----------------------------------------------------------*/
+#accaddfont
+{
+	color:black;
+	margin-left:7.5%;
+	margin-top:1%;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:fixed;
+}
+#male_gender
+{
+	color:black;
+	margin-left:25%;
+	margin-top:58%;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+}
+#male_genderlabel
+{
+	color:black;
+	margin-left:30%;
+	margin-top:57%;
+	font-size:15px;
+	font-weight:bold;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+}
+#female_gender
+{
+	color:black;
+	margin-left:50%;
+	margin-top:58%;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+}
+#female_genderlabel
+{
+	color:black;
+	margin-left:55%;
+	margin-top:57%;
+	font-size:15px;
+	font-weight:bold;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+}
+#addaccrole
+{
+	width:81.2%;
+	height:7%;
+	color:black;
+	margin-left:6.3%;
+	margin-top:78%;
+	font-size:13px;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+}
+/*---------------------------------------------------------class for pos.php----------------------------------------------------------*/
+.posdiv
+{
+	width:50%;
+	height:50%;
+	position:absolute;
+	margin-top:10%;
+	margin-left:32%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.posquantity
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:5%;
+	margin-top:18%;
+	font-weight:bold;
+	position:absolute;
+}
+.PosQuantitytxt
+{
+	margin-top:0.8%;
+	margin-left:4%;
+	height:30px;
+	width:150px;
+	position:absolute;
+}
+.pospricetext
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:1%;
+	margin-top:4%;
+	font-weight:bold;
+	position:absolute;
+}
+.producttxtpos
+{
+	margin-top:3%;
+	margin-left:1%;
+	height:20px;
+	width:150px;
+	position:absolute;
+}
+.posprice
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:58%;
+	margin-top:18%;
+	font-weight:bold;
+	position:absolute;
+}
+.productpricetxtpos
+{
+	margin-top:17.5%;
+	margin-left:68%;
+	height:25px;
+	width:180px;
+	position:absolute;
+	font-size:13px;
+}
+.posaddbtn
+{
+	padding:5px 50px 5px 50px;
+	text-decoration:none;
+	border-style:solid;
+	margin-left:38%;
+	margin-top:25%;
+	border-color:white;
+	background-color:#191970;
+	font-weight:bold;
+	color:white;
+	font-size:100%;
+	position:absolute;
+}
+/*---------------------------------------------------------id for pos.php------------------------------------------------------------*/
+#posfontarchive
+{
+	color:black;
+	margin-left:20px;
+	margin-top:10px;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:relative;
+}
+/*---------------------------------------------------------class for transaction.php----------------------------------------------------------*/
+.transactiondiv
+{
+	width:78%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:18%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.searchtransaction
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:0%;
+	margin-top:1%;
+	font-weight:bold;
+	position:absolute;
+}
+.transtxt
+{
+	margin-top:0.8%;
+	margin-left:4%;
+	height:20px;
+	width:150px;
+	position:absolute;
+}
+.transbtn
+{
+	padding:3px 30px 3px 30px;
+	text-decoration:none;
+	border-style:solid;
+	margin-left:20%;
+	margin-top:0.8%;
+	border-color:white;
+	background-color:#191970;
+	font-weight:bold;
+	color:white;
+	font-size:100%;
+}
+.transactiontbl
+{
+	position:absolute;
+	margin-top:1%;
+	margin-left:0%;
+	width:97%;
+	height:70%;
+}
+.transactiontbl1
+{
+	border-collapse:collapse;
+	border:1px solid;
+}
+.transactionheader
+{
+	padding:1% 95px 1% 95px;
+	border:1px solid black; 
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+}
+.transactioninfo
+{
+	padding:0.7% 0% 0.7% 0%;
+	border:1px solid;
+	background-color:#E5E4E2;
+	text-align:center;
+	font-size:12px;		
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+}
+/*---------------------------------------------------------id for transaction.php------------------------------------------------------------*/
+#transactionfont
+{
+	color:black;
+	margin-left:20px;
+	margin-top:10px;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:relative;
+}
+.textareareceipt
+{
+	font-size:13px;
+}
+/*---------------------------------------------------------class for updateaccount.php-------------------------------------------------------*/
+.accupddiv
+{
+	width:30%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:38%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.accupdline
+{
+	width:92%;
+	margin-top:12%;
+	position:absolute;
+}
+.updateaccidfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:7%;
+	margin-left:2%;
+}
+.updateaccfnamefield
+{
+	width:12%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:11%;
+	margin-left:2%;
+}
+.updateacclnamefield
+{
+	width:12%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:11%;
+	margin-left:16%;
+}
+.updateaccgenderfield
+{
+	width:12%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:15.2%;
+	margin-left:2%;
+}
+.updateaccnumfield
+{
+	width:12%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:15.2%;
+	margin-left:16%;
+}
+.updateacclocfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:19.3%;
+	margin-left:2%;
+}
+.updateaccrolefield
+{
+	width:12%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:23.5%;
+	margin-left:2%;
+}
+.updateaccdatefield
+{
+	width:12%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:23.5%;
+	margin-left:16%;
+}
+.updaccbtn
+{
+	margin-top:28%;
+	margin-left:2%;
+	width:14%;
+	height:5%;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+}
+.updaccbtn:hover
+{
+	background-color:#000080;
+	color:white;
+}
+.updaccback
+{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	font-size:15px;
+	font-family:Calibri;
+	position:fixed;
+	margin-top:28%;
+	margin-left:18.3%;
+	border:1px solid black;
+	padding:5px 50px 5px 50px;
+}
+.updaccback:hover
+{
+	border:1px solid black;
+	color:white;
+	background-color:black;
+}
+/*---------------------------------------------------------id for updateaccount.php------------------------------------------------------------*/
+#accupdfont
+{
+	color:black;
+	margin-left:19%;
+	margin-top:2%;
+	font-size:25px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+}
+#updaccid
+{
+	color:black;
+	margin-left:7%;
+	margin-top:17%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updaccfname
+{
+	color:black;
+	margin-left:7%;
+	margin-top:30%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updacclname
+{
+	color:black;
+	margin-left:50%;
+	margin-top:30%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updaccgender
+{
+	color:black;
+	margin-left:7%;
+	margin-top:43%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updaccnum
+{
+	color:black;
+	margin-left:50%;
+	margin-top:43%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updaccloc
+{
+	color:black;
+	margin-left:7%;
+	margin-top:56%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updaccrole
+{
+	color:black;
+	margin-left:7%;
+	margin-top:69%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updacchdate
+{
+	color:black;
+	margin-left:50%;
+	margin-top:69%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+/*------------------------------------------------------------class for archive.php----------------------------------------------------------*/
+.archivedashboard
+{
+	width:12%;
+	height:100%;
+	background-color:#191970;
+	position:fixed;
+	margin-top:0px;
+	margin-right:0%;
+}
+.dashboardlogo
+{
+	width:8%;
+	height:13%;
+	background-color:white;
+	border-radius:100%;
+	position:fixed;
+	margin-top:1%;
+	margin-left:2%;
+}
+.dasharhive
+{
+	color:white; 
+	text-decoration:none;
+	font-size:110%;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+	margin-top:9%;
+	padding:1% 6.5% 1% 2%;
+}
+.dasharhive:hover
+{
+	background-color:white;
+	color:black;
+	font-weight:bold;
+}
+.Accountsarchivemngr
+{
+	color:white; 
+	text-decoration:none;
+	font-size:110%;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+	margin-top:9%;
+	padding:1% 5.6% 1% 2%;
+}
+.Accountsarchivemngr:hover
+{
+	background-color:white;
+	color:black;
+	font-weight:bold;
+}
+.Customerarhive
+{
+	color:white; 
+	text-decoration:none;
+	font-size:110%;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+	margin-top:12%;
+	padding:1% 5.3% 1% 2%;
+}
+.Customerarhive:hover
+{
+	background-color:white;
+	color:black;
+	font-weight:bold;
+}
+.Productarchive
+{
+	color:white; 
+	text-decoration:none;
+	font-size:110%;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+	margin-top:15%;
+	padding:1% 6.2% 1% 2%;
+}
+.Productarchive:hover
+{
+	background-color:white;
+	color:black;
+	font-weight:bold;
+}
+.Inventoryarchive
+{
+	color:white; 
+	text-decoration:none;
+	font-size:110%;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+	margin-top:18%;
+	padding:1% 5.5% 1% 2%;
+}
+.Inventoryarchive:hover
+{
+	background-color:white;
+	color:black;
+	font-weight:bold;
+}
+.Supplierarchive
+{
+	color:white; 
+	text-decoration:none;
+	font-size:13px;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+	margin-top:21%;
+	padding:1% 6.1% 1% 2%;
+}
+.Supplierarchive:hover
+{
+	background-color:white;
+	color:black;
+	font-weight:bold;
+}
+.Accountsarchive
+{
+	color:white; 
+	text-decoration:none;
+	font-size:13px;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+	margin-top:24%;
+	padding:1% 5.6% 1% 2%;
+}
+.Accountsarchive:hover
+{
+	background-color:white;
+	color:black;
+	font-weight:bold;
+}
+.Returnarchive
+{
+	color:white; 
+	text-decoration:none;
+	font-size:13px;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+	margin-top:40%;
+	padding:1% 6.7% 1% 2%;
+}
+.Returnarchive:hover
+{
+	background-color:white;
+	color:black;
+	font-weight:bold;
+}
+/*------------------------------------------------------------Boxes for archive.php----------------------------------------------------------*/
+.Customerbodyarchive
+{
+	margin-left:17%;
+	margin-top:7%;
+    width:18%;
+    height:16%;
+    background-color:#4682B4;
+	text-decoration:none;
+	position:fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+.Customerbodylinkarch
+{
+	text-decoration:none;
+	width:18%;
+    height:16%;
+	font-family:'Quicksand', Sans-serif;
+	font-weight:bold;	
+	color:white;
+	position:fixed;
+}
+.Customerbodylinkarch:hover
+{
+	 background-color:#29C5F6;
+	 border-color:#29C5F6;
+	 border-left-color:white;
+}
+#customerarchive
+{
+	font-size:22px;
+	text-align:center;
+}
+#customerarchtotal
+{
+	background-color:black;
+	padding:10px 0px 10px 0px;
+	box-shadow: 5px 5px 10px grey;
+	text-align:center;
+}
+.Productbodyarchive
+{
+	margin-left:37%;
+	margin-top:7%;
+    width:18%;
+    height:16%;
+    background-color:#4682B4;
+	text-decoration:none;
+	position:fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+.Productbodylinkarch
+{
+	text-decoration:none;
+	width:18%;
+    height:16%;
+	font-family:'Quicksand', Sans-serif;
+	font-weight:bold;	
+	color:white;
+	position:fixed;
+}
+.Productbodylinkarch:hover
+{
+	 background-color:#29C5F6;
+	 border-color:#29C5F6;
+	 border-left-color:white;
+}
+#productarchive
+{
+	font-size:22px;
+	text-align:center;
+}
+#productarchtotal
+{
+	background-color:black;
+	padding:10px 0px 10px 0px;
+	box-shadow: 5px 5px 10px grey;
+	text-align:center;
+}
+.Inventorybodyarchive
+{
+	margin-left:57%;
+	margin-top:7%;
+    width:18%;
+    height:16%;
+    background-color:#4682B4;
+	text-decoration:none;
+	position:fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+.Inventorybodylinkarch
+{
+	text-decoration:none;
+	width:18%;
+    height:16%;
+	font-family:'Quicksand', Sans-serif;
+	font-weight:bold;	
+	color:white;
+	position:fixed;
+}
+.Inventorybodylinkarch:hover
+{
+	 background-color:#29C5F6;
+	 border-color:#29C5F6;
+	 border-left-color:white;
+}
+#inventoryarchive
+{
+	font-size:22px;
+	text-align:center;
+}
+#inventoryarchtotal
+{
+	background-color:black;
+	padding:10px 0px 10px 0px;
+	box-shadow: 5px 5px 10px grey;
+	text-align:center;
+}
+.Supplierbodyarchive
+{
+	margin-left:77%;
+	margin-top:7%;
+    width:18%;
+    height:16%;
+    background-color:#4682B4;
+	text-decoration:none;
+	position:fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+.Supplierbodylinkarch
+{
+	text-decoration:none;
+	width:18%;
+    height:16%;
+	font-family:'Quicksand', Sans-serif;
+	font-weight:bold;	
+	color:white;
+	position:fixed;
+}
+.Supplierbodylinkarch:hover
+{
+	 background-color:#29C5F6;
+	 border-color:#29C5F6;
+	 border-left-color:white;
+}
+#supplierarchive
+{
+	font-size:22px;
+	text-align:center;
+}
+#supplierarchtotal
+{
+	background-color:black;
+	padding:10px 0px 10px 0px;
+	box-shadow: 5px 5px 10px grey;
+	text-align:center;
+}
+.Accountsbodyarchive
+{
+	margin-left:17%;
+	margin-top:18%;
+    width:18%;
+    height:16%;
+    background-color:#4682B4;
+	text-decoration:none;
+	position:fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+.Accountsbodylinkarch
+{
+	text-decoration:none;
+	width:18%;
+    height:16%;
+	font-family:'Quicksand', Sans-serif;
+	font-weight:bold;	
+	color:white;
+	position:fixed;
+}
+.Accountsbodylinkarch:hover
+{
+	 background-color:#29C5F6;
+	 border-color:#29C5F6;
+	 border-left-color:white;
+}
+#accountarchive
+{
+	font-size:22px;
+	text-align:center;
+}
+#accountarchtotal
+{
+	background-color:black;
+	padding:10px 0px 10px 0px;
+	box-shadow: 5px 5px 10px grey;
+	text-align:center;
+
+}
+/*---------------------------------------------------------class for customerarchive.php----------------------------------------------------------*/
+.customerdivarchive
+{
+	width:82%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:14%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.searchcustomerarchive
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:0%;
+	margin-top:1%;
+	font-weight:bold;
+	position:absolute;
+}
+.custtxtarchive
+{
+	margin-top:0.8%;
+	margin-left:4%;
+	height:20px;
+	width:150px;
+	position:absolute;
+}
+.custbtnarchive
+{
+	padding:3px 30px 3px 30px;
+	text-decoration:none;
+	border-style:solid;
+	margin-left:20%;
+	margin-top:0.8%;
+	border-color:white;
+	background-color:#191970;
+	font-weight:bold;
+	color:white;
+	font-size:100%;
+}
+/*---------------------------------------------------------id for customerarchive.php------------------------------------------------------------*/
+#customerfontarchive
+{
+	color:black;
+	margin-left:20px;
+	margin-top:10px;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:relative;
+}
+/*---------------------------------------------------------class for productarchive.php----------------------------------------------------------*/
+.productdivarchive
+{
+	width:82%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:14%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.searchproductarchive
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:0%;
+	margin-top:1%;
+	font-weight:bold;
+	position:absolute;
+}
+.prodtxtarchive
+{
+	margin-top:0.8%;
+	margin-left:4%;
+	height:20px;
+	width:150px;
+	position:absolute;
+}
+.prodbtnarchive
+{
+	padding:3px 30px 3px 30px;
+	text-decoration:none;
+	border-style:solid;
+	margin-left:20%;
+	margin-top:0.8%;
+	border-color:white;
+	background-color:#191970;
+	font-weight:bold;
+	color:white;
+	font-size:100%;
+}
+/*---------------------------------------------------------id for productarchive.php------------------------------------------------------------*/
+#productfontarchive
+{
+	color:black;
+	margin-left:20px;
+	margin-top:10px;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:relative;
+}
+/*---------------------------------------------------------class for inventoryarchive.php----------------------------------------------------------*/
+.inventorydivarchive
+{
+	width:82%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:14%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.searchinventoryarchive
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:0%;
+	margin-top:1%;
+	font-weight:bold;
+	position:absolute;
+}
+.inventorytxtarchive
+{
+	margin-top:0.8%;
+	margin-left:4%;
+	height:20px;
+	width:150px;
+	position:absolute;
+}
+.inventorybtnarchive
+{
+	padding:3px 30px 3px 30px;
+	text-decoration:none;
+	border-style:solid;
+	margin-left:20%;
+	margin-top:0.8%;
+	border-color:white;
+	background-color:#191970;
+	font-weight:bold;
+	color:white;
+	font-size:100%;
+}
+/*---------------------------------------------------------id for inventoryarchive.php------------------------------------------------------------*/
+#inventoryfontarchive
+{
+	color:black;
+	margin-left:20px;
+	margin-top:10px;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:relative;
+}
+/*---------------------------------------------------------class for supplierarchive.php----------------------------------------------------------*/
+.supplierdivarchive
+{
+	width:82%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:14%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.searchsupplierarchive
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:0%;
+	margin-top:1%;
+	font-weight:bold;
+	position:absolute;
+}
+.suppliertxtarchive
+{
+	margin-top:0.8%;
+	margin-left:4%;
+	height:20px;
+	width:150px;
+	position:absolute;
+}
+.supplierbtnarchive
+{
+	padding:3px 30px 3px 30px;
+	text-decoration:none;
+	border-style:solid;
+	margin-left:20%;
+	margin-top:0.8%;
+	border-color:white;
+	background-color:#191970;
+	font-weight:bold;
+	color:white;
+	font-size:100%;
+}
+/*---------------------------------------------------------id for supplierarchive.php------------------------------------------------------------*/
+#supplierfontarchive
+{
+	color:black;
+	margin-left:20px;
+	margin-top:10px;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:relative;
+}
+/*---------------------------------------------------------class for accountsarchive.php----------------------------------------------------------*/
+.accountsdivarchive
+{
+	width:82%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:14%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.searchaccountsarchive
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:0%;
+	margin-top:1%;
+	font-weight:bold;
+	position:absolute;
+}
+.accountstxtarchive
+{
+	margin-top:0.8%;
+	margin-left:4%;
+	height:20px;
+	width:150px;
+	position:absolute;
+}
+.accountsbtnarchive
+{
+	padding:3px 30px 3px 30px;
+	text-decoration:none;
+	border-style:solid;
+	margin-left:20%;
+	margin-top:0.8%;
+	border-color:white;
+	background-color:#191970;
+	font-weight:bold;
+	color:white;
+	font-size:100%;
+}
+/*---------------------------------------------------------id for accountsarchive.php------------------------------------------------------------*/
+#accountsfontarchive
+{
+	color:black;
+	margin-left:20px;
+	margin-top:10px;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:relative;
+}
+/*---------------------------------------------------------class for audit.php----------------------------------------------------------*/
+.auditdiv
+{
+	width:78%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:18%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.searchaudit
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:0%;
+	margin-top:1%;
+	font-weight:bold;
+	position:absolute;
+}
+.audittxt
+{
+	margin-top:0.8%;
+	margin-left:5%;
+	height:20px;
+	width:150px;
+	position:absolute;
+}
+.auditbtn
+{
+	padding:3px 30px 3px 30px;
+	text-decoration:none;
+	border-style:solid;
+	margin-left:20%;
+	margin-top:0.8%;
+	border-color:white;
+	background-color:#191970;
+	font-weight:bold;
+	color:white;
+	font-size:100%;
+	position:absolute;
+}
+.audittbl
+{
+	position:absolute;
+	margin-top:4%;
+	margin-left:0%;
+	width:97%;
+	height:68%;
+}
+.audittbl1
+{
+	border-collapse:collapse;
+	border:1px solid;
+}
+.auditheader
+{
+	padding:0.5% 156px 0.5% 156px;
+	border:1px solid black; 
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+}
+.auditinfo
+{
+	padding:0.7% 0% 0.7% 0%;
+	border:1px solid;
+	background-color:#E5E4E2;
+	text-align:center;
+	font-size:12px;		
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+}
+/*---------------------------------------------------------id for audit.php------------------------------------------------------------*/
+#auditfont
+{
+	color:black;
+	margin-left:20px;
+	margin-top:10px;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:relative;
+}
+/*---------------------------------------------------------class for sales.php----------------------------------------------------------*/
+.salesdiv
+{
+	width:78%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:18%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.salestbl
+{
+	position:absolute;
+	margin-top:1%;
+	margin-left:0%;
+	width:97%;
+	height:70%;
+}
+.salestbl1
+{
+	border-collapse:collapse;
+	border:1px solid;
+}
+.salesheader
+{
+	padding:1% 60px 1% 60px;
+	border:1px solid black; 
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+	text-align:center;
+}
+.salesinfo
+{
+	padding:0.7% 0% 0.7% 0%;
+	border:1px solid;
+	background-color:#E5E4E2;
+	text-align:center;
+	font-size:12px;		
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+}
+.txtaresales
+{
+	padding:0.7% 0% 0.7% 0%;
+	border:1px solid;
+	background-color:#E5E4E2;
+	text-align:center;
+	font-size:12px;		
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+	margin-left:780px;
+	margin-top:0px;
+	position:absolute;
+	
+}
+/*---------------------------------------------------------id for sales.php------------------------------------------------------------*/
+#salesfont
+{
+	color:black;
+	margin-left:20px;
+	margin-top:10px;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:relative;
+}
+
+
+
+.poscustid
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:5%;
+	margin-top:1%;
+	font-weight:bold;
+	position:absolute;
+}
+.poscustid1
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:19%;
+	margin-top:1%;
+	font-weight:bold;
+	position:absolute;
+	border:#fbfbfb;
+	background-color:#fbfbfb;
+}
+.poscustname
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:5%;
+	margin-top:5%;
+	font-weight:bold;
+	position:absolute;
+}
+.poscustname1
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:22.5%;
+	margin-top:5%;
+	font-weight:bold;
+	position:absolute;
+}
+.poslocation
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:5%;
+	margin-top:9%;
+	font-weight:bold;
+	position:absolute;
+}
+.poslocation1
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:16%;
+	margin-top:9%;
+	font-weight:bold;
+	position:absolute;
+}
+.posconperson
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:50%;
+	margin-top:1%;
+	font-weight:bold;
+	position:absolute;
+}
+.posconperson1
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:68.5%;
+	margin-top:1%;
+	font-weight:bold;
+	position:absolute;
+}
+.posphonenum
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:50%;
+	margin-top:5%;
+	font-weight:bold;
+	position:absolute;
+}
+.posphonenum1
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:67%;
+	margin-top:5%;
+	font-weight:bold;
+	position:absolute;
+}
+.quantitytxt
+{
+	margin-left:16%;
+	margin-top:17.5%;
+	height:25px;
+	width:150px;
+	position:absolute;
+}
+.addposline
+{
+	margin-top:15%;
+	position:absolute;
+	width:95%;
+}
+.paytext
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:5%;
+	margin-top:18%;
+	font-weight:bold;
+	position:absolute;
+	font-size:15px;
+}
+.paytxt
+{
+	border:#fbfbfb;
+	background-color:#fbfbfb;
+	font-size:15px;
+	margin-left:10%;
+	position:absolute;
+}
+.poscash
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:58%;
+	margin-top:18%;
+	font-weight:bold;
+	position:absolute;
+}
+.poscashtxt
+{
+	margin-left:65%;
+	margin-top:17.5%;
+	height:25px;
+	width:180px;
+	position:absolute;
+}
+

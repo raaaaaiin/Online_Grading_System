@@ -1,0 +1,71 @@
+<%- include('../partials/user/header') %>
+
+    <!-- Main Body (content)-->
+    <main style="margin-top: 10px;" class="main users chart-page" id="skip-target">
+      <div class="container">
+        <div class="row stat-cards">
+          <div class="col-md-6 col-xl-6">
+
+          </div>
+
+          <div class="col-md-6 col-xl-6">
+            
+          </div>
+      </div>
+
+        <br>
+        <br>
+
+        <div>
+          <h3 style="color: #8e0050;"><b><%= user.Fname  %> <%= user.Lname %> - Grades</b></h3>
+          <br>
+          <br>
+
+          
+          <% if(error && error.length > 0){ %>
+            <div class="alert alert-danger" role="alert">
+                <%= error %>
+            </div>
+        <% } %>
+        <% if(success && success.length > 0){ %>
+            <div class="alert alert-success" role="alert">
+                <%= success %>
+            </div>
+        <% } %>
+        <% if(info && info.length > 0){ %>
+            <div class="alert alert-info" role="alert">
+                <%= info %>
+            </div>
+        <% } %>
+
+          <!-- Table -->
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                    <th class="hidden-xs">#</th>
+                    <th><center>Subject</center></th>
+                    <th><center>Teacher</center></th>
+                    <th><center>Grades</center></th>
+                    <th><center>Remarks</center></th>
+                </tr> 
+              </thead>
+              <tbody>
+                <% rows.forEach((grades, i) => { %>
+                    <tr>
+                      <td class="hidden-xs"><%=i+1%></td>
+                      <td><center> <%=grades.Subject%> </center></td>
+                      <td><center>Teacher <%=grades.Staff_name%> </center></td>
+                      <td><center> <%=grades.Grade%>  </center></td>
+                      <td><center> <%=grades.Remarks%>  </center></td>
+                    </tr>
+                  <% }) %>
+            
+
+        </tbody>
+            </table>
+        
+        </div>
+      </div>
+    </main>
+
+<%- include('../partials/admin/footer') %>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Stylesheet, Font and Scripts-->
+        <link rel="icon" type="image/png" href="/img/logo.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/Mediko_Style.css"/>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+        <title>CVSU | Register</title>
+    </head>
+    <body class="bg-login-register">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xl-6">
+                    <div class="cont-title">
+                        <img src="/img/logo.png" alt="MediKo Logo"  class="image-logo"/>
+                        <br>
+                        <br>
+                        
+                        <h1><b>Welcome to <br><span style="color:#64BB6A;">ONLINE APPOINTMENT SETTER WITH CONTACT TRACING </span> </b></h1>
+
+                        <br>
+
+                        <p>Stay Safe and Connected</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-6">
+                    <div class="cont-form">
+                        <h3><b>Register</b></h3>
+                        <br>
+                      
+                        <form id="appointment-form" role="form" method="post" action="/authenticate/register">
+
+                            <div class="form-group">
+                                <label for="email">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" name="password" placeholder="Enter Your Password" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Confirm Password</label>
+                                <input type="password" class="form-control" name="confirm" placeholder="Enter Your Confirm Password" required>
+                            </div>
+
+                            <br>
+
+                            <button type="submit" class="btn bg-btn">Register</button>
+
+                        </form>    
+                        <br>
+                        <div style="text-align: center;">
+                            <a href="/authenticate/user/login" class="lnk-text">Already have an account</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<%- include('../partials/admin/header') %>
+
+    <% if(error && error.length > 0){ %>
+        <div class="alert alert-danger" role="alert">
+            <%= error %>
+        </div>
+    <% } %>
+    <% if(success && success.length > 0){ %>
+        <div class="alert alert-success" role="alert">
+            <%= success %>
+        </div>
+    <% } %>
+    <% if(info && info.length > 0){ %>
+        <div class="alert alert-info" role="alert">
+            <%= info %>
+        </div>
+    <% } %>
+    <form id="appointment-form" role="form" method="post" action="/admin/announcement" class="signup-form">
+    <!-- form header -->
+    <div class="form-header">
+      <h1>Create Announcement</h1>
+    </div>
+
+    <!-- form body -->
+    <div class="form-body">
+
+      <!-- Firstname and Lastname -->
+      <div class="horizontal-group">
+        <div class="form-group left">
+          <label for="fname" class="label-title">Announcement </label>
+          <input type="text" name="announce" id="fname" class="form-input" required />
+        </div>
+      </div>
+
+    <!-- form-footer -->
+    <div class="form-footer">
+      <button type="button" class="btn btn-primary btns" data-toggle="modal" onclick="submitForm();" data-target="#staticBackdrop">
+        Create
+    </button>
+    </div>
+
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            </div>
+            <div class="modal-body">
+                <h4>Do you want to add this Announcement ?</h4>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="submit" class="btn btn-primary" id="cf-submit">Register</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+  </form>
+
+      
+<%- include('../partials/admin/footer') %>

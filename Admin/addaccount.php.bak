@@ -1,0 +1,108 @@
+<?php
+		include "../sepi_connect.php";
+			session_start();
+
+			if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true)
+		 {
+
+		 }else if(isset($_SESSION['Acc_ID']))
+			{
+				$userid = $_SESSION['Acc_ID'];
+				
+				$getrecord = mysqli_query($config,"SELECT * FROM tbl_sepi_account WHERE Acc_ID ='$userid'");
+				while($rowedit = mysqli_fetch_assoc($getrecord))
+				{
+					$type = $rowedit['Role'];
+					$name = $rowedit['Fname']." ".$rowedit['Lname'];
+				}
+			}
+		#$sql1 = "Insert into tbl_audithistory (e_name,e_action,e_date) values ('$name','Adding account records',NOW())";
+		#$result1 = $config->query($sql1);
+			
+?>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Add Account | C.V.G.S. Water Refilling Station</title> 
+	</head>
+	<link rel="icon" href="../Images/logo.png">
+	<link rel="stylesheet" href="../css/sepi.css">
+	<body style="background-color:#E5E4E2">
+		<div class="header">
+			<form method="POST" action="logout.php" >
+				<button type="submit" name="logout" class="logout">Log Out</a>
+			</form>
+		</div>
+		<div class="footer">
+			<h6 id="footer">© 2021 CVGS Login Form. All Rights Reserved | Designed by Excel-erator</h6>
+		</div>
+			<form method="POST" action="addaccount.php">
+		<div class="dashboard">
+		<img src="../Images/logo.png" class="dashboardlogocvgs">
+			<a href="dashboard.php" class="Dashboardhome"><img src="../images/homeicon.png" class="homeicon">Dashboard</a>
+			<a href="announcead.php" class="Sales"><img src="../images/sales.png" class="salesicon">Announcement</a>
+			<a href="student.php" class="Transaction"><img src="../images/transaction.png" class="transactionicon">Add Student</a>
+			<a href="teacher.php" class="Inventory"><img src="../images/inventory.png" class="inventoryicon">Add Teacher</a>
+			<a href="accounts.php" class="Accounts"><img src="../images/account.png" class="producticon">Accounts</a>
+		</div>
+				<div class="accadddiv">
+					<h1 id="accaddfont">ADD ACCOUNT</h1>
+					<hr class="accaddline">
+					<input type="text" name="fname" placeholder="First Name" autocomplete="off" size="30" required class="addaccfnamefield">
+					<input type="text" name="lname" placeholder="Last Name" autocomplete="off" size="30" required class="addacclnamefield">
+					<input type="text" name="username" placeholder="Username" autocomplete="off" size="50" required class="addaccusernamefield">
+					<input type="password" name="password" placeholder="Password" autocomplete="off" size="30" required class="addaccpasswordfield">
+					<input type="radio" id="male_gender" name="gender" value="Male">
+						<label for="Male" id="male_genderlabel">Male</label>
+					<input type="radio" id="female_gender" name="gender" value="Female">
+						<label for="css" id="female_genderlabel">Female</label><br>
+					<input type="text" name="address" placeholder="Address" autocomplete="off" size="11" required class="addacclocfield">
+					<input type="text" name="number" placeholder="Number" autocomplete="off" size="11" required class="addaccnumfield">
+		
+						<select id="addaccrole" name="role">
+							<option value="Admin">Admin</option>
+							<option value="Teacher">Teacher</option>
+							<option value="Student">Student</option>
+						</select>
+			
+					<form method="POST" action="addaccount.php">
+						<input type="submit" name="register" class="addaccbtn">
+					</form>
+					<a href="accounts.php" class="addaccback">Back</a>	
+				</div>
+	</form>
+</body>
+</html>
+<?php
+	include "../sepi_connect.php";
+
+if(isset($_POST['register']))
+	{
+		
+		$fname = $_POST['fname'];
+		$lname = $_POST['lname'];
+		$username = $_POST['username'];
+		$password = $_POST['password'];
+		$gender = $_POST['gender'];
+		$address = $_POST['address'];
+		$number = $_POST['number'];
+		$role = $_POST['role'];
+		
+		$sql = "Insert into tbl_sepi_account(Fname, Lname, Username, Password, Gender, Address, Pnumber, Role, Hdate) 
+		VALUES('$fname','$lname','$username','$password','$gender','$address','$number','$role',NOW())";
+		$insert = $config->query($sql);
+	
+
+if($insert == True){
+header("refresh:0;url=accounts.php");
+}else{
+	echo $con->error;
+}
+
+	
+	}	
+
+?>		
+
+
+

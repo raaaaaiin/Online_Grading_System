@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Stylesheet, Font and Scripts-->
+        <link rel="icon" type="image/png" href="/img/logo.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/Mediko_Style.css"/>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+        <title> SEPI | Log In</title>
+    </head>
+    <body class="bg-login-register">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xl-6">
+                    <div class="cont-title">
+                        <br>
+                        <br>
+                        
+                        <h1><b>Welcome to <br><span style="color:#8e0050;">ONLINE GRADE MANAGEMENT SYSTEM </span> </b></h1>
+
+                        <br>
+
+                        <p>Stay Safe and Connected</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-6">
+                    <div class="cont-form" style="margin-top: 170px;">
+                        <h3><b>Admin Log In</b></h3>
+                        <br>
+
+                        <% if(error && error.length > 0){ %>
+                            <div class="alert alert-danger" role="alert">
+                                <%= error %>
+                            </div>
+                        <% } %>
+                        <% if(success && success.length > 0){ %>
+                            <div class="alert alert-success" role="alert">
+                                <%= success %>
+                            </div>
+                        <% } %>
+                        <% if(info && info.length > 0){ %>
+                            <div class="alert alert-info" role="alert">
+                                <%= info %>
+                            </div>
+                        <% } %>
+                      
+                        <form id="appointment-form" role="form" method="post" action="/authenticate/admin/login">
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" name="password" placeholder="Password" required>
+                            </div>
+
+                            <br>
+
+                            <button type="submit" class="btn bg-btn">Log In</button>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+    </body>
+</html>

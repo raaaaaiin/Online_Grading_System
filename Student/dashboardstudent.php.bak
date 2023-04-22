@@ -1,0 +1,71 @@
+<?php
+		include "../sepi_connect.php";
+			session_start();
+	
+		if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true)
+		 {
+			 header("refresh:0;../login.php");
+			 exit;
+		 }else if(isset($_SESSION['Acc_ID']))
+			{
+				$userid = $_SESSION['Acc_ID'];
+	
+				$getrecord = mysqli_query($config,"SELECT * FROM tbl_sepi_account WHERE Acc_ID ='$userid'");
+				while($rowedit = mysqli_fetch_assoc($getrecord))
+					
+				{
+					$type = $rowedit['Fname']." ".$rowedit['Lname'];
+					$types = $rowedit['Role'];
+					
+					$name = $rowedit['Fname']." ".$rowedit['Lname'];
+				}
+			}
+					#$viewloginl = "Insert into tbl_audithistory (e_name,e_action,e_date) values ('$name','Viewing Dashboard',NOW())";
+	
+	
+	$query = "SELECT COUNT(*) AS count FROM tbl_sepi_account WHERE Role='Admin'  or Role='Employee'";
+	$query_result = mysqli_query($config,$query);
+	while($row = mysqli_fetch_assoc($query_result)){
+	$Accountrecord = $row['count']." Record(s)";
+	}
+		
+
+	
+	
+?>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Dashboard | S.E.P.I ONLINE GRADING SYSTEM</title> 
+	</head>
+<link rel="icon" href="../Images/logo.png">
+<link rel="stylesheet" href="../Css/sepi.css">
+<body style="background-color:#E5E4E2">
+<div class="header">
+
+
+<form method="POST"action="logout.php" >
+			<button type=submit name="logout" class="logout">Log Out</a>
+</form>
+</div>
+			<div class="footer">
+				<h6 id="footer">© 2021 CVGS Login Form. All Rights Reserved | Designed by Excel-erator</h6>
+			</div>
+	<form method=POST action="dashboard.php">
+		<div class="dashboard">
+			<img src="../Images/logo.png" class="dashboardlogocvgs">
+			<a href="dashboard.php" class="Dashboardhome"><img src="../images/homeicon.png" class="homeicon">Dashboard</a>
+			<a href="announceteacher.php" class="Sales"><img src="../images/sales.png" class="salesicon">Announcement</a>
+			<a href="grades.php" class="Transaction"><img src="../images/transaction.png" class="transactionicon">Grades</a>
+
+
+		</div>
+
+
+			
+	
+	</form>
+</body>
+</html>
+<?php
+?>

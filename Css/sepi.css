@@ -1,0 +1,10058 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0% 0% 0% 0%;
+}
+
+.purifiedfield {
+	width: 18%;
+	margin-top: 7%;
+}
+
+/*------------------------------------------------------------class for Index.php----------------------------------------------------------*/
+
+.studentlogin {
+	margin-top: 6%;
+	margin-left: 4%;
+	width: 14%;
+	height: 5%;
+	border: 1px solid black;
+	font-size: 17px;
+	font-weight: bold;
+	color: black;
+	background-color: white;
+	font-family: 'Montserrat', sans-serif;
+	position: fixed;
+	text-decoration: none;
+	text-align: center;
+	padding-top: 10px;
+}
+
+	.studentlogin:hover {
+		background-color: #b20064;
+		color: white;
+		border-color: white;
+		font-size: 17px;
+	}
+
+.adminlogin {
+	margin-top: 11%;
+	margin-left: 4%;
+	width: 14%;
+	height: 5%;
+	border: 1px solid black;
+	font-size: 15px;
+	font-weight: bold;
+	color: black;
+	background-color: white;
+	font-family: 'Montserrat', sans-serif;
+	position: fixed;
+	text-decoration: none;
+	text-align: center;
+	padding-top: 10px;
+}
+
+	.adminlogin:hover {
+		background-color: #b20064;
+		color: white;
+		border-color: white;
+		font-size: 17px;
+	}
+
+.teacherlogin {
+	margin-top: 16%;
+	margin-left: 4%;
+	width: 14%;
+	height: 7%;
+	border: 1px solid black;
+	font-size: 15px;
+	font-weight: bold;
+	color: black;
+	background-color: white;
+	font-family: 'Montserrat', sans-serif;
+	position: fixed;
+	text-decoration: none;
+	text-align: center;
+	padding-top: 10px;
+}
+
+	.teacherlogin:hover {
+		background-color: #b20064;
+		color: white;
+		border-color: white;
+		font-size: 17px;
+	}
+
+.welcome {
+	color: black;
+	font-size: 25px;
+	margin-top: 130px;
+	margin-bottom: 0px;
+	margin-left: 60px;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.online {
+	color: #b20064;
+	font-size: 30px;
+	margin-left: 60px;
+	font-weight: bold;
+	margin-top: 0px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	letter-spacing: 2px;
+}
+
+.container {
+	width: 350px;
+	height: 400px;
+	background-color: white;
+	position: fixed;
+	margin-left: 350px;
+	margin-top: 100px;
+	box-shadow: 5px 10px 40px 1px black;
+	border: 1px;
+}
+
+.loginlogo {
+	width: 250px;
+	height: 250px;
+	background-color: white;
+	border-radius: 100%;
+	margin: 90px 45px 90px 45px
+}
+
+.container1 {
+	width: 300px;
+	height: 360px;
+	background-color: #b20064;
+	position: fixed;
+	margin-left: 700px;
+	margin-top: 100px;
+	padding-top: 40px;
+	box-shadow: 20px 10px 40px 1px black;
+	border: 1px;
+}
+
+.namefield {
+	width: 250px;
+	height: 35px;
+	font-size: 15px;
+	position: fixed;
+	margin-top: 120px;
+	margin-left: 25px;
+}
+.passwordfield 
+{
+	width: 250px;
+	height: 35px;
+	font-size: 15px;
+	position: fixed;
+	margin-top: 150px;
+	margin-left: 25px;
+}
+.forgot 
+{
+	text-decoration: none;
+	color: gray;
+	font-family: 'Lato', sans-serif;
+	position: fixed;
+	margin-top: 160px;
+	margin-left: 180px;
+}
+.forgot:hover 
+{
+	color: black;
+}
+.login 
+{
+	margin-top: 200px;
+	width: 150px;
+	height: 35px;
+	border: 1px solid white;
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+	background-color: #8e0050;
+	font-family: 'Montserrat', sans-serif;
+	position: fixed;
+	margin-left: 25px;
+}
+.login:hover 
+{
+	background-color: white;
+	color: #8e0050;
+	font-size: 17px;
+	border: double #8e0050;
+}
+.returnbtn {
+	margin-top: 200px;
+	width: 80px;
+	height: 26px;
+	border: 1px solid white;
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+	background-color: #8e0050;
+	font-family: 'Montserrat', sans-serif;
+	position: fixed;
+	margin-left: 190px;
+	background-color: #8e0050;
+	text-decoration: none;
+	text-align: center;
+	padding-top: 7px;
+}
+.returnbtn:hover {
+	background-color: white;
+	color: #8e0050;
+	font-size: 17px;
+	border: double #8e0050;
+	}
+
+.logintitle {
+	font-size: 35px;
+	color: #b20064;
+	text-shadow: 1px 1px black;
+	margin-top: 120px;
+	margin-left: 410px;
+	position: fixed;
+	font-family: impact;
+	letter-spacing: 3px;
+}
+
+.logintitleconnect {
+	font-size: 35px;
+	color: white;
+	text-shadow: 1px 1px black;
+	margin-top: 120px;
+	margin-left: 700px;
+	position: fixed;
+	font-family: impact;
+	letter-spacing: 3px;
+}
+.rightslogin {
+	margin-top: 520px;
+	margin-left: 330px;
+	position: fixed;
+	font-size: 17px;
+	color: white;
+	font-family: impact;
+	letter-spacing:3.1px;
+	text-shadow:1px 1px 1px black;
+}
+/*------------------------------------------------------------id for Index.php----------------------------------------------------------*/
+#fonttitle {
+	font-size: 18px;
+	font-family: Calibri;
+	font-weight: bold;
+	position: fixed;
+	margin-top: 90px;
+	margin-left: 6%;
+	color: white;
+}
+/*------------------------------------------------------------class for dashboard.php----------------------------------------------------------*/
+.header {
+	position: absolute;
+	margin-top: 0px;
+	background-color: #fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	height: 8%;
+	width: 100%;
+	margin-bottom: 0%;
+	padding: 0%;
+}
+.footer {
+	position: absolute;
+	margin-top: 43.5%;
+	background-color: #fbfbfb;
+	height: 8%;
+	width: 100%;
+}
+#footer {
+	padding-left: 40%;
+	margin-top: 1.5%;
+	font-family: 'Montserrat', sans-serif;
+	position: absolute;
+	font-size: 12px;
+	color: #8ea6b4;
+}
+.accname {
+	color: black;
+	position: absolute;
+	margin-left: 1080px;
+	font-size: 13px;
+	margin-top: 20px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+.logout {
+	padding: 5px 20px 5px 20px;
+	text-decoration: none;
+	border-style: solid;
+	margin-left: 1250px;
+	margin-top: 12px;
+	border-color: #191970;
+	background-color: #191970;
+	font-weight: bold;
+	color: white;
+	border-radius: 20px;
+}
+.logout:hover {
+	background-color: white;
+	color: black;
+	border-color: black;
+}
+.returnviewallbtn {
+	padding: 5px 10px 5px 20px;
+	text-decoration: none;
+	border-style: solid;
+	margin-left: 53%;
+	margin-top: -3px;
+	border-color: white;
+	background-color: #191970;
+	font-weight: bold;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	position: absolute;
+	width: 60px;
+}
+
+.dashboard {
+	width: 13%;
+	height: 100%;
+	background-color: #8e0050;
+	position: absolute;
+	margin-top: 0px;
+	margin-right: 0%;
+}
+.dashboardlogocvgs {
+	width: 68%;
+	height: 16%;
+	background-color: white;
+	border-radius: 100%;
+	position: absolute;
+	margin-top: 6%;
+	margin-left: 15%;
+}
+.Dashboardhome {
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+
+	opacity: 50%;
+	position: absolute;
+	margin-top: 75%;
+	padding: 4% 28% 4% 25%;
+}
+.homeicon {
+	position: absolute;
+	height: 18px;
+	margin-left: -30px;
+	margin-top: 3px;
+}
+.Dashboardhome:hover {
+	background-color: #4C0033;
+	color: white;
+	font-size: 16px;
+	opacity: 100%;
+}
+.Announcement {
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	opacity: 50%;
+	position: absolute;
+	margin-top: 95%;
+	padding: 4% 9% 4% 25%;
+}
+.announcementicon {
+	position: absolute;
+	height: 18px;
+	margin-top: 3px;
+	margin-left: -30px;
+}
+.Announcement:hover {
+	background-color: #4C0033;
+	color: white;
+	font-size: 16px;
+	opacity: 100%;
+}
+.Student {
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	opacity: 50%;
+	position: absolute;
+	margin-top: 115%;
+	padding: 4% 41.5% 4% 25%;
+}
+.studenticon {
+	position: absolute;
+	height: 18px;
+	margin-top: 3px;
+	margin-left: -30px;
+}
+.Student:hover {
+	background-color: #4C0033;
+	color: white;
+	font-size: 16px;
+	opacity: 100%;
+}
+.Teacher {
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	opacity: 50%;
+	position: absolute;
+	margin-top: 135%;
+	padding: 4% 42% 4% 25%;
+}
+.teachericon {
+	position: absolute;
+	height: 18px;
+	margin-top: 3px;
+	margin-left: -30px;
+}
+.Teacher:hover {
+	background-color: #4C0033;
+	color: white;
+	font-size: 16px;
+	opacity: 100%;
+}
+.Accounts {
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	opacity: 50%;
+	position: absolute;
+	margin-top: 155%;
+	padding: 4% 36% 4% 25%;
+}
+.accounticon {
+	position: absolute;
+	height: 18px;
+	margin-top: 3px;
+	margin-left: -30px;
+}
+.Accounts:hover {
+	background-color: #4C0033;
+	color: white;
+	font-size: 16px;
+	opacity: 100%;
+}
+.BAccounts {
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	opacity: 50%;
+	position: absolute;
+	margin-top: 155%;
+	padding: 4% 36% 4% 25%;
+}
+.accounticon {
+	position: absolute;
+	height: 18px;
+	margin-top: 3px;
+	margin-left: -30px;
+}
+.BAccounts:hover {
+	background-color: #4C0033;
+	color: white;
+	font-size: 16px;
+	opacity: 100%;
+}
+.Changepassadmin {
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	opacity: 50%;
+	position: absolute;
+	margin-top: 175%;
+	padding: 4% 40% 4% 25%;
+}
+.archiveicon {
+	position: absolute;
+	height: 18px;
+	margin-top: 3px;
+	margin-left: -30px;
+}
+.Changepassadmin:hover {
+	background-color: #4C0033;
+	color: white;
+	font-size: 16px;
+	opacity: 100%;
+}
+.Audit {
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	opacity: 50%;
+	position: absolute;
+	margin-top: 195%;
+	padding: 4% 29% 4% 25%;
+}
+.auditicon {
+	position: absolute;
+	height: 18px;
+	margin-top: 3px;
+	margin-left: -30px;
+}
+.Audit:hover {
+	background-color: #4C0033;
+	color: white;
+	font-size: 16px;
+	opacity: 100%;
+}
+.Archive {
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	opacity: 50%;
+	position: absolute;
+	margin-top: 215%;
+	padding: 4% 42.5% 4% 25%;
+}
+.archiveicon {
+	position: absolute;
+	height: 18px;
+	margin-top: 3px;
+	margin-left: -30px;
+}
+.Archive:hover {
+	background-color: #4C0033;
+	color: white;
+	font-size: 16px;
+	opacity: 100%;
+}
+
+
+.Accountstudent {
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	opacity: 50%;
+	position: absolute;
+	margin-top: 115%;
+	padding: 4% 40% 4% 25%;
+}
+.accounticon {
+	position: absolute;
+	height: 18px;
+	margin-top: 3px;
+	margin-left: -30px;
+}
+.Accountstudent:hover {
+	background-color: #4C0033;
+	color: white;
+	font-size: 16px;
+	opacity: 100%;
+}
+.Gradesstudent {
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	opacity: 50%;
+	position: absolute;
+	margin-top: 135%;
+	padding: 4% 46% 4% 25%;
+}
+.teachericon {
+	position: absolute;
+	height: 18px;
+	margin-top: 3px;
+	margin-left: -30px;
+}
+.Gradesstudent:hover {
+	background-color: #4C0033;
+	color: white;
+	font-size: 16px;
+	opacity: 100%;
+}
+.BGradestudent {
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	opacity: 50%;
+	position: absolute;
+	margin-top: 115%;
+	padding: 4% 46% 4% 25%;
+}
+.teachericon {
+	position: absolute;
+	height: 18px;
+	margin-top: 3px;
+	margin-left: -30px;
+}
+.BGradestudent:hover {
+	background-color: #4C0033;
+	color: white;
+	font-size: 16px;
+	opacity: 100%;
+}
+.BStudentlist {
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	opacity: 50%;
+	position: absolute;
+	margin-top: 135%;
+	padding: 4% 24% 4% 25%;
+}
+.teachericon {
+	position: absolute;
+	height: 18px;
+	margin-top: 3px;
+	margin-left: -30px;
+}
+.BStudentlist:hover {
+	background-color: #4C0033;
+	color: white;
+	font-size: 16px;
+	opacity: 100%;
+}
+
+.BForm137 {
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	opacity: 50%;
+	position: absolute;
+	margin-top: 175%;
+	padding: 4% 35.5% 4% 25%;
+}
+.teachericon {
+	position: absolute;
+	height: 18px;
+	margin-top: 3px;
+	margin-left: -30px;
+}
+.BForm137:hover {
+	background-color: #4C0033;
+	color: white;
+	
+	font-size: 16px;
+	opacity: 100%;
+}
+
+
+
+.displayname {
+	margin-left: 16%;
+	margin-top: 17px;
+	position: absolute;
+	font-size: 15px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+
+.displaynameviewall {
+	margin-left: 2%;
+	margin-top: 20px;
+	position: absolute;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+
+
+.dashboardtbl {
+	position: absolute;
+	margin-top: 1%;
+	margin-left: 0%;
+	width: 97%;
+	height: 70%;
+}
+
+.dashboardtbl1 {
+	border-collapse: collapse;
+	border: 1px solid;
+}
+
+.dashboardheader {
+	padding: 0.5% 50px 0.5% 50px;
+	border: 1px solid black;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 14px;
+}
+.dashboardinfo {
+	padding: 0.7% 0% 0.7% 0%;
+	border: 1px solid;
+	background-color: #E5E4E2;
+	text-align: center;
+	font-size: 12px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+/*---------------------------------------------------------class for announceview.php----------------------------------------------------------*/
+.announcementdiv {
+	width: 82.5%;
+	height: 75%;
+	position: absolute;
+	margin-top: 5%;
+	margin-left: 14%;
+	background-color: #fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom: 0%;
+	padding: 1%;
+}
+.tlediv {
+	width: 30%;
+	height: 58%;
+	position: absolute;
+	margin-top: 10%;
+	margin-left: 40%;
+	background-color: #fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom: 0%;
+	padding: 1%;
+}
+.viewaccdiv {
+	width: 23%;
+	height: 40%;
+	position: absolute;
+	margin-top: 12%;
+	margin-left: 45%;
+	background-color: #fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom: 0%;
+	padding: 1%;
+}
+
+.addannouncementbtn {
+	width: 3%;
+	height: 6%;
+	position: inline-block;
+	margin-left: 25%;
+	margin-top: 1.5%;
+	padding-bottom: 1%;
+}
+
+.searchannouncement {
+	font-family: 'Quicksand', Sans-serif;
+	color: black;
+	font-size: 14px;
+	margin-left:1%;
+	margin-top: 3px;
+	font-weight: bold;
+	position: absolute;
+}
+
+.announcementtxt {
+	margin-top: 3px;
+	margin-left: 6%;
+	height: 20px;
+	width: 159px;
+	position: absolute;
+}
+
+.announcementbtn {
+	padding: 5px 30px 5px 30px;
+	text-decoration: none;
+	border-style: solid;
+	margin-left: 21%;
+	margin-top: 0px;
+	border-color: white;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #191970;
+	font-weight: bold;
+	color: white;
+	font-size: 12px;
+	position: absolute;
+}
+
+.announcementtbl {
+	position: absolute;
+	margin-top: 3%;
+	margin-left: 0%;
+	width: 97%;
+	height: 70%;
+}
+
+.announcementtbl1 {
+	border-collapse: collapse;
+	border: 1px solid;
+}
+
+.searchgrade {
+	font-family: 'Quicksand', Sans-serif;
+	color: black;
+	font-size: 14px;
+	margin-left:1%;
+	margin-top: 4px;
+	font-weight: bold;
+	position: absolute;
+}
+
+.gradetxt {
+	margin-top: 4px;
+	margin-left: 6%;
+	height: 20px;
+	width: 120px;
+	position: absolute;
+}
+
+.bstudtext {
+	margin-top: 4px;
+	margin-left: 6%;
+	height: 15px;
+	width: 110px;
+	position: absolute;
+}
+
+.cat {
+	margin-top: 4px;
+	margin-left: 17%;
+	height: 20px;
+	width: 150px;
+	position: absolute;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+
+}
+
+.gradebtn {
+	padding: 5px 30px 5px 30px;
+	text-decoration: none;
+	border-style: solid;
+	margin-left: 30.5%;
+	margin-top: 0px;
+	border-color: white;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #191970;
+	font-weight: bold;
+	color: white;
+	font-size: 12px;
+	position: absolute;
+}
+
+.bstudbtn {
+	padding: 5px 30px 5px 30px;
+	text-decoration: none;
+	border-style: solid;
+	margin-left: 30.5%;
+	margin-top: 0px;
+	border-color: white;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #191970;
+	font-weight: bold;
+	color: white;
+	font-size: 12px;
+	position: absolute;
+}
+
+.gradetable {
+	position: absolute;
+	margin-top: 4%;
+	margin-left: 0%;
+	width: 97%;
+	height: 70%;
+}
+.centertext
+{
+	margin-top: 5%;
+}
+.gradetable1 {
+	border-collapse: collapse;
+	border: 1px solid;
+}
+
+.gradeheader {
+	padding: 0.5% 43px 0.5% 43px;
+	border: 1px solid #7c797b;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 14px;
+}
+
+.gradeinfo {
+	padding: 0.7% 0% 0.7% 0%;
+	border: 1px solid #cacacac9;
+	background-color: #e5e4e2cb;
+	text-align: center;
+	font-size: 10.5px;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+	color:black;
+}
+
+
+
+
+.announcementheader1 {
+	padding: 0.5% 50px 0.5% 50px;
+	border: 1px solid black;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 14px;
+}
+.announcementheaderstudent {
+	padding: 0.5% 200px 0.5% 200px;
+	border: 1px solid black;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 14px;
+}
+.announcementheaderstudent1 {
+	padding: 0.5% 10px 0.5% 10px;
+	border: 1px solid black;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 14px;
+}
+.announcementheaderstudent2 {
+	padding: 0.5% 100px 0.5% 100px;
+	border: 1px solid black;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 14px;
+}
+
+.listheader1 {
+	padding: 0.5% 30px 0.5% 30px;
+	border: 1px solid black;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 14px;
+}
+
+.listheader {
+	padding: 0.5% 10px 0.5% 10px;
+	border: 1px solid black;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 14px;
+}
+.listheader4 {
+	padding: 0.5% 12px 0.5% 12px;
+	border: 1px solid black;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 14px;
+}
+.listheader2 {
+	padding: 0.5% 5px 0.5% 5px;
+	border: 1px solid black;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 14px;
+}
+.listheader5 {
+	padding: 0.5% 60px 0.5% 60px;
+	border: 1px solid black;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 14px;
+}
+.announcementheader2 {
+	padding: 0.5% 30px 0.5% 30px;
+	border: 1px solid black;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 14px;
+}
+
+.announcementheader {
+	padding: 0.5% 200px 0.5% 200px;
+	border: 1px solid black;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 14px;
+}
+
+.filfirst {
+	padding: 0.5% 137px 0.5% 137px;
+	border: 1px solid black;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 14px;
+}
+.filfirst1 {
+	padding: 0.5% 40px 0.5% 40px;
+	border: 1px solid black;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 14px;
+}
+.filheaderstudlist {
+	padding: 0.5% 58px 0.5% 58px;
+	border: 1px solid white;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 14px;
+}
+
+.announcementinfo {
+	padding: 1% 0% 1% 0%;
+	border: 1px solid #cacacac9;
+	background-color: #E5E4E2;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	color:black;
+	font-size: 10.5px;
+	font-weight: bold;
+}
+
+.announcementinfograde {
+	padding: 10px 0px 10px 0px;
+	border: 1px solid;
+	background-color: #E5E4E2;
+	text-align: center;
+	font-size: 12px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+.announcementinfo1 {
+	padding: 0% 0% 0% 0%;
+	border: 1px solid black;
+	background-color: black;
+
+}
+
+.calendar {
+	height:400px;
+	width:1100px;
+	margin-top:1px;
+
+}
+
+/*---------------------------------------------------------id for announceview.php------------------------------------------------------------*/
+#announcemetfont {
+	color: black;
+	margin-left: 20px;
+	margin-top: 10px;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	position: absolute;
+	padding-bottom: 30px;
+}
+
+#line {
+	position: inline-block;
+	margin-top: 60px;
+}
+/*---------------------------------------------------------class for announcead.php----------------------------------------------------------*/
+.announceadddiv {
+	width: 30%;
+	height: 41%;
+	position: absolute;
+	margin-top: 13%;
+	margin-left: 40%;
+	background-color: #fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom: 0%;
+	padding: 1%;
+}
+.announceaddline {
+	position: inline-block;
+	margin-top: 60px;
+}
+.addannouncemntfield {
+	width: 26%;
+	height: 5%;
+	font-size: 13px;
+	position: fixed;
+	margin-top: 1%;
+	margin-left: 2%;
+}
+.adddatfield {
+	width: 26%;
+	height: 5%;
+	font-size: 13px;
+	position: fixed;
+	margin-top: 3%;
+	margin-left: 2%;
+}
+.addimage {
+	width: 26%;
+	height: 5%;
+	font-size: 13px;
+	position: fixed;
+	margin-top: 5%;
+	margin-left: 2%;
+}
+.addannouncebtn {
+	margin-top: 7%;
+	margin-left: 2%;
+	width: 14%;
+	height: 5%;
+	border: hidden;
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+	background-color: #1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position: fixed;
+}
+
+.addannouncebtn:hover {
+	background-color: #000080;
+	color: white;
+	}
+
+.addannounceback {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-size: 15px;
+	font-family: Calibri;
+	position: fixed;
+	margin-top: 7%;
+	margin-left: 18.3%;
+	border: 1px solid black;
+	padding: 5px 50px 5px 50px;
+}
+
+.addannounceback:hover {
+	border: 1px solid black;
+	color: white;
+	background-color: black;
+}
+/*---------------------------------------------------------id for announcead.php------------------------------------------------------------*/
+#announceaddfont {
+	color: black;
+	margin-left: 50px;
+	margin-top: 10px;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	position: absolute;
+}
+/*---------------------------------------------------------class for announceupdate.php-------------------------------------------------------*/
+.updannouncediv
+{
+	width:30%;
+	height:52%;
+	position:absolute;
+	margin-top:10.5%;
+	margin-left:40%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.updannounceline
+{
+	width:92%;
+	margin-top:12%;
+	position:absolute;
+}
+.aidupd
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:6.5%;
+	margin-left:2%;
+}
+.announceupd
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:10.5%;
+	margin-left:2%;
+}
+.dateupd
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:14.8%;
+	margin-left:2%;
+}
+.updateaddimageannouncement {
+	width: 26%;
+	height: 5%;
+	font-size: 13px;
+	position: fixed;
+	margin-top: 18.5%;
+	margin-left: 2%;
+}
+.aupdannouncebtn
+{
+	margin-top:20.5%;
+	margin-left:2%;
+	width:14%;
+	height:5%;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+}
+.aupdannouncebtn:hover
+{
+	background-color:#000080;
+	color:white;
+}
+.updannounceback
+{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	font-size:15px;
+	font-family:Calibri;
+	position:fixed;
+	margin-top:20.5%;
+	margin-left:18.3%;
+	border:1px solid black;
+	padding:5px 50px 5px 50px;
+}
+.updannounceback:hover
+{
+	border:1px solid black;
+	color:white;
+	background-color:black;
+}
+/*---------------------------------------------------------id for announceupdate.php------------------------------------------------------------*/
+#updannouncefont
+{
+	color:black;
+	margin-left:13%;
+	margin-top:2%;
+	font-size:25px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+}
+#aidupd
+{
+	color:black;
+	margin-left:7%;
+	margin-top:16%;
+	font-size:13px;
+	font-weight:bold;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+}
+#announceupd
+{
+	color:black;
+	margin-left:7%;
+	margin-top:29%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#dateupd
+{
+	color:black;
+	margin-left:7%;
+	margin-top:42%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+/*---------------------------------------------------------class for student.php----------------------------------------------------------*/
+.studentdiv {
+	width: 82.5%;
+	height: 75%;
+	position: absolute;
+	margin-top: 5%;
+	margin-left: 14%;
+	background-color: #fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom: 0%;
+	padding: 1%;
+}
+.studentdivallrecs {
+	width: 95.5%;
+	height: 70%;
+	position: absolute;
+	margin-top: 6%;
+	margin-left: 1%;
+	background-color: #fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom: 0%;
+	padding: 1%;
+}
+
+.addstudentbtn {
+	width: 3%;
+	height: 6%;
+	position: inline-block;
+	margin-left: 33%;
+	margin-top: 1.5%;
+	padding-bottom: 1%;
+}
+
+.addstudentbtnviewall {
+	width: 3%;
+	height: 6%;
+	position: inline-block;
+	margin-left: 28%;
+	margin-top: 1.5%;
+	padding-bottom: 1%;
+}
+.news{
+	width: 3%;
+	height: 6%;
+	position: inline-block;
+	margin-left: 33%;
+	margin-top: 1.5%;
+	padding-bottom: 1%;
+}
+
+.searchstudent {
+	font-family: 'Quicksand', Sans-serif;
+	color: black;
+	font-size: 14px;
+	margin-left:1%;
+	margin-top: 3px;
+	font-weight: bold;
+	position: absolute;
+}
+.empty {
+	font-family: 'Quicksand', Sans-serif;
+	color: black;
+	font-size: 16px;
+	margin-left:38%;
+	margin-top: 10%;
+	font-weight: bold;
+	position: absolute;
+}
+.studenttxt {
+	margin-top: 3px;
+	margin-left: 6%;
+	height: 15px;
+	width: 150px;
+	position: absolute;
+}
+
+.studentbtn {
+	padding: 5px 30px 5px 30px;
+	text-decoration: none;
+	border-style: solid;
+	margin-left: 21%;
+	margin-top: 0px;
+	border-color: white;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #191970;
+	font-weight: bold;
+	color: white;
+	font-size: 12px;
+}
+.studenttxtviewall {
+	margin-top: 0.2%;
+	margin-left: 5%;
+	height: 15px;
+	width: 150px;
+	position: absolute;
+}
+
+.studentbtnviewall {
+	padding: 3px 30px 3px 30px;
+	text-decoration: none;
+	border-style: solid;
+	margin-left: 18%;
+	margin-top: 0%;
+	border-color: white;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #191970;
+	font-weight: bold;
+	color: white;
+	font-size: 12px;
+}
+.massupdbtn {
+	padding: 5px 30px 5px 30px;
+	text-decoration: none;
+	border-style: solid;
+	margin-left: 85%;
+	margin-top: 0%;
+	border-color: white;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #191970;
+	font-weight: bold;
+	color: white;
+	font-size:12px;
+	position: absolute;
+
+}
+.massupdbtnviewall {
+	padding: 5px 30px 5px 30px;
+	text-decoration: none;
+	border-style: solid;
+	margin-left: 61.5%;
+	margin-top: 11%;
+	border-color: white;
+	background-color: #191970;
+	font-weight: bold;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+}
+.massupdbtntchr {
+	padding: 5px 30px 5px 30px;
+	text-decoration: none;
+	border-style: solid;
+	margin-left: 55%;
+	margin-top: 10%;
+	border-color: white;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #191970;
+	font-weight: bold;
+	color: white;
+	font-size:12px;
+}
+.viewallstudrecordbtn {
+	padding: 5px 0px 5px 30px;
+	text-decoration: none;
+	border-style: solid;
+	margin-left: 67%;
+	margin-top: 0px;
+	border-color: white;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #191970;
+	font-weight: bold;
+	color: white;
+	font-size: 12px;
+	position:absolute;
+	width:15%;
+}
+.viewallteacherrecordbtn {
+	padding: 5px 0px 5px 30px;
+	text-decoration: none;
+	border-style: solid;
+	margin-left: 35%;
+	margin-top: -2px;
+	border-color: white;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #191970;
+	font-weight: bold;
+	color: white;
+	font-size: 12px;
+	position:absolute;
+	width:15%;
+}
+
+.studenttbl {
+	position: absolute;
+	margin-top: 1%;
+	margin-left: 0%;
+	width: 98%;
+	height: 71%;
+}
+.studenttbl2 {
+	position: absolute;
+	margin-top: 1%;
+	margin-left: 0%;
+	width: 98%;
+	height: 67%;
+}
+
+.studenttbl1 {
+	border-collapse: collapse;
+	border: 1px solid;
+}
+
+.studentheaderadminview {
+	padding: 0.5% 15px 0.5% 15px;
+	border: 1px solid white;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 12px;
+}
+
+.studentheaderadminview1 {
+	padding: 0.5% 61px 0.5% 61px;
+	border: 1px solid white;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 12px;
+}
+
+.studentheader2 {
+	padding: 0.5% 80px 0.5% 80px;
+	border: 1px solid black;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 14px;
+}
+
+.studentheader3 {
+	padding: 0.5% 20px 0.5% 20px;
+	border: 1px solid black;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 14px;
+}
+
+.studentheaderarchive2 {
+	padding: 0.5% 25px 0.5% 25px;
+	border: 1px solid white;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 12px;
+}
+
+.studentheaderarchive4 {
+	padding: 0.5% 100px 0.5% 100px;
+	border: 1px solid white;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 12px;
+}
+
+.studentheaderarchive3 {
+	padding: 0.5% 73px 0.5% 73px;
+	border: 1px solid white;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 12px;
+}
+
+.studentheader4 {
+	padding: 0.5% 23px 0.5% 23px;
+	border: 1px solid #7c797b;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 12px;
+}
+
+.studentheader5 {
+	padding: 0.5% 95px 0.5% 95px;
+	border: 1px solid #7c797b;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 12px;
+}
+
+.studentinfo {
+	padding: 0.7% 0% 0.7% 0%;
+	border: 1px solid #cacacac9;
+	background-color: #e5e4e2cb;
+	text-align: center;
+	font-size: 10.5px;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+	color:black;
+}
+/*---------------------------------------------------------id for student.php------------------------------------------------------------*/
+#studentfont {
+	color: black;
+	margin-left: 20px;
+	margin-top: 10px;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	position: absolute;
+}
+/*---------------------------------------------------------class for studentadd.php-------------------------------------------------------*/
+.studentadddiv {
+	width: 30%;
+	height: 50%;
+	position: absolute;
+	margin-top: 12%;
+	margin-left: 40%;
+	background-color: #fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom: 0%;
+	padding: 1%;
+}
+
+.studentaddline {
+	width: 30%;
+	margin-top: 4%;
+	position: fixed;
+}
+
+.addstudidfield {
+	width: 26%;
+	height: 4%;
+	font-size: 13px;
+	position: fixed;
+	margin-top: 5.5%;
+	margin-left: 2%;
+}
+
+.addfnamefield {
+	width: 9%;
+	height: 4%;
+	font-size: 12px;
+	position: fixed;
+	margin-top: 5.5%;
+	margin-left: 2%;
+}
+
+.addmnamefield {
+	width: 6%;
+	height: 4%;
+	font-size: 12px;
+	position: fixed;
+	margin-top: 5.5%;
+	margin-left: 12%;
+}
+
+.addlnamefield {
+	width: 9%;
+	height: 4%;
+	font-size: 12px;
+	position: fixed;
+	margin-top: 5.5%;
+	margin-left: 19%;
+}
+
+.addemailfield {
+	width: 12%;
+	height: 4%;
+	font-size: 12px;
+	position: fixed;
+	margin-top: 8.5%;
+	margin-left: 2%;
+}
+
+.addsectionfield {
+	width: 13%;
+	height: 5%;
+	font-size: 12px;
+	position: fixed;
+	margin-top: 8.5%;
+	margin-left: 15.5%;
+	
+}
+
+.addagefield {
+	width: 10%;
+	height: 4%;
+	font-size: 12px;
+	position: fixed;
+	margin-top: 11.5%;
+	margin-left: 18%;
+}
+
+.addaddressfield {
+	width: 12%;
+	height: 4%;
+	font-size: 12px;
+	position: fixed;
+	margin-top: 14.5%;
+	margin-left: 2%;
+}
+
+.addgenderfield {
+	width: 13%;
+	height: 5%;
+	font-size: 12px;
+	position: fixed;
+	margin-top: 14.5%;
+	margin-left: 15.5%;
+}
+
+.bdayfont {
+	position: fixed;
+	margin-top: 12%;
+	margin-left: 2%;
+	font-family: 'Jura', Sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.addbdayfield {
+	width: 9%;
+	height: 4.3%;
+	font-size: 13px;
+	position: fixed;
+	margin-top: 11.5%;
+	margin-left: 8%;
+}
+.classifiedfont {
+	position: fixed;
+	margin-top: 18%;
+	margin-left: 2%;
+	font-family: 'Jura', Sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.classified {
+	width: 17.5%;
+	height: 5%;
+	font-size: 12px;
+	position: fixed;
+	margin-top: 17.5%;
+	margin-left: 11%;
+}
+
+.addyearfield {
+	width: 12%;
+	height: 4%;
+	font-size: 13px;
+	position: fixed;
+	margin-top: 17%;
+	margin-left: 16%;
+}
+
+.addlrnfield {
+	width: 12%;
+	height: 4%;
+	font-size: 13px;
+	position: fixed;
+	margin-top: 17%;
+	margin-left: 16%;
+}
+
+.Baddstudbtn {
+	margin-top: 21%;
+	margin-left: 2%;
+	width: 14%;
+	height: 5%;
+	border: hidden;
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+	background-color: #1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position: fixed;
+}
+
+	.Baddstudbtn:hover {
+		background-color: #000080;
+		color: white;
+	}
+
+.Baddstudentback {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-size: 15px;
+	font-family: Calibri;
+	position: fixed;
+	margin-top: 21%;
+	margin-left: 18.3%;
+	border: 1px solid black;
+	padding: 5px 50px 5px 50px;
+}
+
+	.Baddstudentback:hover {
+		border: 1px solid black;
+		color: white;
+		background-color: black;
+	}
+
+.addannouncementfield {
+	width: 26%;
+	height: 5%;
+	font-size: 13px;
+	position: fixed;
+	margin-top: 7%;
+	margin-left: 2%;
+}
+
+.adddatefield {
+	width: 26%;
+	height: 5%;
+	font-size: 13px;
+	position: fixed;
+	margin-top: 10%;
+	margin-left: 2%;
+}
+/*---------------------------------------------------------id for studentadd.php----------------------------------------------------------*/
+#studentaddfont {
+	color: black;
+	margin-left: 1%;
+	margin-top: 0.5%;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	position: fixed;
+}
+/*---------------------------------------------------------class for studentupdate.php-------------------------------------------------------*/
+.updstudentdiv
+{
+	width:30%;
+	height:68%;
+	position:absolute;
+	margin-top:7%;
+	margin-left:38%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.updstudentline
+{
+	width:92%;
+	margin-top:12%;
+	position:absolute;
+}
+.studidupd
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:5.8%;
+	margin-left:2%;
+}
+.fnameupd
+{
+	width:10%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:10%;
+	margin-left:2%;
+}
+.mnameupd
+{
+	width:5%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:10%;
+	margin-left:12.5%;
+}
+.lnameupd
+{
+	width:10%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:10%;
+	margin-left:18%;
+}
+
+.emailupd
+{
+	width: 12%;
+	height: 5%;
+	font-size: 13px;
+	position: fixed;
+	margin-top: 14%;
+	margin-left: 2%;
+}
+.addressupd
+{
+	width: 12%;
+	height: 5%;
+	font-size: 13px;
+	position: fixed;
+	margin-top: 22%;
+	margin-left: 2%;
+}
+.bdayupd
+{
+	width:12%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:18%;
+	margin-left:2%;
+}
+.ageupd
+{
+	width:12%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:18%;
+	margin-left:16%;
+}
+.genderupd
+{
+	width:12%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:22%;
+	margin-left:16%;
+}
+
+.classifiedupd
+{
+	width:12%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:25.8%;
+	margin-left:2%;
+}
+.levelupd
+{
+	width:12%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:14%;
+	margin-left:16%;
+}
+.yearupd
+{
+	width:12%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:26.5%;
+	margin-left:2%;
+}
+.lrnupd
+{
+	width:12%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:26.5%;
+	margin-left:16%;
+}
+.updstudentbtn
+{
+	margin-top:30%;
+	margin-left:2%;
+	width:14%;
+	height:5%;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+}
+.updstudentbtn:hover
+{
+	background-color:#000080;
+	color:white;
+}
+.updstudentback
+{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	font-size:15px;
+	font-family:Calibri;
+	position:fixed;
+	margin-top:30%;
+	margin-left:18.3%;
+	border:1px solid black;
+	padding:5px 50px 5px 50px;
+}
+.updstudentback:hover
+{
+	border:1px solid black;
+	color:white;
+	background-color:black;
+}
+/*---------------------------------------------------------id for studentupdate.php------------------------------------------------------------*/
+#updstudentfont
+{
+	color:black;
+	margin-left:19%;
+	margin-top:2%;
+	font-size:25px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+}
+#studidupd
+{
+	color:black;
+	margin-left:7%;
+	margin-top:14%;
+	font-size:12px;
+	font-weight:bold;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+}
+#fnameupd
+{
+	color:black;
+	margin-left:7%;
+	margin-top:27%;
+	font-size:12px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#mnameupd
+{
+	color:black;
+	margin-left:44%;
+	margin-top:27%;
+	font-size:12px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#lnameupd
+{
+	color:black;
+	margin-left:70%;
+	margin-top:27%;
+	font-size:12px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#emailupd 
+{
+	color: black;
+	margin-left: 7%;
+	margin-top: 40%;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: 'Montserrat', Sans-serif;
+	position: absolute;
+}
+#addressupd 
+{
+	color: black;
+	margin-left: 7%;
+	margin-top: 65%;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: 'Montserrat', Sans-serif;
+	position: absolute;
+}
+#bdayupd
+{
+	color:black;
+	margin-left:7%;
+	margin-top:52%;
+	font-size:12px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#ageupd
+{
+	color:black;
+	margin-left:50%;
+	margin-top:52%;
+	font-size:12px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#genderupd
+{
+	color:black;
+	margin-left:7%;
+	margin-top:64.5%;
+	font-size:12px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#levelupd
+{
+	color:black;
+	margin-left:50%;
+	margin-top:64.5%;
+	font-size:12px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#yearupd {
+	color: black;
+	margin-left: 50%;
+	margin-top: 78%;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: 'Montserrat', Sans-serif;
+	position: absolute;
+}
+#lrnupd
+{
+	color:black;
+	margin-left:7%;
+	margin-top:78%;
+	font-size:12px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+/*---------------------------------------------------------class for teacher.php----------------------------------------------------------*/
+.teacherdiv {
+	width: 82.5%;
+	height: 75%;
+	position: absolute;
+	margin-top: 5%;
+	margin-left: 14%;
+	background-color: #fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom: 0%;
+	padding: 1%;
+}
+
+.addteacherbtn {
+	width: 3%;
+	height: 6%;
+	position: inline-block;
+	margin-left: 31%;
+	margin-top: 1.5%;
+	padding-bottom: 1%;
+}
+
+.searchteacher {
+	font-family: 'Quicksand', Sans-serif;
+	color: black;
+	font-size: 14px;
+	margin-left:1%;
+	margin-top: 3px;
+	font-weight: bold;
+	position: absolute;
+}
+
+.teachertxt {
+	margin-top: 3px;
+	margin-left: 6%;
+	height: 20px;
+	width: 159px;
+	position: absolute;
+}
+
+.teacherbtn {
+	padding: 5px 30px 5px 30px;
+	text-decoration: none;
+	border-style: solid;
+	margin-left: 21%;
+	margin-top: 0px;
+	border-color: white;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #191970;
+	font-weight: bold;
+	color: white;
+	font-size: 12px;
+}
+
+.openclosebtn
+{
+	width: 100px;
+	height: 20px;
+	position: absolute;
+	margin-top: 25%;
+	margin-left: 20%;
+}
+
+.teachertbl {
+	position: absolute;
+	margin-top: 1%;
+	margin-left: 0%;
+	width: 98%;
+	height: 71%;
+}
+
+.teachertbl2 {
+	position: absolute;
+	margin-top: 1%;
+	margin-left: 0%;
+	width: 98%;
+	height: 67%;
+}
+.teachertbl1 {
+	border-collapse: collapse;
+	border: 1px solid;
+}
+
+.teacherheader {
+	padding: 5px 40px 5px 40px;
+	border: 1px solid #7c797b;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 12px;
+}
+.teacherheader1 {
+	padding: 0.5% 50px 0.5% 50px;
+	border: 1px solid white;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 12px;
+}
+.teacherheader2 {
+	padding: 0.5% 80px 0.5% 80px;
+	border: 1px solid black;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 14px;
+}
+
+.teacherheader4 {
+	padding: 0.5% 30px 0.5% 30px;
+	border: 1px solid #7c797b;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 12px;
+}
+.teacherheader5 {
+	padding: 0.5% 25px 0.5% 25px;
+	border: 1px solid #7c797b;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 12px;
+}
+.teacherheader6 {
+	padding: 0.5% 20px 0.5% 20px;
+	border: 1px solid #7c797b;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 12px;
+}
+.teacherinfo {
+	padding: 1% 0% 1% 0%;
+	border: 1px solid #cacacac9;
+	background-color: #E5E4E2;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	color:black;
+	font-size: 10.5px;
+	font-weight: bold;
+}
+
+.teacherinfo1 {
+	padding: 0% 0% 0.7% 1%;
+	border: 1px solid #cacacac9;
+	background-color: #E5E4E2;
+	font-family: 'Montserrat', sans-serif;
+	color:black;
+	font-size: 10.5px;
+	font-weight: bold;
+	
+}
+/*---------------------------------------------------------id for teacher.php------------------------------------------------------------*/
+#teacherfont {
+	color: black;
+	margin-left: 20px;
+	margin-top: 10px;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	position: absolute;
+}
+/*---------------------------------------------------------class for teacheradd.php-------------------------------------------------------*/
+.teacheradddiv
+{
+	width:45%;
+	height:53%;
+	position:absolute;
+	margin-top:10%;
+	margin-left:35%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.teacheraddline
+{
+	width:45%;
+	margin-top:4%;
+	position:fixed;
+}
+.addteacherdfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:5.5%;
+	margin-left:2%;
+}
+.addtfnamefield
+{
+	width: 9%;
+	height: 5%;
+	font-size: 12px;
+	position: fixed;
+	margin-top: 5.5%;
+	margin-left: 2%;
+}
+.addtmnamefield
+{
+	width: 6%;
+	height: 5%;
+	font-size: 12px;
+	position: fixed;
+	margin-top: 5.5%;
+	margin-left: 12%;
+}
+.addtlnamefield
+{
+	width: 9%;
+	height: 5%;
+	font-size: 12px;
+	position: fixed;
+	margin-top: 5.5%;
+	margin-left: 19%;
+}
+.addtaddressfield {
+	width: 26%;
+	height: 5%;
+	font-size: 13px;
+	position: fixed;
+	margin-top: 14.5%;
+	margin-left: 2%;
+}
+.addtemailfield {
+	width: 12%;
+	height: 5%;
+	font-size: 12px;
+	position: fixed;
+	margin-top: 8.5%;
+	margin-left: 2%;
+}
+
+.addtgenderfield
+{
+	width: 12.5%;
+	height: 5%;
+	font-size: 12px;
+	position: fixed;
+	margin-top: 8.5%;
+	margin-left: 15.5%;
+}
+.idfirstquarter
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:5.5%;
+	margin-left:2%;
+}
+#studidfirst
+{
+	color: black;
+	margin-left: 7%;
+	margin-top: 2%;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: 'Montserrat', Sans-serif;
+	position: absolute;}
+.studidfirst
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:2%;
+	margin-left:2%;
+}
+.namefirst
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:6%;
+	margin-left:2%;
+}
+#namefirst
+{
+	color: black;
+	margin-left: 7%;
+	margin-top: 14.5%;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: 'Montserrat', Sans-serif;
+	position: absolute;}
+.yrandlvlfirst {
+	width: 26%;
+	height: 5%;
+	font-size: 13px;
+	position: fixed;
+	margin-top: 10%;
+	margin-left: 2%;
+}
+#yrandlvlfirst	
+
+{color: black;
+margin-left: 7%;
+margin-top: 27.5%;
+font-size: 13px;
+font-weight: bold;
+font-family: 'Montserrat', Sans-serif;
+position: absolute;}
+.gradefirst
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:14%;
+	margin-left:2%;
+}
+#gradefirst
+	
+
+{color: black;
+margin-left: 7%;
+margin-top: 39.8%;
+font-size: 13px;
+font-weight: bold;
+font-family: 'Montserrat', Sans-serif;
+position: absolute;}
+
+
+.submitbtnfirst
+{
+	margin-top:58%;
+	margin-left:10%;
+	width:35%;
+	height:6%;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+}
+.submitbtnfirst:hover
+{
+	background-color:#000080;
+	color:white;
+}
+.backfirst
+{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	font-size:15px;
+	font-family:Calibri;
+	position:fixed;
+	margin-top:244px;
+	margin-left:220px;
+	border:1px solid black;
+	padding:5px 50px 5px 50px;
+}
+.backfirst:hover
+{
+	border:1px solid black;
+	color:white;
+	background-color:black;
+}
+
+
+
+.tbdayfont
+{
+	position: fixed;
+	margin-top: 12%;
+	margin-left: 2%;
+	font-family: 'Jura', Sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+.filsubj {
+	position: fixed;
+	margin-left: 30%;
+	font-family: 'Jura', Sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.addtbdayfield
+{
+	width: 9%;
+	height: 5%;
+	font-size: 13px;
+	position: fixed;
+	margin-top: 11.5%;
+	margin-left: 8%;
+}
+.addtagefield
+{
+	width: 10%;
+	height: 5%;
+	font-size: 12px;
+	position: fixed;
+	margin-top: 11.5%;
+	margin-left: 18%;
+}
+.addtsubjectfield
+{
+	width:12.5%;
+	height:15%;
+	font-size:13px;
+	position:fixed;
+	margin-top:17.5%;
+	margin-left:15.5%;
+}
+.addteachbtn
+{
+	margin-top:2%;
+	margin-left:28%;
+	width:18%;
+	height:8%;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+}
+.addteachbtn:hover
+{
+	background-color:#000080;
+	color:white;
+}
+.addteacherback
+{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	font-size:15px;
+	font-family:Calibri;
+	position:fixed;
+	margin-top:14px;
+	margin-left:310px;
+	border:1px solid black;
+	padding:5px 50px 5px 50px;
+}
+.addteacherback:hover
+{
+	border:1px solid black;
+	color:white;
+	background-color:black;
+}
+/*---------------------------------------------------------id for teacheradd.php----------------------------------------------------------*/
+#teacheraddfont
+{
+	color:black;
+	margin-left:1%;
+	margin-top:0.5%;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:fixed;
+}
+/*---------------------------------------------------------class for teacherupdate.php-------------------------------------------------------*/
+.updteacherdiv 
+{
+	width: 45%;
+	height: 55%;
+	position: absolute;
+	margin-top: 9%;
+	margin-left: 38%;
+	background-color: #fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom: 0%;
+	padding: 1%;
+}
+.updteacherline 
+{
+	width: 95%;
+	margin-top: 8%;
+	position: absolute;
+}
+.teacheridupd {
+	width: 26%;
+	height: 5%;
+	font-size: 13px;
+	position: fixed;
+	margin-top: 5.8%;
+	margin-left: 2%;
+}
+.tfnameupd {
+	width: 10%;
+	height: 5%;
+	font-size: 13px;
+	position: fixed;
+	margin-top: 7%;
+	margin-left: 2%;
+}
+
+.tmnameupd {
+	width: 5%;
+	height: 5%;
+	font-size: 13px;
+	position: fixed;
+	margin-top: 7%;
+	margin-left: 12.5%;
+}
+
+.tlnameupd {
+	width: 10%;
+	height: 5%;
+	font-size: 13px;
+	position: fixed;
+	margin-top: 7%;
+	margin-left: 18%;
+}
+
+.taddressupd {
+	width: 26%;
+	height: 5%;
+	font-size: 13px;
+	position: fixed;
+	margin-top: 11%;
+	margin-left: 2%;
+}
+
+.tbdayupd {
+	width: 12%;
+	height: 5%;
+	font-size: 13px;
+	position: fixed;
+	margin-top: 15%;
+	margin-left: 2%;
+}
+
+.tageupd {
+	width: 12%;
+	height: 5%;
+	font-size: 13px;
+	position: fixed;
+	margin-top: 15%;
+	margin-left: 16%;
+}
+
+.tsubjupd {
+	width: 12%;
+	height: 5%;
+	font-size: 13px;
+	position: fixed;
+	margin-top: 22%;
+	margin-left: 2%;
+}
+.tgenderupd {
+	width: 26%;
+	height: 5%;
+	font-size: 13px;
+	position: fixed;
+	margin-top: 19%;
+	margin-left: 2%;
+}
+.updteacherbtn 
+{
+	margin-top: 2%;
+	margin-left: 10%;
+	width: 14%;
+	height: 4.5%;
+	border: hidden;
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+	background-color: #1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position: fixed;
+}
+.updteacherbtn:hover 
+{
+	background-color: #000080;
+	color: white;
+}
+.updteacherback 
+{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-size: 15px;
+	font-family: Calibri;
+	position: fixed;
+	margin-top: 2%;
+	margin-left: 25%;
+	border: 1px solid black;
+	padding: 5px 50px 5px 50px;
+}
+.updteacherback:hover 
+{
+	border: 1px solid black;
+	color: white;
+	background-color: black;
+}
+/*---------------------------------------------------------id for teacherupdate.php----------------------------------------------------------*/
+#updteacherfont {
+	color: black;
+	margin-left: 1%;
+	margin-top: 0%;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	position: fixed;
+}
+#teacheridupd {
+	color: black;
+	margin-left: 7%;
+	margin-top: 14%;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+	position: absolute;
+}
+#tfnameupd {
+	color: black;
+	margin-left: 7%;
+	margin-top: 12%;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: 'Montserrat', Sans-serif;
+	position: absolute;
+}
+
+#tmnameupd {
+	color: black;
+	margin-left: 24%;
+	margin-top: 12%;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: 'Montserrat', Sans-serif;
+	position: absolute;
+}
+
+#tlnameupd {
+	color: black;
+	margin-left: 44%;
+	margin-top: 12%;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: 'Montserrat', Sans-serif;
+	position: absolute;
+}
+#taddressupd {
+	color: black;
+	margin-left: 7%;
+	margin-top: 21%;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: 'Montserrat', Sans-serif;
+	position: absolute;
+}
+
+#tbdayupd {
+	color: black;
+	margin-left: 7%;
+	margin-top: 29%;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: 'Montserrat', Sans-serif;
+	position: absolute;
+}
+
+#tageupd {
+	color: black;
+	margin-left: 38%;
+	margin-top: 29%;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: 'Montserrat', Sans-serif;
+	position: absolute;
+}
+
+#tsubjupd {
+	color: black;
+	margin-left: 7%;
+	margin-top: 64.5%;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: 'Montserrat', Sans-serif;
+	position: absolute;
+}
+
+/*---------------------------------------------------------class for accounts.php----------------------------------------------------------*/
+.accountsdiv {
+	width: 82.5%;
+	height: 75%;
+	position: absolute;
+	margin-top: 5%;
+	margin-left: 14%;
+	background-color: #fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom: 0%;
+	padding: 1%;
+}
+.massuploaddiv {
+	width: 20%;
+	height: 25%;
+	position: absolute;
+	margin-top: 15%;
+	margin-left:45%;
+	background-color: #fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom: 0%;
+	padding: 1%;
+}
+#massuploadfont {
+	color: black;
+	margin-left: 2.5%;
+	margin-top: 0.5%;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	position: fixed;
+}
+.addaccountsbtn {
+	width: 3%;
+	height: 6%;
+	position: inline-block;
+	margin-left: 28%;
+	margin-top: 1.3%;
+	padding-bottom: 1%;
+}
+
+.searchaccounts {
+	font-family: 'Quicksand', Sans-serif;
+	color: black;
+	font-size: 14px;
+	margin-left:1%;
+	margin-top: 3px;
+	font-weight: bold;
+	position: absolute;
+}
+
+.accountstxt {
+	margin-top: 1px;
+	margin-left: 6%;
+	height: 16px;
+	width: 150px;
+	position: absolute;
+}
+
+.accountsbtn {
+	padding: 5px 30px 5px 30px;
+	text-decoration: none;
+	border-style: solid;
+	margin-left: 21%;
+	margin-top: 0px;
+	border-color: white;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #191970;
+	font-weight: bold;
+	color: white;
+	font-size: 12px;
+}
+
+.accountstbl {
+	position: absolute;
+	margin-top: 1%;
+	margin-left: 0%;
+	width: 97%;
+	height: 70%;
+}
+
+.accountstbl1 {
+	border-collapse: collapse;
+	border: 1px solid;
+}
+
+.accountsheader1 {
+	padding: 0.5% 34px 0.5% 34px;
+	border: 1px solid white;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 12px;
+}
+
+.accountsheader2 {
+	padding: 0.5% 40px 0.5% 40px;
+	border: 1px solid white;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 12px;
+}
+
+.accountsheader3 {
+	padding: 0.5% 80px 0.5% 78px;
+	border: 1px solid white;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 12px;
+}
+.accountsheader4 {
+	padding: 0.5% 68px 0.5% 68px;
+	border: 1px solid white;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 12px;
+}
+
+.accountsheader {
+	padding: 0.5% 74px 0.5% 74px;
+	border: 1px solid white;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 12px;
+}
+
+.announcearchiveheader {
+	padding: 5px 150px 5px 150px;
+	border: 1px solid #7c797b;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 12px;
+}
+
+.announcearchiveheader1 {
+	padding: 5px 85px 5px 85px;
+	border: 1px solid #7c797b;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 12px;
+}
+
+.accountsarchiveheader {
+	padding: 0.5% 33px 0.5% 33px;
+	border: 1px solid black;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 14px;
+}
+.accountsarchiveheader1 {
+	padding: 0.5% 120px 0.5% 120px;
+	border: 1px solid black;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 14px;
+}
+.teacherarchiveheader {
+	padding: 0.5% 62px 0.5% 62px;
+	border: 1px solid black;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 14px;
+}
+.teacherarchiveheader1 {
+	padding: 0.5% 160px 0.5% 160px;
+	border: 1px solid black;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 14px;
+}
+.studentheader {
+	padding: 0.5% 50px 0.5% 50px;
+	border: 1px solid black;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 14px;
+}
+.studentheader1 {
+	padding: 0.5% 100px 0.5% 100px;
+	border: 1px solid black;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 14px;
+}
+
+.accountsinfo {
+	padding: 0.7% 0% 0.7% 0%;
+	border: 1px solid #cacacac9;
+	background-color: #e5e4e2cb;
+	text-align: center;
+	font-size: 10.5px;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+	color:black;
+}
+/*---------------------------------------------------------id for accounts.php------------------------------------------------------------*/
+#accountsfont {
+	color: black;
+	margin-left: 20px;
+	margin-top: 10px;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	position: absolute;
+}
+/*---------------------------------------------------------class for addaccounts.php-------------------------------------------------------*/
+.addaccountdiv
+{
+	width:30%;
+	height:55%;
+	position:absolute;
+	margin-top:9.5%;
+	margin-left:40%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.addaccountline
+{
+	width:30%;
+	margin-top:5%;
+	position:fixed;
+}
+.addaccountadminidfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:6.5%;
+	margin-left:2%;
+}
+.addaccountfnamefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:6.5%;
+	margin-left:2%;
+}
+.addaccountmnamefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:9.5%;
+	margin-left:2%;
+}
+.currentpass {
+	width: 20%;
+	height: 4%;
+	font-size: 13px;
+	position: fixed;
+	margin-top: 1%;
+	margin-left: 1%;
+}
+.newpass {
+	width: 20%;
+	height: 4%;
+	font-size: 13px;
+	position: fixed;
+	margin-top: 4%;
+	margin-left: 1%;
+}
+.confirmpass {
+	width: 20%;
+	height: 4%;
+	font-size: 13px;
+	position: fixed;
+	margin-top: 7%;
+	margin-left: 1%;
+}
+.addaccountlnamefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:12.5%;
+	margin-left:2%;
+}
+.addaccountgenderfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:15.5%;
+	margin-left:2%;
+}
+.addaccountlocfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:18.5%;
+	margin-left:2%;
+}
+.addadminaccbtn
+{
+	margin-top:22.5%;
+	margin-left:2%;
+	width:14%;
+	height:5%;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+}
+.addadminaccbtn:hover
+{
+	background-color:#000080;
+	color:white;
+}
+.addadminaccback
+{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	font-size:15px;
+	font-family:Calibri;
+	position:fixed;
+	margin-top:22.5%;
+	margin-left:18.3%;
+	border:1px solid black;
+	padding:5px 50px 5px 50px;
+}
+.addadminaccback:hover
+{
+	border:1px solid black;
+	color:white;
+	background-color:black;
+}
+
+.viewaccsubmit {
+	margin-top: 11%;
+	margin-left: 4.5%;
+	width: 14%;
+	height: 5%;
+	border: hidden;
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+	background-color: #1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position: fixed;
+}
+	.viewaccsubmit:hover {
+		background-color: #000080;
+		color: white;
+	}
+/*---------------------------------------------------------id for addaccounts.php----------------------------------------------------------*/
+#addaccountfont
+{
+	color:black;
+	margin-left:4%;
+	margin-top:1%;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:fixed;
+}
+/*---------------------------------------------------------class for updateaccount.php-------------------------------------------------------*/
+.accupddiv
+{
+	width:30%;
+	height:48%;
+	position:absolute;
+	margin-top:10%;
+	margin-left:38%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.accupdline
+{
+	width:92%;
+	margin-top:12%;
+	position:absolute;
+}
+.updateaccidfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:7%;
+	margin-left:2%;
+}
+.updateaccfnamefield
+{
+	width:12%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:7%;
+	margin-left:2%;
+}
+.updateaccmnamefield
+{
+	width:12%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:7%;
+	margin-left:16%;
+}
+.updateacclnamefield 
+{
+	width: 12%;
+	height: 5%;
+	font-size: 13px;
+	position: fixed;
+	margin-top: 11%;
+	margin-left: 2%;
+}
+.updateaccgenderfield {
+	width: 12%;
+	height: 5%;
+	font-size: 13px;
+	position: fixed;
+	margin-top: 11%;
+	margin-left: 16%;
+}
+.updateaccaddressfield 
+{
+	width: 26%;
+	height: 5%;
+	font-size: 13px;
+	position: fixed;
+	margin-top: 15%;
+	margin-left: 2%;
+}
+.updateaccsubjectfield {
+	width: 13%;
+	height: 5%;
+	font-size: 13px;
+	position: fixed;
+	margin-top: 11%;
+	margin-left: 15%;
+}
+.updaccountbtn {
+	margin-top: 19%;
+	margin-left: 2%;
+	width: 14%;
+	height: 5%;
+	border: hidden;
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+	background-color: #1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position: fixed;
+}
+.updaccountbtn:hover {
+	background-color: #000080;
+	color: white;
+	}
+.updaccountback
+{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	font-size:15px;
+	font-family:Calibri;
+	position:fixed;
+	margin-top:19%;
+	margin-left:18.3%;
+	border:1px solid black;
+	padding:5px 50px 5px 50px;
+}
+.updaccountback:hover
+{
+	border:1px solid black;
+	color:white;
+	background-color:black;
+}
+/*---------------------------------------------------------id for updateaccount.php------------------------------------------------------------*/
+#accupdfont
+{
+	color:black;
+	margin-left:19%;
+	margin-top:2%;
+	font-size:25px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+}
+#updateaccidfield {
+	color: black;
+	margin-left: 7%;
+	margin-top: 17%;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: 'Montserrat', Sans-serif;
+	position: absolute;
+}
+#updateaccfnamefield {
+	color: black;
+	margin-left: 7%;
+	margin-top: 17%;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: 'Montserrat', Sans-serif;
+	position: absolute;
+}
+#updateaccmnamefield {
+	color: black;
+	margin-left: 50%;
+	margin-top: 17%;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: 'Montserrat', Sans-serif;
+	position: absolute;
+}
+#updateacclnamefield {
+	color: black;
+	margin-left: 7%;
+	margin-top: 30%;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: 'Montserrat', Sans-serif;
+	position: absolute;
+}
+#updateaccgenderfield {
+	color: black;
+	margin-left: 50%;
+	margin-top: 30%;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: 'Montserrat', Sans-serif;
+	position: absolute;
+}
+#updateaccsubjectfield {
+	color: black;
+	margin-left: 47%;
+	margin-top: 30%;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: 'Montserrat', Sans-serif;
+	position: absolute;
+}
+#updateaccaddressfield {
+	color: black;
+	margin-left: 7%;
+	margin-top: 43%;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: 'Montserrat', Sans-serif;
+	position: absolute;
+}
+/*---------------------------------------------------------class for audit.php----------------------------------------------------------*/
+.auditdiv {
+	width:82.5%;
+	height: 75%;
+	position: absolute;
+	margin-top: 5%;
+	margin-left: 14%;
+	background-color: #fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom: 0%;
+	padding: 1% 1% 1% 1%;
+}
+
+.searchaudit {
+	font-family: 'Quicksand', Sans-serif;
+	color: black;
+	font-size: 14px;
+	margin-left:1%;
+	margin-top: 5px;
+	font-weight: bold;
+	position: absolute;
+}
+
+.audittxt {
+	margin-top: 4px;
+	margin-left: 6%;
+	height: 15px;
+	width: 150px;
+	position: absolute;
+}
+.audittxt1 {
+	margin-top: 4px;
+	margin-left: 6%;
+	height: 21px;
+	width: 158px;
+	position: absolute;
+}
+
+.auditbtn {
+	padding: 5px 30px 5px 30px;
+	text-decoration: none;
+	border-style: solid;
+	margin-left: 21%;
+	margin-top: 0px;
+	border-color: white;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #191970;
+	font-weight: bold;
+	color: white;
+	font-size: 12px;
+	position:absolute;
+}
+
+.audittbl {
+	position: absolute;
+	margin-top: 3.2%;
+	margin-left: 0.5%;
+	width: 97%;
+	height: 72.5%;
+}
+
+.audittbl1 {
+	border-collapse: collapse;
+	border: 1px solid;
+
+}
+
+.auditheader {
+	padding: 0.5% 299px 0.5% 299px;
+	border: 1px solid white;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 12px;
+}
+.auditheader1 {
+	padding: 0.5% 103px 0.5% 104px;
+	border: 1px solid white;
+	background-color: #191970;
+	color: white;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	font-size: 12px;
+}
+
+.auditinfo {
+	padding: 0.7% 0% 0.7% 0%;
+	border: 1px solid #cacacac9;
+	background-color: #e5e4e2cb;
+	text-align: center;
+	font-size: 10.5px;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+	color:black;
+}
+.adminauditlink {
+	padding: 5px 30px 5px 30px;
+	text-decoration: none;
+	border-style: solid;
+	margin-left: 65%;
+	margin-top: 10px;
+	border-color: white;
+	background-color: #191970;
+	border-color: white;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #191970;
+	font-weight: bold;
+	color: white;
+	font-size: 12px;
+	position: absolute;
+}
+.teacherauditlink {
+	padding: 5px 30px 5px 30px;
+	text-decoration: none;
+	border-style: solid;
+	margin-left: 75%;
+	margin-top: 10px;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #191970;
+	font-weight: bold;
+	color: white;
+	font-size: 12px;
+	position: absolute;
+}
+.studentauditlink {
+	padding: 5px 30px 5px 30px;
+	text-decoration: none;
+	border-style: solid;
+	margin-left: 85.5%;
+	margin-top: 10px;
+	border-color: white;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #191970;
+	font-weight: bold;
+	color: white;
+	font-size: 12px;
+	position: absolute;
+}
+/*---------------------------------------------------------id for audit.php------------------------------------------------------------*/
+#auditfont {
+	color: black;
+	margin-left: 20px;
+	margin-top: 10px;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	position: relative;
+}
+/*------------------------------------------------------------class for archive.php----------------------------------------------------------*/
+.archivedashboard {
+	width: 13%;
+	height: 100%;
+	background-color: #560C41;
+	position: absolute;
+	margin-top: 0px;
+	margin-right: 0%;
+}
+
+.dashboardlogo {
+	width: 68%;
+	height: 16%;
+	background-color: white;
+	border-radius: 100%;
+	position: absolute;
+	margin-top: 6%;
+	margin-left: 15%;
+}
+
+.archivedashboardhome {
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+
+	opacity: 50%;
+	position: absolute;
+	margin-top: 75%;
+	padding: 4% 28% 4% 25%;
+}
+
+.homeicon {
+	position: absolute;
+	height: 18px;
+	margin-left: -30px;
+	margin-top: 3px;
+}
+
+.archivedashboardhome:hover {
+	background-color: #3D002B;
+	color: white;
+	font-size: 16px;
+	opacity: 100%;
+}
+
+.archiveannouncement {
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	opacity: 50%;
+	position: absolute;
+	margin-top: 95%;
+	padding: 4% 6% 4% 25%;
+}
+
+.announcementicon {
+	position: absolute;
+	height: 18px;
+	margin-top: 3px;
+	margin-left: -30px;
+}
+
+.archiveannouncement:hover {
+	background-color: #3D002B;
+	color: white;
+	font-size: 16px;
+	opacity: 100%;
+}
+
+.archivestudents {
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	opacity: 50%;
+	position: absolute;
+	margin-top: 115%;
+	padding: 4% 38% 4% 25%;
+}
+
+.studenticon {
+	position: absolute;
+	height: 18px;
+	margin-top: 3px;
+	margin-left: -30px;
+}
+
+.archivestudents:hover {
+	background-color: #3D002B;
+	color: white;
+	font-size: 16px;
+	opacity: 100%;
+}
+
+.archiveteachers {
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	opacity: 50%;
+	position: absolute;
+	margin-top: 135%;
+	padding: 4% 38% 4% 25%;
+}
+
+.teachericon {
+	position: absolute;
+	height: 18px;
+	margin-top: 3px;
+	margin-left: -30px;
+}
+
+.archiveteachers:hover {
+	background-color: #3D002B;
+	color: white;
+	font-size: 16px;
+	opacity: 100%;
+}
+
+.archiveaccounts {
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	opacity: 50%;
+	position: absolute;
+	margin-top: 155%;
+	padding: 4% 43% 4% 25%;
+}
+
+.accounticon {
+	position: absolute;
+	height: 18px;
+	margin-top: 3px;
+	margin-left: -30px;
+}
+
+.archiveaccounts:hover {
+	background-color: #3D002B;
+	color: white;
+	font-size: 16px;
+	opacity: 100%;
+}
+.Returnarchive {
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	opacity: 50%;
+	position: absolute;
+	margin-top: 310%;
+	padding: 4% 50% 4% 25%;
+}
+.Returnarchive:hover {
+	opacity: 100%;
+	background-color: white;
+	color: black;
+	font-weight: bold;
+}
+/*------------------------------------------------------------Boxes for archive.php----------------------------------------------------------*/
+.announcementbodyarchive {
+	margin-left: 18%;
+	margin-top: 7%;
+	width: 18%;
+	height: 16%;
+	background-color: #A04A87;
+	text-decoration: none;
+	position: fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+
+.announcementbodylinkarch {
+	text-decoration: none;
+	width: 18%;
+	height: 16%;
+	font-family: 'Quicksand', Sans-serif;
+	font-weight: bold;
+	color: white;
+	position: fixed;
+}
+
+	.announcementbodylinkarch:hover {
+		background-color: #29C5F6;
+		border-color: #29C5F6;
+		border-left-color: white;
+	}
+
+#announcementarchive {
+	font-size: 22px;
+	text-align: center;
+}
+
+#announcementarchtotal {
+	background-color: black;
+	padding: 10px 0px 10px 0px;
+	box-shadow: 5px 5px 10px grey;
+	text-align: center;
+}
+
+.studentsbodyarchive {
+	margin-left: 38%;
+	margin-top: 7%;
+	width: 18%;
+	height: 16%;
+	background-color: #A04A87;
+	text-decoration: none;
+	position: fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+
+.studentbodylinkarch {
+	text-decoration: none;
+	width: 18%;
+	height: 16%;
+	font-family: 'Quicksand', Sans-serif;
+	font-weight: bold;
+	color: white;
+	position: fixed;
+}
+
+	.studentbodylinkarch:hover {
+		background-color: #29C5F6;
+		border-color: #29C5F6;
+		border-left-color: white;
+	}
+
+#studentarchive {
+	font-size: 22px;
+	text-align: center;
+}
+
+#studentarchtotal {
+	background-color: black;
+	padding: 10px 0px 10px 0px;
+	box-shadow: 5px 5px 10px grey;
+	text-align: center;
+}
+
+.teachersbodyarchive {
+	margin-left: 58%;
+	margin-top: 7%;
+	width: 18%;
+	height: 16%;
+	background-color: #A04A87;
+	text-decoration: none;
+	position: fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+
+.teacherbodylinkarch {
+	text-decoration: none;
+	width: 18%;
+	height: 16%;
+	font-family: 'Quicksand', Sans-serif;
+	font-weight: bold;
+	color: white;
+	position: fixed;
+}
+
+	.teacherbodylinkarch:hover {
+		background-color: #29C5F6;
+		border-color: #29C5F6;
+		border-left-color: white;
+	}
+
+#teacherarchive {
+	font-size: 22px;
+	text-align: center;
+}
+
+#teacherarchtotal {
+	background-color: black;
+	padding: 10px 0px 10px 0px;
+	box-shadow: 5px 5px 10px grey;
+	text-align: center;
+}
+
+.accountsbodyarchive {
+	margin-left: 78%;
+	margin-top: 7%;
+	width: 18%;
+	height: 16%;
+	background-color: #A04A87;
+	text-decoration: none;
+	position: fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+
+.Accountsbodylinkarch {
+	text-decoration: none;
+	width: 18%;
+	height: 16%;
+	font-family: 'Quicksand', Sans-serif;
+	font-weight: bold;
+	color: white;
+	position: fixed;
+}
+
+	.Accountsbodylinkarch:hover {
+		background-color: #29C5F6;
+		border-color: #29C5F6;
+		border-left-color: white;
+	}
+
+#accountarchive {
+	font-size: 22px;
+	text-align: center;
+}
+
+#accountarchtotal {
+	background-color: black;
+	padding: 10px 0px 10px 0px;
+	box-shadow: 5px 5px 10px grey;
+	text-align: center;
+}
+
+.auditbodyarchive {
+	margin-left: 18%;
+	margin-top: 17%;
+	width: 18%;
+	height: 16%;
+	background-color: #A04A87;
+	text-decoration: none;
+	position: fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+
+.auditbodylinkarch {
+	text-decoration: none;
+	width: 18%;
+	height: 16%;
+	font-family: 'Quicksand', Sans-serif;
+	font-weight: bold;
+	color: white;
+	position: fixed;
+}
+
+	.auditbodylinkarch:hover {
+		background-color: #29C5F6;
+		border-color: #29C5F6;
+		border-left-color: white;
+	}
+
+#auditarchive {
+	font-size: 22px;
+	text-align: center;
+}
+
+#auditarchtotal {
+	background-color: black;
+	padding: 10px 0px 10px 0px;
+	box-shadow: 5px 5px 10px grey;
+	text-align: center;
+}
+/*---------------------------------------------------------class for announcearchive.php----------------------------------------------------------*/
+.announcementdivarchive {
+	width: 82.5%;
+	height: 75%;
+	position: absolute;
+	margin-top: 5%;
+	margin-left: 14%;
+	background-color: #fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom: 0%;
+	padding: 1%;
+}
+
+.searchannouncementarchive {
+	font-family: 'Quicksand', Sans-serif;
+	color: black;
+	font-size: 14px;
+	margin-left:1%;
+	margin-top: 3px;
+	font-weight: bold;
+	position: absolute;
+}
+
+.announcementtxtarchive {
+	margin-top: 3px;
+	margin-left: 6%;
+	height: 14px;
+	width: 151px;
+	position: absolute;
+}
+
+.announcementbtnarchive {
+	padding: 5px 30px 5px 30px;
+	text-decoration: none;
+	border-style: solid;
+	margin-left: 21%;
+	margin-top: 0px;
+	border-color: white;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #191970;
+	font-weight: bold;
+	color: white;
+	font-size: 12px;
+}
+/*---------------------------------------------------------id for announcearchive.php------------------------------------------------------------*/
+#announcementfontarchive {
+	color: black;
+	margin-left: 20px;
+	margin-top: 10px;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	position: relative;
+}
+/*---------------------------------------------------------class for studentarchive.php----------------------------------------------------------*/
+.studentdivarchive {
+	width: 82.5%;
+	height: 75%;
+	position: absolute;
+	margin-top: 5%;
+	margin-left: 14%;
+	background-color: #fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom: 0%;
+	padding: 1%;
+}
+
+.searchstudentarchive {
+	font-family: 'Quicksand', Sans-serif;
+	color: black;
+	font-size: 14px;
+	margin-left:1%;
+	margin-top: 3px;
+	font-weight: bold;
+	position: absolute;
+}
+
+.studenttxtarchive {
+	margin-top: 3px;
+	margin-left: 6%;
+	height: 20px;
+	width: 159px;
+	position: absolute;
+}
+
+.studentbtnarchive {
+	padding: 5px 30px 5px 30px;
+	text-decoration: none;
+	border-style: solid;
+	margin-left: 21%;
+	margin-top: 0px;
+	border-color: white;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #191970;
+	font-weight: bold;
+	color: white;
+	font-size: 12px;
+}
+/*---------------------------------------------------------id for studentarchive.php------------------------------------------------------------*/
+#studentfontarchive {
+	color: black;
+	margin-left: 20px;
+	margin-top: 10px;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	position: relative;
+}
+/*---------------------------------------------------------class for teacherarchive.php----------------------------------------------------------*/
+.teacherdivarchive {
+	width: 82.5%;
+	height: 75%;
+	position: absolute;
+	margin-top: 5%;
+	margin-left: 14%;
+	background-color: #fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom: 0%;
+	padding: 1%;
+}
+
+.searchteacherarchive {
+	font-family: 'Quicksand', Sans-serif;
+	color: black;
+	font-size: 14px;
+	margin-left:1%;
+	margin-top: 3px;
+	font-weight: bold;
+	position: absolute;
+}
+
+.teachertxtarchive {
+	margin-top: 3px;
+	margin-left: 6%;
+	height: 20px;
+	width: 159px;
+	position: absolute;
+}
+
+.teacherbtnarchive {
+	padding: 5px 30px 5px 30px;
+	text-decoration: none;
+	border-style: solid;
+	margin-left: 21%;
+	margin-top: 0px;
+	border-color: white;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #191970;
+	font-weight: bold;
+	color: white;
+	font-size: 12px;
+}
+/*---------------------------------------------------------id for teacherarchive.php------------------------------------------------------------*/
+#teacherfontarchive {
+	color: black;
+	margin-left: 20px;
+	margin-top: 10px;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	position: relative;
+}
+/*---------------------------------------------------------class for accountarchive.php----------------------------------------------------------*/
+.accountsdivarchive {
+	width: 82.5%;
+	height: 75%;
+	position: absolute;
+	margin-top: 5%;
+	margin-left: 14%;
+	background-color: #fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom: 0%;
+	padding: 1%;
+}
+
+.searchaccountsarchive {
+	font-family: 'Quicksand', Sans-serif;
+	color: black;
+	font-size: 14px;
+	margin-left:1%;
+	margin-top: 3px;
+	font-weight: bold;
+	position: absolute;
+}
+
+.accountstxtarchive {
+	margin-top: 3px;
+	margin-left: 6%;
+	height: 20px;
+	width: 159px;
+	position: absolute;
+}
+
+.accountsbtnarchive {
+	padding: 5px 30px 5px 30px;
+	text-decoration: none;
+	border-style: solid;
+	margin-left: 21%;
+	margin-top: 0px;
+	border-color: white;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #191970;
+	font-weight: bold;
+	color: white;
+	font-size: 12px;
+}
+/*---------------------------------------------------------id for accountarchive.php------------------------------------------------------------*/
+#accountsfontarchive {
+	color: black;
+	margin-left: 20px;
+	margin-top: 10px;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	position: relative;
+}
+
+/*-------------------------------------------------------------------------id for viewgrades.php--------------------------------------------------------------------------*/
+.firstquarter {
+	padding: 5px 20px 5px 20px;
+	text-decoration: none;
+	border-style: solid;
+	margin-left: 53.1%;
+	margin-top: 0px;
+	border-color: white;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #191970;
+	font-weight: bold;
+	color: white;
+	font-size: 12px;
+	position: absolute;
+}
+.secondquarter {
+	padding: 5px 15px 5px 15px;
+	text-decoration: none;
+	border-style: solid;
+	margin-left: 63.7%;
+	margin-top: 0px;
+	border-color: white;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #191970;
+	font-weight: bold;
+	color: white;
+	font-size: 12px;	
+	position: absolute;
+
+}
+.thirdquarter {
+	padding: 5px 18px 5px 17px;
+	text-decoration: none;
+	border-style: solid;
+	margin-left: 75%;
+	margin-top:0px;
+	border-color: white;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #191970;
+	font-weight: bold;
+	color: white;
+	font-size: 12px;
+	position: absolute;
+
+}
+.fourthquarter {
+	padding: 5px 17px 5px 17px;
+	text-decoration: none;
+	border-style: solid;
+	margin-left: 85.5%;
+	margin-top:0px;
+	border-color: white;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #191970;
+	font-weight: bold;
+	color: white;
+	font-size: 12px;
+	position: absolute;
+
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.studgradet {
+	width: 30%;
+	height: 52%;
+	position: absolute;
+	margin-top: 11%;
+	margin-left: 40%;
+	background-color: #fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom: 0%;
+	padding: 1%;
+}
+.studidt {
+	width: 26%;
+	height: 4%;
+	font-size: 13px;
+	position: fixed;
+	margin-top: 6.5%;
+	margin-left: 2%;
+}
+
+.studnamet {
+	width: 26%;
+	height: 4%;
+	font-size: 13px;
+	position: fixed;
+	margin-top: 10.5%;
+	margin-left: 2%;
+}
+
+.yearlevelt {
+	width: 26%;
+	height: 4%;
+	font-size: 13px;
+	position: fixed;
+	margin-top: 14.5%;
+	margin-left: 2%;
+}
+
+.gradesubjectt {
+	width: 26%;
+	height: 4%;
+	font-size: 13px;
+	position: fixed;
+	margin-top: 18.5%;
+	margin-left: 2%;
+}
+
+
+
+.studidtfont {
+	position: fixed;
+	margin-top: 5%;
+	margin-left: 2%;
+	font-family: 'Jura', Sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.studnametfont {
+	position: fixed;
+	margin-top: 9%;
+	margin-left: 2%;
+	font-family: 'Jura', Sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.yearleveltfont {
+	position: fixed;
+	margin-top: 13%;
+	margin-left: 2%;
+	font-family: 'Jura', Sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.gradesubjecttfont {
+	position: fixed;
+	margin-top: 17%;
+	margin-left: 2%;
+	font-family: 'Jura', Sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+
+#studtitle {
+	color: black;
+	margin-left: 5%;
+	margin-top: 0.5%;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Jura', Sans-serif;
+	position: fixed;
+}
+.addstudbtn {
+	margin-top: 22%;
+	margin-left: 2%;
+	width: 14%;
+	height: 5%;
+	border: hidden;
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+	background-color: #1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position: fixed;
+}
+
+	.addstudbtn:hover {
+		background-color: #000080;
+		color: white;
+	}
+
+.addstudentback {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-size: 15px;
+	font-family: Calibri;
+	position: fixed;
+	margin-top: 22%;
+	margin-left: 18.3%;
+	border: 1px solid black;
+	padding: 5px 50px 5px 50px;
+}
+
+	.addstudentback:hover {
+		border: 1px solid black;
+		color: white;
+		background-color: black;
+	}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.headerfinalgrade
+{
+	background-color:#779ecb ;
+	padding: 8px 7px 8px 7px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	font-size:15px;
+	border:1px solid black;
+}
+.tablefinalgrade
+{	
+	background-color: black;
+	border: 1px solid black;
+	border-collapse: collapse;	
+
+}
+.datafinalgrade
+{
+	background-color:#e8e4c9 ;
+	width: 70px;
+	border:1px solid black;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+	text-align: center;
+}
+
+.printgrade
+{
+	margin-top:0%;
+	margin-left:110%;
+	width:14%;
+	height:5%;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+	padding:10px 0px 5px 50px;
+}
+.printgrade:hover
+{
+	background-color:#000080;
+	color:white;
+}
+.datafinalgrade1
+{
+	background-color:#e8e4c9 ;
+	width: 70px;
+	border:none;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+	text-align: center;
+}
+.datafnamefinalgrade {
+	background-color: #e8e4c9;
+	width: 200px;
+	font-weight: bold;
+	font-family: 'Montserrat', Sans-serif;
+	font-size: 14px;
+		border:none;
+
+}
+.datalvlfinalgrade
+{
+	background-color:#e8e4c9 ;
+	width: 150px;
+	border:0px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	font-size:14px;
+}
+.finalgradediv
+{
+	position: absolute;
+	margin-top: 5%;
+	margin-left: 32%;
+	background-color: #fbfbfb;
+	margin-bottom: 0%;
+	padding: 0%;
+}
+
+.finalgradediv1
+{
+	position: absolute;
+	margin-top: 0%;
+	margin-left: 5%;
+	background-color: #fbfbfb;
+	margin-bottom: 0%;
+	padding: 0%;
+}
+.datafinalgradeblank
+{
+	background-color: #808080;
+	border: 0px;
+}
+.infoprint
+{
+	margin-left: 8%;
+}
+.logoprint
+{
+	width: 15%;
+	height: 10%;
+	position: fixed;
+	margin-left: 75%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+body
+{
+	height:100%;
+	width:100%;
+	margin:0% 0% 0% 0%;
+}
+.purifiedfield
+{
+	width:18%;
+	margin-top:7%;
+}*/
+
+/*------------------------------------------------------------class for Index.php----------------------------------------------------------*/
+
+/*.studentlogin
+{
+	margin-top:6%;
+	margin-left:4%;
+	width:14%;
+	height:5%;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#191970;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+	text-decoration:none;
+	text-align:center;
+	padding-top:10px;
+}
+.studentlogin:hover
+{
+	background-color:#b20064;
+	color:white;
+	border-color:black;
+}
+.adminlogin
+{
+	margin-top:10%;
+	margin-left:4%;
+	width:14%;
+	height:5%;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#191970;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+	text-decoration:none;
+	text-align:center;
+	padding-top:10px;
+}
+.adminlogin:hover
+{
+	background-color:#b20064;
+	color:white;
+	border-color:black;
+}
+.teacherlogin
+{
+	margin-top:14%;
+	margin-left:4%;
+	width:14%;
+	height:5%;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#191970;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+	text-decoration:none;
+	text-align:center;
+	padding-top:10px;
+}
+.teacherlogin:hover
+{
+	background-color:#b20064;
+	color:white;
+	border-color:black;
+}
+
+
+.container
+{
+	width:350px;
+	height:400px;
+	background-color:#b20064;
+	position:fixed;
+	margin-left:350px;
+	margin-top:100px;
+	box-shadow: 5px 10px 40px 1px black;
+	border:1px;
+}
+.loginlogo
+{
+	width:250px;
+	height:250px;
+	background-color:white;
+	border-radius:100%;
+	margin:90px 70px 20px 45px
+}
+.container1
+{
+	width:300px;
+	height:360px;
+	background-color:white;
+	position:fixed;
+	margin-left:700px;
+	margin-top:100px;
+	padding-top:40px;
+	box-shadow: 20px 10px 40px 1px black;
+	border:1px;
+}
+.namefield
+{
+	width:250px;
+	height:35px;
+	font-size:15px;
+	position:fixed;
+	margin-top:70px;
+	margin-left:25px;
+}
+.passwordfield
+{
+	width:250px;
+	height:35px;
+	font-size:15px;
+	position:fixed;
+	margin-top:120px;
+	margin-left:25px;
+}
+.forgot
+{
+	text-decoration:none;
+	color:gray;
+	font-family: 'Lato', sans-serif;
+	position:fixed;
+	margin-top:160px;
+	margin-left:180px;
+}
+.forgot:hover
+{
+	color:black;
+}
+.login
+{
+	margin-top:30px;
+	width:200px;
+	height:35px;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#b20064;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+	margin-top:200px;
+	margin-left:50px;
+}
+.login:hover
+{
+	background-color:#8e0050;
+	color:white;
+}
+.logintitle
+{
+	font-size:35px;
+	color:white;
+	text-shadow: 1px 1px black;
+	margin-top:120px;
+	margin-left:390px;
+	position:fixed;
+	font-family:impact;
+	letter-spacing:3px;
+}
+.logintitleconnect
+{
+	font-size:35px;
+	color:#b20064;
+	text-shadow: 1px 1px black;
+	margin-top:120px;
+	margin-left:700px;
+	position:fixed;
+	font-family:impact;
+	letter-spacing:3px;
+}
+.rightslogin
+{
+	margin-top:520px;
+	margin-left:430px;
+	position:fixed;
+	font-size:17px;
+}*/
+/*------------------------------------------------------------id for Index.php----------------------------------------------------------*/
+/*#fonttitle
+{
+	font-size:18px;
+	font-family:Calibri;
+	font-weight:bold;
+	position:fixed;
+	margin-top:25px;
+	margin-left:6.5%;
+}*/
+/*------------------------------------------------------------class for dashboard.php----------------------------------------------------------*/
+/*.header
+{
+	position:absolute;
+	margin-top:0px;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	height:9%;
+	width:100%;
+	margin-bottom:0%;
+	padding:0%;
+}
+.footer
+{
+	position:absolute;
+	margin-top:41%;
+	background-color:#fbfbfb;
+	height:9%;
+	width:100%;
+
+}
+#footer
+{	
+	padding-left:39%;
+	margin-top:1.8%;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+	font-size:12px;
+	color:#8ea6b4;
+}
+.accname
+{
+	color:black;
+	position:absolute;
+	margin-left:1080px;
+	font-size:13px;
+	margin-top:20px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+}
+.logout
+{
+	padding:5px 20px 5px 20px;
+	text-decoration:none;
+	border-style:solid;
+	margin-left:1270px;
+	margin-top:15px;
+	border-color:#191970;
+	background-color:#191970;
+	font-weight:bold;
+	color:white;
+	border-radius:15px;
+}
+.logout:hover
+{
+	background-color:white;
+	color:black;
+	border-color:black;
+}
+.dashboard
+{
+	width:16%;
+	height:100%;
+	background-color:#8e0050;
+	position:absolute;
+	margin-top:0px;
+	margin-right:0%;
+}
+.dashboardlogocvgs
+{
+	width:70%;
+	height:18%;
+	background-color:white;
+	border-radius:100%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:13%;
+}
+.Dashboardhome
+{
+	color:white; 
+	text-decoration:none;
+	font-size:14px;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+	margin-top:65%;
+	padding:4% 36.9% 4% 25%;
+}
+.homeicon
+{
+	position:absolute;
+	height:18px;
+	margin-left:-30px;
+}
+.Dashboardhome:hover
+{
+	background-color:#051075;
+	color:white;
+	font-size:15.3px;
+}
+.Announcement
+{
+	color:white; 
+	text-decoration:none;
+	font-size:14px;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+	margin-top:85%;
+	padding:4% 20% 4% 25%;
+}
+.announcementicon
+{
+	position:absolute;
+	height:18px;
+	margin-left:-30px;
+}
+.Announcement:hover
+{
+	background-color:#051075;
+	color:white;
+	font-size:15.3px;
+}
+.Student
+{
+	color:white; 
+	text-decoration:none;
+	font-size:14px;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+	margin-top:105%;
+	padding:4% 47% 4% 25%;
+}
+.studenticon
+{
+	position:absolute;
+	height:18px;
+	margin-left:-30px;
+}
+.Student:hover
+{
+	background-color:#051075;
+	color:white;
+	font-size:15.3px;
+}
+.Teacher
+{
+	color:white; 
+	text-decoration:none;
+	font-size:14px;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+	margin-top:125%;
+	padding:4% 47.9% 4% 25%;
+}
+.teachericon
+{
+	position:absolute;
+	height:18px;
+	margin-left:-30px;
+}
+.Teacher:hover
+{
+	background-color:#051075;
+	color:white;
+	font-size:15.3px;
+}
+.Accounts
+{
+	color:white; 
+	text-decoration:none;
+	font-size:14px;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+	margin-top:145%;
+	padding:4% 42.9% 4% 25%;
+}
+.accounticon
+{
+	position:absolute;
+	height:18px;
+	margin-left:-30px;
+}
+.Accounts:hover
+{
+	background-color:#051075;
+	color:white;
+	font-size:15.3px;
+}
+
+
+
+
+.Dashboardhome
+{
+	color:white; 
+	text-decoration:none;
+	font-size:14px;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+	margin-top:65%;
+	padding:4% 36.9% 4% 25%;
+}
+.homeicon
+{
+	position:absolute;
+	height:18px;
+	margin-left:-30px;
+}
+.Dashboardhome:hover
+{
+	background-color:#051075;
+	color:white;
+	font-size:15.3px;
+}
+.Announcementtchr
+{
+	color:white; 
+	text-decoration:none;
+	font-size:14px;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+	margin-top:85%;
+	padding:4% 20% 4% 25%;
+}
+.announcementicon
+{
+	position:absolute;
+	height:18px;
+	margin-left:-30px;
+}
+.Announcementtchr:hover
+{
+	background-color:#051075;
+	color:white;
+	font-size:15.3px;
+}
+.Gradesteacher
+{
+	color:white; 
+	text-decoration:none;
+	font-size:14px;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+	margin-top:105%;
+	padding:4% 51% 4% 25%;
+}
+.studenticon
+{
+	position:absolute;
+	height:18px;
+	margin-left:-30px;
+}
+.Gradesteacher:hover
+{
+	background-color:#051075;
+	color:white;
+	font-size:15.3px;
+}
+.Studentlist
+{
+	color:white; 
+	text-decoration:none;
+	font-size:14px;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+	margin-top:125%;
+	padding:4% 33% 4% 25%;
+}
+.teachericon
+{
+	position:absolute;
+	height:18px;
+	margin-left:-30px;
+}
+.Studentlist:hover
+{
+	background-color:#051075;
+	color:white;
+	font-size:15.3px;
+}*/
+/*---------------------------------------------------------class for announceview.php----------------------------------------------------------*/
+/*.announcementdiv
+{
+	width:78%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:18%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.addannouncementbtn
+{
+	width:3%;
+	height:6%;
+	position:inline-block;
+	margin-left:25%;
+	margin-top:1.5%;
+	padding-bottom:1%;
+}
+.searchannouncement
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:0%;
+	margin-top:1%;
+	font-weight:bold;
+	position:absolute;
+}
+.announcementtxt
+{
+	margin-top:0.8%;
+	margin-left:5%;
+	height:20px;
+	width:150px;
+	position:absolute;
+}
+.announcementbtn
+{
+	padding:3px 30px 3px 30px;
+	text-decoration:none;
+	border-style:solid;
+	margin-left:20%;
+	margin-top:0.8%;
+	border-color:white;
+	background-color:#191970;
+	font-weight:bold;
+	color:white;
+	font-size:100%;
+}
+.announcementtbl
+{
+	position:absolute;
+	margin-top:1%;
+	margin-left:0%;
+	width:97%;
+	height:70%;
+
+}
+.announcementtbl1
+{
+	border-collapse:collapse;
+	border:1px solid;
+}
+.announcementheader1
+{
+	padding:0.5% 50px 0.5% 50px;
+	border:1px solid black; 
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+}
+.listheader1
+{
+	padding:0.5% 30px 0.5% 30px;
+	border:1px solid black; 
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+}
+.listheader
+{
+	padding:0.5% 10px 0.5% 10px;
+	border:1px solid black; 
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+}
+.announcementheader2
+{
+	padding:0.5% 120px 0.5% 120px;
+	border:1px solid black; 
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+}
+.announcementheader
+{
+	padding:0.5% 275px 0.5% 275px;
+	border:1px solid black; 
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+}
+.announcementinfo
+{
+	padding:0.7% 0% 0.7% 0%;
+	border:1px solid;
+	background-color:#E5E4E2;
+	text-align:center;
+	font-size:12px;		
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+}*/
+/*---------------------------------------------------------id for announceview.php------------------------------------------------------------*/
+/*#announcemetfont
+{
+	color:black;
+	margin-left:20px;
+	margin-top:10px;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+	padding-bottom:30px;
+}
+#line
+{
+	position:inline-block;
+	margin-top:60px;
+
+}*/
+/*---------------------------------------------------------class for announcead.php-------------------------------------------------------*/
+/*.announceadddiv
+{
+	width:30%;
+	height:40%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:38%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.announceaddline
+{
+	width:30%;
+	margin-top:5%;
+	position:fixed;
+}
+.addaccfnamefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:6.5%;
+	margin-left:2%;
+}
+.addacclnamefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:9.5%;
+	margin-left:2%;
+}
+.addaccusernamefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:12.5%;
+	margin-left:2%;
+}
+.addaccpasswordfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:15.5%;
+	margin-left:2%;
+}
+.addacclocfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:19%;
+	margin-left:2%;
+}
+.addaccnumfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:22%;
+	margin-left:2%;
+}
+.addaccbtn
+{
+	margin-top:28.5%;
+	margin-left:2%;
+	width:14%;
+	height:5%;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+}
+.addaccbtn:hover
+{
+	background-color:#000080;
+	color:white;
+}
+.addaccback
+{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	font-size:15px;
+	font-family:Calibri;
+	position:fixed;
+	margin-top:28.5%;
+	margin-left:18.3%;
+	border:1px solid black;
+	padding:5px 50px 5px 50px;
+}
+.addaccback:hover
+{
+	border:1px solid black;
+	color:white;
+	background-color:black;
+}
+.addannouncementfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:7%;
+	margin-left:2%;
+}
+.adddatefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:10%;
+	margin-left:2%;
+}
+.addannouncebtn
+{
+	margin-top:14%;
+	margin-left:1%;
+	width:14%;
+	height:5%;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+}
+.addannouncebtn:hover
+{
+	background-color:#000080;
+	color:white;
+}
+.addannounceback
+{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	font-size:15px;
+	font-family:Calibri;
+	position:fixed;
+	margin-top:14%;
+	margin-left:18.3%;
+	border:1px solid black;
+	padding:5px 50px 5px 50px;
+}
+.addannounceback:hover
+{
+	border:1px solid black;
+	color:white;
+	background-color:black;
+}*/
+/*---------------------------------------------------------id for announcead.php----------------------------------------------------------*/
+/*#announceaddfont
+{
+	color:black;
+	margin-left:4%;
+	margin-top:1%;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:fixed;
+}*/
+
+/*---------------------------------------------------------class for student.php----------------------------------------------------------*/
+/*.studentdiv
+{
+	width:78%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:18%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.addstudentbtn
+{
+	width:3%;
+	height:6%;
+	position:inline-block;
+	margin-left:33%;
+	margin-top:1.5%;
+	padding-bottom:1%;
+}
+.searchstudent
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:0%;
+	margin-top:1%;
+	font-weight:bold;
+	position:absolute;
+}
+.studenttxt
+{
+	margin-top:0.9%;
+	margin-left:5%;
+	height:15px;
+	width:150px;
+	position:absolute;
+}
+.studentbtn
+{
+	padding:3px 30px 3px 30px;
+	text-decoration:none;
+	border-style:solid;
+	margin-left:20%;
+	margin-top:0.8%;
+	border-color:white;
+	background-color:#191970;
+	font-weight:bold;
+	color:white;
+	font-size:100%;
+}
+.studenttbl
+{
+	position:absolute;
+	margin-top:1%;
+	margin-left:0%;
+	width:97%;
+	height:70%;
+
+}
+.studenttbl1
+{
+	border-collapse:collapse;
+	border:1px solid;
+}
+.studentheader
+{
+	padding:0.5% 30px 0.5% 30px;
+	border:1px solid black; 
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+}
+.studentheader1
+{
+	padding:0.5% 69px 0.5% 70px;
+	border:1px solid black; 
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+}
+.studentheader2
+{
+	padding:0.5% 30px 0.5% 30px;
+	border:1px solid black; 
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+}
+.studentheader3
+{
+	padding:0.5% 20px 0.5% 20px;
+	border:1px solid black; 
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+}
+.studentinfo
+{
+	padding:0.7% 0% 0.7% 0%;
+	border:1px solid;
+	background-color:#E5E4E2;
+	text-align:center;
+	font-size:12px;		
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+}*/
+/*---------------------------------------------------------id for student.php------------------------------------------------------------*/
+/*#studentfont
+{
+	color:black;
+	margin-left:20px;
+	margin-top:10px;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+}*/
+/*---------------------------------------------------------class for studentadd.php-------------------------------------------------------*/
+/*.studentadddiv
+{
+	width:30%;
+	height:73%;
+	position:absolute;
+	margin-top:5%;
+	margin-left:38%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.studentaddline
+{
+	width:30%;
+	margin-top:4%;
+	position:fixed;
+}
+.addstudidfield
+{
+	width:26%;
+	height:4%;
+	font-size:13px;
+	position:fixed;
+	margin-top:5.5%;
+	margin-left:2%;
+}
+.addfnamefield
+{
+	width:26%;
+	height:4%;
+	font-size:13px;
+	position:fixed;
+	margin-top:8.5%;
+	margin-left:2%;
+}
+.addmnamefield
+{
+	width:26%;
+	height:4%;
+	font-size:13px;
+	position:fixed;
+	margin-top:11.5%;
+	margin-left:2%;
+}
+.addlnamefield
+{
+	width:26%;
+	height:4%;
+	font-size:13px;
+	position:fixed;
+	margin-top:14.5%;
+	margin-left:2%;
+}
+.addgenderfield
+{
+	width:10%;
+	height:4%;
+	font-size:13px;
+	position:fixed;
+	margin-top:17.5%;
+	margin-left:18.5%;
+}
+.bdayfont
+{
+	position:fixed;
+	margin-top:17.8%;
+	margin-left:2%;
+	font-family:'Jura', Sans-serif;
+	font-size:16px;
+	font-weight:bold;
+}
+.addbdayfield
+{
+	width:9%;
+	height:3.5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:17.5%;
+	margin-left:8%;
+}
+.addagefield
+{
+	width:12%;
+	height:4%;
+	font-size:13px;
+	position:fixed;
+	margin-top:20%;
+	margin-left:2%;
+}
+.addsectionfield
+{
+	width:13%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:20%;
+	margin-left:15.5%;
+}
+.addyearfield
+{
+	width:26%;
+	height:4%;
+	font-size:13px;
+	position:fixed;
+	margin-top:23%;
+	margin-left:2%;
+}
+.addlrnfield
+{
+	width:26%;
+	height:4%;
+	font-size:13px;
+	position:fixed;
+	margin-top:26%;
+	margin-left:2%;
+}
+.addstudbtn
+{
+	margin-top:30%;
+	margin-left:2%;
+	width:14%;
+	height:5%;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+}
+.addstudbtn:hover
+{
+	background-color:#000080;
+	color:white;
+}
+.addstudentback
+{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	font-size:15px;
+	font-family:Calibri;
+	position:fixed;
+	margin-top:30%;
+	margin-left:18.3%;
+	border:1px solid black;
+	padding:5px 50px 5px 50px;
+}
+.addstudentback:hover
+{
+	border:1px solid black;
+	color:white;
+	background-color:black;
+}
+.addannouncementfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:7%;
+	margin-left:2%;
+}
+.adddatefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:10%;
+	margin-left:2%;
+}*/
+/*---------------------------------------------------------id for studentadd.php----------------------------------------------------------*/
+/*#studentaddfont
+{
+	color:black;
+	margin-left:1%;
+	margin-top:0.5%;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:fixed;
+}*/
+/*---------------------------------------------------------class for teacher.php----------------------------------------------------------*/
+/*.teacherdiv
+{
+	width:78%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:18%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.addteacherbtn
+{
+	width:3%;
+	height:6%;
+	position:inline-block;
+	margin-left:33%;
+	margin-top:1.5%;
+	padding-bottom:1%;
+}
+.searchteacher
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:0%;
+	margin-top:1%;
+	font-weight:bold;
+	position:absolute;
+}
+.teachertxt
+{
+	margin-top:0.9%;
+	margin-left:5%;
+	height:15px;
+	width:150px;
+	position:absolute;
+}
+.teacherbtn
+{
+	padding:3px 30px 3px 30px;
+	text-decoration:none;
+	border-style:solid;
+	margin-left:20%;
+	margin-top:0.8%;
+	border-color:white;
+	background-color:#191970;
+	font-weight:bold;
+	color:white;
+	font-size:100%;
+}
+.teachertbl
+{
+	position:absolute;
+	margin-top:1%;
+	margin-left:0%;
+	width:97%;
+	height:70%;
+
+}
+.teachertbl1
+{
+	border-collapse:collapse;
+	border:1px solid;
+}
+.teacherheader
+{
+	padding:0.5% 50px 0.5% 50px;
+	border:1px solid black; 
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+}
+.teacherinfo
+{
+	padding:0.7% 0% 0.7% 0%;
+	border:1px solid;
+	background-color:#E5E4E2;
+	text-align:center;
+	font-size:12px;		
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+}*/
+/*---------------------------------------------------------id for teacher.php------------------------------------------------------------*/
+/*#teacherfont
+{
+	color:black;
+	margin-left:20px;
+	margin-top:10px;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+}*/
+/*---------------------------------------------------------class for teacheradd.php-------------------------------------------------------*/
+/*.teacheradddiv
+{
+	width:30%;
+	height:73%;
+	position:absolute;
+	margin-top:5%;
+	margin-left:38%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.teacheraddline
+{
+	width:30%;
+	margin-top:4%;
+	position:fixed;
+}
+.addteacherdfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:5.5%;
+	margin-left:2%;
+}
+.addtfnamefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:8.5%;
+	margin-left:2%;
+}
+.addtmnamefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:11.5%;
+	margin-left:2%;
+}
+.addtlnamefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:14.5%;
+	margin-left:2%;
+}
+.addtgenderfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:23.5%;
+	margin-left:2%;
+}
+.tbdayfont
+{
+	position:fixed;
+	margin-top:17.8%;
+	margin-left:2%;
+	font-family:'Jura', Sans-serif;
+	font-size:16px;
+	font-weight:bold;
+}
+.addtbdayfield
+{
+	width:20%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:17.5%;
+	margin-left:8%;
+}
+.addtagefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:20.5%;
+	margin-left:2%;
+}
+.addtsubjectfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:26.5%;
+	margin-left:2%;
+}
+.addteachbtn
+{
+	margin-top:30%;
+	margin-left:2%;
+	width:14%;
+	height:5%;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+}
+.addteachbtn:hover
+{
+	background-color:#000080;
+	color:white;
+}
+.addteacherback
+{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	font-size:15px;
+	font-family:Calibri;
+	position:fixed;
+	margin-top:30%;
+	margin-left:18.3%;
+	border:1px solid black;
+	padding:5px 50px 5px 50px;
+}
+.addteacherback:hover
+{
+	border:1px solid black;
+	color:white;
+	background-color:black;
+}*/
+/*---------------------------------------------------------id for teacheradd.php----------------------------------------------------------*/
+/*#teacheraddfont
+{
+	color:black;
+	margin-left:1%;
+	margin-top:0.5%;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:fixed;
+}*/
+/*---------------------------------------------------------class for accounts.php----------------------------------------------------------*/
+/*.accountsdiv
+{
+	width:78%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:18%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.addaccountsbtn
+{
+	width:3%;
+	height:6%;
+	position:inline-block;
+	margin-left:17%;
+	margin-top:1.5%;
+	padding-bottom:1%;
+}
+.searchaccounts
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:0%;
+	margin-top:1%;
+	font-weight:bold;
+	position:absolute;
+}
+.accountstxt
+{
+	margin-top:0.8%;
+	margin-left:5%;
+	height:20px;
+	width:150px;
+	position:absolute;
+}
+.accountsbtn
+{
+	padding:3px 30px 3px 30px;
+	text-decoration:none;
+	border-style:solid;
+	margin-left:20%;
+	margin-top:0.8%;
+	border-color:white;
+	background-color:#191970;
+	font-weight:bold;
+	color:white;
+	font-size:100%;
+}
+.accountstbl
+{
+	position:absolute;
+	margin-top:1%;
+	margin-left:0%;
+	width:97%;
+	height:70%;
+
+}
+.accountstbl1
+{
+	border-collapse:collapse;
+	border:1px solid;
+}
+.accountsheader1
+{
+	padding:0.5% 25px 0.5% 25px;
+	border:1px solid black; 
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+}
+.accountsheader2
+{
+	padding:0.5% 40px 0.5% 40px;
+	border:1px solid black; 
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+}
+.accountsheader
+{
+	padding:0.5% 70px 0.5% 70px;
+	border:1px solid black; 
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+}
+.accountsinfo
+{
+	padding:0.7% 0% 0.7% 0%;
+	border:1px solid;
+	background-color:#E5E4E2;
+	text-align:center;
+	font-size:12px;		
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+}*/
+/*---------------------------------------------------------id for accounts.php------------------------------------------------------------*/
+/*#accountsfont
+{
+	color:black;
+	margin-left:20px;
+	margin-top:10px;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+}*/
+/*---------------------------------------------------------class for addaccounts.php-------------------------------------------------------*/
+/*.addaccountdiv
+{
+	width:30%;
+	height:65%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:38%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.addaccountline
+{
+	width:30%;
+	margin-top:5%;
+	position:fixed;
+}
+.addaccountadminidfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:6.5%;
+	margin-left:2%;
+}
+.addaccountfnamefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:9.5%;
+	margin-left:2%;
+}
+.addaccountmnamefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:12.5%;
+	margin-left:2%;
+}
+.addaccountlnamefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:15.5%;
+	margin-left:2%;
+}
+.addaccountgenderfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:18.5%;
+	margin-left:2%;
+}
+.addaccountlocfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:21.5%;
+	margin-left:2%;
+}
+.addadminaccbtn
+{
+	margin-top:25.5%;
+	margin-left:2%;
+	width:14%;
+	height:5%;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+}
+.addadminaccbtn:hover
+{
+	background-color:#000080;
+	color:white;
+}
+.addadminaccback
+{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	font-size:15px;
+	font-family:Calibri;
+	position:fixed;
+	margin-top:25.5%;
+	margin-left:18.3%;
+	border:1px solid black;
+	padding:5px 50px 5px 50px;
+}
+.addadminaccback:hover
+{
+	border:1px solid black;
+	color:white;
+	background-color:black;
+}*/
+/*---------------------------------------------------------id for addaccounts.php----------------------------------------------------------*/
+/*#addaccountfont
+{
+	color:black;
+	margin-left:4%;
+	margin-top:1%;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:fixed;
+}*/
+/*---------------------------------------------------------class for announceupdate.php-------------------------------------------------------*/
+/*.updannouncediv
+{
+	width:30%;
+	height:50%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:38%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.updannounceline
+{
+	width:92%;
+	margin-top:12%;
+	position:absolute;
+}
+.aidupd
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:6.5%;
+	margin-left:2%;
+}
+.announceupd
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:10.5%;
+	margin-left:2%;
+}
+.dateupd
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:14.8%;
+	margin-left:2%;
+}
+.aupdannouncebtn
+{
+	margin-top:19%;
+	margin-left:2%;
+	width:14%;
+	height:5%;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+}
+.aupdannouncebtn:hover
+{
+	background-color:#000080;
+	color:white;
+}
+.updannounceback
+{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	font-size:15px;
+	font-family:Calibri;
+	position:fixed;
+	margin-top:19%;
+	margin-left:18.3%;
+	border:1px solid black;
+	padding:5px 50px 5px 50px;
+}
+.updannounceback:hover
+{
+	border:1px solid black;
+	color:white;
+	background-color:black;
+}*/
+/*---------------------------------------------------------id for announceupdate.php------------------------------------------------------------*/
+/*#updannouncefont
+{
+	color:black;
+	margin-left:13%;
+	margin-top:2%;
+	font-size:25px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+}
+#aidupd
+{
+	color:black;
+	margin-left:7%;
+	margin-top:16%;
+	font-size:13px;
+	font-weight:bold;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+}
+#announceupd
+{
+	color:black;
+	margin-left:7%;
+	margin-top:29%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#dateupd
+{
+	color:black;
+	margin-left:7%;
+	margin-top:42%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}*/
+/*---------------------------------------------------------class for studentupdate.php-------------------------------------------------------*/
+/*.updstudentdiv
+{
+	width:30%;
+	height:72%;
+	position:absolute;
+	margin-top:5.5%;
+	margin-left:38%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.updteacherdiv
+{
+	width:30%;
+	height:58%;
+	position:absolute;
+	margin-top:5.5%;
+	margin-left:38%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.updstudentline
+{
+	width:92%;
+	margin-top:12%;
+	position:absolute;
+}
+.studidupd
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:5.8%;
+	margin-left:2%;
+}
+.fnameupd
+{
+	width:10%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:10%;
+	margin-left:2%;
+}
+.mnameupd
+{
+	width:5%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:10%;
+	margin-left:12.5%;
+}
+.lnameupd
+{
+	width:10%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:10%;
+	margin-left:18%;
+}
+.bdayupd
+{
+	width:12%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:14%;
+	margin-left:2%;
+}
+.ageupd
+{
+	width:12%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:14%;
+	margin-left:16%;
+}
+.genderupd
+{
+	width:12%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:18%;
+	margin-left:2%;
+}
+.subjupd
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:18%;
+	margin-left:2%;
+}
+.levelupd
+{
+	width:12%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:18%;
+	margin-left:16%;
+}
+.yearupd
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:22%;
+	margin-left:2%;
+}
+.lrnupd
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:26.5%;
+	margin-left:2%;
+}
+.updstudentbtn
+{
+	margin-top:30%;
+	margin-left:2%;
+	width:14%;
+	height:5%;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+}
+.updstudentbtn:hover
+{
+	background-color:#000080;
+	color:white;
+}
+.updstudentback
+{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	font-size:15px;
+	font-family:Calibri;
+	position:fixed;
+	margin-top:30%;
+	margin-left:18.3%;
+	border:1px solid black;
+	padding:5px 50px 5px 50px;
+}
+.updstudentback:hover
+{
+	border:1px solid black;
+	color:white;
+	background-color:black;
+}
+.updteacherbtn
+{
+	margin-top:22%;
+	margin-left:2%;
+	width:14%;
+	height:5%;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+}
+.updteacherbtn:hover
+{
+	background-color:#000080;
+	color:white;
+}
+.updteacherback
+{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	font-size:15px;
+	font-family:Calibri;
+	position:fixed;
+	margin-top:22%;
+	margin-left:18.3%;
+	border:1px solid black;
+	padding:5px 50px 5px 50px;
+}
+.updteacherback:hover
+{
+	border:1px solid black;
+	color:white;
+	background-color:black;
+}*/
+/*---------------------------------------------------------id for studentupdate.php------------------------------------------------------------*/
+/*#updstudentfont
+{
+	color:black;
+	margin-left:19%;
+	margin-top:2%;
+	font-size:25px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+}
+#studidupd
+{
+	color:black;
+	margin-left:7%;
+	margin-top:14%;
+	font-size:13px;
+	font-weight:bold;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+}
+#fnameupd
+{
+	color:black;
+	margin-left:7%;
+	margin-top:27%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#mnameupd
+{
+	color:black;
+	margin-left:35%;
+	margin-top:27%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#lnameupd
+{
+	color:black;
+	margin-left:70%;
+	margin-top:27%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#bdayupd
+{
+	color:black;
+	margin-left:7%;
+	margin-top:40%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#ageupd
+{
+	color:black;
+	margin-left:50%;
+	margin-top:40%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#genderupd
+{
+	color:black;
+	margin-left:7%;
+	margin-top:52%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#levelupd
+{
+	color:black;
+	margin-left:50%;
+	margin-top:52%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#yearupd
+{
+	color:black;
+	margin-left:7%;
+	margin-top:65%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#lrnupd
+{
+	color:black;
+	margin-left:7%;
+	margin-top:78%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------Boxes for dashboard.php----------------------------------------------------------*/
+/*.Accountbodymngr
+{
+	margin-left:18%;
+	margin-top:7%;
+    width:18%;
+    height:16%;
+    background-color:#4682B4;
+	text-decoration:none;
+	position:fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+.Accountbodylinkmngr
+{
+	text-decoration:none;
+	width:18%;
+    height:16%;
+	font-family:'Quicksand', Sans-serif;
+	font-weight:bold;	
+	color:white;
+	position:fixed;
+}
+.Accountbodylinkmngr:hover
+{
+	 background-color:#29C5F6;
+	 border-color:#29C5F6;
+	 border-left-color:white;
+}
+#Accountsmngr
+{
+	font-size:22px;
+	text-align:center;
+}
+#Accountstotalmngr
+{
+	background-color:black;
+	padding:10px 0px 10px 0px;
+	box-shadow: 5px 5px 10px grey;
+	text-align:center;
+}
+.Auditbodymngr
+{
+	margin-left:38%;
+	margin-top:7%;
+    width:18%;
+    height:16%;
+    background-color:#4682B4;
+	text-decoration:none;
+	position:fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+.Auditbodylinkmngr
+{
+	text-decoration:none;
+	width:18%;
+    height:16%;
+	font-family:'Quicksand', Sans-serif;
+	font-weight:bold;	
+	color:white;
+	position:fixed;
+}
+.Auditbodylinkmngr:hover
+{
+	 background-color:#29C5F6;
+	 border-color:#29C5F6;
+	 border-left-color:white;
+}
+#Auditmngr
+{
+	font-size:22px;
+	text-align:center;
+}
+#Audittotalmngr
+{
+	background-color:black;
+	padding:10px 0px 10px 0px;
+	box-shadow: 5px 5px 10px grey;
+	text-align:center;
+}*/
+/*------------------------------------------------------------Boxes for dashboard.php----------------------------------------------------------*/
+/*.salesbody
+{
+	margin-left:18%;
+	margin-top:7%;
+    width:18%;
+    height:16%;
+    background-color:#4682B4;
+	text-decoration:none;
+	position:fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+.saleslink
+{
+	text-decoration:none;
+	width:18%;
+    height:16%;
+	font-family:'Quicksand', Sans-serif;
+	font-weight:bold;	
+	color:white;
+	position:fixed;
+}
+.saleslink:hover
+{
+	 background-color:#29C5F6;
+	 border-color:#29C5F6;
+	 border-left-color:white;
+}
+#sales
+{
+	font-size:22px;
+	text-align:center;
+}
+#salestotal
+{
+	background-color:black;
+	padding:10px 0px 10px 0px;
+	box-shadow: 5px 5px 10px grey;
+	text-align:center;
+}
+.Transactionbody
+{
+	margin-left:38%;
+	margin-top:7%;
+    width:18%;
+    height:16%;
+    background-color:#4682B4;
+	text-decoration:none;
+	position:fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+.Transactionbodylink
+{
+	text-decoration:none;
+	width:18%;
+    height:16%;
+	font-family:'Quicksand', Sans-serif;
+	font-weight:bold;	
+	color:white;
+	position:fixed;
+}
+.Transactionbodylink:hover
+{
+	 background-color:#29C5F6;
+	 border-color:#29C5F6;
+	 border-left-color:white;
+}
+#Transaction
+{
+	font-size:22px;
+	text-align:center;
+}
+#Transactiontotal
+{
+	background-color:black;
+	padding:10px 0px 10px 0px;
+	box-shadow: 5px 5px 10px grey;
+	text-align:center;
+}
+.Inventorybody
+{
+	margin-left:58%;
+	margin-top:7%;
+    width:18%;
+    height:16%;
+    background-color:#4682B4;
+	text-decoration:none;
+	position:fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+.Inventorybodylink
+{
+	text-decoration:none;
+	width:18%;
+    height:16%;
+	font-family:'Quicksand', Sans-serif;
+	font-weight:bold;	
+	color:white;
+	position:fixed;
+}
+.Inventorybodylink:hover
+{
+	 background-color:#29C5F6;
+	 border-color:#29C5F6;
+	 border-left-color:white;
+}
+#Inventory
+{
+	font-size:22px;
+	text-align:center;
+}
+#Inventorytotal
+{
+	background-color:black;
+	padding:10px 0px 10px 0px;
+	box-shadow: 5px 5px 10px grey;
+	text-align:center;
+}
+.Productbody
+{
+	margin-left:78%;
+	margin-top:7%;
+    width:18%;
+    height:16%;
+    background-color:#4682B4;
+	text-decoration:none;
+	position:fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+.Productbodylink
+{
+	text-decoration:none;
+	width:18%;
+    height:16%;
+	font-family:'Quicksand', Sans-serif;
+	font-weight:bold;	
+	color:white;
+	position:fixed;
+}
+.Productbodylink:hover
+{
+	 background-color:#29C5F6;
+	 border-color:#29C5F6;
+	 border-left-color:white;
+}
+#Product
+{
+	font-size:22px;
+	text-align:center;
+}
+.Producttotal
+{
+	background-color:black;
+	padding:8px 0px 8px 0px;
+	text-align:center;
+}
+.Supplierbody
+{
+	margin-left:18%;
+	margin-top:20%;
+    width:18%;
+    height:16%;
+    background-color:#4682B4;
+	text-decoration:none;
+	position:fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+.Supplierbodylink
+{
+	text-decoration:none;
+	width:18%;
+    height:16%;
+	font-family:'Quicksand', Sans-serif;
+	font-weight:bold;	
+	color:white;
+	position:fixed;
+}
+.Supplierbodylink:hover
+{
+	 background-color:#29C5F6;
+	 border-color:#29C5F6;
+	 border-left-color:white;
+}
+#Supplier
+{
+	font-size:22px;
+	text-align:center;
+}
+#Suppliertotal
+{
+	background-color:black;
+	padding:10px 0px 10px 0px;
+	box-shadow: 5px 5px 10px grey;
+	text-align:center;
+}
+.Customerbody
+{
+	margin-left:18%;
+	margin-top:20%;
+    width:18%;
+    height:16%;
+    background-color:#4682B4;
+	text-decoration:none;
+	position:fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+.customerbodylink
+{
+	text-decoration:none;
+	width:18%;
+    height:16%;
+	font-family:'Quicksand', Sans-serif;
+	font-weight:bold;	
+	color:white;
+	position:fixed;
+}
+.customerbodylink:hover
+{
+	 background-color:#29C5F6;
+	 border-color:#29C5F6;
+	 border-left-color:white;
+}
+#customer
+{
+	font-size:22px;
+	text-align:center;
+}
+#customertotal
+{
+	background-color:black;
+	padding:10px 0px 10px 0px;
+	box-shadow: 5px 5px 10px grey;
+	text-align:center;
+}
+.Customerbody
+{
+	margin-left:38%;
+	margin-top:20%;
+    width:18%;
+    height:16%;
+    background-color:#4682B4;
+	text-decoration:none;
+	position:fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+.Customerbodylink
+{
+	text-decoration:none;
+	width:18%;
+    height:16%;
+	font-family:'Quicksand', Sans-serif;
+	font-weight:bold;	
+	color:white;
+	position:fixed;
+}
+.Customerbodylink:hover
+{
+	 background-color:#29C5F6;
+	 border-color:#29C5F6;
+	 border-left-color:white;
+}
+#Customer
+{
+	font-size:22px;
+	text-align:center;
+}
+#Customertotal
+{
+	background-color:black;
+	padding:10px 0px 10px 0px;
+	box-shadow: 5px 5px 10px grey;
+	text-align:center;
+}
+.Accountbody
+{
+	margin-left:58%;
+	margin-top:20%;
+    width:18%;
+    height:16%;
+    background-color:#8e0050;
+	text-decoration:none;
+	position:fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+.Accountbodylink
+{
+	text-decoration:none;
+	width:18%;
+    height:16%;
+	font-family:'Quicksand', Sans-serif;
+	font-weight:bold;	
+	color:white;
+	position:fixed;
+}
+.Accountbodylink:hover
+{
+	 background-color:#b20064;
+	 border-color:#b20064;
+	 border-left-color:white;
+}
+#Accounts
+{
+	font-size:22px;
+	text-align:center;
+}
+#Accountstotal
+{
+	background-color:black;
+	padding:10px 0px 10px 0px;
+	box-shadow: 5px 5px 10px grey;
+	text-align:center;
+}
+.Auditbody
+{
+	margin-left:78%;
+	margin-top:20%;
+    width:18%;
+    height:16%;
+    background-color:#4682B4;
+	text-decoration:none;
+	position:fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+.Auditbodylink
+{
+	text-decoration:none;
+	width:18%;
+    height:16%;
+	font-family:'Quicksand', Sans-serif;
+	font-weight:bold;	
+	color:white;
+	position:fixed;
+}
+.Auditbodylink:hover
+{
+	 background-color:#29C5F6;
+	 border-color:#29C5F6;
+	 border-left-color:white;
+}
+#Audit
+{
+	font-size:22px;
+	text-align:center;
+}
+#Audittotal
+{
+	background-color:black;
+	padding:10px 0px 10px 0px;
+	box-shadow: 5px 5px 10px grey;
+	text-align:center;
+}*/
+/*---------------------------------------------------------class for customer.php----------------------------------------------------------*/
+/*.customerdiv
+{
+	width:78%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:18%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.addcustomerbtn
+{
+	width:3%;
+	height:6%;
+	position:inline-block;
+	margin-left:17%;
+	margin-top:1.5%;
+	padding-bottom:1%;
+}
+.searchcustomer
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:0%;
+	margin-top:1%;
+	font-weight:bold;
+	position:absolute;
+}
+.custtxt
+{
+	margin-top:0.8%;
+	margin-left:4%;
+	height:20px;
+	width:150px;
+	position:absolute;
+}
+.custbtn
+{
+	padding:3px 30px 3px 30px;
+	text-decoration:none;
+	border-style:solid;
+	margin-left:20%;
+	margin-top:0.8%;
+	border-color:white;
+	background-color:#191970;
+	font-weight:bold;
+	color:white;
+	font-size:100%;
+}
+.custtbl
+{
+	position:absolute;
+	margin-top:1%;
+	margin-left:0%;
+	width:97%;
+	height:70%;
+
+}
+.custtbl1
+{
+	border-collapse:collapse;
+	border:1px solid;
+}
+.custheader
+{
+	padding:1% 67px 1% 67px;
+	border:1px solid black; 
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+}
+.custheader1
+{
+	padding:1% 52px 1% 52px;
+	border:1px solid black;  
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+}
+.custinfo
+{
+	padding:0.7% 0% 0.7% 0%;
+	border:1px solid;
+	background-color:#E5E4E2;
+	text-align:center;
+	font-size:12px;		
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+}*/
+/*---------------------------------------------------------id for customer.php------------------------------------------------------------*/
+/*#customerfont
+{
+	color:black;
+	margin-left:20px;
+	margin-top:10px;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+}*/
+/*---------------------------------------------------------class for addcustomer.php-------------------------------------------------------*/
+/*.custadddiv
+{
+	width:30%;
+	height:60%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:38%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.custaddline
+{
+	width:30%;
+	margin-top:5%;
+	position:fixed;
+}
+.addcustnamefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:7%;
+	margin-left:2%;
+}
+.addcustlocfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:10.5%;
+	margin-left:2%;
+}
+.addcustconperfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:14%;
+	margin-left:2%;
+}
+.addcustnumfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:17.5%;
+	margin-left:2%;
+}
+.addcustbtn
+{
+	margin-top:22%;
+	margin-left:2%;
+	width:14%;
+	height:5%;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+}
+.addcustbtn:hover
+{
+	background-color:#000080;
+	color:white;
+}
+.addcustback
+{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	font-size:15px;
+	font-family:Calibri;
+	position:fixed;
+	margin-top:22%;
+	margin-left:18.3%;
+	border:1px solid black;
+	padding:5px 50px 5px 50px;
+}
+.addcustback:hover
+{
+	border:1px solid black;
+	color:white;
+	background-color:black;
+}*/
+/*---------------------------------------------------------id for addcustomer.php----------------------------------------------------------*/
+/*#custaddfont
+{
+	color:black;
+	margin-left:6.5%;
+	margin-top:1%;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:fixed;
+}*/
+/*---------------------------------------------------------class for supplier.php----------------------------------------------------------*/
+/*.supplierdiv
+{
+	width:78%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:18%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.addsupplierbtn
+{
+	width:3%;
+	height:6%;
+	position:inline-block;
+	margin-left:17%;
+	margin-top:1.5%;
+	padding-bottom:1%;
+}
+.searchsupplier
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:0%;
+	margin-top:1%;
+	font-weight:bold;
+	position:absolute;
+}
+.suppliertxt
+{
+	margin-top:0.8%;
+	margin-left:5%;
+	height:20px;
+	width:150px;
+	position:absolute;
+}
+.supplierbtn
+{
+	padding:3px 30px 3px 30px;
+	text-decoration:none;
+	border-style:solid;
+	margin-left:20%;
+	margin-top:0.8%;
+	border-color:white;
+	background-color:#191970;
+	font-weight:bold;
+	color:white;
+	font-size:100%;
+}
+.suppliertbl
+{
+	position:absolute;
+	margin-top:1%;
+	margin-left:0%;
+	width:97%;
+	height:70%;
+
+}
+.suppliertbl1
+{
+	border-collapse:collapse;
+	border:1px solid;
+}
+.tblheadersupplier
+{
+	padding:0.5% 67px 0.5% 69px;
+	border:1px solid black; 
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+}
+.tbldatasupplier
+{
+	padding:0.7% 0% 0.7% 0%;
+	border:1px solid;
+	background-color:#E5E4E2;
+	text-align:center;
+	font-size:12px;		
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+}*/
+/*---------------------------------------------------------id for supplier.php------------------------------------------------------------*/
+/*#supplierfont
+{
+	color:black;
+	margin-left:20px;
+	margin-top:10px;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+}*/
+/*---------------------------------------------------------class for addsupplier.php-------------------------------------------------------*/
+/*.suppadddiv
+{
+	width:30%;
+	height:53%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:38%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.custaddline
+{
+	width:30%;
+	margin-top:5%;
+	position:fixed;
+}
+.CompanyName
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:7%;
+	margin-left:2%;
+}
+.CompanyAddress
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:10.5%;
+	margin-left:2%;
+}
+.CompanyContact
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:14%;
+	margin-left:2%;
+}
+.addsuppbtn
+{
+	margin-top:19%;
+	margin-left:2%;
+	width:14%;
+	height:5%;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+}
+.addsuppbtn:hover
+{
+	background-color:#000080;
+	color:white;
+}
+.addsuppback
+{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	font-size:15px;
+	font-family:Calibri;
+	position:fixed;
+	margin-top:19%;
+	margin-left:18.3%;
+	border:1px solid black;
+	padding:5px 50px 5px 50px;
+}
+.addsuppback:hover
+{
+	border:1px solid black;
+	color:white;
+	background-color:black;
+}*/
+/*---------------------------------------------------------id for addaupplier.php----------------------------------------------------------*/
+/*#suppaddfont
+{
+	color:black;
+	margin-left:8%;
+	margin-top:1%;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:fixed;
+}*/
+/*---------------------------------------------------------class for product.php----------------------------------------------------------*/
+/*.productdiv
+{
+	width:78%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:18%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.addproductbtn
+{
+	width:3%;
+	height:6%;
+	position:inline-block;
+	margin-left:17%;
+	margin-top:1.5%;
+	padding-bottom:1%;
+}
+.searchproduct
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:0%;
+	margin-top:1%;
+	font-weight:bold;
+	position:absolute;
+}
+.prodtxt
+{
+	margin-top:0.8%;
+	margin-left:4%;
+	height:20px;
+	width:150px;
+	position:absolute;
+}
+.prodbtn
+{
+	padding:3px 30px 3px 30px;
+	text-decoration:none;
+	border-style:solid;
+	margin-left:20%;
+	margin-top:0.8%;
+	border-color:white;
+	background-color:#191970;
+	font-weight:bold;
+	color:white;
+	font-size:100%;
+}
+.prodtbl
+{
+	position:absolute;
+	margin-top:1%;
+	margin-left:0%;
+	width:97%;
+	height:69%;
+}
+.prodtbl1
+{
+	border-collapse:collapse;
+	border:1px solid;
+}
+.prodheader1
+{
+	padding:1% 50px 1% 50px;
+	border:1px solid black; 
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+}
+.prodheader
+{
+	padding:1% 85px 1% 85px;
+	border:1px solid black; 
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+}
+.prodinfo
+{
+	padding:0.7% 0% 0.7% 0%;
+	border:1px solid;
+	background-color:#E5E4E2;
+	text-align:center;
+	font-size:12px;		
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+}*/
+/*---------------------------------------------------------id for product.php------------------------------------------------------------*/
+/*#productfont
+{
+	color:black;
+	margin-left:20px;
+	margin-top:10px;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+}*/
+/*---------------------------------------------------------class for productadd.php-------------------------------------------------------*/
+/*.prodadddiv
+{
+	width:30%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:38%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.prodaddline
+{
+	width:30%;
+	margin-top:3.5%;
+	position:fixed;
+}
+.addprodcodefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:5%;
+	margin-left:2%;
+}
+.addprodnamefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:8%;
+	margin-left:2%;
+}
+.adddescfield
+{
+	width:26%;
+	height:5%;
+	font-size:15px;
+	position:fixed;
+	font-weight:bold;
+	margin-top:10%;
+	margin-left:2%;
+}
+.addquantityfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:13%;
+	margin-left:2%;
+}
+.addonhandfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:16%;
+	margin-left:2%;
+}
+.addpricefield
+{
+	width:18%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:22%;
+	margin-left:10%;
+}
+.addprodcatfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:19%;
+	margin-left:2%;
+}
+.addprodsuppfield
+{
+	width:12%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:22%;
+	margin-left:2%;
+}
+.adddatestockfield
+{
+	width:13%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:22%;
+	margin-left:15%;
+}
+.addprodbtn
+{
+	margin-top:26%;
+	margin-left:2%;
+	width:14%;
+	height:5%;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+}
+.addprodbtn:hover
+{
+	background-color:#000080;
+	color:white;
+}
+.addprodback
+{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	font-size:15px;
+	font-family:Calibri;
+	position:fixed;
+	margin-top:26%;
+	margin-left:18.3%;
+	border:1px solid black;
+	padding:5px 50px 5px 50px;
+}
+.addprodback:hover
+{
+	border:1px solid black;
+	color:white;
+	background-color:black;
+}*/
+/*---------------------------------------------------------id for productadd.php------------------------------------------------------------*/
+/*#prodaddfont
+{
+	color:black;
+	margin-left:100px;
+	margin-top:5px;
+	font-size:30px;
+	font-weight:bold;
+	text-align:center;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+}
+#ppricetxt
+{
+	color:black;
+	margin-left:7%;
+	margin-top:70%;
+	font-size:15px;
+	font-weight:bold;
+	text-align:center;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+}*/
+/*---------------------------------------------------------class for inventory.php----------------------------------------------------------*/
+/*.inventorydiv
+{
+	width:78%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:18%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.inventoryline
+{
+	width:97%;
+	position:absolute;
+	margin-top:5%;
+	margin-left:0%;
+}
+.searchinventory
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:0%;
+	margin-top:7%;
+	font-weight:bold;
+	position:absolute;
+}
+.inventorytxt
+{
+	margin-top:6.8%;
+	margin-left:4.5%;
+	height:15px;
+	width:150px;
+	position:absolute;
+}
+.inventorybtn
+{
+	padding:3px 30px 3px 30px;
+	text-decoration:none;
+	border-style:solid;
+	margin-left:20%;
+	margin-top:6.9%;
+	border-color:white;
+	background-color:#191970;
+	font-weight:bold;
+	color:white;
+	font-size:100%;
+}
+.inventorytbl
+{
+	position:absolute;
+	margin-top:1%;
+	margin-left:0%;
+	width:97%;
+	height:68%;
+}
+.inventorytbl1
+{
+	border-collapse:collapse;
+	border:1px solid;
+}
+.tblheaderinventory
+{
+	padding:0.5% 58px 0.5% 58px;
+	border:1px solid black; 
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+}
+.tblheaderinventory1
+{
+	padding:0.5% 20px 0.5% 20px;
+	border:1px solid black; 
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+}
+.tbldatainventory
+{
+	padding:0.7% 0% 0.7% 0%;
+	border:1px solid;
+	background-color:#E5E4E2;
+	text-align:center;
+	font-size:12px;		
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+}*/
+/*---------------------------------------------------------id for inventory.php------------------------------------------------------------*/
+/*#inventoryfont
+{
+	color:black;
+	margin-left:20px;
+	margin-top:10px;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+}*/
+/*---------------------------------------------------------class for updatecustomer.php-------------------------------------------------------*/
+/*.custupddiv
+{
+	width:30%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:38%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.custupdline
+{
+	width:92%;
+	margin-top:12%;
+	position:absolute;
+}
+.updatecustidfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:7%;
+	margin-left:2%;
+}
+.updatecustnamefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:11%;
+	margin-left:2%;
+}
+.updatecustlocfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:15%;
+	margin-left:2%;
+}
+.updatecustcontactperfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:19%;
+	margin-left:2%;
+}
+.updatecustnumfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:23%;
+	margin-left:2%;
+}
+.updcustbtn
+{
+	margin-top:28%;
+	margin-left:2%;
+	width:14%;
+	height:5%;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+}
+.updcustbtn:hover
+{
+	background-color:#000080;
+	color:white;
+}
+.updcustback
+{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	font-size:15px;
+	font-family:Calibri;
+	position:fixed;
+	margin-top:28%;
+	margin-left:18.3%;
+	border:1px solid black;
+	padding:5px 50px 5px 50px;
+}
+.updcustback:hover
+{
+	border:1px solid black;
+	color:white;
+	background-color:black;
+}*/
+/*---------------------------------------------------------id for updatecustomer.php------------------------------------------------------------*/
+/*#updcustid
+{
+	color:black;
+	margin-left:7%;
+	margin-top:17.8%;
+	font-size:13px;
+	font-weight:bold;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+}
+#updcustname
+{
+	color:black;
+	margin-left:7%;
+	margin-top:30.5%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updcustloc
+{
+	color:black;
+	margin-left:7%;
+	margin-top:43.3%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updcustconper
+{
+	color:black;
+	margin-left:7%;
+	margin-top:55.8%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updcustnum
+{
+	color:black;
+	margin-left:7%;
+	margin-top:68%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}*/
+/*---------------------------------------------------------id for updatecustomer.php------------------------------------------------------------*/
+/*#custupdfont
+{
+	color:black;
+	margin-left:7px;
+	margin-top:10px;
+	font-size:25px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+}*/
+/*---------------------------------------------------------class for updateproduct.php-------------------------------------------------------*/
+/*.produpddiv
+{
+	width:30%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:38%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.produpdline
+{
+	width:92%;
+	margin-top:12%;
+	position:absolute;
+}
+.updateprodidfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:7%;
+	margin-left:2%;
+}
+.updateprodnamefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:11%;
+	margin-left:2%;
+}
+.updateprodlocfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:15%;
+	margin-left:2%;
+}
+.updateprodcontactperfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:19%;
+	margin-left:2%;
+}
+.updateprodnumfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:23%;
+	margin-left:2%;
+}
+.updprodbtn
+{
+	margin-top:28%;
+	margin-left:2%;
+	width:14%;
+	height:5%;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+}
+.updprodbtn:hover
+{
+	background-color:#000080;
+	color:white;
+}
+.updprodback
+{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	font-size:15px;
+	font-family:Calibri;
+	position:fixed;
+	margin-top:28%;
+	margin-left:18.3%;
+	border:1px solid black;
+	padding:5px 50px 5px 50px;
+}
+.updprodback:hover
+{
+	border:1px solid black;
+	color:white;
+	background-color:black;
+}*/
+/*---------------------------------------------------------id for updateproduct.php------------------------------------------------------------*/
+/*#produpdfont
+{
+	color:black;
+	margin-left:19%;
+	margin-top:2%;
+	font-size:25px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+}
+#updprodid
+{
+	color:black;
+	margin-left:7%;
+	margin-top:17.8%;
+	font-size:13px;
+	font-weight:bold;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+}
+#updprodcode
+{
+	color:black;
+	margin-left:7%;
+	margin-top:30.5%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updprodname
+{
+	color:black;
+	margin-left:7%;
+	margin-top:43.3%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updprodprice
+{
+	color:black;
+	margin-left:7%;
+	margin-top:55.8%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updprodcat
+{
+	color:black;
+	margin-left:7%;
+	margin-top:68%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}*/
+/*---------------------------------------------------------class for updateinventory.php-------------------------------------------------------*/
+/*.invupddiv
+{
+	width:30%;
+	height:74%;
+	position:absolute;
+	margin-top:5%;
+	margin-left:38%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.invupdline
+{
+	width:92%;
+	margin-top:12%;
+	position:absolute;
+}
+.updateinvcodefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:6.5%;
+	margin-left:2%;
+}
+.updateinvnamefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:10.7%;
+	margin-left:2%;
+}
+.updateprodquanfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:14.8%;
+	margin-left:2%;
+}
+.updateprodhandfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:18.8%;
+	margin-left:2%;
+}
+.updateprodstockfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:22.8%;
+	margin-left:2%;
+}
+.updateprodcatfield
+{
+	width:12%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:26.8%;
+	margin-left:2%;
+}
+.updateproddatefield
+{
+	width:12%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:26.8%;
+	margin-left:16%;
+}
+.updinvbtn
+{
+	margin-top:96%;
+	margin-left:6%;
+	width:43%;
+	height:6%;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+}
+.updinvbtn:hover
+{
+	background-color:#000080;
+	color:white;
+}
+.updinvback
+{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	font-size:15px;
+	font-family:Calibri;
+	position:absolute;
+	margin-top:96%;
+	margin-left:55%;
+	border:1px solid black;
+	padding:5px 55px 5px 55px;
+}
+.updinvback:hover
+{
+	border:1px solid black;
+	color:white;
+	background-color:black;
+}*/
+/*---------------------------------------------------------id for updateinventory.php------------------------------------------------------------*/
+/*#invupdfont
+{
+	color:black;
+	margin-left:19%;
+	margin-top:2%;
+	font-size:25px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+}
+#updinvcode
+{
+	color:black;
+	margin-left:7%;
+	margin-top:16%;
+	font-size:13px;
+	font-weight:bold;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+}
+#updinvname
+{
+	color:black;
+	margin-left:7%;
+	margin-top:29%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updinvquan
+{
+	color:black;
+	margin-left:7%;
+	margin-top:42%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updinvhand
+{
+	color:black;
+	margin-left:7%;
+	margin-top:54.3%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updinvstock
+{
+	color:black;
+	margin-left:7%;
+	margin-top:67.5%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updinvcat
+{
+	color:black;
+	margin-left:7%;
+	margin-top:80%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updinvdate
+{
+	color:black;
+	margin-left:50%;
+	margin-top:80%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}*/
+/*---------------------------------------------------------class for updatesupplier.php-------------------------------------------------------*/
+/*.suppupddiv
+{
+	width:30%;
+	height:60%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:38%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.suppupdline
+{
+	width:92%;
+	margin-top:12%;
+	position:absolute;
+}
+.updatesuppidfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:7%;
+	margin-left:2%;
+}
+.updatecompnamefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:11%;
+	margin-left:2%;
+}
+.updatesupplocfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:15%;
+	margin-left:2%;
+}
+.updatesuppnumfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:19%;
+	margin-left:2%;
+}
+.updsuppbtn
+{
+	margin-top:75%;
+	margin-left:6%;
+	width:43%;
+	height:7%;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+}
+.updsuppbtn:hover
+{
+	background-color:#000080;
+	color:white;
+}
+.updsuppback
+{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	font-size:15px;
+	font-family:Calibri;
+	position:absolute;
+	margin-top:75%;
+	margin-left:55%;
+	border:1px solid black;
+	padding:5px 55px 5px 55px;
+}
+.updsuppback:hover
+{
+	border:1px solid black;
+	color:white;
+	background-color:black;
+}*/
+/*---------------------------------------------------------id for updatesupplier.php------------------------------------------------------------*/
+/*#suppupdfont
+{
+	color:black;
+	margin-left:19%;
+	margin-top:2%;
+	font-size:25px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+}
+#updsuppid
+{
+	color:black;
+	margin-left:7%;
+	margin-top:17%;
+	font-size:13px;
+	font-weight:bold;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+}
+#updcompname
+{
+	color:black;
+	margin-left:7%;
+	margin-top:30%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updsupploc
+{
+	color:black;
+	margin-left:7%;
+	margin-top:43%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updsuppnum
+{
+	color:black;
+	margin-left:7%;
+	margin-top:55.5%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updinvstock
+{
+	color:black;
+	margin-left:7%;
+	margin-top:67.5%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updinvcat
+{
+	color:black;
+	margin-left:7%;
+	margin-top:80%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updinvdate
+{
+	color:black;
+	margin-left:50%;
+	margin-top:80%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}*/
+
+/*---------------------------------------------------------class for addaccounts.php-------------------------------------------------------*/
+/*.accadddiv
+{
+	width:30%;
+	height:71%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:38%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.accaddline
+{
+	width:30%;
+	margin-top:5%;
+	position:fixed;
+}
+.addaccfnamefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:6.5%;
+	margin-left:2%;
+}
+.addacclnamefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:9.5%;
+	margin-left:2%;
+}
+.addaccusernamefield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:12.5%;
+	margin-left:2%;
+}
+.addaccpasswordfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:15.5%;
+	margin-left:2%;
+}
+.addacclocfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:19%;
+	margin-left:2%;
+}
+.addaccnumfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:22%;
+	margin-left:2%;
+}
+.addaccbtn
+{
+	margin-top:28.5%;
+	margin-left:2%;
+	width:14%;
+	height:5%;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+}
+.addaccbtn:hover
+{
+	background-color:#000080;
+	color:white;
+}
+.addaccback
+{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	font-size:15px;
+	font-family:Calibri;
+	position:fixed;
+	margin-top:28.5%;
+	margin-left:18.3%;
+	border:1px solid black;
+	padding:5px 50px 5px 50px;
+}
+.addaccback:hover
+{
+	border:1px solid black;
+	color:white;
+	background-color:black;
+}*/
+/*---------------------------------------------------------id for addaccounts.php----------------------------------------------------------*/
+/*#accaddfont
+{
+	color:black;
+	margin-left:7.5%;
+	margin-top:1%;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:fixed;
+}
+#male_gender
+{
+	color:black;
+	margin-left:25%;
+	margin-top:58%;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+}
+#male_genderlabel
+{
+	color:black;
+	margin-left:30%;
+	margin-top:57%;
+	font-size:15px;
+	font-weight:bold;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+}
+#female_gender
+{
+	color:black;
+	margin-left:50%;
+	margin-top:58%;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+}
+#female_genderlabel
+{
+	color:black;
+	margin-left:55%;
+	margin-top:57%;
+	font-size:15px;
+	font-weight:bold;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+}
+#addaccrole
+{
+	width:81.2%;
+	height:7%;
+	color:black;
+	margin-left:6.3%;
+	margin-top:78%;
+	font-size:13px;
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+}*/
+/*---------------------------------------------------------class for pos.php----------------------------------------------------------*/
+/*.posdiv
+{
+	width:50%;
+	height:50%;
+	position:absolute;
+	margin-top:10%;
+	margin-left:32%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.posquantity
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:5%;
+	margin-top:18%;
+	font-weight:bold;
+	position:absolute;
+}
+.PosQuantitytxt
+{
+	margin-top:0.8%;
+	margin-left:4%;
+	height:30px;
+	width:150px;
+	position:absolute;
+}
+.pospricetext
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:1%;
+	margin-top:4%;
+	font-weight:bold;
+	position:absolute;
+}
+.producttxtpos
+{
+	margin-top:3%;
+	margin-left:1%;
+	height:20px;
+	width:150px;
+	position:absolute;
+}
+.posprice
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:58%;
+	margin-top:18%;
+	font-weight:bold;
+	position:absolute;
+}
+.productpricetxtpos
+{
+	margin-top:17.5%;
+	margin-left:68%;
+	height:25px;
+	width:180px;
+	position:absolute;
+	font-size:13px;
+}
+.posaddbtn
+{
+	padding:5px 50px 5px 50px;
+	text-decoration:none;
+	border-style:solid;
+	margin-left:38%;
+	margin-top:25%;
+	border-color:white;
+	background-color:#191970;
+	font-weight:bold;
+	color:white;
+	font-size:100%;
+	position:absolute;
+}*/
+/*---------------------------------------------------------id for pos.php------------------------------------------------------------*/
+/*#posfontarchive
+{
+	color:black;
+	margin-left:20px;
+	margin-top:10px;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:relative;
+}*/
+/*---------------------------------------------------------class for transaction.php----------------------------------------------------------*/
+/*.transactiondiv
+{
+	width:78%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:18%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.searchtransaction
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:0%;
+	margin-top:1%;
+	font-weight:bold;
+	position:absolute;
+}
+.transtxt
+{
+	margin-top:0.8%;
+	margin-left:4%;
+	height:20px;
+	width:150px;
+	position:absolute;
+}
+.transbtn
+{
+	padding:3px 30px 3px 30px;
+	text-decoration:none;
+	border-style:solid;
+	margin-left:20%;
+	margin-top:0.8%;
+	border-color:white;
+	background-color:#191970;
+	font-weight:bold;
+	color:white;
+	font-size:100%;
+}
+.transactiontbl
+{
+	position:absolute;
+	margin-top:1%;
+	margin-left:0%;
+	width:97%;
+	height:70%;
+}
+.transactiontbl1
+{
+	border-collapse:collapse;
+	border:1px solid;
+}
+.transactionheader
+{
+	padding:1% 95px 1% 95px;
+	border:1px solid black; 
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+}
+.transactioninfo
+{
+	padding:0.7% 0% 0.7% 0%;
+	border:1px solid;
+	background-color:#E5E4E2;
+	text-align:center;
+	font-size:12px;		
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+}*/
+/*---------------------------------------------------------id for transaction.php------------------------------------------------------------*/
+/*#transactionfont
+{
+	color:black;
+	margin-left:20px;
+	margin-top:10px;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:relative;
+}
+.textareareceipt
+{
+	font-size:13px;
+}*/
+/*---------------------------------------------------------class for updateaccount.php-------------------------------------------------------*/
+/*.accupddiv
+{
+	width:30%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:38%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.accupdline
+{
+	width:92%;
+	margin-top:12%;
+	position:absolute;
+}
+.updateaccidfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:7%;
+	margin-left:2%;
+}
+.updateaccfnamefield
+{
+	width:12%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:11%;
+	margin-left:2%;
+}
+.updateacclnamefield
+{
+	width:12%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:11%;
+	margin-left:16%;
+}
+.updateaccgenderfield
+{
+	width:12%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:15.2%;
+	margin-left:2%;
+}
+.updateaccnumfield
+{
+	width:12%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:15.2%;
+	margin-left:16%;
+}
+.updateacclocfield
+{
+	width:26%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:19.3%;
+	margin-left:2%;
+}
+.updateaccrolefield
+{
+	width:12%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:23.5%;
+	margin-left:2%;
+}
+.updateaccdatefield
+{
+	width:12%;
+	height:5%;
+	font-size:13px;
+	position:fixed;
+	margin-top:23.5%;
+	margin-left:16%;
+}
+.updaccbtn
+{
+	margin-top:28%;
+	margin-left:2%;
+	width:14%;
+	height:5%;
+	border:hidden;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	background-color:#1F51FF;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+}
+.updaccbtn:hover
+{
+	background-color:#000080;
+	color:white;
+}
+.updaccback
+{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+	font-size:15px;
+	font-family:Calibri;
+	position:fixed;
+	margin-top:28%;
+	margin-left:18.3%;
+	border:1px solid black;
+	padding:5px 50px 5px 50px;
+}
+.updaccback:hover
+{
+	border:1px solid black;
+	color:white;
+	background-color:black;
+}*/
+/*---------------------------------------------------------id for updateaccount.php------------------------------------------------------------*/
+/*#accupdfont
+{
+	color:black;
+	margin-left:19%;
+	margin-top:2%;
+	font-size:25px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:absolute;
+}
+#updaccid
+{
+	color:black;
+	margin-left:7%;
+	margin-top:17%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updaccfname
+{
+	color:black;
+	margin-left:7%;
+	margin-top:30%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updacclname
+{
+	color:black;
+	margin-left:50%;
+	margin-top:30%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updaccgender
+{
+	color:black;
+	margin-left:7%;
+	margin-top:43%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updaccnum
+{
+	color:black;
+	margin-left:50%;
+	margin-top:43%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updaccloc
+{
+	color:black;
+	margin-left:7%;
+	margin-top:56%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updaccrole
+{
+	color:black;
+	margin-left:7%;
+	margin-top:69%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}
+#updacchdate
+{
+	color:black;
+	margin-left:50%;
+	margin-top:69%;
+	font-size:13px;
+	font-weight:bold;
+	font-family:'Montserrat', Sans-serif;
+	position:absolute;
+}*/
+/*------------------------------------------------------------class for archive.php----------------------------------------------------------*/
+/*.archivedashboard
+{
+	width:12%;
+	height:100%;
+	background-color:#191970;
+	position:fixed;
+	margin-top:0px;
+	margin-right:0%;
+}
+.dashboardlogo
+{
+	width:8%;
+	height:13%;
+	background-color:white;
+	border-radius:100%;
+	position:fixed;
+	margin-top:1%;
+	margin-left:2%;
+}
+.dasharhive
+{
+	color:white; 
+	text-decoration:none;
+	font-size:110%;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+	margin-top:9%;
+	padding:1% 6.5% 1% 2%;
+}
+.dasharhive:hover
+{
+	background-color:white;
+	color:black;
+	font-weight:bold;
+}
+.Accountsarchivemngr
+{
+	color:white; 
+	text-decoration:none;
+	font-size:110%;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+	margin-top:9%;
+	padding:1% 5.6% 1% 2%;
+}
+.Accountsarchivemngr:hover
+{
+	background-color:white;
+	color:black;
+	font-weight:bold;
+}
+.Customerarhive
+{
+	color:white; 
+	text-decoration:none;
+	font-size:110%;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+	margin-top:12%;
+	padding:1% 5.3% 1% 2%;
+}
+.Customerarhive:hover
+{
+	background-color:white;
+	color:black;
+	font-weight:bold;
+}
+.Productarchive
+{
+	color:white; 
+	text-decoration:none;
+	font-size:110%;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+	margin-top:15%;
+	padding:1% 6.2% 1% 2%;
+}
+.Productarchive:hover
+{
+	background-color:white;
+	color:black;
+	font-weight:bold;
+}
+.Inventoryarchive
+{
+	color:white; 
+	text-decoration:none;
+	font-size:110%;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+	margin-top:18%;
+	padding:1% 5.5% 1% 2%;
+}
+.Inventoryarchive:hover
+{
+	background-color:white;
+	color:black;
+	font-weight:bold;
+}
+.Supplierarchive
+{
+	color:white; 
+	text-decoration:none;
+	font-size:13px;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+	margin-top:21%;
+	padding:1% 6.1% 1% 2%;
+}
+.Supplierarchive:hover
+{
+	background-color:white;
+	color:black;
+	font-weight:bold;
+}
+.Accountsarchive
+{
+	color:white; 
+	text-decoration:none;
+	font-size:13px;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+	margin-top:24%;
+	padding:1% 5.6% 1% 2%;
+}
+.Accountsarchive:hover
+{
+	background-color:white;
+	color:black;
+	font-weight:bold;
+}
+.Returnarchive
+{
+	color:white; 
+	text-decoration:none;
+	font-size:13px;
+	font-family: 'Montserrat', sans-serif;
+	position:fixed;
+	margin-top:40%;
+	padding:1% 6.7% 1% 2%;
+}
+.Returnarchive:hover
+{
+	background-color:white;
+	color:black;
+	font-weight:bold;
+}*/
+/*------------------------------------------------------------Boxes for archive.php----------------------------------------------------------*/
+/*.Customerbodyarchive
+{
+	margin-left:17%;
+	margin-top:7%;
+    width:18%;
+    height:16%;
+    background-color:#4682B4;
+	text-decoration:none;
+	position:fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+.Customerbodylinkarch
+{
+	text-decoration:none;
+	width:18%;
+    height:16%;
+	font-family:'Quicksand', Sans-serif;
+	font-weight:bold;	
+	color:white;
+	position:fixed;
+}
+.Customerbodylinkarch:hover
+{
+	 background-color:#29C5F6;
+	 border-color:#29C5F6;
+	 border-left-color:white;
+}
+#customerarchive
+{
+	font-size:22px;
+	text-align:center;
+}
+#customerarchtotal
+{
+	background-color:black;
+	padding:10px 0px 10px 0px;
+	box-shadow: 5px 5px 10px grey;
+	text-align:center;
+}
+.Productbodyarchive
+{
+	margin-left:37%;
+	margin-top:7%;
+    width:18%;
+    height:16%;
+    background-color:#4682B4;
+	text-decoration:none;
+	position:fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+.Productbodylinkarch
+{
+	text-decoration:none;
+	width:18%;
+    height:16%;
+	font-family:'Quicksand', Sans-serif;
+	font-weight:bold;	
+	color:white;
+	position:fixed;
+}
+.Productbodylinkarch:hover
+{
+	 background-color:#29C5F6;
+	 border-color:#29C5F6;
+	 border-left-color:white;
+}
+#productarchive
+{
+	font-size:22px;
+	text-align:center;
+}
+#productarchtotal
+{
+	background-color:black;
+	padding:10px 0px 10px 0px;
+	box-shadow: 5px 5px 10px grey;
+	text-align:center;
+}
+.Inventorybodyarchive
+{
+	margin-left:57%;
+	margin-top:7%;
+    width:18%;
+    height:16%;
+    background-color:#4682B4;
+	text-decoration:none;
+	position:fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+.Inventorybodylinkarch
+{
+	text-decoration:none;
+	width:18%;
+    height:16%;
+	font-family:'Quicksand', Sans-serif;
+	font-weight:bold;	
+	color:white;
+	position:fixed;
+}
+.Inventorybodylinkarch:hover
+{
+	 background-color:#29C5F6;
+	 border-color:#29C5F6;
+	 border-left-color:white;
+}
+#inventoryarchive
+{
+	font-size:22px;
+	text-align:center;
+}
+#inventoryarchtotal
+{
+	background-color:black;
+	padding:10px 0px 10px 0px;
+	box-shadow: 5px 5px 10px grey;
+	text-align:center;
+}
+.Supplierbodyarchive
+{
+	margin-left:77%;
+	margin-top:7%;
+    width:18%;
+    height:16%;
+    background-color:#4682B4;
+	text-decoration:none;
+	position:fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+.Supplierbodylinkarch
+{
+	text-decoration:none;
+	width:18%;
+    height:16%;
+	font-family:'Quicksand', Sans-serif;
+	font-weight:bold;	
+	color:white;
+	position:fixed;
+}
+.Supplierbodylinkarch:hover
+{
+	 background-color:#29C5F6;
+	 border-color:#29C5F6;
+	 border-left-color:white;
+}
+#supplierarchive
+{
+	font-size:22px;
+	text-align:center;
+}
+#supplierarchtotal
+{
+	background-color:black;
+	padding:10px 0px 10px 0px;
+	box-shadow: 5px 5px 10px grey;
+	text-align:center;
+}
+.Accountsbodyarchive
+{
+	margin-left:17%;
+	margin-top:18%;
+    width:18%;
+    height:16%;
+    background-color:#4682B4;
+	text-decoration:none;
+	position:fixed;
+	box-shadow: 5px 5px 10px grey;
+}
+.Accountsbodylinkarch
+{
+	text-decoration:none;
+	width:18%;
+    height:16%;
+	font-family:'Quicksand', Sans-serif;
+	font-weight:bold;	
+	color:white;
+	position:fixed;
+}
+.Accountsbodylinkarch:hover
+{
+	 background-color:#29C5F6;
+	 border-color:#29C5F6;
+	 border-left-color:white;
+}
+#accountarchive
+{
+	font-size:22px;
+	text-align:center;
+}
+#accountarchtotal
+{
+	background-color:black;
+	padding:10px 0px 10px 0px;
+	box-shadow: 5px 5px 10px grey;
+	text-align:center;
+
+}*/
+/*---------------------------------------------------------class for customerarchive.php----------------------------------------------------------*/
+/*.customerdivarchive
+{
+	width:82%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:14%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.searchcustomerarchive
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:0%;
+	margin-top:1%;
+	font-weight:bold;
+	position:absolute;
+}
+.custtxtarchive
+{
+	margin-top:0.8%;
+	margin-left:4%;
+	height:20px;
+	width:150px;
+	position:absolute;
+}
+.custbtnarchive
+{
+	padding:3px 30px 3px 30px;
+	text-decoration:none;
+	border-style:solid;
+	margin-left:20%;
+	margin-top:0.8%;
+	border-color:white;
+	background-color:#191970;
+	font-weight:bold;
+	color:white;
+	font-size:100%;
+}*/
+/*---------------------------------------------------------id for customerarchive.php------------------------------------------------------------*/
+/*#customerfontarchive
+{
+	color:black;
+	margin-left:20px;
+	margin-top:10px;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:relative;
+}*/
+/*---------------------------------------------------------class for productarchive.php----------------------------------------------------------*/
+/*.productdivarchive
+{
+	width:82%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:14%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.searchproductarchive
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:0%;
+	margin-top:1%;
+	font-weight:bold;
+	position:absolute;
+}
+.prodtxtarchive
+{
+	margin-top:0.8%;
+	margin-left:4%;
+	height:20px;
+	width:150px;
+	position:absolute;
+}
+.prodbtnarchive
+{
+	padding:3px 30px 3px 30px;
+	text-decoration:none;
+	border-style:solid;
+	margin-left:20%;
+	margin-top:0.8%;
+	border-color:white;
+	background-color:#191970;
+	font-weight:bold;
+	color:white;
+	font-size:100%;
+}*/
+/*---------------------------------------------------------id for productarchive.php------------------------------------------------------------*/
+/*#productfontarchive
+{
+	color:black;
+	margin-left:20px;
+	margin-top:10px;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:relative;
+}*/
+/*---------------------------------------------------------class for inventoryarchive.php----------------------------------------------------------*/
+/*.inventorydivarchive
+{
+	width:82%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:14%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.searchinventoryarchive
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:0%;
+	margin-top:1%;
+	font-weight:bold;
+	position:absolute;
+}
+.inventorytxtarchive
+{
+	margin-top:0.8%;
+	margin-left:4%;
+	height:20px;
+	width:150px;
+	position:absolute;
+}
+.inventorybtnarchive
+{
+	padding:3px 30px 3px 30px;
+	text-decoration:none;
+	border-style:solid;
+	margin-left:20%;
+	margin-top:0.8%;
+	border-color:white;
+	background-color:#191970;
+	font-weight:bold;
+	color:white;
+	font-size:100%;
+}*/
+/*---------------------------------------------------------id for inventoryarchive.php------------------------------------------------------------*/
+/*#inventoryfontarchive
+{
+	color:black;
+	margin-left:20px;
+	margin-top:10px;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:relative;
+}*/
+/*---------------------------------------------------------class for supplierarchive.php----------------------------------------------------------*/
+/*.supplierdivarchive
+{
+	width:82%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:14%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.searchsupplierarchive
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:0%;
+	margin-top:1%;
+	font-weight:bold;
+	position:absolute;
+}
+.suppliertxtarchive
+{
+	margin-top:0.8%;
+	margin-left:4%;
+	height:20px;
+	width:150px;
+	position:absolute;
+}
+.supplierbtnarchive
+{
+	padding:3px 30px 3px 30px;
+	text-decoration:none;
+	border-style:solid;
+	margin-left:20%;
+	margin-top:0.8%;
+	border-color:white;
+	background-color:#191970;
+	font-weight:bold;
+	color:white;
+	font-size:100%;
+}*/
+/*---------------------------------------------------------id for supplierarchive.php------------------------------------------------------------*/
+/*#supplierfontarchive
+{
+	color:black;
+	margin-left:20px;
+	margin-top:10px;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:relative;
+}*/
+/*---------------------------------------------------------class for accountsarchive.php----------------------------------------------------------*/
+/*.accountsdivarchive
+{
+	width:82%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:14%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.searchaccountsarchive
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:0%;
+	margin-top:1%;
+	font-weight:bold;
+	position:absolute;
+}
+.accountstxtarchive
+{
+	margin-top:0.8%;
+	margin-left:4%;
+	height:20px;
+	width:150px;
+	position:absolute;
+}
+.accountsbtnarchive
+{
+	padding:3px 30px 3px 30px;
+	text-decoration:none;
+	border-style:solid;
+	margin-left:20%;
+	margin-top:0.8%;
+	border-color:white;
+	background-color:#191970;
+	font-weight:bold;
+	color:white;
+	font-size:100%;
+}*/
+/*---------------------------------------------------------id for accountsarchive.php------------------------------------------------------------*/
+/*#accountsfontarchive
+{
+	color:black;
+	margin-left:20px;
+	margin-top:10px;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:relative;
+}*/
+/*---------------------------------------------------------class for audit.php----------------------------------------------------------*/
+/*.auditdiv
+{
+	width:78%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:18%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.searchaudit
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:0%;
+	margin-top:1%;
+	font-weight:bold;
+	position:absolute;
+}
+.audittxt
+{
+	margin-top:0.8%;
+	margin-left:5%;
+	height:20px;
+	width:150px;
+	position:absolute;
+}
+.auditbtn
+{
+	padding:3px 30px 3px 30px;
+	text-decoration:none;
+	border-style:solid;
+	margin-left:20%;
+	margin-top:0.8%;
+	border-color:white;
+	background-color:#191970;
+	font-weight:bold;
+	color:white;
+	font-size:100%;
+	position:absolute;
+}
+.audittbl
+{
+	position:absolute;
+	margin-top:4%;
+	margin-left:0%;
+	width:97%;
+	height:68%;
+}
+.audittbl1
+{
+	border-collapse:collapse;
+	border:1px solid;
+}
+.auditheader
+{
+	padding:0.5% 156px 0.5% 156px;
+	border:1px solid black; 
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+}
+.auditinfo
+{
+	padding:0.7% 0% 0.7% 0%;
+	border:1px solid;
+	background-color:#E5E4E2;
+	text-align:center;
+	font-size:12px;		
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+}*/
+/*---------------------------------------------------------id for audit.php------------------------------------------------------------*/
+/*#auditfont
+{
+	color:black;
+	margin-left:20px;
+	margin-top:10px;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:relative;
+}*/
+/*---------------------------------------------------------class for sales.php----------------------------------------------------------*/
+/*.salesdiv
+{
+	width:78%;
+	height:70%;
+	position:absolute;
+	margin-top:6%;
+	margin-left:18%;
+	background-color:#fbfbfb;
+	box-shadow: 1px 1px 15px gray;
+	margin-bottom:0%;
+	padding:1%;
+}
+.salestbl
+{
+	position:absolute;
+	margin-top:1%;
+	margin-left:0%;
+	width:97%;
+	height:70%;
+}
+.salestbl1
+{
+	border-collapse:collapse;
+	border:1px solid;
+}
+.salesheader
+{
+	padding:1% 60px 1% 60px;
+	border:1px solid black; 
+	background-color:#191970;
+	color:white;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	font-size:14px;
+	text-align:center;
+}
+.salesinfo
+{
+	padding:0.7% 0% 0.7% 0%;
+	border:1px solid;
+	background-color:#E5E4E2;
+	text-align:center;
+	font-size:12px;		
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+}
+.txtaresales
+{
+	padding:0.7% 0% 0.7% 0%;
+	border:1px solid;
+	background-color:#E5E4E2;
+	text-align:center;
+	font-size:12px;		
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+	margin-left:780px;
+	margin-top:0px;
+	position:absolute;
+	
+}*/
+/*---------------------------------------------------------id for sales.php------------------------------------------------------------*/
+/*#salesfont
+{
+	color:black;
+	margin-left:20px;
+	margin-top:10px;
+	font-size:30px;
+	font-weight:bold;
+	font-family:'Jura', Sans-serif;
+	position:relative;
+}
+
+
+
+.poscustid
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:5%;
+	margin-top:1%;
+	font-weight:bold;
+	position:absolute;
+}
+.poscustid1
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:19%;
+	margin-top:1%;
+	font-weight:bold;
+	position:absolute;
+	border:#fbfbfb;
+	background-color:#fbfbfb;
+}
+.poscustname
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:5%;
+	margin-top:5%;
+	font-weight:bold;
+	position:absolute;
+}
+.poscustname1
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:22.5%;
+	margin-top:5%;
+	font-weight:bold;
+	position:absolute;
+}
+.poslocation
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:5%;
+	margin-top:9%;
+	font-weight:bold;
+	position:absolute;
+}
+.poslocation1
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:16%;
+	margin-top:9%;
+	font-weight:bold;
+	position:absolute;
+}
+.posconperson
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:50%;
+	margin-top:1%;
+	font-weight:bold;
+	position:absolute;
+}
+.posconperson1
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:68.5%;
+	margin-top:1%;
+	font-weight:bold;
+	position:absolute;
+}
+.posphonenum
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:50%;
+	margin-top:5%;
+	font-weight:bold;
+	position:absolute;
+}
+.posphonenum1
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:67%;
+	margin-top:5%;
+	font-weight:bold;
+	position:absolute;
+}
+.quantitytxt
+{
+	margin-left:16%;
+	margin-top:17.5%;
+	height:25px;
+	width:150px;
+	position:absolute;
+}
+.addposline
+{
+	margin-top:15%;
+	position:absolute;
+	width:95%;
+}
+.paytext
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:5%;
+	margin-top:18%;
+	font-weight:bold;
+	position:absolute;
+	font-size:15px;
+}
+.paytxt
+{
+	border:#fbfbfb;
+	background-color:#fbfbfb;
+	font-size:15px;
+	margin-left:10%;
+	position:absolute;
+}
+.poscash
+{
+	font-family:'Quicksand', Sans-serif;
+	color:black;
+	font-size:110%;
+	margin-left:58%;
+	margin-top:18%;
+	font-weight:bold;
+	position:absolute;
+}
+.poscashtxt
+{
+	margin-left:65%;
+	margin-top:17.5%;
+	height:25px;
+	width:180px;
+	position:absolute;
+}*/
+

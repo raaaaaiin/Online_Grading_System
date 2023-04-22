@@ -1,0 +1,68 @@
+<%- include('../partials/user/header') %>
+
+    <!-- Main Body (content)-->
+    <main class="main users chart-page" id="skip-target">
+      <div class="container">
+
+        <br>
+        <br>
+
+        <div>
+          
+          <% if(error && error.length > 0){ %>
+            <div class="alert alert-danger" role="alert">
+                <%= error %>
+            </div>
+        <% } %>
+        <% if(success && success.length > 0){ %>
+            <div class="alert alert-success" role="alert">
+                <%= success %>
+            </div>
+        <% } %>
+        <% if(info && info.length > 0){ %>
+            <div class="alert alert-info" role="alert">
+                <%= info %>
+            </div>
+        <% } %>
+
+          <!-- Table -->
+          <div class="float-child green">
+               <section id="appointment" data-stellar-background-ratio="3">
+                              <div class="col-md-12 ol-sm-6">
+                                             <!-- EMAIL CHANGE HERE -->
+                                             <form id="appointment-form" role="form" method="post" action="/user/emailchange" >
+                                                  <!-- USER NAME -->
+                                                  <div style="margin-left: 15px;">
+                                                       <h3>Hello <%=user.Fname%> <%=user.Lname%></h3>
+                                                  </div>
+                                                  <input type="hidden" name="_method" value="PUT">
+                                                  <div  style="margin-top: 20px; margin-left: 5px;" class="row">
+                                                       <div class="col-xl-6">
+                                                            <div class="form-group">
+                                                                 <label>Old Username:</label>
+                                                                 <input type="email" style="padding: 0px;" name="email" placeholder="Your Email"  value="<%=user.Email%>" class="form-control" disabled required>
+                                                            </div>
+                                                       </div>
+                                             
+                                                       <div class="col-xl-6">
+                                                            <div class="form-group">
+                                                                 <label>New Username*</label>
+                                                                 <input type="text" style="padding: 0px;" name="email" placeholder="Your Email"  value="<%=user.Email%>" class="form-control" required>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                    
+                                                  <div class="col-xl-6">
+                                                       <div class="form-group">
+                                                       <button type="submit" class="btn bg-btn" style="background-color:#0a2825; border-color: transparent; padding: 10px; margin-top: 10px;" id="cf-submit">Change Email</button>
+                                                       </div>
+                                                  </div>
+                                            </form>
+                              </div>
+                         </section>
+                    </div>
+        
+        </div>
+      </div>
+    </main>
+

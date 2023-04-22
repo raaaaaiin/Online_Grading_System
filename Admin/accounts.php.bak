@@ -1,0 +1,123 @@
+<?php
+		include "../sepi_connect.php";
+			session_start();
+
+		if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true)
+		 {
+			 // When Not Login Return to this Page
+			 header("refresh:0; ../login.php");
+			 exit;
+		 }else if(isset($_SESSION['Acc_ID']))
+			{
+				$userid = $_SESSION['Acc_ID'];
+				
+				$getrecord = mysqli_query($config,"SELECT * FROM tbl_sepi_account WHERE Acc_ID ='$userid'");
+				while($rowedit = mysqli_fetch_assoc($getrecord))
+				{
+					$type = $rowedit['Role'];
+					$name = $rowedit['Fname']." ".$rowedit['Lname'];
+				}
+			}
+		#$sql1 = "Insert into tbl_audithistory (e_name,e_action,e_date) values ('$name','Viewing Account records',NOW())";
+		#$result1 = $config->query($sql1);
+
+if(isset($_POST['search'])){
+$search = $_POST['search'];
+
+if ($search != NULL){
+$sql = "Select * from tbl_sepi_account where Acc_ID like '%$search%' or 
+										Fname like '%$search%' or 
+										Lname like '%$search%' or 
+										Username like '%$search%' or 
+										Gender like '%$search%' or 
+										Address like '%$search%' or 
+										Pnumber like '%$search%' or 
+										Role like '%$search%'";
+
+}else{
+
+$sql = "Select * from tbl_sepi_account ORDER BY Acc_ID DESC LIMIT 10";
+}
+}else{
+
+$sql = "Select * from tbl_sepi_account ORDER BY Acc_ID DESC LIMIT 10";
+}
+
+?>
+<html>
+	<head>
+		<title>Accounts | S.E.P.I. Water Refilling Station</title> 
+	</head>
+<link rel="icon" href="../Images/logo.png">
+<link rel="stylesheet" href="../Css/sepi.css">
+<body style="background-color:#E5E4E2">
+	<div class="header">
+	<form method="POST"action="logout.php" >
+		<button type=submit name="logout" class="logout">Log Out</a>
+	</form>
+	</div>
+	<div class="footer">
+		<h6 id="footer">© 2021 CVGS Login Form. All Rights Reserved | Designed by Excel-erator</h6>
+	</div>
+</div>
+<form method="POST" action="accounts.php">
+		<div class="dashboard">
+			<img src="../Images/logo.png" class="dashboardlogocvgs">
+	<img src="../Images/logo.png" class="dashboardlogocvgs">
+			<a href="dashboard.php" class="Dashboardhome"><img src="../images/homeicon.png" class="homeicon">Dashboard</a>
+			<a href="announcead.php" class="Sales"><img src="../images/sales.png" class="salesicon">Announcement</a>
+			<a href="student.php" class="Transaction"><img src="../images/transaction.png" class="transactionicon">Add Student</a>
+			<a href="teacher.php" class="Inventory"><img src="../images/inventory.png" class="inventoryicon">Add Teacher</a>
+			<a href="accounts.php" class="Product"><img src="../images/account.png" class="producticon">Accounts</a>
+
+		</div>
+			<div class="accountsdiv">
+				<h1 id="accountsfont">ACCOUNTS</h1>
+				<a href="addaccount.php" name=addsupplier><img src="../images/add_icon.png" class="addaccountsbtn"></a>
+				<hr>
+				<p class="searchaccounts">Search:</p>
+				<input type=text name=search class="accountstxt">
+				<input type=submit name=sub class="accountsbtn"> 
+		
+<?php
+$result = $config -> query($sql);
+
+if ($result -> num_rows > 0){
+	echo"<div class=accountstbl style=overflow:auto;>";
+	echo"<table class=accountstbl1>";
+	echo "<tr>";
+	echo "<th Class=accountsheader1>ID";
+	echo "<th Class=accountsheader>NAME";
+	echo "<th Class=accountsheader2>GENDER";
+	echo "<th Class=accountsheader>ADDRESS";
+	echo "<th Class=accountsheader>PHONE NUMBER";
+	echo "<th Class=accountsheader2>ROLE";
+	echo "<th Class=accountsheader>ADD DATE";
+	echo "<th class=accountsheader colspan=2>ACTION";
+	
+	while($row = $result -> fetch_assoc()){
+	
+	echo "<tr>";
+	echo "<td class=accountsinfo>".$row['Acc_ID'];
+	echo "<td class=accountsinfo>".$row['Fname']." ".$row['Lname'];
+	echo "<td class=accountsinfo>".$row['Gender'];
+	echo "<td class=accountsinfo>".$row['Address'];
+	echo "<td class=accountsinfo>".$row['Pnumber'];
+	echo "<td class=accountsinfo>".$row['Role'];
+	echo "<td class=accountsinfo>".$row['Hdate'];
+	#echo "<td class=accountsinfo><center> <a href='updateaccount.php?ID=".$row['Acc_ID']."'> Update </a></center>";
+	#echo "<td class=accountsinfo><center> <a href='deleteaccount.php?ID=".$row['Acc_ID']."'> Archive </a></center>";
+}
+		echo "</table>";
+	}
+	else
+	{
+		echo "The record is not found";			
+	}
+	?>	
+</div>
+
+
+</form>
+</body>
+</html>

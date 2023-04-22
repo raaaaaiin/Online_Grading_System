@@ -1,0 +1,88 @@
+
+<html>
+<body>
+<head>
+<title>Teacher </title>
+</head>
+<link rel=stylesheet href=style.css>
+<form method = POST action=teacher.php>
+<center>
+<h1>Add Teacher Information</h1>
+<table border=3>
+<th colspan=2>Add Teacher Information
+<tr>
+<td>Employee ID:
+<td><input type=text name=empid>
+<tr>
+<td>Firstname:
+<td><input type=text name=fnames>
+<tr>
+<td>Middle Initial:
+<td><input type=text name=mnames>
+<tr>
+<td>Lastname:
+<td><input type=text name=lnames>
+<tr>
+<td>Birthday:
+<td><input type=date name=bdays>
+<tr>
+<td>Age:
+<td><input type=text name=agess>
+<tr>
+<td>Gender:
+<td><select name=gens>
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+<option value="Others">Others</option>
+</select>
+<tr>
+<td>Subject Teacher:
+<td><select name=subject>
+		<option value="Filipino">Filipino</option>
+		<option value="English">English</option>
+		<option value="Mathematics">Mathematics</option>
+		<option value="Science">Science</option>
+		<option value="Araling Panlipunan">Araling Panlipunan</option>
+		<option value="T.L.E.">T.L.E.</option>
+		<option value="M.A.P.E.H.">M.A.P.E.H.</option>
+		<option value="Christian Education">Christian Education</option>
+		<option value="Computer">Computer</option>
+</select>
+<tr>
+<td colspan=2><center> <input type=submit name=submit value="Add Teacher">
+</table>
+</form>
+</center>
+</body>
+</html>
+
+<?php
+include "../sepi_connect.php";
+if($config->connect_error){
+	echo "Not Connected";
+}else{
+	echo " Connected";
+}
+if(isset($_POST['submit'])){
+$employeetid = $_POST['empid'];
+$firsts = $_POST['fnames'];
+$middles = $_POST['mnames'];
+$lasts = $_POST['lnames'];
+$births = $_POST['bdays'];
+$aging = $_POST['agess'];
+$genders = $_POST['gens'];
+$subjects = $_POST['subject'];
+$sql = "Insert into tbl_teacher (Employee_ID,FNAMES,MNAMES,LNAMES,BDAYS,AGES,GENDERS,SUBJECTS) values  
+($employeeid,'$firsts','$middles','$lasts','$births',$aging,'$genders','$subjects')";
+$insert = $config->query($sql);
+if($insert == True){
+?>
+<script>
+alert("Successfully Added")
+</script>
+<?php
+}else{
+	echo $config->error;
+}
+}
+?>

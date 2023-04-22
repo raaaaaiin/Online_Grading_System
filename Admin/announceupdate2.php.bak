@@ -1,0 +1,26 @@
+<?php
+include "../sepi_connect.php";
+if(!$config->connect_error){
+	echo "Connected";
+}
+if(isset($_POST['Announceup'])){
+$AIDS = $_POST['AIDS'];
+$ANN = $_POST['ANN'];
+
+
+$sql = "Update tbl_announce SET ANNOUNCEMENT='$ANN', AID='$AIDS' where AID='$AIDS'";
+
+$result = $conn->query($sql);
+
+if($result == True){
+?>
+<script>
+alert("Successfully Update")
+</script>
+<?php
+header("refresh:0;url=announceview.php");
+}else{
+	echo $conn->error;
+}
+}
+?>

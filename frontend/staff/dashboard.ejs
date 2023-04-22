@@ -1,0 +1,145 @@
+<%- include('../partials/staff/header') %>
+
+    <!-- Main Body (content)-->
+    <main style="margin-top: 10px;" class="main users chart-page" id="skip-target">
+      <div class="container">
+        <div class="row stat-cards">
+          <div class="col-md-4 col-xl-4">
+              <div class="stat-cards-item">
+                    <div class="stat-cards-icon ">
+                      <i data-feather="file" aria-hidden="true"></i>
+                    </div>
+                    <div class="stat-cards-info">
+                      <h3 class="stat-cards-info__num"><%=row.length%></h3>
+                      <h5 class="stat-cards-info__title">Pending Appointments</a></h5>
+                    </div>
+              </div>
+          </div>
+
+          <div class="col-md-4 col-xl-4">
+                  <div class="stat-cards-item">
+                    <div class="stat-cards-icon ">
+                      <i data-feather="bar-chart-2" aria-hidden="true"></i>
+                    </div>
+                    <div class="stat-cards-info">
+                      <h3 class="stat-cards-info__num"><%=row2.length%></h3>
+                      <h5 class="stat-cards-info__title">Confirmed Appointments</h5> 
+                    </div>
+                  </div>
+          </div>
+
+          <div class="col-md-4 col-xl-4">
+            <div class="stat-cards-item">
+              <div class="stat-cards-icon ">
+                <i data-feather="bar-chart-2" aria-hidden="true"></i>
+              </div>
+              <div class="stat-cards-info">
+                <h3 class="stat-cards-info__num"><%=row3.length%></h3>
+                <h5 class="stat-cards-info__title">Number of Made Transactions</h5> 
+              </div>
+            </div>
+    </div>
+      </div>
+
+        <br>
+        <br>
+
+        <div>
+          <h3 style="color: #8e0050;"><b>Today's Activity</b></h3>
+          <br>
+          <br>
+
+          
+          <% if(error && error.length > 0){ %>
+            <div class="alert alert-danger" role="alert">
+                <%= error %>
+            </div>
+        <% } %>
+        <% if(success && success.length > 0){ %>
+            <div class="alert alert-success" role="alert">
+                <%= success %>
+            </div>
+        <% } %>
+        <% if(info && info.length > 0){ %>
+            <div class="alert alert-info" role="alert">
+                <%= info %>
+            </div>
+        <% } %>
+
+          <!-- Table -->
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                    <th class="hidden-xs">#</th>
+                    <th><center>Name</center></th>
+                    <th><center>Diagnose with Covid 19</center></th>
+                    <th><center>Symptoms</center></th>
+                    <th><center>Preffered Date Assigned</center></th>
+                    <th><center>Actions</center></th>
+                </tr> 
+              </thead>
+              <tbody>
+
+                <% row.forEach((appointment, i) => { %>
+                  <tr>
+                    <td class="hidden-xs"><%=i+1%></td>
+                    <td><center> <%=appointment.Pname%> </center></td>
+                    <td><center> <%=appointment.diagnose%> </center></td>
+                    <td><center> <%=appointment.symptoms%> </center></td>
+                    <td> <center>
+                      <% if(appointment.date == null) {%>
+                        <p>Pending</p>
+                      <% }else{%>
+                        <%=appointment.date %>
+                      <% } %> </center>
+                      <td align="center">
+
+                       <% id=appointment.Appointment_id %>
+                    
+
+                        <button type="button" class="btn btn-danger" style="background-color: blue; border-color: blue;" data-toggle="modal" data-target="#staticBackdrop">
+                          Confirm
+                        </button>
+
+                        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                Appointment Confirmation
+                              </div>
+                              <div class="modal-body">
+                                  <form action="confirm/<%=id%>" method="post">
+                                    <input type="hidden" name="_method" value="PUT">
+                                    <input style="border-color: transparent; color: white;" class="form-control" type="text" name="email" value="<%=appointment.email%>" id="email">
+                                    <h5>Kindly Input the start time and end time of the appointment.</h5>
+                                    <br>
+                                    <label for="start">Start Time</label>
+                                    <input class="form-control" type="time" name="start" id="start">
+                                    <br>
+                                    <label for="end">End Time</label>
+                                    <input class="form-control" type="time" name="end" id="end">
+                                    <br>
+                                  
+                              </div>
+                              <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                              <button class="btn btn-secondary" style="background-color: blue;" type="submit">Confirm</button>
+                              </div>
+                            </form>
+                          </div>
+                          </div>
+                      </div>
+
+                     </td>
+                    </td>
+                  </tr>
+                <% }) %>
+
+        </tbody>
+            </table>
+        
+        </div>
+      </div>
+    </main>
+
+<%- include('../partials/admin/footer') %>

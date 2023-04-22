@@ -1,0 +1,42 @@
+<html>
+<body>
+<head>
+<title>Announcement</title>
+</head>
+<link rel= href=>
+<form method = POST action=announcead.php>
+<center>
+<h1> School Announcement </h1>
+<table border=3>
+<td>Announcement:
+<td><input type=text name=announce>
+<tr>
+<td colspan=2><center> <input type=submit name=sub value="Announce">
+</table>
+</form>
+</center>
+</body>
+</html>
+<?php
+include "sepi_connect.php";
+if($config->connect_error){
+	echo "Not Connected";
+}else{
+	echo " Connected";
+}
+if(isset($_POST['sub'])){
+$announe = $_POST['announce'];
+$sql = "Insert into tbl_announce (ANNOUNCEMENT) values ($announce)";
+$insert = $config->query($sql);
+if($insert == True){
+?>
+<script>
+alert("Successfully Added")
+</script>
+<?php
+}else{
+	echo $config->error;
+}
+}
+
+?>

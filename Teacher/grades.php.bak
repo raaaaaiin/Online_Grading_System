@@ -1,0 +1,51 @@
+<html>
+<body>
+<head>
+<title>Teacher </title>
+</head>
+<link rel=stylesheet href=style.css>
+<form method = POST action=teacher.php>
+<center>
+<h1>Report Grade</h1>
+<table border=3>
+<th colspan=2>Report Grade
+<tr>
+<td>ID:
+<td><input type=text name=empid>
+<tr>
+<td>Subject:
+<td><input type=text name=fnames>
+<tr>
+<td>Faculty Name:
+<td><input type=text name=mnames>
+<tr>
+<td>Final Grade:
+<td><input type=text name=lnames>
+<tr>
+<td>Grade Status:
+<td><select name=level>
+
+	
+			<option value="Outstanding">Outstanding -(90-100)	</option>
+			<option value="Very Satisfactory">Very Satisfactory -(85-89)	</option>	
+			<option value="Satisfactory">Satisfactory -(80-84)		</option>
+			<option value="Fairly Satisfactory">Fairly Satisfactory -(75-79)	</option>	
+			<option value="Did Not Meet Expectations">Did Not Meet Expectations - (Below 75)	</option>
+</select>
+<tr>
+<td>Remarks:
+<td><select name=level>
+
+	
+			<option value="Promoted">Promoted	</option>
+			<option value="Failed">Failed</option>	
+
+</select>
+
+<tr>
+<td colspan=2><center> <input type=submit name=submit value="Add Teacher">
+</table>
+</form>
+</center>
+</body>
+</html>

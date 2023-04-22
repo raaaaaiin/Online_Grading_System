@@ -1,0 +1,43 @@
+<%- include('../partials/admin/header') %>
+    <!-- Main Body (content)-->
+    <main class="main users chart-page" style="margin-top: 40px;" id="skip-target">
+      <div class="container">
+        
+
+        <br>
+        <br>
+
+        <div>
+          <p id="p1"></p>
+
+          <br>
+          <br>
+
+          <!-- Table -->
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th class="hidden-xs">#</th>
+                  <th><center>Action</center></th>
+                  <th><center>Email</center></th>
+                  <th><center>Date</center></th>
+                </tr> 
+              </thead>
+              <tbody>
+                <% row1.forEach((row1, i ) => {%>
+                  <tr>
+                    <td class="hidden-xs"><%=i+1%></td>
+                    <td><center><%=row1.DESCRIPTION%></center></td>
+                    <td><center><%=row1.NAME%></center></td>
+                    <td><center><%=row1.DATE%></center></td>
+                  </tr>
+                <% }) %> 
+
+              </tbody>
+            </table>
+        
+        </div>
+      </div>
+    </main>
+
+<%- include('../partials/admin/footer') %>

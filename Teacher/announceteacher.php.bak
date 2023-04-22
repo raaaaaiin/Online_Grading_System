@@ -1,0 +1,64 @@
+<html>
+<head> 
+<title> Announcement view</title>
+</head>
+<link rel=stylesheet href=style.css>
+<body>
+<center>
+<form method=POST action="announceteacher.php">
+Search:
+<input type=text name=search>
+Category:
+<select name=category>
+<option value=" "> 
+<option>Fiction</option>
+<option>Fantasy</option>
+<option>Sci-Fi</option>
+<option>Mystery</option>
+<option>Romance</option>
+</select>
+<input type=submit name=sub>
+<br>
+
+</body>
+</html>
+
+<?php
+include "../sepi_connect.php";
+if($config->connect_error){
+echo "Not Connected";
+}else{
+echo " Connected";
+}
+if(isset($_POST['sub'])){
+$search = $_POST['search'];
+$category = $_POST['category'];
+if($category != NULL){
+$sql = "SELECT * FROM tbl_announce where ANNOUNCEMENT = '$category'";
+}elseif($search !=NULL){
+$sql = "SELECT * FROM tbl_announce where category LIKE '%$search%' or category LIKE '%$search%'";
+}
+}else{
+$sql = "SELECT * FROM tbl_announce";
+}
+
+$result = $config -> query($sql);
+if($result -> num_rows > 0){
+echo "<table border =1>";
+echo "<tr>";
+echo "<th>ID: ";
+echo "<th>Announcement: ";
+echo "<th>Update";
+
+while($row = $result -> fetch_assoc()){
+echo "<tr>";
+echo "<td>".$row['AID'];
+echo "<td>".$row['ANNOUNCEMENT'];
+
+	
+echo "<td> <a href='Viloria_update.php?ID=".$row['AID']."'> Edit </a>";
+}	
+}else{
+echo "Empty";
+}
+?>

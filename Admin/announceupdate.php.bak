@@ -1,0 +1,36 @@
+<?php
+include "../sepi_connect.php";
+
+if(!$config->connect_error){
+	echo "Connected";
+}
+$AID = $_GET['ID'];
+$sql="Select *from tbl_announce where AID = '$AID'";
+$result = $config->query($sql);
+
+$row = $result->fetch_assoc();
+$AAID = $row['AID'];
+$ANNOUNCE = $row ['ANNOUNCEMENT'];
+
+
+	echo $config->error;
+?>
+<html>
+<head>
+<title>
+
+</title>
+</head>
+<body>
+<form method=POST action="announceupdate2.php">
+Announcement:
+<input type=text name=AIDS value="<?php echo $AAID; ?>" >
+<br>
+<input type=text name=ANN value="<?php echo $ANNOUNCE; ?>" >
+<br>
+<input type=submit name=Announceup value="UPDATE">
+
+</form>
+</body>
+
+</html>

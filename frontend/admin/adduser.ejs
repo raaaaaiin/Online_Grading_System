@@ -1,0 +1,143 @@
+<%- include('../partials/admin/header') %>
+
+    <% if(error && error.length > 0){ %>
+        <div class="alert alert-danger" role="alert">
+            <%= error %>
+        </div>
+    <% } %>
+    <% if(success && success.length > 0){ %>
+        <div class="alert alert-success" role="alert">
+            <%= success %>
+        </div>
+    <% } %>
+    <% if(info && info.length > 0){ %>
+        <div class="alert alert-info" role="alert">
+            <%= info %>
+        </div>
+    <% } %>
+    <form id="appointment-form" role="form" method="post" action="/admin/addnewuser" class="signup-form">
+    <!-- form header -->
+    <div class="form-header">
+      <h1>Create Student Account</h1>
+    </div>
+
+    <!-- form body -->
+    <div class="form-body">
+
+      <!-- Firstname and Lastname -->
+      <div class="horizontal-group">
+        <div class="form-group left">
+          <label for="fname" class="label-title">First name </label>
+          <input type="text" name="fname" id="fname" class="form-input" required />
+        </div>
+        <div class="form-group right">
+          <label for="mname" class="label-title">Middle name</label>
+          <input type="text" id="mname" name="mname" class="form-input" required/>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="horizontal-group">
+          <div class="form-group left">
+              <label for="lname" class="label-title">Last name</label>
+              <input type="text" id="lname" name="lname" class="form-input" required/>
+            </div>
+            <div class="form-group right">
+              <label for="email" class="label-title">Email</label>
+              <input type="text" id="email" name="email" class="form-input" required/>
+            </div>
+      </div>
+
+      <div class="horizontal-group">
+        <div class="form-group left">
+            <label for="lname" class="label-title">Birthdate</label>
+            <input type="date" id="lname" name="bday" class="form-input" required/>
+          </div>
+          <div class="form-group right">
+            <label for="email" class="label-title">Age</label>
+            <input type="number" id="email" name="age" class="form-input" required/>
+          </div>
+    </div>
+
+    <div class="horizontal-group">
+      <div class="form-group left">
+          <label for="lname" class="label-title">Grade/Section</label>
+          <input type="text" id="lname" name="section" class="form-input" required/>
+        </div>
+        <div class="form-group right">
+          <label for="email" class="label-title">Student ID</label>
+          <input type="number" id="email" name="studentid" class="form-input" required/>
+        </div>
+  </div>
+
+      <!-- Passwrod and confirm password -->
+      <div class="horizontal-group">
+        <div class="form-group left">
+          <label for="password" class="label-title">Password</label>
+          <input type="password" name="password" id="password" class="form-input" required="required">
+        </div>
+
+        <div  class="form-group ">
+          <label for="medTime" style="margin-left: 75px;"><b>Gender:</b></label>
+          <select  style="padding: 10px 30px; margin-top: 40px; margin-left: 35px;" name="gender"required>
+              <option value=""></option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Others">Others</option>
+          </select>
+          </div>
+      </div>
+
+      
+
+    
+
+    <!-- form-footer -->
+    <div class="form-footer">
+      <button type="button" class="btn btn-primary btns" data-toggle="modal" onclick="submitForm();" data-target="#staticBackdrop">
+        Create
+    </button>
+    </div>
+
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            </div>
+            <div class="modal-body">
+                <h4>Do you want to register this user ?</h4>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="submit" class="btn btn-primary" id="cf-submit">Register</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+  </form>
+
+             <script>
+
+              var  months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+              var d = new Date();
+              var monthName=months[d.getMonth()]+'-'+d.getDate()+'-'+d.getFullYear();
+
+              document.getElementById("p1").innerHTML = monthName;
+
+              function submitForm(){
+
+                var fn = document.getElementById('fname').value;
+                var mn = document.getElementById('mname').value;
+                var ln = document.getElementById('lname').value;
+                var em = document.getElementById('email').value;
+                var pass = document.getElementById('password').value;
+                var spec = document.getElementById('spec').value;
+                var assist = document.getElementById('assist').value;
+
+                alert ("First Name : " + fn + "\n" + "Middle Name : " + mn + "\n" + "Last Name : " + ln + "\n" + "Email Address : " + em + "\n" + "Password : " + pass + "\n" + "Specialization : " + spec + "\n" + "Assistant Name : " + assist);
+                }
+
+
+              </script>
+<%- include('../partials/admin/footer') %>
