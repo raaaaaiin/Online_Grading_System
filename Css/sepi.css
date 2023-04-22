@@ -568,6 +568,7 @@ body {
 	height: 18px;
 	margin-top: 3px;
 	margin-left: -30px;
+	filter: invert(1);
 }
 .Grade:hover {
 	background-color: #4C0033;
@@ -590,6 +591,7 @@ body {
 	position: absolute;
 	height: 18px;
 	margin-top: 3px;
+	filter: invert(1);
 	margin-left: -30px;
 }
 .Grading:hover {
@@ -614,6 +616,7 @@ body {
 	height: 18px;
 	margin-top: 3px;
 	margin-left: -30px;
+	filter: invert(1);
 }
 .Subject:hover {
 	background-color: #4C0033;
@@ -637,6 +640,7 @@ body {
 	height: 18px;
 	margin-top: 3px;
 	margin-left: -30px;
+	filter: invert(1);
 }
 .Section:hover {
 	background-color: #4C0033;
@@ -659,6 +663,7 @@ body {
 	height: 18px;
 	margin-top: 3px;
 	margin-left: -30px;
+	filter: invert(1);
 }
 .Restriction:hover {
 	background-color: #4C0033;
