@@ -10,7 +10,7 @@
 			{
 				$userid = $_SESSION['TID'];
 	
-				$getrecord = mysqli_query($config,"SELECT * FROM tbl_teacher WHERE TID ='$userid'");
+				$getrecord = mysqli_query($config,"SELECT * FROM tbl_teacherinfo WHERE TID ='$userid'");
 				while($rowedit = mysqli_fetch_assoc($getrecord))
 
 					
@@ -19,7 +19,7 @@
 					$type = $rowedit['Role'];
 					
 					$name = $rowedit['FNAMES']." ".$rowedit['LNAMES'];
-					$subject = $rowedit['SUBJECTF'];
+
 				}
 			}
 			$sql1 = "Insert into tbl_auditteacher (e_name,e_action,e_date) values ('$name','Viewing 1st Quarter Grades',NOW())";
@@ -27,13 +27,13 @@
 ?>
 <html>
 <head> 
-<title> First Quarter</title>
+<title> Quarter</title>
 </head>
 <link rel="icon" href="../../Images/logo.png">
 <link rel="stylesheet" href="../../Css/sepi.css">
 <body style="background-color:#E5E4E2">
 <div class="header">
-<p class="displayname"><?php echo "$subject" ?> | <?php echo "$type" ?> | <?php echo "$name" ?> </p>
+
 
 <form method="POST"action="logout.php" >
 			<button type=submit name="logout" class="logout">Log Out</a>
@@ -52,31 +52,57 @@
 			<a href="changepass.php"  class="Accounts"><img src="../../Images/account.png" class="accounticon">Accounts</a>
 		</div>
 <div class="announcementdiv">
-				<h1 id="announcemetfont">1ST QUARTER GRADES</h1>
+				<h1 id="announcemetfont">QUARTERLY GRADES</h1>
 				<input type="button" onclick="printDiv('printableArea')" value="PRINT" />
 				<hr id=line>
 				<p class="searchannouncement">Search:</p>
 				<input type=text name=search class="gradetxt">
 
-<select name=category class=cat>
+				<select name="grade" class="cat" style="
+    width: 85px;
+">
 <option value="">Grade Level & Section</option>
-<option>Grade 1 - Love	</option>
-<option>Grade 2 - Hope</option>
-<option>Grade 3 - Humility</option>
-<option>Grade 4 - Meekness</option>
-<option>Grade 5 - Gentleness</option>
-<option>Grade 6 - Patience</option>
-<option>Grade 7 - Perseverance</option>
-<option>Grade 8 - Generosity</option>
-<option>Grade 9 - Industriousness</option>
-<option>Grade 10 - Prosperity</option>
-</select>
-<input type=submit name=sub class="gradebtn"> 
-				<a href="first.php" class="firstquarter">First Quarter</a>
-				<a href="second.php" class="secondquarter">Second Quarter</a>
-				<a href="third.php" class="thirdquarter">Third Quarter</a>
-				<a href="fourth.php" class="fourthquarter">Fourth Quarter</a>
+<?php
+include "../../sepi_connect.php";
 
+?>
+
+</select>
+<select name="section" class="cat" style="
+    margin-left: 25%;
+">
+<option value="">Subject</option>
+<?php
+
+
+?>
+
+</select>
+<select name="subject" class="cat" style="
+    margin-left: 39%;
+">
+<option value="">Section</option>
+<?php
+
+
+?>
+
+</select>
+<select name="sy" class="cat" style="
+    margin-left: 53%;
+	width:100px
+">
+<option value="">Sy</option>
+<?php
+
+
+?>
+
+</select>
+<input type='submit' name='sub' class="gradebtn" style="
+    margin-left: 62.5%;
+"> 
+				
 
 </body>
 </html>
@@ -157,4 +183,141 @@ function printDiv(divName) {
 
      document.body.innerHTML = originalContents;
 }
+// Define the select dropdowns
+const gradeDropdown = document.querySelector('select[name="grade"]');
+const sectionDropdown = document.querySelector('select[name="section"]');
+const subjectDropdown = document.querySelector('select[name="subject"]');
+const syDropdown = document.querySelector('select[name="sy"]');
+
+// Define the SQL queries to retrieve the dropdown options
+const gradeQuery = 'SELECT DISTINCT Grade_Level FROM tbl_restriction WHERE Teacher_Code = 1';
+const sectionQuery = 'SELECT * FROM sections WHERE grade_level = ...';
+const subjectQuery = 'SELECT * FROM subjects WHERE section = ...';
+const syQuery = 'SELECT DISTINCT Sy FROM ...';
+
+// Define the function to populate the "Section" dropdown based on the selected grade level
+function populateSectionDropdown(selectedGrade) {
+	
+    // Define the SQL query to retrieve the sections based on the selected grade level
+    const query = `SELECT
+ tbl_restriction.Subject_Code,
+ tbl_subject.Subject_name
+ FROM
+ tbl_restriction
+ INNER JOIN tbl_subject ON tbl_restriction.Subject_Code = tbl_subject.Subject_code
+ WHERE Teacher_Code = 1  and tbl_restriction.Grade_Level = '${selectedGrade}'
+`;
+
+    // Fetch the sections from the server using the SQL query
+    fetch('fetch.php?query=' + query)
+        .then(response => response.json())
+        .then(sections => {
+            // Delete all existing options in the "Section" dropdown menu
+			
+            while (sectionDropdown.firstChild) {
+                sectionDropdown.removeChild(sectionDropdown.firstChild);
+            }
+            // Add the retrieved sections to the "Section" dropdown menu
+			sectionDropdown.innerHTML += '<option disabled selected>Select an option</option>';
+            sections.forEach(section => {
+                sectionDropdown.innerHTML += '<option value="' + section.Subject_Code + '">' + section.Subject_Code +  ' :' + section.Subject_name + '</option>';
+            });
+        });
+}
+
+// Define the function to populate the "Subject" dropdown based on the selected section
+function populateSubjectDropdown(selectedSection) {
+    // Define the SQL query to retrieve the subjects based on the selected section
+    const query = `SELECT
+ tbl_restriction_subject.ID,
+ tbl_restriction_subject.Section_Code,
+ tbl_restriction_subject.Subject_Code,
+ tbl_section.Section_Name as ASection_Name,
+ Concat(tbl_section.Grade_Level,' - ',tbl_section.Section_Name) as Section_Name
+ FROM
+ tbl_restriction_subject
+ INNER JOIN tbl_section ON tbl_restriction_subject.Section_Code = tbl_section.ID
+ where Subject_Code = '${selectedSection}'
+`;
+
+    // Fetch the subjects from the server using the SQL query
+    fetch('fetch.php?query=' + query)
+        .then(response => response.json())
+        .then(subjects => {
+            // Delete all existing options in the "Subject" dropdown menu
+            while (subjectDropdown.firstChild) {
+                subjectDropdown.removeChild(subjectDropdown.firstChild);
+            }
+            // Add the retrieved subjects to the "Subject" dropdown menu
+			subjectDropdown.innerHTML+= '<option disabled selected>Select an option</option>';
+            subjects.forEach(subject => {
+                subjectDropdown.innerHTML += '<option value="' + subject.ASection_Name + '">' + subject.Section_Name + '</option>';
+            });
+        });
+}
+
+// Define the function to populate the "Sy" dropdown based on the selected grade level and section
+function populateSyDropdown(selectedSubject) {
+    // Define the SQL query to retrieve the Sy values based on the selected subject
+    const query = `SELECT DISTINCT SY FROM tbl_section where Section_Name = '${selectedSubject}'`;
+
+    // Fetch the Sy values from the server using the SQL query
+    fetch('fetch.php?query=' + query)
+        .then(response => response.json())
+        .then(sys => {
+            // Delete all existing options in the "Sy" dropdown menu
+            while (syDropdown.firstChild) {
+                syDropdown.removeChild(syDropdown.firstChild);
+            }
+			syDropdown.innerHTML +=  '<option disabled selected>Select an option</option>';
+            // Add the retrieved Sy values to the "Sy" dropdown menu
+            sys.forEach(sy => {
+                syDropdown.innerHTML += '<option value="' + sy.SY + '">' + sy.SY + '</option>';
+            });
+        });
+}
+
+// Define the event listener for the "Grade Level" dropdown
+gradeDropdown.addEventListener('change', event => {
+    const selectedGrade = event.target.value;
+    // Populate the "Section" dropdown based on the selected grade level
+    populateSectionDropdown(selectedGrade);
+    // Reset the "Subject" and "Sy" dropdowns
+    subjectDropdown.innerHTML = '<option value="">Section</option>';
+	syDropdown.innerHTML = '<option value="">Sy</option>';
+});
+
+// Define the event listener for the "Section" dropdown
+sectionDropdown.addEventListener('change', event => {
+const selectedSection = event.target.value;
+// Populate the "Subject" dropdown based on the selected section
+populateSubjectDropdown(selectedSection);
+// Reset the "Sy" dropdown
+syDropdown.innerHTML = '<option value="">Sy</option>';
+});
+
+// Define the event listener for the "Grade Level" and "Section" dropdowns (together)
+// This is used to populate the "Sy" dropdown based on both the selected grade level and section
+[gradeDropdown, sectionDropdown].forEach(dropdown => {
+dropdown.addEventListener('change', event => {
+const selectedGrade = gradeDropdown.value;
+const selectedSection = sectionDropdown.value;
+// Populate the "Sy" dropdown based on the selected grade level and section
+
+});
+});
+subjectDropdown.addEventListener('change', event => {
+    const selectedSubject = event.target.value;
+    // Populate the "Sy" dropdown based on the selected subject
+    populateSyDropdown(selectedSubject);
+});
+// Populate the "Grade Level" dropdown initially
+fetch('fetch.php?query=' + gradeQuery)
+.then(response => response.json())
+.then(grades => {
+// Add the retrieved grades to the "Grade Level" dropdown menu
+grades.forEach(grade => {
+gradeDropdown.innerHTML += '<option value="' + grade.Grade_Level + '">' + grade.Grade_Level + '</option>';
+});
+});
 </script>
