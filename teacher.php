@@ -11,9 +11,9 @@
 		
 		<img src="./Images/logo.png" class="loginlogo">
 		</div>
-		<form method=POST action=teacherap.php>
+		<form method=POST action=teacher.php>
 			<div class="container1">
-				<h4 id=fonttitle>TEACHER - LOG IN - A.P</h4>
+				<h4 id=fonttitle>TEACHER - LOG IN - General</h4>
 				<input type="text" name="username" placeholder="Username" autocomplete="off" size="20" required class="namefield">
 					<p>
 						<input type="password" name="password" placeholder="Password" size="20" required class="passwordfield">
@@ -43,10 +43,10 @@
 	{
 		$username = $_POST['username'];
 		$password  = $_POST['password'];
-		$subject = $_POST['subject'];
+
 		
 		
-		$viewlogin= "SELECT * FROM tbl_teacher WHERE USERNAME = '$username'";
+		$viewlogin= "SELECT * FROM tbl_teacherinfo WHERE USERNAME = '$username'";
 		$result = mysqli_query($config,$viewlogin);
 		$number = mysqli_num_rows($result);
 		
@@ -57,14 +57,13 @@
 			$userid = $row['TID'];
 			$username = $row['EMAIL'];
 			$dbpassword = $row['PASS'];
-			$subject = $row['SUBJECTF'];
+
 
 			session_start();
 						
 			$_SESSION['TID'] = $userid;
 			$_SESSION['EMAIL'] = $username;
 			$_SESSION['Role'] = $type;
-			$_SESSION['SUBJECTF'] = $subject;
 	
 		
 
@@ -73,7 +72,7 @@
 		 }else if(isset($_SESSION['TID']))
 			{
 	
-				$getrecord = mysqli_query($config,"SELECT * FROM tbl_teacher WHERE TID ='$userid'");
+				$getrecord = mysqli_query($config,"SELECT * FROM tbl_teacherinfo WHERE TID ='$userid'");
 				while($rowedit = mysqli_fetch_assoc($getrecord))
 					
 				{
@@ -87,11 +86,11 @@
 	
 				$_SESSION['loggedin'] = true;	
 	
-			 if($type == "Teacher" && $subject == "Araling Panlipunan")
+			 if($type == "Teacher")
 				{
 					if($dbpassword == $password)
 						{
-							header("refresh:0;url=./Teacher/General/apdashboard.php");
+							header("refresh:0;url=./Teacher/General/dashboard.php");
 						}
 						else
 						{

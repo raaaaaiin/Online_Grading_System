@@ -20,11 +20,12 @@
 					
 					$name = $rowedit['FNAMES']." ".$rowedit['LNAMES'];
 					$subject = $rowedit['SUBJECTF'];
-				}
-			}
-			$sql1 = "Insert into tbl_auditteacher (e_name,e_action,e_date) values ('$name','Viewing Teacher Dashboard',NOW())";
+					$sql1 = "Insert into tbl_auditteacher (e_name,e_action,e_date) values ('$name','Viewing Teacher Dashboard',NOW())";
 			$result1 = $config->query($sql1);
 
+				}
+			}
+			
 
 	
 	
@@ -40,7 +41,7 @@
 <body style="background-color:#E5E4E2">
 <div class="header">
 
-<p class="displayname"><?php echo "$subject" ?> | <?php echo "$type" ?> | <?php echo "$name" ?> </p>
+
 <form method="POST"action="logout.php" >
 			<button type=submit name="logout" class="logout">Log Out</a>
 </form>
