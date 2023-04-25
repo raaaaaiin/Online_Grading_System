@@ -104,7 +104,7 @@ include "../../sepi_connect.php";
     margin-left: 62.5%;
 	width:100px
 ">
-<option disabled>Select an option</option>
+<option disabled selected>Select an option</option>
 <option value="Prelim">Prelim</option>
 
 <option value="Midterm">Midterm</option>
@@ -128,6 +128,9 @@ include "../../sepi_connect.php";
 </body>
 </html>
 <form action="first.php" method="post">
+<input type='text' name='quarter' class="" style="
+    margin-left: 90.5%;
+" value="<?php echo @$_POST['Quarter']?>" hidden>
 <input type='submit' name='save' class="gradebtn" style="
     margin-left: 82.5%;
 " value="Save">
@@ -148,7 +151,7 @@ include "../../sepi_connect.php";
 				@$Quarter = $_POST['Quarter'];
 				@$category = $_POST['category'];
 				if($Level != NULL){
-				$sql = "SELECT tbl_studentinfo.Stud_SID, tbl_studentinfo.Stud_ID, tbl_studentinfo.FNAME, tbl_studentinfo.MNAME, tbl_studentinfo.LNAME, tbl_studentinfo.USERNAME, tbl_studentinfo.ADDRESS, tbl_studentinfo.EMAIL, tbl_studentinfo.PASS, tbl_studentinfo.BDAY, tbl_studentinfo.AGE, tbl_studentinfo.GENDER, tbl_studentinfo.`LEVEL`, tbl_studentinfo.`YEAR`, tbl_studentinfo.LRN, tbl_studentinfo.Role, tbl_studentinfo.`STATUS`, tbl_grades.".$Quarter." FROM tbl_studentinfo Left JOIN tbl_grades ON tbl_studentinfo.Stud_SID = tbl_grades.Student_Code AND tbl_studentinfo.`YEAR` = tbl_grades.SY where LEVEL = '$Level' and YEAR = '$Year' AND (tbl_grades.Subject_Code = '$subject' OR tbl_grades.Subject_Code IS NULL)"; 	
+				$sql = "SELECT Distinct tbl_studentinfo.Stud_SID, tbl_studentinfo.Stud_ID, tbl_studentinfo.FNAME, tbl_studentinfo.MNAME, tbl_studentinfo.LNAME, tbl_studentinfo.USERNAME, tbl_studentinfo.ADDRESS, tbl_studentinfo.EMAIL, tbl_studentinfo.PASS, tbl_studentinfo.BDAY, tbl_studentinfo.AGE, tbl_studentinfo.GENDER, tbl_studentinfo.`LEVEL`, tbl_studentinfo.`YEAR`, tbl_studentinfo.LRN, tbl_studentinfo.Role, tbl_studentinfo.`STATUS`, tbl_grades.".$Quarter." FROM tbl_studentinfo Left JOIN tbl_grades ON tbl_studentinfo.Stud_SID = tbl_grades.Student_Code AND tbl_studentinfo.`YEAR` = tbl_grades.SY where LEVEL = '$Level' and YEAR = '$Year' AND (tbl_grades.Subject_Code = '$subject' OR tbl_grades.Subject_Code IS NULL)"; 	
 				
 				}
 				else{
@@ -194,6 +197,8 @@ echo "<td class='gradeinfo'><input type='hidden' name='row_data[".$i."][1]' valu
 echo "<td class='gradeinfo'><input type='hidden' name='row_data[".$i."][2]' value='".$row['LEVEL']."'>".$row['LEVEL']."</td>";
 echo "<td class='gradeinfo'><input type='text' name='row_data[".$i."][3]' value='".$grade."'></td>";
 echo "<td class='gradeinfo'><input type='hidden' name='row_data[".$i."][4]' value='".$row['EMAIL']."'>".$row['EMAIL']."</td>";
+echo "<input type='text' name='row_data[".$i."][5]' value='".$row['YEAR']."' hidden>";
+echo "<input type='text' name='row_data[".$i."][6]' value='".$_POST['section']."' hidden>";
 echo "<td class='gradeinfo'><a href='index.php?ID=".$row['Stud_SID']."'>SEND EMAIL</a></td>";
 echo "</tr>";
 
@@ -215,20 +220,60 @@ $i++;
 include("../../sepi_connect.php");
 if(isset($_POST['save'])){
 	var_dump($_POST);
-// Loop through each row of the table
-foreach ($_POST['row_data'] as $row) {
-  // Extract the data from each column in the row
-  $column1 = $row[0];
-  $column2 = $row[1];
-  $column3 = $row[2];
-var_dump($row);
-  // Generate an SQL insert statement for the row
-  //$sql = "INSERT INTO table_name (column1, column2, column3) VALUES ('$column1', '$column2', '$column3')";
-  mysqli_query($conn, $sql);
-}
+		$row_data = $_POST['row_data'];
+	
+    $quarter = $_POST['quarter'];
 
-// Close the database connection
-mysqli_close($conn);
+    // Determine which quarter to update
+    switch ($quarter) {
+      case 'Prelim':
+        $grade_column = 'Prelim';
+        break;
+      case 'Midterm':
+        $grade_column = 'Midterm';
+        break;
+      case 'Prefinal':
+        $grade_column = 'Prefinal';
+        break;
+      case 'Final':
+        $grade_column = 'Final';
+        break;
+      default:
+        die("Invalid quarter value");
+    }
+    
+    // Get the teacher's ID from the session
+    $Teacher_Code = $_SESSION['TID'];
+    
+    // Loop through the submitted data and execute the upsert query
+    foreach ($row_data as $row) {
+      $Subject_Code = $row[6];
+      $Student_Code = $row[0];
+      $Grade = $row[3];
+      $SY = $row[5];
+
+      // Check if the record exists
+      $check_query = "SELECT ID FROM tbl_grades WHERE Student_Code = '$Student_Code' AND SY = '$SY' AND Subject_Code ='$Subject_Code'";
+	  var_dump($check_query);
+      @$check_result = $config->query($check_query);
+      
+      if (@$check_result->num_rows > 0) {
+          // Update the existing record
+          $update_query = "UPDATE tbl_grades SET Subject_Code = '$Subject_Code', Teacher_Code = '$Teacher_Code', $grade_column = '$Grade' WHERE Student_Code = '$Student_Code' AND SY = '$SY'";
+          $result = $config->query($update_query);
+		  var_dump($update_query);
+      } else {
+          // Insert a new record
+          $insert_query = "INSERT INTO tbl_grades (Subject_Code, Teacher_Code, Student_Code, $grade_column, SY) VALUES ('$Subject_Code', '$Teacher_Code', '$Student_Code', '$Grade', '$SY')";
+          $result = $config->query($insert_query);
+		  var_dump($insert_query);
+      }
+
+      if (!$result) {
+        die("Query failed: " . $config->error);
+		
+      }
+    }
 }
 ?>
 <script>
