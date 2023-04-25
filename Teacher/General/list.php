@@ -11,7 +11,7 @@
 			{
 				$userid = $_SESSION['TID'];
 	
-				$getrecord = mysqli_query($config,"SELECT * FROM tbl_teacher WHERE TID ='$userid'");
+				$getrecord = mysqli_query($config,"SELECT * FROM tbl_teacherinfo WHERE TID ='$userid'");
 				while($rowedit = mysqli_fetch_assoc($getrecord))
 
 					
@@ -20,7 +20,6 @@
 					$type = $rowedit['Role'];
 					
 					$name = $rowedit['FNAMES']." ".$rowedit['LNAMES'];
-					$subject = $rowedit['SUBJECTF'];
 				}
 			}
 			$sql1 = "Insert into tbl_auditstudent (e_name,e_action,e_date) values ('$name','Viewing Student list',NOW())";
@@ -59,8 +58,6 @@ $sql = "Select * from tbl_student";
 <link rel="stylesheet" href="../../Css/sepi.css">
 <body style="background-color:#E5E4E2">
 <div class="header">
-<p class="displayname"><?php echo "$subject" ?> | <?php echo "$type" ?> | <?php echo "$name" ?> </p>
-
 
 
 <form method="POST"action="logout.php" >

@@ -19,7 +19,7 @@
 					$type = $rowedit['Role'];
 					
 					$name = $rowedit['FNAMES']." ".$rowedit['LNAMES'];
-					$subject = $rowedit['SUBJECTF'];
+				
 					$sql1 = "Insert into tbl_auditteacher (e_name,e_action,e_date) values ('$name','Viewing Teacher Dashboard',NOW())";
 			$result1 = $config->query($sql1);
 

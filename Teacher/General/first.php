@@ -1,4 +1,5 @@
-<?php
+	<?php
+
 		include "../../sepi_connect.php";
 			session_start();
 	
@@ -99,37 +100,71 @@ include "../../sepi_connect.php";
 ?>
 
 </select>
-<input type='submit' name='sub' class="gradebtn" style="
+<select name="Quarter" class="cat" style="
     margin-left: 62.5%;
+	width:100px
+">
+<option disabled>Select an option</option>
+<option value="Prelim">Prelim</option>
+
+<option value="Midterm">Midterm</option>
+
+<option value="Prefinal">Prefinal</option>
+
+<option value="Final">Final</option>
+<?php
+
+
+
+?>
+
+</select>
+<input type='submit' name='sub' class="gradebtn" style="
+    margin-left: 72.5%;
 "> 
 				
 
+			 
 </body>
 </html>
+<form action="first.php" method="post">
+<input type='submit' name='save' class="gradebtn" style="
+    margin-left: 82.5%;
+" value="Save">
 <div id=printableArea>
+
 <?php
 			include "../../sepi_connect.php";
 
 			if(isset($_POST['sub'])){
-				$search = $_POST['search'];
-				$category = $_POST['category'];
-				if($category != NULL){
-				$sql = "SELECT * FROM tbl_student where LEVEL = '$category'";
+
+				@$search = $_POST['search'];
+				@$grade = $_POST['grade'];
+				@$subject = $_POST['section'];
+				@$schoolyear = $_POST['sy'];
+				@$section = $_POST['subject'];
+				@$Level = $grade . ' - '. $section;
+				@$Year = $schoolyear;
+				@$Quarter = $_POST['Quarter'];
+				@$category = $_POST['category'];
+				if($Level != NULL){
+				$sql = "SELECT tbl_studentinfo.Stud_SID, tbl_studentinfo.Stud_ID, tbl_studentinfo.FNAME, tbl_studentinfo.MNAME, tbl_studentinfo.LNAME, tbl_studentinfo.USERNAME, tbl_studentinfo.ADDRESS, tbl_studentinfo.EMAIL, tbl_studentinfo.PASS, tbl_studentinfo.BDAY, tbl_studentinfo.AGE, tbl_studentinfo.GENDER, tbl_studentinfo.`LEVEL`, tbl_studentinfo.`YEAR`, tbl_studentinfo.LRN, tbl_studentinfo.Role, tbl_studentinfo.`STATUS`, tbl_grades.".$Quarter." FROM tbl_studentinfo Left JOIN tbl_grades ON tbl_studentinfo.Stud_SID = tbl_grades.Student_Code AND tbl_studentinfo.`YEAR` = tbl_grades.SY where LEVEL = '$Level' and YEAR = '$Year' AND (tbl_grades.Subject_Code = '$subject' OR tbl_grades.Subject_Code IS NULL)"; 	
 				
 				}
 				else{
-					$sql = "SELECT * FROM tbl_student ORDER BY Stud_SID DESC LIMIT 0";
+					$sql = "SELECT * FROM tbl_studentinfo ORDER BY Stud_SID";
 					
 					}
 				if($search !=NULL){
-				$sql = "SELECT * FROM tbl_student where Stud_SID LIKE '%$search%' or 
+				$sql = "SELECT * FROM tbl_studentinfo where Stud_SID LIKE '%$search%' or 
 														FNAME LIKE '%$search%' or
 														LNAME LIKE '%$search%' or
 														USERNAME LIKE '%$search%' or
-														EMAIL LIKE '%$search%'";
+														EMAIL LIKE '%$search%' and
+														LEVEL = '$Level' and YEAR = '$Year'";
 				}
 				}else{
-				$sql = "SELECT * FROM tbl_student ORDER BY Stud_SID DESC LIMIT 0";
+				$sql = "SELECT * FROM tbl_studentinfo ORDER BY Stud_SID DESC LIMIT 0";
 				
 				}
 
@@ -143,35 +178,59 @@ if($result -> num_rows > 0){
 	echo "<th Class=gradeheader>GRADE LEVEL AND SECTION ";
 	echo "<th Class=gradeheader>GRADE ";
 	echo "<th Class=gradeheader>EMAIL: ";
-	echo "<th Class=gradeheader>ENTER GRADE";
 	echo "<th Class=gradeheader>SEND EMAIL ";
+	$i = 0;
 while($row = $result -> fetch_assoc()){
 	$zero = 0;
 $zero1 = 0;
 $zero2 = 0;
 $date=date_create("2023");
 $dateformat=date_format($date,"y");
+@$grade = $row[$Quarter] >= 0 ? $row[$Quarter]  : 0;
+
 echo "<tr>";
-echo "<td class=gradeinfo>".$dateformat."-".$zero."".$zero1."".$zero2."-".$row['Stud_SID'];
-echo "<td class=gradeinfo>".$row['FNAME']."".$row['MNAME']."".$row['LNAME'];
-echo "<td class=gradeinfo>".$row['LEVEL'];
-echo "<td class=gradeinfo>".$row['AP'];
-echo "<td class=gradeinfo>".$row['EMAIL'];
-echo "<td class=gradeinfo> <a href='apfirstquarter.php?ID=".$row['Stud_SID']."'> INPUT GRADE </a>";
-echo "<td class=gradeinfo> <a href='index.php?ID=".$row['Stud_SID']."'> SEND EMAIL </a>";
+echo "<td class='gradeinfo'><input type='hidden' name='row_data[".$i."][0]' value='".$row['Stud_SID']."'>".$dateformat."-".$zero."".$zero1."".$zero2."-".$row['Stud_SID']."</td>";
+echo "<td class='gradeinfo'><input type='hidden' name='row_data[".$i."][1]' value='".$row['FNAME']."'>".$row['FNAME']." ".$row['MNAME']." ".$row['LNAME']."</td>";
+echo "<td class='gradeinfo'><input type='hidden' name='row_data[".$i."][2]' value='".$row['LEVEL']."'>".$row['LEVEL']."</td>";
+echo "<td class='gradeinfo'><input type='text' name='row_data[".$i."][3]' value='".$grade."'></td>";
+echo "<td class='gradeinfo'><input type='hidden' name='row_data[".$i."][4]' value='".$row['EMAIL']."'>".$row['EMAIL']."</td>";
+echo "<td class='gradeinfo'><a href='index.php?ID=".$row['Stud_SID']."'>SEND EMAIL</a></td>";
+echo "</tr>";
 
 
-
-
+$i++;
 	
 
 }	
 }else{
 	echo "<p class=empty>SELECT GRADE LEVEL AND SECTION</p>";
 }
+
 ?>
 
 </div>
+</form>
+<?php
+// Include the file that contains your database connection code
+include("../../sepi_connect.php");
+if(isset($_POST['save'])){
+	var_dump($_POST);
+// Loop through each row of the table
+foreach ($_POST['row_data'] as $row) {
+  // Extract the data from each column in the row
+  $column1 = $row[0];
+  $column2 = $row[1];
+  $column3 = $row[2];
+var_dump($row);
+  // Generate an SQL insert statement for the row
+  //$sql = "INSERT INTO table_name (column1, column2, column3) VALUES ('$column1', '$column2', '$column3')";
+  mysqli_query($conn, $sql);
+}
+
+// Close the database connection
+mysqli_close($conn);
+}
+?>
 <script>
 function printDiv(divName) {
      var printContents = document.getElementById(divName).innerHTML;
