@@ -48,18 +48,7 @@
 
 
 <div class="dropdown">
-  <button class="teacherlogin">Teacher Login</button>
-  <div class="dropdown-content">
-    <a href="teacherlogin.php">Filipino</a>
-    <a href="teacherenglish.php">English</a>
-    <a href="teachermath.php">Mathematics</a>
-    <a href="teacherscience.php">Science</a>
-    <a href="teacherap.php">Araling Panlipunan</a>
-    <a href="teachertle.php">T.L.E / HELE</a>
-    <a href="teachermapeh.php">M.A.P.E.H</a>
-    <a href="teacherce.php">Christian Education / EPP</a>
-    <a href="teachercom.php">Computer</a>
-  </div>
+  <a class="teacherlogin" href='teacher.php' >Teacher Login</a>
 </div>
 
 

@@ -42,7 +42,7 @@
 			<div class="footer">
 				<h6 id="footer">� 2022 SEPI Login Form. All Rights Reserved | Designed by Excel-erator</h6>
 			</div>
-<form method=POST action="apfirst.php">
+<form method=POST action="first.php">
 		<div class="dashboard">
 			<img src="../../Images/logo.png" class="dashboardlogocvgs">
 			<a href="dashboard.php" class="Dashboardhome"><img src="../../Images/homeicon.png" class="homeicon">Dashboard</a>
