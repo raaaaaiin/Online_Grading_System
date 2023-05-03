@@ -46,7 +46,7 @@
         <h6 id="footer">© 2022 SEPI Login Form. All Rights Reserved | Designed by Excel-erator</h6>
     </div>
     <form method=POST action="sectionadd.php" enctype="multipart/form-data">
-        <div class="dashboard">
+        <!--<div class="dashboard">
             <img src="../Images/logo.png" class="dashboardlogocvgs">
             <a href="dashboard.php" class="Dashboardhome"><img src="../Images/homeicon.png"
                     class="homeicon">Dashboard</a>
@@ -62,7 +62,10 @@
                     class="archiveicon">Archive</a>
             <a href="grade.php" class=""><img src="" class="">Grades</a>
             <a href="grading.php" class=""><img src="" class="">Grading Policy</a>
-        </div>
+        </div>-->
+        <?php
+		include_once('SideNav.php');
+		?>
 
         <div class="announceadddiv">
             <h1 id="announceaddfont">ADD SECTION</h1>

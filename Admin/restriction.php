@@ -66,17 +66,16 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true)
 			}else{
 
 $sql = "SELECT
-tbl_restriction.ID,
 tbl_restriction.Teacher_Code,
-tbl_restriction.Grade_Level,
-GROUP_CONCAT(tbl_restriction.Subject_Code SEPARATOR ', ') AS Subject_Codes,
-tbl_restriction.Sy,
+GROUP_CONCAT(DISTINCT tbl_restriction.Grade_Level ORDER BY tbl_restriction.Grade_Level ASC) AS Grade_Level,
+GROUP_CONCAT(tbl_restriction.Subject_Code ORDER BY tbl_restriction.Grade_Level ASC SEPARATOR ', ') AS Subject_Codes,
 CONCAT(tbl_teacherinfo.FNAMES, ' ', tbl_teacherinfo.MNAMES, ' ', tbl_teacherinfo.LNAMES) AS Teacher_Name
 FROM
 tbl_restriction
-INNER JOIN tbl_teacherinfo ON tbl_restriction.Teacher_Code = tbl_teacherinfo.TID
-GROUP BY Teacher_Code, Grade_Level;
-";
+INNER JOIN
+tbl_teacherinfo ON tbl_restriction.Teacher_Code = tbl_teacherinfo.TID
+GROUP BY
+tbl_restriction.Teacher_Code;";
 }
 
 
@@ -170,9 +169,9 @@ echo "<td class=announcementinfo rowspan=2>".$row['Teacher_Code'];
 echo "<td class=announcementinfo rowspan=2>".$row['Teacher_Name'];
 echo "<td class=announcementinfo rowspan=2>".$row['Subject_Codes'];
 echo "<td class=announcementinfo rowspan=2>".$row['Grade_Level'];
-echo "<td class=announcementinfo> <a href='announceupdate.php?ID=".$row['ID']."'> Update </a>";
+echo "<td class=announcementinfo> <a href='announceupdate.php?ID=".$row['Teacher_Code']."'> Update </a>";
 echo "<tr>";
-echo "<td class=announcementinfo> <a href='deleteannounce.php?ID=".$row['ID']."'> Archive </a>";
+echo "<td class=announcementinfo> <a href='deleteannounce.php?ID=".$row['Teacher_Code']."'> Archive </a>";
 echo"<tr>";
 echo "<td class=announcementinfo1 colspan=4>";
 

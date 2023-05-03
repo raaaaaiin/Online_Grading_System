@@ -46,7 +46,7 @@
         <h6 id="footer">© 2022 SEPI Login Form. All Rights Reserved | Designed by Excel-erator</h6>
     </div>
     <form method=POST action="restrictionadd.php" enctype="multipart/form-data">
-        <div class="dashboard">
+        <!--<div class="dashboard">
             <img src="../Images/logo.png" class="dashboardlogocvgs">
             <a href="dashboard.php" class="Dashboardhome"><img src="../Images/homeicon.png"
                     class="homeicon">Dashboard</a>
@@ -62,14 +62,16 @@
                     class="archiveicon">Archive</a>
             <a href="grade.php" class=""><img src="" class="">Grades</a>
             <a href="grading.php" class=""><img src="" class="">Grading Policy</a>
-        </div>
-
+        </div>-->
+        <?php
+		include_once('SideNav.php');
+		?>
         <div class="announceadddiv">
             <h1 id="announceaddfont">ADD Restriction</h1>
             <hr class="announceaddline">
             <select name="Teacher" class="addannouncemntfield">
                <?php
-               $query = "SELECT ID as teacher_Code, CONCAT(FNAMES, ' ', MNAMES, ' ', LNAMES) AS name FROM tbl_teacherinfo";
+               $query = "SELECT TID as teacher_Code, CONCAT(FNAMES, ' ', MNAMES, ' ', LNAMES) AS name FROM tbl_teacherinfo";
 
                // Execute the query and retrieve the result set
                $result = mysqli_query($config, $query);

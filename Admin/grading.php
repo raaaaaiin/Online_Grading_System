@@ -44,7 +44,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true)
 			</form>
 </div>
 	<form method=POST action="dashboard.php">
-		<div class="dashboard">
+		<!--<div class="dashboard">
 			<img src="../Images/logo.png" class="dashboardlogocvgs">
 			<a href="dashboard.php" class="Dashboardhome"><img src="../Images/homeicon.png" class="homeicon">Dashboard</a>
 			<a href="announceview.php" class="Announcement"><img src="../Images/announcement.png" class="announcementicon">Announcement</a>
@@ -59,7 +59,10 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true)
            
 
 
-		</div>
+		</div>-->
+		<?php
+		include_once('SideNav.php');
+		?>
 
         <div class="auditdiv">
 				<h1 id="auditfont">GRADING POLICY</h1>
