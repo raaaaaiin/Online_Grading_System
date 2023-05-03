@@ -24,7 +24,7 @@ if(isset($_POST['search'])){
 $search = $_POST['search'];
 
 if ($search != NULL){
-$sql = "Select * from tbl_teacher where TID like '%$search%' or 
+$sql = "Select * from tbl_teacherinfo where TID like '%$search%' or 
 										Employee_ID like '%$search%' or
 										FNAMES like '%$search%' or
 										MNAMES like '%$search%' or
@@ -35,11 +35,11 @@ $sql = "Select * from tbl_teacher where TID like '%$search%' or
 										SUBJECTS like '%$search%'";
 }else{
 
-$sql = "Select * from tbl_teacher";
+$sql = "Select * from tbl_teacherinfo";
 }
 }else{
 
-$sql = "Select * from tbl_teacher";
+$sql = "Select * from tbl_teacherinfo";
 }
 
 
@@ -114,7 +114,7 @@ echo "<td class=teacherinfo>".$row['FNAMES']." ".$row['MNAMES']." ".$row['LNAMES
 echo "<td class=teacherinfo>".$row['USERNAME'];
 echo "<td class=teacherinfo>".$row['EMAIL'];
 
-echo "<td class=teacherinfo1>".$row['SUBJECT']." | ".$row['SUBJECTO']." | ".$row['SUBJECTT']." | ".$row['SUBJECTTH']." | ".$row['SUBJECTF']." | ".$row['SUBJECTFI']." | ".$row['SUBJECTS']." | ".$row['SUBJECTSE']." | ".$row['SUBJECTE'];
+echo "<td class=teacherinfo1>";
 echo "<td class=teacherinfo> <a href='teacherupdate.php?ID=".$row['TID']."'> Update </a>";
 echo "<td class=teacherinfo> <a href='teacherdelete.php?ID=".$row['TID']."'> Archive </a>";
 echo "<td class=teacherinfo> <a href='index.php'?ID=".$row['TID']."'> Send Email </a>";	

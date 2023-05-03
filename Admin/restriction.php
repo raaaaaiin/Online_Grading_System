@@ -74,7 +74,7 @@ tbl_restriction.Sy,
 CONCAT(tbl_teacherinfo.FNAMES, ' ', tbl_teacherinfo.MNAMES, ' ', tbl_teacherinfo.LNAMES) AS Teacher_Name
 FROM
 tbl_restriction
-INNER JOIN tbl_teacherinfo ON tbl_restriction.Teacher_Code = tbl_teacherinfo.ID
+INNER JOIN tbl_teacherinfo ON tbl_restriction.Teacher_Code = tbl_teacherinfo.TID
 GROUP BY Teacher_Code, Grade_Level;
 ";
 }
