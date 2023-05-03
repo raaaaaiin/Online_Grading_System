@@ -361,7 +361,7 @@
                 <th class=headerfinalgrade>4</th>
             </tr>
 
-            <tr>
+            <!--<tr>
                 <th class=headerfinalgrade>Mathematics</th>
                 <td class=datafinalgrade><input type=text name=studmathfirst class=datafinalgrade1 value="<?php echo $MATH; ?>" readonly></td>
                 <td class=datafinalgrade><input type=text name=studmathsecond class=datafinalgrade1 value="<?php echo $MATHS; ?>"readonly></td>
@@ -427,7 +427,73 @@
                 <td class=datafinalgrade><input type=text name=studcefourth class=datafinalgrade1 value="<?php echo $CEF; ?>"readonly></td>
                 <td class=datafinalgrade><input type=text name=studcefourth class=datafinalgrade1 value="<?php echo $CEFINAL; ?>"readonly></td>
                 <td class=datafinalgrade><input type=text name=studcefourth class=datafinalgrade1 value="<?php echo $gradece; ?>"readonly></td>
-            </tr>
+            </tr>-->
+
+            <?php
+// Fetch the data from the query
+$query = "SELECT
+tbl_subject.Grade_level,
+tbl_subject.ID,
+tbl_subject.Subject_code,
+tbl_subject.Subject_name,
+tbl_grades.Prelim,
+tbl_grades.Midterm,
+tbl_grades.Prefinal,
+tbl_grades.Final
+FROM
+tbl_studentinfo
+left JOIN tbl_section ON tbl_studentinfo.`LEVEL` = tbl_section.Section
+left JOIN tbl_subject ON tbl_section.Grade_Level = tbl_subject.Grade_level
+left JOIN tbl_grades ON tbl_subject.Subject_code = tbl_grades.Subject_Code
+where tbl_studentinfo.Stud_SID = 25;";
+
+$result = mysqli_query($config, $query);
+
+// Loop through the results and create a table row for each subject
+while ($row = mysqli_fetch_assoc($result)) {
+    $subject_name = $row['Subject_name'];
+    $prelim = $row['Prelim'];
+    $midterm = $row['Midterm'];
+    $prefinal = $row['Prefinal'];
+    $final = $row['Final'];
+    // Calculate the total grade or any other calculations needed
+   
+
+    $total_grade = ($prelim + $midterm + $prefinal + $final)/4 == 0 ? "--" : ($prelim + $midterm + $prefinal + $final)/4;
+   
+    if (is_int($total_grade)) {
+        // If it's an integer, round it
+        $grade = round($total_grade);
+    } else {
+        // If it's not an integer, use the original value
+        $grade = $total_grade;
+    }
+
+    
+    if ($grade >= 75)
+        $remarks = "Passed";
+    else if ($grade <= 75 && $grade >= 1)
+        $remarks = "Failed";
+    else if($grade = "--")
+        $remarks = "--";
+    else
+        $remarks = "--";
+
+
+
+
+
+    echo "<tr>";
+    echo "<th class='headerfinalgrade'>$subject_name</th>";
+    echo "<td class='datafinalgrade'><input type='text' name='stud{$subject_name}first' class='datafinalgrade1' value='$prelim' readonly></td>";
+    echo "<td class='datafinalgrade'><input type='text' name='stud{$subject_name}second' class='datafinalgrade1' value='$midterm' readonly></td>";
+    echo "<td class='datafinalgrade'><input type='text' name='stud{$subject_name}third' class='datafinalgrade1' value='$prefinal' readonly></td>";
+    echo "<td class='datafinalgrade'><input type='text' name='stud{$subject_name}fourth' class='datafinalgrade1' value='$final' readonly></td>";
+    echo "<td class='datafinalgrade'><input type='text' name='stud{$subject_name}fourth' class='datafinalgrade1' value='$total_grade' readonly></td>";
+    echo "<td class='datafinalgrade'><input type='text' name='stud{$subject_name}fourth' class='datafinalgrade1' value='$grade' readonly></td>";
+    echo "</tr>";
+}
+?>
             <tr>
                 <th class=headerfinalgrade></th>
                 <td class=datafinalgrade><input type=text name=studcefirst class=datafinalgrade1 value="" readonly></td>

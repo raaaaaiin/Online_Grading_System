@@ -64,7 +64,7 @@ $sql = "Select * from tbl_section";
 		?>
 <div class="announcementdiv">
 				<h1 id="announcemetfont">Sections</h1>
-				<a href="section.php" name="addannouncement"><img src="../Images/add_icon.png" class="addannouncementbtn"></a>
+				<a href="sectionadd.php" name="addannouncement"><img src="../Images/add_icon.png" class="addannouncementbtn"></a>
 				<hr>
 				<p class="searchannouncement">Search:</p>
 				<input type=text name=search class="announcementtxt">
