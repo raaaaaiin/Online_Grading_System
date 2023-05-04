@@ -327,7 +327,7 @@
     </div>
     <form method=POST action="viewstudgrades.php">
 
-    <div class="dashboard">
+    <!--<div class="dashboard">
 			<img src="../Images/logo.png" class="dashboardlogocvgs">
 			<a href="dashboard.php" class="Dashboardhome"><img src="../Images/homeicon.png" class="homeicon">Dashboard</a>
 			<a href="announceview.php" class="Announcement"><img src="../Images/announcement.png" class="announcementicon">Announcement</a>
@@ -337,7 +337,11 @@
 			<a href="adchangepass.php" class="Changepassadmin"><img src="../Images/pass.png" class="archiveicon">Account</a>
 			<a href="audit.php" class="Audit"><img src="../Images/mag.png" class="auditicon">Audit Trail</a>
 			<a href="../Archive/archive.php" class="Archive"><img src="../Images/arc.png" class="archiveicon">Archive</a>
-		</div>
+		</div>-->
+
+        <?php
+		include_once('SideNav.php');
+		?>
         <div class=finalgradediv>
         <?php echo "<a href='printgrade.php?ID=".$row['Stud_SID']."' class=printgrade>Print</a>"?>
 
@@ -431,21 +435,13 @@
 
             <?php
 // Fetch the data from the query
-$query = "SELECT
-tbl_subject.Grade_level,
-tbl_subject.ID,
-tbl_subject.Subject_code,
-tbl_subject.Subject_name,
-tbl_grades.Prelim,
-tbl_grades.Midterm,
-tbl_grades.Prefinal,
-tbl_grades.Final
-FROM
-tbl_studentinfo
-left JOIN tbl_section ON tbl_studentinfo.`LEVEL` = tbl_section.Section
-left JOIN tbl_subject ON tbl_section.Grade_Level = tbl_subject.Grade_level
-left JOIN tbl_grades ON tbl_subject.Subject_code = tbl_grades.Subject_Code
-where tbl_studentinfo.Stud_SID = 25;";
+$query = "SELECT tbl_subject.Grade_level, tbl_subject.ID, tbl_subject.Subject_code, tbl_subject.Subject_name, tbl_grades.Prelim, tbl_grades.Midterm, tbl_grades.Prefinal, tbl_grades.Final
+ FROM
+ tbl_studentinfo
+ LEFT JOIN tbl_section ON tbl_studentinfo.`LEVEL` = tbl_section.Section
+ LEFT JOIN tbl_subject ON tbl_section.Grade_Level = tbl_subject.Grade_level
+ LEFT JOIN tbl_grades ON tbl_subject.Subject_code = tbl_grades.Subject_Code AND tbl_studentinfo.Stud_SID = tbl_grades.Student_Code
+ where tbl_studentinfo.Stud_SID = ".$_GET['ID'].";";
 
 $result = mysqli_query($config, $query);
 
@@ -490,7 +486,7 @@ while ($row = mysqli_fetch_assoc($result)) {
     echo "<td class='datafinalgrade'><input type='text' name='stud{$subject_name}third' class='datafinalgrade1' value='$prefinal' readonly></td>";
     echo "<td class='datafinalgrade'><input type='text' name='stud{$subject_name}fourth' class='datafinalgrade1' value='$final' readonly></td>";
     echo "<td class='datafinalgrade'><input type='text' name='stud{$subject_name}fourth' class='datafinalgrade1' value='$total_grade' readonly></td>";
-    echo "<td class='datafinalgrade'><input type='text' name='stud{$subject_name}fourth' class='datafinalgrade1' value='$grade' readonly></td>";
+    echo "<td class='datafinalgrade'><input type='text' name='stud{$subject_name}fourth' class='datafinalgrade1' value='$remarks' readonly></td>";
     echo "</tr>";
 }
 ?>

@@ -219,7 +219,6 @@ $i++;
 // Include the file that contains your database connection code
 include("../../sepi_connect.php");
 if(isset($_POST['save'])){
-	var_dump($_POST);
 		$row_data = $_POST['row_data'];
 	
     $quarter = $_POST['quarter'];
@@ -254,26 +253,32 @@ if(isset($_POST['save'])){
 
       // Check if the record exists
       $check_query = "SELECT ID FROM tbl_grades WHERE Student_Code = '$Student_Code' AND SY = '$SY' AND Subject_Code ='$Subject_Code'";
-	  var_dump($check_query);
+	 
       @$check_result = $config->query($check_query);
       
       if (@$check_result->num_rows > 0) {
           // Update the existing record
           $update_query = "UPDATE tbl_grades SET Subject_Code = '$Subject_Code', Teacher_Code = '$Teacher_Code', $grade_column = '$Grade' WHERE Student_Code = '$Student_Code' AND SY = '$SY'";
           $result = $config->query($update_query);
-		  var_dump($update_query);
       } else {
           // Insert a new record
           $insert_query = "INSERT INTO tbl_grades (Subject_Code, Teacher_Code, Student_Code, $grade_column, SY) VALUES ('$Subject_Code', '$Teacher_Code', '$Student_Code', '$Grade', '$SY')";
           $result = $config->query($insert_query);
-		  var_dump($insert_query);
       }
 
       if (!$result) {
         die("Query failed: " . $config->error);
 		
+      }else{
+        
       }
     }
+    if (!$result) {
+        die("Query failed: " . $config->error);
+		
+      }else{
+        echo "<script>alert('Grade successfully saved');</script>";
+      }
 }
 ?>
 <script>
@@ -294,7 +299,7 @@ const subjectDropdown = document.querySelector('select[name="subject"]');
 const syDropdown = document.querySelector('select[name="sy"]');
 
 // Define the SQL queries to retrieve the dropdown options
-const gradeQuery = 'SELECT DISTINCT Grade_Level FROM tbl_restriction WHERE Teacher_Code = 1';
+const gradeQuery = 'SELECT DISTINCT Grade_Level FROM tbl_restriction WHERE Teacher_Code = <?php echo $_SESSION['TID']?>';
 const sectionQuery = 'SELECT * FROM sections WHERE grade_level = ...';
 const subjectQuery = 'SELECT * FROM subjects WHERE section = ...';
 const syQuery = 'SELECT DISTINCT Sy FROM ...';
@@ -309,8 +314,9 @@ function populateSectionDropdown(selectedGrade) {
  FROM
  tbl_restriction
  INNER JOIN tbl_subject ON tbl_restriction.Subject_Code = tbl_subject.Subject_code
- WHERE Teacher_Code = 1  and tbl_restriction.Grade_Level = '${selectedGrade}'
+ WHERE Teacher_Code = <?php echo $_SESSION['TID']?> and tbl_restriction.Grade_Level = '${selectedGrade}'
 `;
+console.log(query);
 
     // Fetch the sections from the server using the SQL query
     fetch('fetch.php?query=' + query)
@@ -333,17 +339,16 @@ function populateSectionDropdown(selectedGrade) {
 function populateSubjectDropdown(selectedSection) {
     // Define the SQL query to retrieve the subjects based on the selected section
     const query = `SELECT
- tbl_restriction_subject.ID,
- tbl_restriction_subject.Section_Code,
- tbl_restriction_subject.Subject_Code,
- tbl_section.Section_Name as ASection_Name,
- Concat(tbl_section.Grade_Level,' - ',tbl_section.Section_Name) as Section_Name
+ Concat(tbl_section.Grade_Level,' - ',tbl_section.Section_Name) AS Section_Name,
+ tbl_restriction.ID,
+ tbl_restriction.Subject_Code,
+ tbl_restriction.Grade_Level,
+ tbl_section.Section_Name as ASection_Name
  FROM
- tbl_restriction_subject
- INNER JOIN tbl_section ON tbl_restriction_subject.Section_Code = tbl_section.ID
- where Subject_Code = '${selectedSection}'
-`;
-
+ tbl_section
+ INNER JOIN tbl_restriction ON tbl_restriction.Grade_Level = tbl_section.Grade_Level where Subject_Code = '${selectedSection}'
+ `;
+console.log(query);
     // Fetch the subjects from the server using the SQL query
     fetch('fetch.php?query=' + query)
         .then(response => response.json())
@@ -364,7 +369,7 @@ function populateSubjectDropdown(selectedSection) {
 function populateSyDropdown(selectedSubject) {
     // Define the SQL query to retrieve the Sy values based on the selected subject
     const query = `SELECT DISTINCT SY FROM tbl_section where Section_Name = '${selectedSubject}'`;
-
+    console.log(query);
     // Fetch the Sy values from the server using the SQL query
     fetch('fetch.php?query=' + query)
         .then(response => response.json())

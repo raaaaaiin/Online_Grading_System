@@ -14,4 +14,5 @@
 			<a href="subject.php" class="Subject"><img src="../Images/subject.svg" class="Subjecticon">Subject</a>
 			<a href="section.php" class="Section"><img src="../Images/section.svg" class="Sectionicon">Section</a>
 			<a href="restriction.php" class="Restriction"><img src="../Images/restriction.svg" class="Restrictionicon">Restriction</a>
+			<a href="promotion.php" class="Promotion"><img src="../Images/restriction.svg" class="Promotionicon">Promotion</a>
 </div>t
