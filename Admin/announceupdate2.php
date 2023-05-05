@@ -21,8 +21,9 @@
 		$sql1 = "Insert into tbl_audithistory (e_name,e_action,e_date) values ('$name','Updating Admin Announcement',NOW())";
 		$result1 = $config->query($sql1);
 
-
+		
 if(isset($_POST['subs'])&& isset($_FILES['fileToUpload'])){
+	
 	echo "<pre>";
 	print_r($_FILES['fileToUpload']);
 	echo "</pre>";

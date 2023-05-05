@@ -53,7 +53,7 @@ $fileToUpload = $row['image'];
 			<div class="footer">
 				<h6 id="footer">© 2022 SEPI Login Form. All Rights Reserved | Designed by Excel-erator</h6>
 			</div>
-<form method=POST action="announceupdate2.php">
+<form method=POST action="announceupdate2.php"  enctype="multipart/form-data">>
 		<?php
 		include_once('SideNav.php');
 		?>
