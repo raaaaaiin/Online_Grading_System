@@ -52,16 +52,31 @@
 					<input type="text" name="email" placeholder="EMAIL ADDRESS" autocomplete="off" size="50"  class="addemailfield">
 					<select name="section" class="addsectionfield" required>
 						<option value="">GRADE & SECTION</option>
-						<option value="Grade 1 - Love">Grade 1 - Love</option>
-						<option value="Grade 2 - Hope"> Grade 2 - Hope</option>
-						<option value="Grade 3 - Humility">Grade 3 - Humility</option>
-						<option value="Grade 4 - Meekness">Grade 4 - Meekness</option>
-						<option value="Grade 5 - Gentleness">Grade 5 - Gentleness</option>
-						<option value="Grade 6 - Patience">Grade 6 - Patience</option>
-						<option value="Grade 7 - Perseverance">Grade 7 - Perseverance</option>
-						<option value="Grade 8 - Generosity">Grade 8 - Generosity</option>
-						<option value="Grade 9 - Industriousness">Grade 9 - Industriousness</option>
-						<option value="Grade 10 - Prosperity">Grade 10 - Prosperity</option>
+						<?php
+						$today = new DateTime();
+						$currentMonth = (int) $today->format('m');
+						$currentYear = (int) $today->format('Y');
+						
+						// Determine the school year for enrollment
+						if ($currentMonth >= 9) {
+							$enrollmentSY = ($currentYear + 1) . ' - ' . ($currentYear + 2);
+						} else {
+							$enrollmentSY = $currentYear . ' - ' . ($currentYear + 1);
+						}
+						
+						// Fetch sections for the enrollment school year
+						$query = "SELECT tbl_section.Section FROM `tbl_section` WHERE SY = '$enrollmentSY'";
+						$result = mysqli_query($config, $query);
+						$num_rows = mysqli_num_rows($result);
+						if ($num_rows > 0) {
+							while ($row = mysqli_fetch_assoc($result)) {
+								echo '<option value="' . $row['Section'] . '">' . $row['Section'] . '</option>';
+							}
+						} else {
+							echo '<option>Please add new section for the School Year: "' . $enrollmentSY . '"</option>';
+							echo '<option>You cannot add new students for previous school years</option>';
+						}
+?>
 					</select>
 					<input type="text" name="age" placeholder="AGE" autocomplete="off" size="50"  class="addagefield">
 					<input type="text" name="add" placeholder="ADDRESS" autocomplete="off" size="50"  class="addaddressfield">
