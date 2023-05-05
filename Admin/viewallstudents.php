@@ -25,7 +25,7 @@ if(isset($_POST['search'])){
 $search = $_POST['search'];
 
 if ($search != NULL){
-$sql = "Select * from tbl_studentinfo where Stud_SID like '%$search%' or 
+$sql = "Select * from tbl_studentinfoinfo where Stud_SID like '%$search%' or 
 										Stud_ID like '%$search%' or
 										FNAME like '%$search%' or
 										MNAME like '%$search%' or
@@ -39,11 +39,11 @@ $sql = "Select * from tbl_studentinfo where Stud_SID like '%$search%' or
 
 }else{
 
-$sql = "Select * from tbl_studentinfo";
+$sql = "Select * from tbl_studentinfoinfo";
 }
 }else{
 
-$sql = "Select * from tbl_studentinfo";
+$sql = "Select * from tbl_studentinfoinfo";
 }
 
 
@@ -101,22 +101,22 @@ if(isset($_POST['sub'])){
 	$search = $_POST['search'];
 	$category = $_POST['category'];
 	if($category != NULL){
-	$sql = "SELECT * FROM tbl_studentinfo where LEVEL = '$category'";
+	$sql = "SELECT * FROM tbl_studentinfoinfo where LEVEL = '$category'";
 	
 	}
 	else{
-		$sql = "SELECT * FROM tbl_student ";
+		$sql = "SELECT * FROM tbl_studentinfo ";
 		
 		}
 	if($search !=NULL){
-	$sql = "SELECT * FROM tbl_studentinfo where Stud_SID LIKE '%$search%' or 
+	$sql = "SELECT * FROM tbl_studentinfoinfo where Stud_SID LIKE '%$search%' or 
 											FNAME LIKE '%$search%' or
 											LNAME LIKE '%$search%' or
 											USERNAME LIKE '%$search%' or
 											EMAIL LIKE '%$search%'";
 	}
 	}else{
-	$sql = "SELECT * FROM tbl_studentinfo";
+	$sql = "SELECT * FROM tbl_studentinfoinfo";
 	
 	}
 $result = $config -> query($sql);

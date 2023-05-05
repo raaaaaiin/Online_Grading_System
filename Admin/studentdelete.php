@@ -26,12 +26,12 @@ include "../sepi_connect.php";
 error_reporting(0);
 
 $ID=$_GET['ID'];
-$sql = "INSERT INTO tbl_archive_student SELECT * FROM tbl_student WHERE Stud_SID = '$ID'";
+$sql = "INSERT INTO tbl_archive_student SELECT * FROM tbl_studentinfo WHERE Stud_SID = '$ID'";
 	
 $result = $config->query($sql);
 if($result == True)
 {
-	$query = "DELETE FROM tbl_student WHERE Stud_SID = '$ID'";
+	$query = "DELETE FROM tbl_studentinfo WHERE Stud_SID = '$ID'";
 	if ($config->query($query) == TRUE) 
 	{
 		?>

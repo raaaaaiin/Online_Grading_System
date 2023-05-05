@@ -40,17 +40,17 @@ if(isset($_POST['importSubmit'])){
 
                 
                 // Check whether member already exists in the database with the same email
-                $prevQuery = "SELECT Stud_SID FROM tbl_student WHERE Stud_ID = '".$line[0]."'";
+                $prevQuery = "SELECT Stud_SID FROM tbl_studentinfo WHERE Stud_ID = '".$line[0]."'";
                 $prevResult = $config->query($prevQuery);
                 
                 if($prevResult->num_rows > 0){
                     // Update member data in the database
-                    $config->query("UPDATE tbl_student SET Stud_ID = '".$Stud_ID. "', FNAME = '".$FNAME."', MNAME = '". $MNAME."',LNAME = '". $LNAME."',
+                    $config->query("UPDATE tbl_studentinfo SET Stud_ID = '".$Stud_ID. "', FNAME = '".$FNAME."', MNAME = '". $MNAME."',LNAME = '". $LNAME."',
                      USERNAME = '". $UNAME."',ADDRESS = '". $ADDRESS."', EMAIL = '". $EMAIL."', PASS = '". $PASS."', BDAY = '". $BDAY."', AGE = '". $AGE."', 
                      GENDER = '". $GENDER."', LEVEL = '". $LEVEL."', YEAR = '". $YEAR."', LRN = '". $LRN."', Role = '". $Role."' WHERE Stud_SID = '".$ID."'");
                 }else{
                     // Insert member data in the database
-                    $config->query("INSERT INTO tbl_student (Stud_ID, FNAME, MNAME, LNAME, USERNAME, ADDRESS, EMAIL, PASS, BDAY, AGE, GENDER, LEVEL, YEAR, LRN, Role)
+                    $config->query("INSERT INTO tbl_studentinfo (Stud_ID, FNAME, MNAME, LNAME, USERNAME, ADDRESS, EMAIL, PASS, BDAY, AGE, GENDER, LEVEL, YEAR, LRN, Role)
                      VALUES ('".$Stud_ID. "', '".$FNAME."', '".$MNAME."', '".$LNAME."', '".$UNAME."', '". $ADDRESS."', '". $EMAIL."', '". $PASS."', '". $BDAY."', '". $AGE."', '".$GENDER."', '". $LEVEL."', '". $YEAR."', '". $LRN."', '". $Role."')");
                 }
             }

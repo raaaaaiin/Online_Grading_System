@@ -11,7 +11,7 @@
 			{
 				$userid = $_SESSION['Stud_SID'];
 	
-				$getrecord = mysqli_query($config,"SELECT * FROM tbl_student WHERE Stud_SID ='$userid'");
+				$getrecord = mysqli_query($config,"SELECT * FROM tbl_studentinfo WHERE Stud_SID ='$userid'");
 				while($rowedit = mysqli_fetch_assoc($getrecord))
 					
 				{
@@ -70,13 +70,13 @@ if(isset($_POST['sub'])){
 $search = $_POST['search'];
 $category = $_POST['category'];
 if($category != NULL){
-$sql = "SELECT * FROM tbl_student where ANNOUNCEMENT = '$category'";
+$sql = "SELECT * FROM tbl_studentinfo where ANNOUNCEMENT = '$category'";
 }elseif($search !=NULL){
-$sql = "SELECT * FROM tbl_student where category LIKE '%$search%' or category LIKE '%$search%'";
+$sql = "SELECT * FROM tbl_studentinfo where category LIKE '%$search%' or category LIKE '%$search%'";
 }
 }else{
 
-$sql = "SELECT * FROM tbl_student where Stud_SID = '$userid'";
+$sql = "SELECT * FROM tbl_studentinfo where Stud_SID = '$userid'";
 }
 
 $result = $config -> query($sql);

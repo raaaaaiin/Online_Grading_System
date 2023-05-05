@@ -85,13 +85,13 @@ if(isset($_POST['sub'])){
 $search = $_POST['search'];
 $category = $_POST['category'];
 if($category != NULL){
-	$sql = "SELECT * FROM tbl_student where LEVEL = '$category'";
+	$sql = "SELECT * FROM tbl_studentinfo where LEVEL = '$category'";
 }elseif($search !=NULL){
-	$sql = "SELECT * FROM tbl_student where category LIKE '%$search%' or category LIKE '%$search%'";
+	$sql = "SELECT * FROM tbl_studentinfo where category LIKE '%$search%' or category LIKE '%$search%'";
 
 }
 }else{
-	$sql = "SELECT * FROM tbl_student ORDER BY Stud_SID DESC LIMIT 0";
+	$sql = "SELECT * FROM tbl_studentinfo ORDER BY Stud_SID DESC LIMIT 0";
 }
 
 $result = $config -> query($sql);

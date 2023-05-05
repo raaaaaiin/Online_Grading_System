@@ -31,13 +31,13 @@
 	
 		
 
-	$query = "SELECT COUNT(*) AS count FROM tbl_student GROUP BY ";
+	$query = "SELECT COUNT(*) AS count FROM tbl_studentinfo GROUP BY ";
 	$query_result = mysqli_query($config,$query);
 	while($row = mysqli_fetch_assoc($query_result)){
 	$announcementrecord = $row['count']." Total(s)";
 	}
 
-	$query = "SELECT COUNT(*) AS count FROM tbl_student";
+	$query = "SELECT COUNT(*) AS count FROM tbl_studentinfo";
 	$query_result = mysqli_query($config,$query);
 	while($row = mysqli_fetch_assoc($query_result)){
 	$studentrecord = $row['count']." Total(s)";

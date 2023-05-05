@@ -36,7 +36,7 @@ $LAP = $_POST['LAP'];
 
 
 
-$sql = "Update tbl_student SET Stud_SID='$ASID', AP='$LAP' where Stud_SID='$ASID'";
+$sql = "Update tbl_studentinfo SET Stud_SID='$ASID', AP='$LAP' where Stud_SID='$ASID'";
 
 $result = $config->query($sql);
 

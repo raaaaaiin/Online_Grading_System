@@ -68,7 +68,7 @@ $remarks = "Unavailable";
 else
 	$remarks = "Failed";
 
-$sql = "Update tbl_student SET Stud_SID='$ASID', FILS='$LFIL', ENGS='$LENG', MATHS='$LMATH', SCIS='$LSCI', APS='$LAP', TLES='$LTLE', MAPS='$LMAP', CES='$LCE', COMS='$LCOM', TOTALS='$PER', STATUSS='$grade', REMARKSS='$remarks' where Stud_SID='$ASID'";
+$sql = "Update tbl_studentinfo SET Stud_SID='$ASID', FILS='$LFIL', ENGS='$LENG', MATHS='$LMATH', SCIS='$LSCI', APS='$LAP', TLES='$LTLE', MAPS='$LMAP', CES='$LCE', COMS='$LCOM', TOTALS='$PER', STATUSS='$grade', REMARKSS='$remarks' where Stud_SID='$ASID'";
 
 $result = $config->query($sql);
 

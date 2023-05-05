@@ -29,7 +29,7 @@
 			<?php
 			include "../../sepi_connect.php";
 $SID = $_GET['ID'];
-$sql="Select *from tbl_student where Stud_SID = '$SID'";
+$sql="Select *from tbl_studentinfo where Stud_SID = '$SID'";
 $result = $config->query($sql);
 
 $row = $result->fetch_assoc();

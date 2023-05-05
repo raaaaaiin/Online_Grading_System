@@ -12,7 +12,7 @@
 			{
 				$userid = $_SESSION['Stud_SID'];
 	
-				$getrecord = mysqli_query($config,"SELECT * FROM tbl_student WHERE Stud_SID ='$userid'");
+				$getrecord = mysqli_query($config,"SELECT * FROM tbl_studentinfo WHERE Stud_SID ='$userid'");
 				while($rowedit = mysqli_fetch_assoc($getrecord))
 					
 				{
@@ -71,11 +71,11 @@ if (isset($_POST['submit']))
 {
 	global $confirmPassword;
 	
-    $result = mysqli_query($config, "SELECT *from tbl_student WHERE Stud_SID='" . $userid . "'");
+    $result = mysqli_query($config, "SELECT *from tbl_studentinfo WHERE Stud_SID='" . $userid . "'");
     $row = mysqli_fetch_array($result);
     if ($_POST["currentPassword"] == $row["PASS"] && $_POST["newPassword"] == $_POST["confirmPassword"]) {
 		
-        mysqli_query($config, "UPDATE tbl_student set PASS='" . $_POST["newPassword"] . "' WHERE Stud_SID='" . $userid . "'");
+        mysqli_query($config, "UPDATE tbl_studentinfo set PASS='" . $_POST["newPassword"] . "' WHERE Stud_SID='" . $userid . "'");
 	
         ?>
 			<script>

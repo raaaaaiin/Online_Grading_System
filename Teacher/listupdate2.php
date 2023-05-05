@@ -42,7 +42,7 @@ $YEAR = $_POST['YEAR'];
 $LRN = $_POST['LRN'];
 
 
-$sql = "Update tbl_student SET FNAME='$FNAME', 
+$sql = "Update tbl_studentinfo SET FNAME='$FNAME', 
 								MNAME='$MNAME',
 								LNAME='$LNAME',
 								ADDRESS='$ADDRESS',

@@ -64,7 +64,7 @@ else if ($AVE >= 0 && $AVE < 59)
 $remarks = "Unavailable";
 
 
-$sql = "Update tbl_student SET Stud_SID='$ASID', GWA ='$PER',STAT='$grade', REM='$remarks' where Stud_SID='$ASID'";
+$sql = "Update tbl_studentinfo SET Stud_SID='$ASID', GWA ='$PER',STAT='$grade', REM='$remarks' where Stud_SID='$ASID'";
 
 $result = $config->query($sql);
 

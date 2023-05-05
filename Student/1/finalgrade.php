@@ -11,7 +11,7 @@
 			{
 				$userid = $_SESSION['Stud_SID'];
 	
-				$getrecord = mysqli_query($config,"SELECT * FROM tbl_student WHERE Stud_SID ='$userid'");
+				$getrecord = mysqli_query($config,"SELECT * FROM tbl_studentinfo WHERE Stud_SID ='$userid'");
 				while($rowedit = mysqli_fetch_assoc($getrecord))
 					
 				{
@@ -25,7 +25,7 @@
 			$sql1 = "Insert into tbl_auditstudent (e_name,e_level,e_action,e_date) values ('$name','$section','Viewing Stundent Final Grade',NOW())";
 			$result1 = $config->query($sql1);
 
-            $sql="Select * from tbl_student where Stud_SID = '$userid'";
+            $sql="Select * from tbl_studentinfo where Stud_SID = '$userid'";
             $result = $config->query($sql);
             
             $row = $result->fetch_assoc();

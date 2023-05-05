@@ -10,7 +10,7 @@
 			{
 				$userid = $_SESSION['Stud_ID'];
 	
-				$getrecord = mysqli_query($config,"SELECT * FROM tbl_student WHERE Stud_ID ='$userid'");
+				$getrecord = mysqli_query($config,"SELECT * FROM tbl_studentinfo WHERE Stud_ID ='$userid'");
 				while($rowedit = mysqli_fetch_assoc($getrecord))
 					
 				{
@@ -30,11 +30,11 @@ $currentPassword = $_POST ['currentPassword'];
 $confirmPassword = $_POST ['confirmPassword'];
 
 if(count($_POST)>0) {
-$result = mysqli_query($config,"SELECT *from tbl_student WHERE Stud_ID='" . $userid . "'");
+$result = mysqli_query($config,"SELECT *from tbl_studentinfo WHERE Stud_ID='" . $userid . "'");
 
 $row=mysqli_fetch_array($result);
 if($_POST["currentPassword"] == $row["PASS"] && $_POST["PWORDS"] == $row["confirmPassword"] ) {
-	mysqli_query($config,"UPDATE tbl_student set PASS='" . $_POST["PWORDS"] . "' WHERE Stud_ID='" . $userid . "'");
+	mysqli_query($config,"UPDATE tbl_studentinfo set PASS='" . $_POST["PWORDS"] . "' WHERE Stud_ID='" . $userid . "'");
 	$message = "Password Changed Sucessfully";
 	} else{
 	 $message = "Password is not correct";

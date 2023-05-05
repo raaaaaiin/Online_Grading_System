@@ -14,7 +14,7 @@ $fields = array('Stud_ID', 'FNAME', 'MNAME' ,'LNAME' ,'USERNAME', 'ADDRESS',
 fputcsv($f, $fields, $delimiter); 
  
 // Get records from the database 
-$result = $config->query("SELECT * FROM tbl_student ORDER BY Stud_SID DESC"); 
+$result = $config->query("SELECT * FROM tbl_studentinfo ORDER BY Stud_SID DESC"); 
 if($result->num_rows > 0){ 
     // Output each row of the data, format line as csv and write to file pointer 
     while($row = $result->fetch_assoc()){ 

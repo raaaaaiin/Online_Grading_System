@@ -125,7 +125,7 @@ $date = date('Y', strtotime($yearss. ' + 1 years'));
 $sy = $yearss." - ".$date;
 
 
-$check = mysqli_query($config,"select * from tbl_student where FNAME='$first' and MNAME='$middle' and LNAME='$last'");
+$check = mysqli_query($config,"select * from tbl_studentinfo where FNAME='$first' and MNAME='$middle' and LNAME='$last'");
 $checkrows = mysqli_num_rows($check);
 if($checkrows>0) 
 	{
@@ -137,7 +137,7 @@ if($checkrows>0)
 	} 
 else
 	{  
-		$sql = "Insert into tbl_student (FNAME,MNAME,LNAME,ADDRESS,USERNAME,EMAIL,PASS,BDAY,AGE,GENDER,LEVEL,YEAR,Role,STATUS) values  
+		$sql = "Insert into tbl_studentinfo (FNAME,MNAME,LNAME,ADDRESS,USERNAME,EMAIL,PASS,BDAY,AGE,GENDER,LEVEL,YEAR,Role,STATUS) values  
 		('$first','$middle','$last','$address','$username','$email','$yearss','$birth','$agess','$gender','$levels','$sy','$role','$status')";
 		$insert = $config->query($sql);
 	if($insert == True)

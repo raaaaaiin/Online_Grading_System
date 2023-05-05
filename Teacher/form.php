@@ -71,12 +71,12 @@ if(isset($_POST['sub'])){
 $search = $_POST['search'];
 $category = $_POST['category'];
 if($category != NULL){
-$sql = "SELECT * FROM tbl_student where ANNOUNCEMENT = '$category'";
+$sql = "SELECT * FROM tbl_studentinfo where ANNOUNCEMENT = '$category'";
 }elseif($search !=NULL){
-$sql = "SELECT * FROM tbl_student where category LIKE '%$search%' or category LIKE '%$search%'";
+$sql = "SELECT * FROM tbl_studentinfo where category LIKE '%$search%' or category LIKE '%$search%'";
 }
 }else{
-$sql = "SELECT * FROM tbl_student";
+$sql = "SELECT * FROM tbl_studentinfo";
 
 }
 

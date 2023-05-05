@@ -85,7 +85,7 @@ $gender = $_POST['gen'];
 $levels = $_POST['level'];
 $years = $_POST['year'];
 $numbers = $_POST['number'];
-$sql = "Insert into tbl_student (Stud_ID,FNAME,MNAME,LNAME,BDAY,AGE,GENDER,LEVEL,YEAR,LRN) values  
+$sql = "Insert into tbl_studentinfo (Stud_ID,FNAME,MNAME,LNAME,BDAY,AGE,GENDER,LEVEL,YEAR,LRN) values  
 ($studentid,'$first','$middle','$last','$birth',$agess,'$gender','$levels','$years','$numbers')";
 $insert = $config->query($sql);
 if($insert == True){

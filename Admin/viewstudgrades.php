@@ -22,7 +22,7 @@
 		$result1 = $config->query($sql1);
  
             $SID = $_GET['ID'];
-            $sql="Select *from tbl_student where Stud_SID = '$SID'";
+            $sql="Select *from tbl_studentinfo where Stud_SID = '$SID'";
             $result = $config->query($sql);
             
             $row = $result->fetch_assoc();
@@ -437,11 +437,11 @@
 // Fetch the data from the query
 $query = "SELECT tbl_subject.Grade_level, tbl_subject.ID, tbl_subject.Subject_code, tbl_subject.Subject_name, tbl_grades.Prelim, tbl_grades.Midterm, tbl_grades.Prefinal, tbl_grades.Final
  FROM
- tbl_studentinfo
- LEFT JOIN tbl_section ON tbl_studentinfo.`LEVEL` = tbl_section.Section
+ tbl_studentinfoinfo
+ LEFT JOIN tbl_section ON tbl_studentinfoinfo.`LEVEL` = tbl_section.Section
  LEFT JOIN tbl_subject ON tbl_section.Grade_Level = tbl_subject.Grade_level
- LEFT JOIN tbl_grades ON tbl_subject.Subject_code = tbl_grades.Subject_Code AND tbl_studentinfo.Stud_SID = tbl_grades.Student_Code
- where tbl_studentinfo.Stud_SID = ".$_GET['ID'].";";
+ LEFT JOIN tbl_grades ON tbl_subject.Subject_code = tbl_grades.Subject_Code AND tbl_studentinfoinfo.Stud_SID = tbl_grades.Student_Code
+ where tbl_studentinfoinfo.Stud_SID = ".$_GET['ID'].";";
 
 $result = mysqli_query($config, $query);
 

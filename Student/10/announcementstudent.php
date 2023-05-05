@@ -11,7 +11,7 @@
 			{
 				$userid = $_SESSION['Stud_SID'];
 	
-				$getrecord = mysqli_query($config,"SELECT * FROM tbl_student WHERE Stud_SID ='$userid'");
+				$getrecord = mysqli_query($config,"SELECT * FROM tbl_studentinfo WHERE Stud_SID ='$userid'");
 				while($rowedit = mysqli_fetch_assoc($getrecord))
 					
 				{
