@@ -10,16 +10,16 @@ $f = fopen('php://memory', 'w');
  
 // Set column headers 
 $fields = array('Employee_ID', 'FNAMES', 'MNAMES' ,'LNAMES', 'USERNAME', 'ADDRESS',
- 'EMAIL', 'PASS', 'BDAYS', 'AGES', 'GENDERS' , 'SUBJECTS', 'Role'); 
+ 'EMAIL', 'PASS', 'BDAYS', 'AGES', 'GENDERS' , 'Role'); 
 fputcsv($f, $fields, $delimiter); 
  
 // Get records from the database 
-$result = $config->query("SELECT * FROM tbl_teacher ORDER BY TID DESC"); 
+$result = $config->query("SELECT * FROM tbl_teacherinfo ORDER BY TID DESC"); 
 if($result->num_rows > 0){ 
     // Output each row of the data, format line as csv and write to file pointer 
     while($row = $result->fetch_assoc()){ 
         $lineData = array($row['Employee_ID'], $row['FNAMES'], $row['MNAMES'], $row['LNAMES'] , $row['USERNAME'], $row['ADDRESS'], $row['EMAIL'], $row['PASS'], $row['BDAYS'],$row['AGES'],
-         $row['GENDERS'] ,$row['SUBJECTS'],$row['Role']); 
+         $row['GENDERS'] ,$row['Role']); 
         fputcsv($f, $lineData, $delimiter); 
     } 
 } 

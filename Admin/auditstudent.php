@@ -18,82 +18,121 @@
 					$name = $rowedit['Fname']." ".$rowedit['Lname'];
 				}
 			}
-		$sql1 = "Insert into tbl_auditstudent (e_name,e_action,e_date) values ('$name','Viewing Audit Students Records',NOW())";
+		$sql1 = "Insert into tbl_audithistory (e_name,e_action,e_date) values ('$name','Viewing Audit Students Records',NOW())";
 		$result1 = $config->query($sql1);
 
-if(isset($_POST['search'])){
-	$search = $_POST['search'];
+		if (isset($_POST['search'])) {
 
-	if ($search != NULL)
-	{
-		$sql = "Select * from tbl_auditstudent where e_userID like '%$search%' or 
-			e_name like '%$search%' or 
-			e_action like '%$search%' or 
-			e_date like '%$search%'";
-	}
-	else
-	{
-		$sql = "Select * from tbl_auditstudent ORDER BY e_userID DESC LIMIT 12";
-	}
-	}
-	else
-	{
-		$sql = "Select * from tbl_auditstudent ORDER BY e_userID DESC LIMIT 12";
-	}
-?>
-<html>
-	<head> 
-		<title>Student Audit</title>
-	</head>
-	<link rel="icon" href="../Images/logo.png">
-	<link rel="stylesheet" href="../Css/sepi.css">
-	<body style="background-color:#E5E4E2">
-		<div class="header">
-		<p class="displayname"><?php echo "$type" ?> | <?php echo "$name" ?></p>
-			<form method="POST"action="logout.php" >
-				<button type=submit name="logout" class="logout">Log Out</a>
-			</form>
-		</div>
-		<div class="footer">
-			<h6 id="footer">© 2022 SEPI Login Form. All Rights Reserved | Designed by Excel-erator</h6>
-		</div>
-<form method=POST action="auditstudent.php">
-		<?php
-		include_once('SideNav.php');
+			if (!empty($_POST['dpa']) && !empty($_POST['dpb'])) {
+				
+				$search = $_POST['search'];
+				$dpa = $_POST['dpa'];
+				$dpb = $_POST['dpb'];
+				if ($search != NULL) {
+		
+		
+					$query = "SELECT * FROM tbl_auditstudent 
+				  WHERE (e_userID LIKE '%$search%' OR
+						 e_name LIKE '%$search%' OR
+						 e_action LIKE '%$search%') AND
+						e_date >= '$dpa' AND
+						e_date <= '$dpb'";
+				} else {
+					$sql = "SELECT * FROM tbl_auditstudent 
+				WHERE e_date >= '$dpa' AND
+					  e_date <= '$dpb'
+				ORDER BY e_userID DESC
+				LIMIT 500";
+				}
+				
+			}else {
+				
+		
+				$search = $_POST['search'];
+		
+				if ($search != NULL) {
+					$sql = "Select * from tbl_auditstudent where e_userID like '%$search%' or 
+						e_name like '%$search%' or 
+						e_action like '%$search%' or 
+						e_date like '%$search%'";
+				} else {
+					$sql = "Select * from tbl_auditstudent ORDER BY e_userID DESC LIMIT 100";
+				}
+		
+		
+		
+			}
+		
+		} else {
+			$sql = "Select * from tbl_auditstudent ORDER BY e_userID DESC LIMIT 100";
+		}
+		
 		?>
-
-
-	<div class="auditdiv">
-				<h1 id="auditfont">AUDIT TRAIL STUDENT</h1>
-				<a href="audit.php" class="adminauditlink">Admin</a>
-				<a href="auditteacher.php" class="teacherauditlink">Teacher</a>
-				<a href="auditstudent.php" class="studentauditlink">Student</a>
-				<hr>
-				<p class="searchaudit">Search:</p>
-				<input type=text name=search class="audittxt1">
-				<input type=submit name=sub class="auditbtn"> 
-
-<?php
-$result = $config -> query($sql);
-
-if ($result -> num_rows > 0){
-	echo "<div class=audittbl style=overflow:auto;>";
-	echo"<table class=audittbl1>";
-	echo "<th class=auditheader1> User";
-	echo "<th class=auditheader> Action";
-	echo "<th class=auditheader1> Date";	
-while($row = $result -> fetch_assoc()){
-	echo "<tr>";
-	echo "<td class=auditinfo>".$row['e_name'];
-	echo "<td class=auditinfo>".$row['e_action'];
-	echo "<td class=auditinfo>".$row['e_date'];			
-}	
-}
-?>
-</div>
-
-
-
-</form>
-</body>
-</html>
+		<!DOCTYPE html>
+		<html>
+		
+		<head>
+			<title>Student Audit</title>
+		</head>
+		<link rel="icon" href="../Images/logo.png">
+		<link rel="stylesheet" href="../Css/sepi.css">
+		
+		<body style="background-color:#E5E4E2">
+			<div class="header">
+		
+				<p class="displayname">
+					<?php echo "$type" ?> |
+					<?php echo "$name" ?>
+				</p>
+				<form method="POST" action="logout.php">
+					<button type=submit name="logout" class="logout">Log Out</a>
+				</form>
+			</div>
+			<div class="footer">
+				<h6 id="footer">© 2022 SEPI Login Form. All Rights Reserved | Designed by Excel-erator</h6>
+			</div>
+			<form method=POST action="audit.php">
+				<?php
+				include_once('SideNav.php');
+				?>
+				<div class="auditdiv">
+					<h1 id="auditfont">AUDIT TRAIL ADMIN</h1>
+					<a href="audit.php" class="adminauditlink">Admin</a>
+					<a href="auditteacher.php" class="teacherauditlink">Teacher</a>
+					<a href="auditstudent.php" class="studentauditlink">Student</a>
+					<hr class="">
+					<p class="searchaudit">Search:</p>
+					<input type=text name=search class="audittxt">
+					<input type=text name=search class="audittxt">
+					<input type="date" id="date-picker" name="dpa" class="audittxt" style="    margin-left: 21% !important">
+					<input type="date" id="date-picker" name="dpb" class="audittxt" style="    margin-left: 36% !important">
+					<input type=submit name=sub class="auditbtn" style="
+			margin-left: 51%;
+		">
+		
+					<?php
+					include "../sepi_connect.php";
+		
+		
+		
+					$result = $config->query($sql);
+		
+					if ($result->num_rows > 0) {
+						echo "<div class=audittbl style=overflow:auto;>";
+						echo "<table class=audittbl1>";
+						echo "<th class=auditheader1> User";
+						echo "<th class=auditheader> Action";
+						echo "<th class=auditheader1> Date";
+						while ($row = $result->fetch_assoc()) {
+							echo "<tr>";
+							echo "<td class=auditinfo>" . $row['e_name'];
+							echo "<td class=auditinfo>" . $row['e_action'];
+							echo "<td class=auditinfo>" . $row['e_date'];
+						}
+					}
+					?>
+				</div>
+			</form>
+		</body>
+		
+		</html>

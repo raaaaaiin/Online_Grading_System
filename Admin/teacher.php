@@ -114,7 +114,7 @@ echo "<td class=teacherinfo>".$row['FNAMES']." ".$row['MNAMES']." ".$row['LNAMES
 echo "<td class=teacherinfo>".$row['USERNAME'];
 echo "<td class=teacherinfo>".$row['EMAIL'];
 
-echo "<td class=teacherinfo1>";
+echo "<td class=teacherinfo1>Please see on Restriction";
 echo "<td class=teacherinfo> <a href='teacherupdate.php?ID=".$row['TID']."'> Update </a>";
 echo "<td class=teacherinfo> <a href='teacherdelete.php?ID=".$row['TID']."'> Archive </a>";
 echo "<td class=teacherinfo> <a href='index.php'?ID=".$row['TID']."'> Send Email </a>";	
