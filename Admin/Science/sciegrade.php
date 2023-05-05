@@ -39,7 +39,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true)
 	$studentrecord = $row['count']." Total(s)";
 	}		
 
-	$query = "SELECT COUNT(*) AS count FROM tbl_teacher";
+	$query = "SELECT COUNT(*) AS count FROM tbl_teacherinfo";
 	$query_result = mysqli_query($config,$query);
 	while($row = mysqli_fetch_assoc($query_result)){
 	$teacherrecord = $row['count']." Total(s)";

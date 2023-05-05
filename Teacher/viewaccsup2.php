@@ -10,7 +10,7 @@
 			{
 				$userid = $_SESSION['Employee_ID'];
 	
-				$getrecord = mysqli_query($config,"SELECT * FROM tbl_teacher WHERE Employee_ID ='$userid'");
+				$getrecord = mysqli_query($config,"SELECT * FROM tbl_teacherinfo WHERE Employee_ID ='$userid'");
 				while($rowedit = mysqli_fetch_assoc($getrecord))
 					
 				{
@@ -36,7 +36,7 @@ $PWORDS = $_POST ['PWORDS'];
 
 
 
-$sql = "Update tbl_teacher SET TID='$ACIDIC', EMAIL='$UNAMES', PASS='$PWORDS' where TID='$ACIDIC'";
+$sql = "Update tbl_teacherinfo SET TID='$ACIDIC', EMAIL='$UNAMES', PASS='$PWORDS' where TID='$ACIDIC'";
 
 $result = $config->query($sql);
 

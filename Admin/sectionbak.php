@@ -137,7 +137,7 @@ $yearss = date("Y");
 $config = new mysqli("localhost","root","","db_sepi");
 
 
-$check = mysqli_query($config,"select * from tbl_teacher where FNAMES='$firsts' and MNAMES='$middles' and LNAMES='$lasts'");
+$check = mysqli_query($config,"select * from tbl_teacherinfo where FNAMES='$firsts' and MNAMES='$middles' and LNAMES='$lasts'");
 $checkrows = mysqli_num_rows($check);
 if($checkrows>0) 
 	{
@@ -149,7 +149,7 @@ if($checkrows>0)
 	} 
 else
 	{  
-$sql = "Insert into tbl_teacher (FNAMES,MNAMES,LNAMES,USERNAME,ADDRESS,EMAIL,PASS,BDAYS,AGES,GENDERS,SUBJECT,SUBJECTO,
+$sql = "Insert into tbl_teacherinfo (FNAMES,MNAMES,LNAMES,USERNAME,ADDRESS,EMAIL,PASS,BDAYS,AGES,GENDERS,SUBJECT,SUBJECTO,
 SUBJECTT,SUBJECTTH,SUBJECTF,SUBJECTFI,SUBJECTS,SUBJECTSE,SUBJECTE,SECTION,SECTION2,SECTION3,SECTION4,SECTION5,SECTION6,SECTION7,SECTION8,SECTION9,SECTION10,Role) values  
 ('$firsts','$middles','$lasts','$username','$addres','$email','$yearss','$births',$aging,'$genders','$subject1','$subject2',
 '$subject3','$subject4','$subject5','$subject6','$subject7','$subject8','$subject9','$section1','$section2','$section3','$section4','$section5','$section6','$section7','$section8','$section9','$section10','$role')";

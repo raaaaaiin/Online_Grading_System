@@ -24,7 +24,7 @@ include "../sepi_connect.php";
 
 
 $TID = $_GET['ID']; 
-$sql="Select *from tbl_teacher where TID = '$TID'";
+$sql="Select *from tbl_teacherinfo where TID = '$TID'";
 $result = $config->query($sql);
 
 $row = $result->fetch_assoc();

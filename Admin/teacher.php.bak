@@ -72,7 +72,7 @@ $births = $_POST['bdays'];
 $aging = $_POST['agess'];
 $genders = $_POST['gens'];
 $subjects = $_POST['subject'];
-$sql = "Insert into tbl_teacher (Employee_ID,FNAMES,MNAMES,LNAMES,BDAYS,AGES,GENDERS,SUBJECTS) values  
+$sql = "Insert into tbl_teacherinfo (Employee_ID,FNAMES,MNAMES,LNAMES,BDAYS,AGES,GENDERS,SUBJECTS) values  
 ($employeeid,'$firsts','$middles','$lasts','$births',$aging,'$genders','$subjects')";
 $insert = $config->query($sql);
 if($insert == True){

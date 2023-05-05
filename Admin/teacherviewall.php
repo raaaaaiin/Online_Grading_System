@@ -24,7 +24,7 @@ if(isset($_POST['search'])){
 $search = $_POST['search'];
 
 if ($search != NULL){
-$sql = "Select * from tbl_teacherinfo where TID like '%$search%' or 
+$sql = "Select * from tbl_teacherinfoinfo where TID like '%$search%' or 
 										Employee_ID like '%$search%' or
 										FNAMES like '%$search%' or
 										MNAMES like '%$search%' or
@@ -35,11 +35,11 @@ $sql = "Select * from tbl_teacherinfo where TID like '%$search%' or
 										SUBJECTS like '%$search%'";
 }else{
 
-$sql = "Select * from tbl_teacherinfo";
+$sql = "Select * from tbl_teacherinfoinfo";
 }
 }else{
 
-$sql = "Select * from tbl_teacherinfo";
+$sql = "Select * from tbl_teacherinfoinfo";
 }
 
 

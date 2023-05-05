@@ -37,18 +37,18 @@ if(isset($_POST['importSubmit'])){
 
                 
                 // Check whether member already exists in the database with the same email
-                $prevQuery = "SELECT TID FROM tbl_teacherinfo WHERE Employee_ID = '".$line[0]."'";
+                $prevQuery = "SELECT TID FROM tbl_teacherinfoinfo WHERE Employee_ID = '".$line[0]."'";
                 $prevResult = $config->query($prevQuery);
                 
                 if($prevResult->num_rows > 0){
                     // Update member data in the database
-                    $config->query("UPDATE tbl_teacherinfo SET Employee_ID = '".$Employee_ID. "', FNAMES = '".$FNAMES."', MNAMES = '". $MNAMES."',LNAMES = '". $LNAMES."',
+                    $config->query("UPDATE tbl_teacherinfoinfo SET Employee_ID = '".$Employee_ID. "', FNAMES = '".$FNAMES."', MNAMES = '". $MNAMES."',LNAMES = '". $LNAMES."',
                     USERNAME = '". $UNAME."', ADDRESS = '". $ADDRESS."', EMAIL = '". $EMAIL."', PASS = '". $PASS."', BDAYS = '". $BDAYS."', AGES = '". $AGES."', 
                      GENDERS = '". $GENDERS."', SUBJECTS = '". $Role."' WHERE Employee_ID = '".$line[0]."'");
                      var_dump("hey");
                 }else{
                     // Insert member data in the database
-                    $config->query("INSERT INTO tbl_teacherinfo (Employee_ID, FNAMES, MNAMES, LNAMES, USERNAME, ADDRESS, EMAIL, PASS, BDAYS, AGES, GENDERS, SUBJECTS, Role)
+                    $config->query("INSERT INTO tbl_teacherinfoinfo (Employee_ID, FNAMES, MNAMES, LNAMES, USERNAME, ADDRESS, EMAIL, PASS, BDAYS, AGES, GENDERS, SUBJECTS, Role)
                      VALUES ('".$Employee_ID. "', '".$FNAMES."', '".$MNAMES."', '".$LNAMES."' , '".$UNAME."', '". $ADDRESS."', '". $EMAIL."', '". $PASS."', '". $BDAYS."', '". $AGES."', '".$GENDERS."', '". $Role."')");
                var_dump("hayyyyuhy");
             }

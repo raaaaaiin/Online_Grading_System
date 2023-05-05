@@ -21,7 +21,7 @@
 		$sql1 = "Insert into tbl_audithistory (e_name,e_action,e_date) values ('$name','Retrieve Teacher Records',NOW())";
 		$result1 = $config->query($sql1);
 $ID=$_GET['ID'];
-$sql = "INSERT INTO tbl_teacher SELECT * FROM tbl_archive_teacher WHERE TID = '$ID'";
+$sql = "INSERT INTO tbl_teacherinfo SELECT * FROM tbl_archive_teacher WHERE TID = '$ID'";
 $result = $config->query($sql);
 if($result == True)
 {

@@ -46,7 +46,7 @@
 		
 		
 		
-		$viewlogin= "SELECT * FROM tbl_teacher WHERE USERNAME = '$username'";
+		$viewlogin= "SELECT * FROM tbl_teacherinfo WHERE USERNAME = '$username'";
 		$result = mysqli_query($config,$viewlogin);
 		$number = mysqli_num_rows($result);
 		
@@ -73,7 +73,7 @@
 		 }else if(isset($_SESSION['TID']))
 			{
 	
-				$getrecord = mysqli_query($config,"SELECT * FROM tbl_teacher WHERE TID ='$userid'");
+				$getrecord = mysqli_query($config,"SELECT * FROM tbl_teacherinfo WHERE TID ='$userid'");
 				while($rowedit = mysqli_fetch_assoc($getrecord))
 					
 				{

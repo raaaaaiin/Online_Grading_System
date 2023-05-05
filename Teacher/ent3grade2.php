@@ -10,7 +10,7 @@
 			{
 				$userid = $_SESSION['Employee_ID'];
 	
-				$getrecord = mysqli_query($config,"SELECT * FROM tbl_teacher WHERE Employee_ID ='$userid'");
+				$getrecord = mysqli_query($config,"SELECT * FROM tbl_teacherinfo WHERE Employee_ID ='$userid'");
 				while($rowedit = mysqli_fetch_assoc($getrecord))
 					
 				{

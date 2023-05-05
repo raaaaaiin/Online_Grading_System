@@ -41,7 +41,7 @@ $subject8 = !empty($_POST['subjectse'])?$_POST['subjectse']:" ";
 $subject9 = !empty($_POST['subjecte'])?$_POST['subjecte']:" ";
 
 
-$sql = "Update tbl_teacher SET TID='$TID', 
+$sql = "Update tbl_teacherinfo SET TID='$TID', 
 								FNAMES='$FNAME', 
 								MNAMES='$MNAME',
 								LNAMES='$LNAME',

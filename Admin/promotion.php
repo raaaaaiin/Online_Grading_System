@@ -71,7 +71,7 @@
             <hr class="announceaddline">
             <select name="Teacher" class="addannouncemntfield">
                <?php
-               $query = "SELECT TID as teacher_Code, CONCAT(FNAMES, ' ', MNAMES, ' ', LNAMES) AS name FROM tbl_teacherinfo";
+               $query = "SELECT TID as teacher_Code, CONCAT(FNAMES, ' ', MNAMES, ' ', LNAMES) AS name FROM tbl_teacherinfoinfo";
 
                // Execute the query and retrieve the result set
                $result = mysqli_query($config, $query);

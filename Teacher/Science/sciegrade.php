@@ -10,7 +10,7 @@
 			{
 				$userid = $_SESSION['TID'];
 	
-				$getrecord = mysqli_query($config,"SELECT * FROM tbl_teacher WHERE TID ='$userid'");
+				$getrecord = mysqli_query($config,"SELECT * FROM tbl_teacherinfo WHERE TID ='$userid'");
 				while($rowedit = mysqli_fetch_assoc($getrecord))
 
 					
@@ -43,7 +43,7 @@
 	$studentrecord = $row['count']." Total(s)";
 	}		
 
-	$query = "SELECT COUNT(*) AS count FROM tbl_teacher";
+	$query = "SELECT COUNT(*) AS count FROM tbl_teacherinfo";
 	$query_result = mysqli_query($config,$query);
 	while($row = mysqli_fetch_assoc($query_result)){
 	$teacherrecord = $row['count']." Total(s)";

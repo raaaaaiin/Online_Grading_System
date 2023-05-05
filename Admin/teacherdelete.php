@@ -30,12 +30,12 @@ error_reporting(0);
 
 
 $ID=$_GET['ID'];
-$sql = "INSERT INTO tbl_archive_teacher SELECT * FROM tbl_teacher WHERE TID = '$ID'";
+$sql = "INSERT INTO tbl_archive_teacher SELECT * FROM tbl_teacherinfo WHERE TID = '$ID'";
 
 $result = $config->query($sql);
 if($result == True)
 {
-	$query = "DELETE FROM tbl_teacher WHERE TID = '$ID'";
+	$query = "DELETE FROM tbl_teacherinfo WHERE TID = '$ID'";
 	if ($config->query($query) == TRUE) 
 	{
 		?>
