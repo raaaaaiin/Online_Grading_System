@@ -70,81 +70,68 @@
             <h1 id="announceaddfont">ADD Restriction</h1>
             <hr class="announceaddline">
             <select name="Teacher" class="addannouncemntfield">
-               <?php
-               $query = "SELECT TID as teacher_Code, CONCAT(FNAMES, ' ', MNAMES, ' ', LNAMES) AS name FROM tbl_teacherinfo";
+    <?php
+    // Get the current date and month
+    $current_date = new DateTime();
+    $current_year = $current_date->format('Y');
+    $current_month = $current_date->format('m');
 
-               // Execute the query and retrieve the result set
-               $result = mysqli_query($config, $query);
-               
-               // Create the options for the dropdown menu with the teacher names
-               while ($row = mysqli_fetch_assoc($result)) {
-                   echo "<option value='" . $row["teacher_Code"] . "'>" . $row["name"] . "</option>";
-               }
-               
-               // Close the result set and database connection
-               mysqli_free_result($result);
-               mysqli_close($config);
-               ?>
-            
-            </select>
-                <br>
+    // Determine the current school year
+    $sy_start_year = $current_month >= 6 ? $current_year : $current_year - 1;
+    $sy_end_year = $sy_start_year + 1;
+    $current_sy = $sy_start_year . ' - ' . $sy_end_year;
 
-                <select name="grade" class="adddatfield">
-    <option value="" disabled selected>Please select a grade level</option>
-    <option value="Grade 1">Grade 1</option>
-    <option value="Grade 2">Grade 2</option>
-    <option value="Grade 3">Grade 3</option>
-    <option value="Grade 4">Grade 4</option>
-    <option value="Grade 5">Grade 5</option>
-    <option value="Grade 6">Grade 6</option>
-    <option value="Grade 7">Grade 7</option>
-    <option value="Grade 8">Grade 8</option>
-    <option value="Grade 9">Grade 9</option>
-    <option value="Grade 10">Grade 10</option>
+    // Modify the query to filter by the current school year
+    $query = "SELECT Section_Code as teacher_Code, CONCAT(Section,' ',SY) AS name, SY FROM tbl_section WHERE SY = '$current_sy'";
+    $result = mysqli_query($config, $query);
+    $next_sy = "";
+
+    while ($row = mysqli_fetch_assoc($result)) {
+        // Calculate the next school year
+        $sy_parts = explode('-', $row["SY"]);
+        $next_sy = ($sy_parts[0] + 1) . ' - ' . ($sy_parts[1] + 1);
+
+        echo "<option value='" . $row["teacher_Code"] . "'>" . $row["name"] . "</option>";
+    }
+
+    mysqli_free_result($result);
+    mysqli_close($config);
+    ?>
 </select>
+<br>
+
+<select name="to" class="adddatfield">
+    <?php
+    include "../sepi_connect.php";
+
+    $query2 = "SELECT Section_Code as teacher_Code, CONCAT(Section,' ',SY) AS name FROM tbl_section WHERE SY = '$next_sy'";
+    $result2 = mysqli_query($config, $query2);
+    $num_rows = mysqli_num_rows($result2);
+
+    if ($num_rows > 0) {
+        while ($row2 = mysqli_fetch_assoc($result2)) {
+            echo "<option value='" . $row2["teacher_Code"] . "'>" . $row2["name"] . "</option>";
+        }
+    } else {
+        echo "<option>Please add section first on next School year</option>";
+    }
+
+    mysqli_free_result($result2);
+    mysqli_close($config);
+    ?>
+</select>
+
             <br>
-            <select name="Subject" class="adddatfield" style="margin-top: 5%;">
-            <option value="Grade 1">Please Select Grade Level first</option>
-            </select>
+            
             <br>
 
             <input type=submit name=sub value="Add" class="addannouncebtn">
             <a href="restriction.php" class="addannounceback">Back</a>
 
     </form>
-
+    <?php var_dump($query) ?>
 </body>
-<script>
-    // Get the "Grade" and "Subject" dropdown menus
-    var gradeDropdown = document.querySelector('select[name="grade"]');
-var subjectDropdown = document.querySelector('select[name="Subject"]');
 
-// Listen for changes in the "Grade" dropdown menu
-gradeDropdown.addEventListener('change', function() {
-    // Get the selected value in the "Grade" dropdown menu
-    var selectedGrade = this.value;
-    
-    // Construct the SQL query to retrieve the subjects for the selected grade
-    var query = "SELECT subject_Name, Subject_code FROM tbl_subject WHERE Grade_level = '" + selectedGrade + "'";
-    
-    // Clear the options in the "Subject" dropdown menu
-    subjectDropdown.innerHTML = '<option value="">Please Select Grade Level first</option>';
-    
-    // Fetch the subjects for the selected grade from the server
-    fetch('fetch.php?query=' + query)
-        .then(response => response.json())
-        .then(subjects => {
-            // Delete all existing options in the "Subject" dropdown menu
-            while (subjectDropdown.firstChild) {
-                subjectDropdown.removeChild(subjectDropdown.firstChild);
-            }
-            // Add the retrieved subjects to the "Subject" dropdown menu
-            subjects.forEach(subject => {
-                subjectDropdown.innerHTML += '<option value="' + subject.Subject_code + '">' + subject.subject_Name + '</option>';
-            });
-        });
-});
-</script>
 </html>
 <?php
 include "../sepi_connect.php";
@@ -153,18 +140,6 @@ include "../sepi_connect.php";
 
 if(isset($_POST['sub'])){
 	
-$teacher = $_POST['Teacher'];
-$grade = $_POST['grade'];
-$subject = $_POST['Subject'];
-	$sql = "Insert into tbl_restriction (Teacher_Code,Subject_Code,Grade_Level) values  
-			('$teacher','$subject','$grade')";
-			if ($config->query($sql)) {
-				// query successful
-				echo '<script>alert("Subject added successfully.");</script>';
-			  } else {
-				// query failed
-				echo '<script>alert("Failed to add new subject or already existing. Please check the inputs and provide the correct details.");</script>';
-			  }
 }
 
 ?>
