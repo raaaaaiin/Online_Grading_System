@@ -94,7 +94,10 @@ $sql = "Select * from tbl_studentinfo";
 <form method='POST' action='index.php'>
 				<a href="student.php" class="returnviewallbtn">Return</a>
 				<a href="import.php" class="massupdbtnviewall">Mass Upload</a>
-
+				<input type='submit' name='emailButton' value='Send Email' class='returnviewallbtn' style="
+    margin-left: 0%;
+    width: 150px;
+">
 
 
 <?php
@@ -171,7 +174,7 @@ if ($result->num_rows > 0) {
 		echo "<tr><td colspan='12'>No records found.</td></tr>";
 		}
 		echo "</table>";
-		echo "<input type='submit' name='emailButton' value='EMAIL' class='emailButton'>";
+		echo "";
 		echo "</form>";
 		
 		?>

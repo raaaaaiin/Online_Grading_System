@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2023-05-04 18:58:20
+Date: 2023-05-07 03:29:49
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -30,8 +30,8 @@ CREATE TABLE `tbl_announce` (
 -- ----------------------------
 -- Records of tbl_announce
 -- ----------------------------
-INSERT INTO `tbl_announce` VALUES ('67', 'IT NIGHT', '2023-02-25', 'IMG-63da5cdb396fe7.17447681.png');
-INSERT INTO `tbl_announce` VALUES ('69', 'new', '2023-04-21', 'IMG-644252117aa2c0.02046969.png');
+INSERT INTO `tbl_announce` VALUES ('67', 'IT NIGHT', '2023-02-25', 'IMG-6455696b2bbff5.62129317.png');
+INSERT INTO `tbl_announce` VALUES ('69', 'new', '2023-04-21', 'IMG-6456a2dfd30754.13027705.jpg');
 
 -- ----------------------------
 -- Table structure for `tbl_archive_account`
@@ -250,7 +250,7 @@ CREATE TABLE `tbl_audithistory` (
   `e_action` varchar(99) NOT NULL,
   `e_date` datetime NOT NULL,
   PRIMARY KEY (`e_userID`)
-) ENGINE=InnoDB AUTO_INCREMENT=8813 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=9180 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of tbl_audithistory
@@ -9067,6 +9067,373 @@ INSERT INTO `tbl_audithistory` VALUES ('8809', 'brian demesa', 'Viewing Admin Da
 INSERT INTO `tbl_audithistory` VALUES ('8810', 'brian demesa', 'Viewing Admin Dashboard', '2023-05-04 18:48:35');
 INSERT INTO `tbl_audithistory` VALUES ('8811', 'brian demesa', 'Viewing Admin Announcement', '2023-05-04 18:48:36');
 INSERT INTO `tbl_audithistory` VALUES ('8812', 'brian demesa', 'Viewing Teachers Information', '2023-05-04 18:48:38');
+INSERT INTO `tbl_audithistory` VALUES ('8813', 'brian demesa', 'Viewing Admin Dashboard', '2023-05-04 19:01:34');
+INSERT INTO `tbl_audithistory` VALUES ('8814', 'brian demesa', 'Viewing Admin Announcement', '2023-05-04 19:03:44');
+INSERT INTO `tbl_audithistory` VALUES ('8815', 'brian demesa', 'Viewing Admin Announcement', '2023-05-04 19:03:48');
+INSERT INTO `tbl_audithistory` VALUES ('8816', 'brian demesa', 'Viewing Admin Announcement', '2023-05-04 19:03:51');
+INSERT INTO `tbl_audithistory` VALUES ('8817', 'brian demesa', 'Viewing Admin Announcement', '2023-05-04 19:03:53');
+INSERT INTO `tbl_audithistory` VALUES ('8818', 'brian demesa', 'Adding Admin Announcement', '2023-05-04 19:03:56');
+INSERT INTO `tbl_audithistory` VALUES ('8819', 'brian demesa', 'Viewing Admin Announcement', '2023-05-04 19:04:00');
+INSERT INTO `tbl_audithistory` VALUES ('8820', 'brian demesa', 'Adding Admin Announcement', '2023-05-04 19:04:05');
+INSERT INTO `tbl_audithistory` VALUES ('8821', 'brian demesa', 'Adding Admin Announcement', '2023-05-04 19:04:39');
+INSERT INTO `tbl_audithistory` VALUES ('8822', 'brian demesa', 'Viewing Admin Announcement', '2023-05-04 19:04:43');
+INSERT INTO `tbl_audithistory` VALUES ('8823', 'brian demesa', 'Viewing Admin Announcement', '2023-05-04 19:04:55');
+INSERT INTO `tbl_audithistory` VALUES ('8824', 'brian demesa', 'Adding Admin Announcement', '2023-05-04 19:05:15');
+INSERT INTO `tbl_audithistory` VALUES ('8825', 'brian demesa', 'Adding Admin Announcement', '2023-05-04 19:05:26');
+INSERT INTO `tbl_audithistory` VALUES ('8826', 'brian demesa', 'Viewing Admin Announcement', '2023-05-04 19:05:30');
+INSERT INTO `tbl_audithistory` VALUES ('8827', 'brian demesa', 'Viewing Admin Announcement', '2023-05-04 19:05:44');
+INSERT INTO `tbl_audithistory` VALUES ('8828', 'brian demesa', 'Viewing Admin Announcement', '2023-05-04 19:05:46');
+INSERT INTO `tbl_audithistory` VALUES ('8829', 'brian demesa', 'Viewing Admin Announcement', '2023-05-04 19:05:48');
+INSERT INTO `tbl_audithistory` VALUES ('8830', 'brian demesa', 'Viewing Admin Announcement', '2023-05-04 19:05:53');
+INSERT INTO `tbl_audithistory` VALUES ('8831', 'brian demesa', 'Adding Admin Announcement', '2023-05-04 19:06:35');
+INSERT INTO `tbl_audithistory` VALUES ('8832', 'brian demesa', 'Adding Admin Announcement', '2023-05-04 19:07:06');
+INSERT INTO `tbl_audithistory` VALUES ('8833', 'brian demesa', 'Viewing Admin Announcement', '2023-05-04 19:07:09');
+INSERT INTO `tbl_audithistory` VALUES ('8834', 'brian demesa', 'Logging Out', '2023-05-04 19:07:27');
+INSERT INTO `tbl_audithistory` VALUES ('8835', 'brian demesa', 'Viewing Admin Dashboard', '2023-05-04 19:10:49');
+INSERT INTO `tbl_audithistory` VALUES ('8836', 'brian demesa', 'Viewing Students Information', '2023-05-04 19:10:51');
+INSERT INTO `tbl_audithistory` VALUES ('8837', 'brian demesa', 'Viewing Students Information', '2023-05-04 19:10:52');
+INSERT INTO `tbl_audithistory` VALUES ('8838', 'brian demesa', 'Viewing Students Information', '2023-05-04 19:10:54');
+INSERT INTO `tbl_audithistory` VALUES ('8839', 'brian demesa', 'Viewing Students Information', '2023-05-04 19:10:58');
+INSERT INTO `tbl_audithistory` VALUES ('8840', 'brian demesa', 'Viewing Students Information', '2023-05-04 19:11:02');
+INSERT INTO `tbl_audithistory` VALUES ('8841', 'brian demesa', 'Viewing Admin Announcement', '2023-05-04 19:12:37');
+INSERT INTO `tbl_audithistory` VALUES ('8842', 'brian demesa', 'Viewing Admin Announcement', '2023-05-04 19:12:38');
+INSERT INTO `tbl_audithistory` VALUES ('8843', 'brian demesa', 'Viewing Admin Announcement', '2023-05-04 19:12:39');
+INSERT INTO `tbl_audithistory` VALUES ('8844', 'brian demesa', 'Viewing Admin Announcement', '2023-05-04 19:12:40');
+INSERT INTO `tbl_audithistory` VALUES ('8845', 'brian demesa', 'Viewing Admin Announcement', '2023-05-04 19:13:42');
+INSERT INTO `tbl_audithistory` VALUES ('8846', 'brian demesa', 'Viewing Admin Announcement', '2023-05-04 19:13:48');
+INSERT INTO `tbl_audithistory` VALUES ('8847', 'brian demesa', 'Viewing Admin Announcement', '2023-05-04 19:13:50');
+INSERT INTO `tbl_audithistory` VALUES ('8848', 'brian demesa', 'Viewing Admin Announcement', '2023-05-04 19:13:51');
+INSERT INTO `tbl_audithistory` VALUES ('8849', 'brian demesa', 'Viewing Admin Announcement', '2023-05-04 19:13:52');
+INSERT INTO `tbl_audithistory` VALUES ('8850', 'brian demesa', 'Viewing Admin Announcement', '2023-05-04 19:14:03');
+INSERT INTO `tbl_audithistory` VALUES ('8851', 'brian demesa', 'Viewing Admin Announcement', '2023-05-04 19:14:06');
+INSERT INTO `tbl_audithistory` VALUES ('8852', 'brian demesa', 'Viewing Admin Dashboard', '2023-05-05 17:15:38');
+INSERT INTO `tbl_audithistory` VALUES ('8853', 'brian demesa', 'Viewing Admin Announcement', '2023-05-05 17:15:46');
+INSERT INTO `tbl_audithistory` VALUES ('8854', 'brian demesa', 'Viewing Students Information', '2023-05-05 17:15:47');
+INSERT INTO `tbl_audithistory` VALUES ('8855', 'brian demesa', 'Viewing Teachers Information', '2023-05-05 17:15:48');
+INSERT INTO `tbl_audithistory` VALUES ('8856', 'brian demesa', 'Viewing Teachers Information', '2023-05-05 17:16:03');
+INSERT INTO `tbl_audithistory` VALUES ('8857', 'brian demesa', 'Viewing Admin Announcement', '2023-05-05 17:16:25');
+INSERT INTO `tbl_audithistory` VALUES ('8858', 'brian demesa', 'Viewing Teachers Information', '2023-05-05 17:16:27');
+INSERT INTO `tbl_audithistory` VALUES ('8859', 'brian demesa', 'Viewing Students Information', '2023-05-05 17:16:29');
+INSERT INTO `tbl_audithistory` VALUES ('8860', 'brian demesa', 'Viewing Students Information', '2023-05-05 17:16:31');
+INSERT INTO `tbl_audithistory` VALUES ('8861', 'brian demesa', 'Viewing Teachers Information', '2023-05-05 17:16:31');
+INSERT INTO `tbl_audithistory` VALUES ('8862', 'brian demesa', 'Viewing Admin Account', '2023-05-05 17:16:34');
+INSERT INTO `tbl_audithistory` VALUES ('8863', 'brian demesa', 'Viewing Account', '2023-05-05 17:16:37');
+INSERT INTO `tbl_audithistory` VALUES ('8864', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-05 17:16:39');
+INSERT INTO `tbl_audithistory` VALUES ('8865', 'brian demesa', 'Viewing Admin Announcement', '2023-05-05 21:22:32');
+INSERT INTO `tbl_audithistory` VALUES ('8866', 'brian demesa', 'Viewing Admin Announcement', '2023-05-05 21:22:33');
+INSERT INTO `tbl_audithistory` VALUES ('8867', 'brian demesa', 'Viewing Admin Announcement', '2023-05-05 21:22:36');
+INSERT INTO `tbl_audithistory` VALUES ('8868', 'brian demesa', 'Viewing Admin Announcement', '2023-05-05 21:22:39');
+INSERT INTO `tbl_audithistory` VALUES ('8869', 'brian demesa', 'Viewing Students Information', '2023-05-05 21:22:40');
+INSERT INTO `tbl_audithistory` VALUES ('8870', 'brian demesa', 'Viewing Teachers Information', '2023-05-05 21:22:42');
+INSERT INTO `tbl_audithistory` VALUES ('8871', 'brian demesa', 'Viewing Mass Upload Page', '2023-05-05 21:22:51');
+INSERT INTO `tbl_audithistory` VALUES ('8872', 'brian demesa', 'Viewing Mass Upload Page', '2023-05-05 23:00:31');
+INSERT INTO `tbl_audithistory` VALUES ('8873', 'brian demesa', 'Viewing Mass Upload Page', '2023-05-05 23:01:48');
+INSERT INTO `tbl_audithistory` VALUES ('8874', 'brian demesa', 'Viewing Teachers Information', '2023-05-05 23:06:33');
+INSERT INTO `tbl_audithistory` VALUES ('8875', 'brian demesa', 'Viewing Mass Upload Page', '2023-05-05 23:06:37');
+INSERT INTO `tbl_audithistory` VALUES ('8876', 'brian demesa', 'Viewing Teachers Information', '2023-05-05 23:06:43');
+INSERT INTO `tbl_audithistory` VALUES ('8877', 'brian demesa', 'Viewing Teachers Information', '2023-05-05 23:06:46');
+INSERT INTO `tbl_audithistory` VALUES ('8878', 'brian demesa', 'Adding Teacher Information', '2023-05-05 23:06:54');
+INSERT INTO `tbl_audithistory` VALUES ('8879', 'brian demesa', 'Viewing Teachers Information', '2023-05-05 23:06:55');
+INSERT INTO `tbl_audithistory` VALUES ('8880', 'brian demesa', 'Viewing Mass Upload Page', '2023-05-05 23:06:56');
+INSERT INTO `tbl_audithistory` VALUES ('8881', 'brian demesa', 'Viewing Teachers Information', '2023-05-05 23:07:40');
+INSERT INTO `tbl_audithistory` VALUES ('8882', 'brian demesa', 'Adding Teacher Information', '2023-05-05 23:08:14');
+INSERT INTO `tbl_audithistory` VALUES ('8883', 'brian demesa', 'Viewing Teachers Information', '2023-05-05 23:08:16');
+INSERT INTO `tbl_audithistory` VALUES ('8884', 'brian demesa', 'Viewing Mass Upload Page', '2023-05-05 23:15:55');
+INSERT INTO `tbl_audithistory` VALUES ('8885', 'brian demesa', 'Viewing Teachers Information', '2023-05-05 23:15:59');
+INSERT INTO `tbl_audithistory` VALUES ('8886', 'brian demesa', 'Viewing Teachers Information', '2023-05-05 23:30:22');
+INSERT INTO `tbl_audithistory` VALUES ('8887', 'brian demesa', 'Viewing Teachers Information', '2023-05-05 23:30:43');
+INSERT INTO `tbl_audithistory` VALUES ('8888', 'brian demesa', 'Viewing Teachers Information', '2023-05-05 23:30:54');
+INSERT INTO `tbl_audithistory` VALUES ('8889', 'brian demesa', 'Viewing Teachers Information', '2023-05-05 23:30:57');
+INSERT INTO `tbl_audithistory` VALUES ('8890', 'brian demesa', 'Viewing Teachers Information', '2023-05-05 23:31:18');
+INSERT INTO `tbl_audithistory` VALUES ('8891', 'brian demesa', 'Viewing Teachers Information', '2023-05-05 23:31:23');
+INSERT INTO `tbl_audithistory` VALUES ('8892', 'brian demesa', 'Viewing Teachers Information', '2023-05-05 23:31:50');
+INSERT INTO `tbl_audithistory` VALUES ('8893', 'brian demesa', 'Adding Teacher Information', '2023-05-05 23:53:27');
+INSERT INTO `tbl_audithistory` VALUES ('8894', 'brian demesa', 'Viewing Teachers Information', '2023-05-05 23:53:29');
+INSERT INTO `tbl_audithistory` VALUES ('8895', 'brian demesa', 'Viewing Mass Upload Page', '2023-05-05 23:53:31');
+INSERT INTO `tbl_audithistory` VALUES ('8896', 'brian demesa', 'Viewing Teachers Information', '2023-05-05 23:58:23');
+INSERT INTO `tbl_audithistory` VALUES ('8897', 'brian demesa', 'Viewing Mass Upload Page', '2023-05-05 23:58:25');
+INSERT INTO `tbl_audithistory` VALUES ('8898', 'brian demesa', 'Viewing Mass Upload Page', '2023-05-05 23:58:31');
+INSERT INTO `tbl_audithistory` VALUES ('8899', 'brian demesa', 'Viewing Teachers Information', '2023-05-05 23:58:35');
+INSERT INTO `tbl_audithistory` VALUES ('8900', 'brian demesa', 'Viewing Teachers Information', '2023-05-05 23:58:44');
+INSERT INTO `tbl_audithistory` VALUES ('8901', 'brian demesa', 'Viewing Mass Upload Page', '2023-05-05 23:58:47');
+INSERT INTO `tbl_audithistory` VALUES ('8902', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 03:03:37');
+INSERT INTO `tbl_audithistory` VALUES ('8903', 'brian demesa', 'Adding Teacher Information', '2023-05-06 03:03:40');
+INSERT INTO `tbl_audithistory` VALUES ('8904', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 03:03:43');
+INSERT INTO `tbl_audithistory` VALUES ('8905', 'brian demesa', 'Viewing Mass Upload Page', '2023-05-06 03:03:47');
+INSERT INTO `tbl_audithistory` VALUES ('8906', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 03:03:54');
+INSERT INTO `tbl_audithistory` VALUES ('8907', 'brian demesa', 'Viewing Mass Upload Page', '2023-05-06 03:03:56');
+INSERT INTO `tbl_audithistory` VALUES ('8908', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 03:14:49');
+INSERT INTO `tbl_audithistory` VALUES ('8909', 'brian demesa', 'Viewing Update Teacher Information', '2023-05-06 03:14:54');
+INSERT INTO `tbl_audithistory` VALUES ('8910', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 03:15:04');
+INSERT INTO `tbl_audithistory` VALUES ('8911', 'brian demesa', 'Viewing Mass Upload Page', '2023-05-06 03:15:09');
+INSERT INTO `tbl_audithistory` VALUES ('8912', 'brian demesa', 'Viewing Students Information', '2023-05-06 03:15:20');
+INSERT INTO `tbl_audithistory` VALUES ('8913', 'brian demesa', 'Viewing Mass Upload Page', '2023-05-06 03:15:22');
+INSERT INTO `tbl_audithistory` VALUES ('8914', 'brian demesa', 'Viewing Students Information', '2023-05-06 03:15:25');
+INSERT INTO `tbl_audithistory` VALUES ('8915', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 03:15:26');
+INSERT INTO `tbl_audithistory` VALUES ('8916', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 03:15:33');
+INSERT INTO `tbl_audithistory` VALUES ('8917', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 03:15:35');
+INSERT INTO `tbl_audithistory` VALUES ('8918', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 03:15:43');
+INSERT INTO `tbl_audithistory` VALUES ('8919', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 03:16:22');
+INSERT INTO `tbl_audithistory` VALUES ('8920', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 03:17:22');
+INSERT INTO `tbl_audithistory` VALUES ('8921', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 03:17:25');
+INSERT INTO `tbl_audithistory` VALUES ('8922', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 03:17:54');
+INSERT INTO `tbl_audithistory` VALUES ('8923', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:25:16');
+INSERT INTO `tbl_audithistory` VALUES ('8924', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:26:12');
+INSERT INTO `tbl_audithistory` VALUES ('8925', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:26:25');
+INSERT INTO `tbl_audithistory` VALUES ('8926', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:28:06');
+INSERT INTO `tbl_audithistory` VALUES ('8927', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:28:37');
+INSERT INTO `tbl_audithistory` VALUES ('8928', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:28:47');
+INSERT INTO `tbl_audithistory` VALUES ('8929', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:28:52');
+INSERT INTO `tbl_audithistory` VALUES ('8930', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:28:57');
+INSERT INTO `tbl_audithistory` VALUES ('8931', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:29:01');
+INSERT INTO `tbl_audithistory` VALUES ('8932', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:29:08');
+INSERT INTO `tbl_audithistory` VALUES ('8933', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:29:16');
+INSERT INTO `tbl_audithistory` VALUES ('8934', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:29:20');
+INSERT INTO `tbl_audithistory` VALUES ('8935', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:29:26');
+INSERT INTO `tbl_audithistory` VALUES ('8936', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:29:53');
+INSERT INTO `tbl_audithistory` VALUES ('8937', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:30:16');
+INSERT INTO `tbl_audithistory` VALUES ('8938', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:30:53');
+INSERT INTO `tbl_audithistory` VALUES ('8939', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:31:49');
+INSERT INTO `tbl_audithistory` VALUES ('8940', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:33:16');
+INSERT INTO `tbl_audithistory` VALUES ('8941', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:40:14');
+INSERT INTO `tbl_audithistory` VALUES ('8942', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:40:23');
+INSERT INTO `tbl_audithistory` VALUES ('8943', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:40:43');
+INSERT INTO `tbl_audithistory` VALUES ('8944', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:40:58');
+INSERT INTO `tbl_audithistory` VALUES ('8945', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:41:16');
+INSERT INTO `tbl_audithistory` VALUES ('8946', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:42:46');
+INSERT INTO `tbl_audithistory` VALUES ('8947', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:43:09');
+INSERT INTO `tbl_audithistory` VALUES ('8948', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:43:20');
+INSERT INTO `tbl_audithistory` VALUES ('8949', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:43:26');
+INSERT INTO `tbl_audithistory` VALUES ('8950', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:47:10');
+INSERT INTO `tbl_audithistory` VALUES ('8951', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:48:31');
+INSERT INTO `tbl_audithistory` VALUES ('8952', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:48:34');
+INSERT INTO `tbl_audithistory` VALUES ('8953', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:48:44');
+INSERT INTO `tbl_audithistory` VALUES ('8954', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:48:51');
+INSERT INTO `tbl_audithistory` VALUES ('8955', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:49:02');
+INSERT INTO `tbl_audithistory` VALUES ('8956', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:50:05');
+INSERT INTO `tbl_audithistory` VALUES ('8957', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:50:10');
+INSERT INTO `tbl_audithistory` VALUES ('8958', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:50:15');
+INSERT INTO `tbl_audithistory` VALUES ('8959', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:52:01');
+INSERT INTO `tbl_audithistory` VALUES ('8960', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:52:11');
+INSERT INTO `tbl_audithistory` VALUES ('8961', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:52:23');
+INSERT INTO `tbl_audithistory` VALUES ('8962', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:52:34');
+INSERT INTO `tbl_audithistory` VALUES ('8963', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:54:36');
+INSERT INTO `tbl_audithistory` VALUES ('8964', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:54:45');
+INSERT INTO `tbl_audithistory` VALUES ('8965', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:55:05');
+INSERT INTO `tbl_audithistory` VALUES ('8966', 'brian demesa', 'Viewing Audit Teacher Records', '2023-05-06 03:55:10');
+INSERT INTO `tbl_audithistory` VALUES ('8967', 'brian demesa', 'Viewing Audit Teacher Records', '2023-05-06 03:57:44');
+INSERT INTO `tbl_audithistory` VALUES ('8968', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-06 03:57:46');
+INSERT INTO `tbl_audithistory` VALUES ('8969', 'brian demesa', 'Viewing Audit Teacher Records', '2023-05-06 03:57:47');
+INSERT INTO `tbl_audithistory` VALUES ('8970', 'brian demesa', 'Viewing Audit Students Records', '2023-05-06 03:58:01');
+INSERT INTO `tbl_audithistory` VALUES ('8971', 'brian demesa', 'Viewing Audit Teacher Records', '2023-05-06 03:58:08');
+INSERT INTO `tbl_audithistory` VALUES ('8972', 'brian demesa', 'Viewing Audit Students Records', '2023-05-06 03:58:08');
+INSERT INTO `tbl_audithistory` VALUES ('8973', 'brian demesa', 'Viewing Audit Teacher Records', '2023-05-06 03:58:09');
+INSERT INTO `tbl_audithistory` VALUES ('8974', 'brian demesa', 'Viewing Audit Students Records', '2023-05-06 03:58:10');
+INSERT INTO `tbl_audithistory` VALUES ('8975', 'brian demesa', 'Viewing Audit Teacher Records', '2023-05-06 03:58:12');
+INSERT INTO `tbl_audithistory` VALUES ('8976', 'brian demesa', 'Viewing Audit Students Records', '2023-05-06 03:58:14');
+INSERT INTO `tbl_audithistory` VALUES ('8977', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 03:58:48');
+INSERT INTO `tbl_audithistory` VALUES ('8978', 'brian demesa', 'Viewing Admin Account', '2023-05-06 03:58:49');
+INSERT INTO `tbl_audithistory` VALUES ('8979', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 03:58:51');
+INSERT INTO `tbl_audithistory` VALUES ('8980', 'brian demesa', 'Viewing Students Information', '2023-05-06 03:58:52');
+INSERT INTO `tbl_audithistory` VALUES ('8981', 'brian demesa', 'Viewing Account', '2023-05-06 03:58:53');
+INSERT INTO `tbl_audithistory` VALUES ('8982', 'brian demesa', 'Viewing Admin Account', '2023-05-06 03:58:54');
+INSERT INTO `tbl_audithistory` VALUES ('8983', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 03:58:55');
+INSERT INTO `tbl_audithistory` VALUES ('8984', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 03:58:59');
+INSERT INTO `tbl_audithistory` VALUES ('8985', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 03:59:23');
+INSERT INTO `tbl_audithistory` VALUES ('8986', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 03:59:32');
+INSERT INTO `tbl_audithistory` VALUES ('8987', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 03:59:39');
+INSERT INTO `tbl_audithistory` VALUES ('8988', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 03:59:48');
+INSERT INTO `tbl_audithistory` VALUES ('8989', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 03:59:58');
+INSERT INTO `tbl_audithistory` VALUES ('8990', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 04:00:01');
+INSERT INTO `tbl_audithistory` VALUES ('8991', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 04:00:02');
+INSERT INTO `tbl_audithistory` VALUES ('8992', 'brian demesa', 'Viewing Update Teacher Information', '2023-05-06 04:00:10');
+INSERT INTO `tbl_audithistory` VALUES ('8993', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 04:00:14');
+INSERT INTO `tbl_audithistory` VALUES ('8994', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 04:00:27');
+INSERT INTO `tbl_audithistory` VALUES ('8995', 'brian demesa', 'Viewing Students Information', '2023-05-06 04:00:30');
+INSERT INTO `tbl_audithistory` VALUES ('8996', 'brian demesa', 'Adding Student Information', '2023-05-06 04:00:32');
+INSERT INTO `tbl_audithistory` VALUES ('8997', 'brian demesa', 'Adding Student Information', '2023-05-06 04:05:01');
+INSERT INTO `tbl_audithistory` VALUES ('8998', 'brian demesa', 'Adding Student Information', '2023-05-06 04:11:06');
+INSERT INTO `tbl_audithistory` VALUES ('8999', 'brian demesa', 'Adding Student Information', '2023-05-06 04:13:24');
+INSERT INTO `tbl_audithistory` VALUES ('9000', 'brian demesa', 'Adding Student Information', '2023-05-06 04:13:28');
+INSERT INTO `tbl_audithistory` VALUES ('9001', 'brian demesa', 'Adding Student Information', '2023-05-06 04:14:19');
+INSERT INTO `tbl_audithistory` VALUES ('9002', 'brian demesa', 'Adding Student Information', '2023-05-06 04:14:54');
+INSERT INTO `tbl_audithistory` VALUES ('9003', 'brian demesa', 'Adding Student Information', '2023-05-06 04:18:32');
+INSERT INTO `tbl_audithistory` VALUES ('9004', 'brian demesa', 'Adding Student Information', '2023-05-06 04:24:29');
+INSERT INTO `tbl_audithistory` VALUES ('9005', 'brian demesa', 'Adding Student Information', '2023-05-06 04:27:49');
+INSERT INTO `tbl_audithistory` VALUES ('9006', 'brian demesa', 'Adding Student Information', '2023-05-06 04:27:53');
+INSERT INTO `tbl_audithistory` VALUES ('9007', 'brian demesa', 'Adding Student Information', '2023-05-06 04:27:56');
+INSERT INTO `tbl_audithistory` VALUES ('9008', 'brian demesa', 'Adding Student Information', '2023-05-06 04:29:03');
+INSERT INTO `tbl_audithistory` VALUES ('9009', 'brian demesa', 'Adding Student Information', '2023-05-06 04:29:20');
+INSERT INTO `tbl_audithistory` VALUES ('9010', 'brian demesa', 'Adding Student Information', '2023-05-06 04:30:20');
+INSERT INTO `tbl_audithistory` VALUES ('9011', 'brian demesa', 'Viewing Admin Account', '2023-05-06 04:30:24');
+INSERT INTO `tbl_audithistory` VALUES ('9012', 'brian demesa', 'Viewing Admin Dashboard', '2023-05-06 04:30:48');
+INSERT INTO `tbl_audithistory` VALUES ('9013', 'brian demesa', 'Viewing Admin Announcement', '2023-05-06 04:30:50');
+INSERT INTO `tbl_audithistory` VALUES ('9014', 'brian demesa', 'Viewing Updating Admin Announcement', '2023-05-06 04:30:52');
+INSERT INTO `tbl_audithistory` VALUES ('9015', 'brian demesa', 'Updating Admin Announcement', '2023-05-06 04:31:46');
+INSERT INTO `tbl_audithistory` VALUES ('9016', 'brian demesa', 'Updating Admin Announcement', '2023-05-06 04:32:52');
+INSERT INTO `tbl_audithistory` VALUES ('9017', 'brian demesa', 'Updating Admin Announcement', '2023-05-06 04:33:10');
+INSERT INTO `tbl_audithistory` VALUES ('9018', 'brian demesa', 'Updating Admin Announcement', '2023-05-06 04:33:14');
+INSERT INTO `tbl_audithistory` VALUES ('9019', 'brian demesa', 'Updating Admin Announcement', '2023-05-06 04:33:34');
+INSERT INTO `tbl_audithistory` VALUES ('9020', 'brian demesa', 'Updating Admin Announcement', '2023-05-06 04:33:46');
+INSERT INTO `tbl_audithistory` VALUES ('9021', 'brian demesa', 'Viewing Updating Admin Announcement', '2023-05-06 04:33:53');
+INSERT INTO `tbl_audithistory` VALUES ('9022', 'brian demesa', 'Viewing Admin Announcement', '2023-05-06 04:33:53');
+INSERT INTO `tbl_audithistory` VALUES ('9023', 'brian demesa', 'Adding Admin Announcement', '2023-05-06 04:33:56');
+INSERT INTO `tbl_audithistory` VALUES ('9024', 'brian demesa', 'Viewing Admin Announcement', '2023-05-06 04:33:59');
+INSERT INTO `tbl_audithistory` VALUES ('9025', 'brian demesa', 'Viewing Updating Admin Announcement', '2023-05-06 04:34:01');
+INSERT INTO `tbl_audithistory` VALUES ('9026', 'brian demesa', 'Updating Admin Announcement', '2023-05-06 04:34:51');
+INSERT INTO `tbl_audithistory` VALUES ('9027', 'brian demesa', 'Viewing Updating Admin Announcement', '2023-05-06 04:37:21');
+INSERT INTO `tbl_audithistory` VALUES ('9028', 'brian demesa', 'Updating Admin Announcement', '2023-05-06 04:37:34');
+INSERT INTO `tbl_audithistory` VALUES ('9029', 'brian demesa', 'Viewing Updating Admin Announcement', '2023-05-06 04:38:50');
+INSERT INTO `tbl_audithistory` VALUES ('9030', 'brian demesa', 'Viewing Updating Admin Announcement', '2023-05-06 04:38:52');
+INSERT INTO `tbl_audithistory` VALUES ('9031', 'brian demesa', 'Viewing Updating Admin Announcement', '2023-05-06 04:38:55');
+INSERT INTO `tbl_audithistory` VALUES ('9032', 'brian demesa', 'Updating Admin Announcement', '2023-05-06 04:39:07');
+INSERT INTO `tbl_audithistory` VALUES ('9033', 'brian demesa', 'Viewing Admin Announcement', '2023-05-06 04:39:10');
+INSERT INTO `tbl_audithistory` VALUES ('9034', 'brian demesa', 'Viewing Admin Announcement', '2023-05-06 04:39:31');
+INSERT INTO `tbl_audithistory` VALUES ('9035', 'brian demesa', 'Viewing Admin Announcement', '2023-05-06 04:39:46');
+INSERT INTO `tbl_audithistory` VALUES ('9036', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 04:40:38');
+INSERT INTO `tbl_audithistory` VALUES ('9037', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 04:40:51');
+INSERT INTO `tbl_audithistory` VALUES ('9038', 'brian demesa', 'Viewing Admin Announcement', '2023-05-06 04:40:53');
+INSERT INTO `tbl_audithistory` VALUES ('9039', 'brian demesa', 'Viewing Admin Announcement', '2023-05-06 04:40:55');
+INSERT INTO `tbl_audithistory` VALUES ('9040', 'brian demesa', 'Viewing Admin Announcement', '2023-05-06 04:40:56');
+INSERT INTO `tbl_audithistory` VALUES ('9041', 'brian demesa', 'Viewing Admin Announcement', '2023-05-06 04:40:57');
+INSERT INTO `tbl_audithistory` VALUES ('9042', 'brian demesa', 'Viewing Admin Announcement', '2023-05-06 04:40:59');
+INSERT INTO `tbl_audithistory` VALUES ('9043', 'brian demesa', 'Adding Admin Announcement', '2023-05-06 04:41:01');
+INSERT INTO `tbl_audithistory` VALUES ('9044', 'brian demesa', 'Viewing Admin Announcement', '2023-05-06 04:41:10');
+INSERT INTO `tbl_audithistory` VALUES ('9045', 'brian demesa', 'Viewing Admin Announcement', '2023-05-06 04:41:13');
+INSERT INTO `tbl_audithistory` VALUES ('9046', 'brian demesa', 'Adding Admin Announcement', '2023-05-06 04:41:15');
+INSERT INTO `tbl_audithistory` VALUES ('9047', 'brian demesa', 'Adding Admin Announcement', '2023-05-06 04:41:41');
+INSERT INTO `tbl_audithistory` VALUES ('9048', 'brian demesa', 'Adding Admin Announcement', '2023-05-06 04:41:50');
+INSERT INTO `tbl_audithistory` VALUES ('9049', 'brian demesa', 'Viewing Students Information', '2023-05-06 04:42:32');
+INSERT INTO `tbl_audithistory` VALUES ('9050', 'brian demesa', 'Adding Student Information', '2023-05-06 04:42:34');
+INSERT INTO `tbl_audithistory` VALUES ('9051', 'brian demesa', 'Adding Student Information', '2023-05-06 04:42:58');
+INSERT INTO `tbl_audithistory` VALUES ('9052', 'brian demesa', 'Adding Student Information', '2023-05-06 04:47:30');
+INSERT INTO `tbl_audithistory` VALUES ('9053', 'brian demesa', 'Adding Student Information', '2023-05-06 04:47:51');
+INSERT INTO `tbl_audithistory` VALUES ('9054', 'brian demesa', 'Viewing Admin Announcement', '2023-05-06 22:32:09');
+INSERT INTO `tbl_audithistory` VALUES ('9055', 'brian demesa', 'Viewing Admin Announcement', '2023-05-06 22:32:14');
+INSERT INTO `tbl_audithistory` VALUES ('9056', 'brian demesa', 'Viewing Admin Announcement', '2023-05-06 22:32:17');
+INSERT INTO `tbl_audithistory` VALUES ('9057', 'brian demesa', 'Viewing Admin Announcement', '2023-05-06 22:32:19');
+INSERT INTO `tbl_audithistory` VALUES ('9058', 'brian demesa', 'Viewing Admin Announcement', '2023-05-06 22:33:48');
+INSERT INTO `tbl_audithistory` VALUES ('9059', 'brian demesa', 'Viewing Admin Announcement', '2023-05-06 22:33:50');
+INSERT INTO `tbl_audithistory` VALUES ('9060', 'brian demesa', 'Viewing Admin Announcement', '2023-05-06 22:33:56');
+INSERT INTO `tbl_audithistory` VALUES ('9061', 'brian demesa', 'Viewing Admin Dashboard', '2023-05-06 22:33:57');
+INSERT INTO `tbl_audithistory` VALUES ('9062', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 22:34:08');
+INSERT INTO `tbl_audithistory` VALUES ('9063', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 22:34:10');
+INSERT INTO `tbl_audithistory` VALUES ('9064', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 22:39:52');
+INSERT INTO `tbl_audithistory` VALUES ('9065', 'brian demesa', 'Viewing Students Information', '2023-05-06 22:40:01');
+INSERT INTO `tbl_audithistory` VALUES ('9066', 'brian demesa', 'Viewing Students Information', '2023-05-06 22:40:26');
+INSERT INTO `tbl_audithistory` VALUES ('9067', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 22:40:28');
+INSERT INTO `tbl_audithistory` VALUES ('9068', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 22:40:33');
+INSERT INTO `tbl_audithistory` VALUES ('9069', 'brian demesa', 'Viewing Students Information', '2023-05-06 22:40:42');
+INSERT INTO `tbl_audithistory` VALUES ('9070', 'brian demesa', 'Viewing Students Information', '2023-05-06 22:41:03');
+INSERT INTO `tbl_audithistory` VALUES ('9071', 'brian demesa', 'Viewing Students Information', '2023-05-06 22:41:07');
+INSERT INTO `tbl_audithistory` VALUES ('9072', 'brian demesa', 'Viewing Students Information', '2023-05-06 22:41:14');
+INSERT INTO `tbl_audithistory` VALUES ('9073', 'brian demesa', 'Viewing Students Information', '2023-05-06 22:42:01');
+INSERT INTO `tbl_audithistory` VALUES ('9074', 'brian demesa', 'Viewing Students Information', '2023-05-06 22:43:11');
+INSERT INTO `tbl_audithistory` VALUES ('9075', 'brian demesa', 'Viewing Students Information', '2023-05-06 22:43:20');
+INSERT INTO `tbl_audithistory` VALUES ('9076', 'brian demesa', 'Viewing Students Information', '2023-05-06 22:49:15');
+INSERT INTO `tbl_audithistory` VALUES ('9077', 'brian demesa', 'Viewing Students Information', '2023-05-06 22:49:26');
+INSERT INTO `tbl_audithistory` VALUES ('9078', 'brian demesa', 'Viewing Students Information', '2023-05-06 22:49:31');
+INSERT INTO `tbl_audithistory` VALUES ('9079', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 22:49:38');
+INSERT INTO `tbl_audithistory` VALUES ('9080', 'brian demesa', 'Viewing Students Information', '2023-05-06 22:49:48');
+INSERT INTO `tbl_audithistory` VALUES ('9081', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 22:49:53');
+INSERT INTO `tbl_audithistory` VALUES ('9082', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 22:52:04');
+INSERT INTO `tbl_audithistory` VALUES ('9083', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 22:52:36');
+INSERT INTO `tbl_audithistory` VALUES ('9084', 'brian demesa', 'Viewing Students Information', '2023-05-06 22:52:36');
+INSERT INTO `tbl_audithistory` VALUES ('9085', 'brian demesa', 'Viewing Students Information', '2023-05-06 22:53:32');
+INSERT INTO `tbl_audithistory` VALUES ('9086', 'brian demesa', 'Viewing Students Information', '2023-05-06 22:54:56');
+INSERT INTO `tbl_audithistory` VALUES ('9087', 'brian demesa', 'Viewing Students Information', '2023-05-06 22:54:59');
+INSERT INTO `tbl_audithistory` VALUES ('9088', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 22:55:05');
+INSERT INTO `tbl_audithistory` VALUES ('9089', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 22:55:07');
+INSERT INTO `tbl_audithistory` VALUES ('9090', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 22:55:10');
+INSERT INTO `tbl_audithistory` VALUES ('9091', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 22:55:19');
+INSERT INTO `tbl_audithistory` VALUES ('9092', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 22:55:41');
+INSERT INTO `tbl_audithistory` VALUES ('9093', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 22:55:47');
+INSERT INTO `tbl_audithistory` VALUES ('9094', 'brian demesa', 'Viewing Teachers Information', '2023-05-06 22:55:54');
+INSERT INTO `tbl_audithistory` VALUES ('9095', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 00:10:04');
+INSERT INTO `tbl_audithistory` VALUES ('9096', 'brian demesa', 'Viewing Teachers Information', '2023-05-07 00:10:07');
+INSERT INTO `tbl_audithistory` VALUES ('9097', 'brian demesa', 'Viewing Teachers Information', '2023-05-07 00:10:09');
+INSERT INTO `tbl_audithistory` VALUES ('9098', 'brian demesa', 'Viewing Teachers Information', '2023-05-07 00:10:34');
+INSERT INTO `tbl_audithistory` VALUES ('9099', 'brian demesa', 'Viewing Update Teacher Information', '2023-05-07 00:10:36');
+INSERT INTO `tbl_audithistory` VALUES ('9100', 'brian demesa', 'Viewing Teachers Information', '2023-05-07 00:10:39');
+INSERT INTO `tbl_audithistory` VALUES ('9101', 'brian demesa', 'Viewing Teachers Information', '2023-05-07 00:27:21');
+INSERT INTO `tbl_audithistory` VALUES ('9102', 'brian demesa', 'Viewing Teachers Information', '2023-05-07 00:28:09');
+INSERT INTO `tbl_audithistory` VALUES ('9103', 'brian demesa', 'Viewing Teachers Information', '2023-05-07 00:31:20');
+INSERT INTO `tbl_audithistory` VALUES ('9104', 'brian demesa', 'Viewing Teachers Information', '2023-05-07 00:33:42');
+INSERT INTO `tbl_audithistory` VALUES ('9105', 'brian demesa', 'Viewing Teachers Information', '2023-05-07 00:34:19');
+INSERT INTO `tbl_audithistory` VALUES ('9106', 'brian demesa', 'Viewing Teachers Information', '2023-05-07 00:34:57');
+INSERT INTO `tbl_audithistory` VALUES ('9107', 'brian demesa', 'Viewing Teachers Information', '2023-05-07 00:35:24');
+INSERT INTO `tbl_audithistory` VALUES ('9108', 'brian demesa', 'Viewing Teachers Information', '2023-05-07 00:35:28');
+INSERT INTO `tbl_audithistory` VALUES ('9109', 'brian demesa', 'Viewing Teachers Information', '2023-05-07 00:36:22');
+INSERT INTO `tbl_audithistory` VALUES ('9110', 'brian demesa', 'Viewing Teachers Information', '2023-05-07 00:43:31');
+INSERT INTO `tbl_audithistory` VALUES ('9111', 'brian demesa', 'Viewing Teachers Information', '2023-05-07 00:43:34');
+INSERT INTO `tbl_audithistory` VALUES ('9112', 'brian demesa', 'Viewing Teachers Information', '2023-05-07 00:44:02');
+INSERT INTO `tbl_audithistory` VALUES ('9113', 'brian demesa', 'Viewing Teachers Information', '2023-05-07 00:44:24');
+INSERT INTO `tbl_audithistory` VALUES ('9114', 'brian demesa', 'Viewing Teachers Information', '2023-05-07 00:44:31');
+INSERT INTO `tbl_audithistory` VALUES ('9115', 'brian demesa', 'Viewing Teachers Information', '2023-05-07 00:44:33');
+INSERT INTO `tbl_audithistory` VALUES ('9116', 'brian demesa', 'Viewing Teachers Information', '2023-05-07 00:44:48');
+INSERT INTO `tbl_audithistory` VALUES ('9117', 'brian demesa', 'Viewing Teachers Information', '2023-05-07 00:49:03');
+INSERT INTO `tbl_audithistory` VALUES ('9118', 'brian demesa', 'Viewing Teachers Information', '2023-05-07 00:49:03');
+INSERT INTO `tbl_audithistory` VALUES ('9119', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 00:49:03');
+INSERT INTO `tbl_audithistory` VALUES ('9120', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 02:21:22');
+INSERT INTO `tbl_audithistory` VALUES ('9121', 'brian demesa', 'Viewing Students Information', '2023-05-07 02:21:25');
+INSERT INTO `tbl_audithistory` VALUES ('9122', 'brian demesa', 'Viewing Teachers Information', '2023-05-07 02:21:28');
+INSERT INTO `tbl_audithistory` VALUES ('9123', 'brian demesa', 'Viewing Students Information', '2023-05-07 02:21:29');
+INSERT INTO `tbl_audithistory` VALUES ('9124', 'brian demesa', 'Viewing Students Information', '2023-05-07 02:21:32');
+INSERT INTO `tbl_audithistory` VALUES ('9125', 'brian demesa', 'Viewing Students Information', '2023-05-07 02:21:36');
+INSERT INTO `tbl_audithistory` VALUES ('9126', 'brian demesa', 'Viewing Students Information', '2023-05-07 02:25:38');
+INSERT INTO `tbl_audithistory` VALUES ('9127', 'brian demesa', 'Viewing Students Information', '2023-05-07 02:25:54');
+INSERT INTO `tbl_audithistory` VALUES ('9128', 'brian demesa', 'Viewing Students Information', '2023-05-07 02:26:21');
+INSERT INTO `tbl_audithistory` VALUES ('9129', 'brian demesa', 'Viewing Students Information', '2023-05-07 02:27:09');
+INSERT INTO `tbl_audithistory` VALUES ('9130', 'brian demesa', 'Viewing Students Information', '2023-05-07 02:27:59');
+INSERT INTO `tbl_audithistory` VALUES ('9131', 'brian demesa', 'Viewing Students Information', '2023-05-07 02:28:13');
+INSERT INTO `tbl_audithistory` VALUES ('9132', 'brian demesa', 'Viewing Students Information', '2023-05-07 02:29:43');
+INSERT INTO `tbl_audithistory` VALUES ('9133', 'brian demesa', 'Viewing Students Information', '2023-05-07 02:30:24');
+INSERT INTO `tbl_audithistory` VALUES ('9134', 'brian demesa', 'Viewing Students Information', '2023-05-07 02:30:35');
+INSERT INTO `tbl_audithistory` VALUES ('9135', 'brian demesa', 'Viewing Students Information', '2023-05-07 02:30:42');
+INSERT INTO `tbl_audithistory` VALUES ('9136', 'brian demesa', 'Viewing Students Information', '2023-05-07 02:30:50');
+INSERT INTO `tbl_audithistory` VALUES ('9137', 'brian demesa', 'Viewing Students Information', '2023-05-07 02:31:18');
+INSERT INTO `tbl_audithistory` VALUES ('9138', 'brian demesa', 'Viewing Students Information', '2023-05-07 02:31:22');
+INSERT INTO `tbl_audithistory` VALUES ('9139', 'brian demesa', 'Viewing Students Information', '2023-05-07 02:31:24');
+INSERT INTO `tbl_audithistory` VALUES ('9140', 'brian demesa', 'Viewing Students Information', '2023-05-07 02:31:27');
+INSERT INTO `tbl_audithistory` VALUES ('9141', 'brian demesa', 'Viewing Students Information', '2023-05-07 02:32:10');
+INSERT INTO `tbl_audithistory` VALUES ('9142', 'brian demesa', 'Viewing Students Information', '2023-05-07 02:53:29');
+INSERT INTO `tbl_audithistory` VALUES ('9143', 'brian demesa', 'Viewing Students Information', '2023-05-07 02:53:55');
+INSERT INTO `tbl_audithistory` VALUES ('9144', 'brian demesa', 'Viewing Students Information', '2023-05-07 02:55:27');
+INSERT INTO `tbl_audithistory` VALUES ('9145', 'brian demesa', 'Viewing Students Information', '2023-05-07 02:55:39');
+INSERT INTO `tbl_audithistory` VALUES ('9146', 'brian demesa', 'Viewing Students Information', '2023-05-07 02:55:44');
+INSERT INTO `tbl_audithistory` VALUES ('9147', 'brian demesa', 'Viewing Update Student Information', '2023-05-07 02:55:49');
+INSERT INTO `tbl_audithistory` VALUES ('9148', 'brian demesa', 'Viewing Admin Dashboard', '2023-05-07 02:55:54');
+INSERT INTO `tbl_audithistory` VALUES ('9149', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 02:55:56');
+INSERT INTO `tbl_audithistory` VALUES ('9150', 'brian demesa', 'Viewing Updating Admin Announcement', '2023-05-07 02:56:02');
+INSERT INTO `tbl_audithistory` VALUES ('9151', 'brian demesa', 'Updating Admin Announcement', '2023-05-07 02:56:31');
+INSERT INTO `tbl_audithistory` VALUES ('9152', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 02:56:34');
+INSERT INTO `tbl_audithistory` VALUES ('9153', 'brian demesa', 'Viewing Admin Dashboard', '2023-05-07 02:58:12');
+INSERT INTO `tbl_audithistory` VALUES ('9154', 'brian demesa', 'Viewing Admin Audit Records', '2023-05-07 02:59:12');
+INSERT INTO `tbl_audithistory` VALUES ('9155', 'brian demesa', 'Viewing Archive Records', '2023-05-07 02:59:13');
+INSERT INTO `tbl_audithistory` VALUES ('9156', 'brian demesa', 'Viewing Admin Dashboard', '2023-05-07 02:59:15');
+INSERT INTO `tbl_audithistory` VALUES ('9157', 'brian demesa', 'Promotion', '2023-05-07 02:59:17');
+INSERT INTO `tbl_audithistory` VALUES ('9158', 'brian demesa', 'Promotion', '2023-05-07 03:00:53');
+INSERT INTO `tbl_audithistory` VALUES ('9159', 'brian demesa', 'Promotion', '2023-05-07 03:01:54');
+INSERT INTO `tbl_audithistory` VALUES ('9160', 'brian demesa', 'Promotion', '2023-05-07 03:03:07');
+INSERT INTO `tbl_audithistory` VALUES ('9161', 'brian demesa', 'Promotion', '2023-05-07 03:03:25');
+INSERT INTO `tbl_audithistory` VALUES ('9162', 'brian demesa', 'Promotion', '2023-05-07 03:06:19');
+INSERT INTO `tbl_audithistory` VALUES ('9163', 'brian demesa', 'Promotion', '2023-05-07 03:08:17');
+INSERT INTO `tbl_audithistory` VALUES ('9164', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 03:08:21');
+INSERT INTO `tbl_audithistory` VALUES ('9165', 'brian demesa', 'Adding Admin Announcement', '2023-05-07 03:08:23');
+INSERT INTO `tbl_audithistory` VALUES ('9166', 'brian demesa', 'Adding Admin Announcement', '2023-05-07 03:08:31');
+INSERT INTO `tbl_audithistory` VALUES ('9167', 'brian demesa', 'Promotion', '2023-05-07 03:08:34');
+INSERT INTO `tbl_audithistory` VALUES ('9168', 'brian demesa', 'Promotion', '2023-05-07 03:09:13');
+INSERT INTO `tbl_audithistory` VALUES ('9169', 'brian demesa', 'Promotion', '2023-05-07 03:09:30');
+INSERT INTO `tbl_audithistory` VALUES ('9170', 'brian demesa', 'Promotion', '2023-05-07 03:14:04');
+INSERT INTO `tbl_audithistory` VALUES ('9171', 'brian demesa', 'Promotion', '2023-05-07 03:14:16');
+INSERT INTO `tbl_audithistory` VALUES ('9172', 'brian demesa', 'Promotion', '2023-05-07 03:14:25');
+INSERT INTO `tbl_audithistory` VALUES ('9173', 'brian demesa', 'Promotion', '2023-05-07 03:17:18');
+INSERT INTO `tbl_audithistory` VALUES ('9174', 'brian demesa', 'Promotion', '2023-05-07 03:18:24');
+INSERT INTO `tbl_audithistory` VALUES ('9175', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 03:18:29');
+INSERT INTO `tbl_audithistory` VALUES ('9176', 'brian demesa', 'Adding Admin Announcement', '2023-05-07 03:18:33');
+INSERT INTO `tbl_audithistory` VALUES ('9177', 'brian demesa', 'Adding Admin Announcement', '2023-05-07 03:18:43');
+INSERT INTO `tbl_audithistory` VALUES ('9178', 'brian demesa', 'Promotion', '2023-05-07 03:18:46');
+INSERT INTO `tbl_audithistory` VALUES ('9179', 'brian demesa', 'Promotion', '2023-05-07 03:20:49');
 
 -- ----------------------------
 -- Table structure for `tbl_auditstudent`
@@ -11454,7 +11821,7 @@ CREATE TABLE `tbl_auditteacher` (
   `e_action` varchar(99) NOT NULL,
   `e_date` datetime NOT NULL,
   PRIMARY KEY (`e_userID`)
-) ENGINE=InnoDB AUTO_INCREMENT=5369 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=5382 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of tbl_auditteacher
@@ -16827,6 +17194,19 @@ INSERT INTO `tbl_auditteacher` VALUES ('5365', 'Teacher ', 'Viewing 1st Quarter 
 INSERT INTO `tbl_auditteacher` VALUES ('5366', '', 'Viewing 1st Quarter Grades', '2023-05-04 16:16:36');
 INSERT INTO `tbl_auditteacher` VALUES ('5367', '', 'Viewing 1st Quarter Grades', '2023-05-04 16:16:54');
 INSERT INTO `tbl_auditteacher` VALUES ('5368', '', 'Viewing 1st Quarter Grades', '2023-05-04 16:17:49');
+INSERT INTO `tbl_auditteacher` VALUES ('5369', 'Teacher ', 'Viewing Teacher Dashboard', '2023-05-04 19:07:35');
+INSERT INTO `tbl_auditteacher` VALUES ('5370', 'Teacher ', 'Viewing 1st Quarter Grades', '2023-05-04 19:07:37');
+INSERT INTO `tbl_auditteacher` VALUES ('5371', 'Teacher ', 'Viewing 1st Quarter Grades', '2023-05-04 19:08:03');
+INSERT INTO `tbl_auditteacher` VALUES ('5372', 'Teacher ', 'Viewing 1st Quarter Grades', '2023-05-04 19:08:46');
+INSERT INTO `tbl_auditteacher` VALUES ('5373', 'Teacher ', 'Viewing 1st Quarter Grades', '2023-05-04 19:09:01');
+INSERT INTO `tbl_auditteacher` VALUES ('5374', 'Teacher ', 'Viewing 1st Quarter Grades', '2023-05-04 19:09:18');
+INSERT INTO `tbl_auditteacher` VALUES ('5375', 'Teacher ', 'Viewing 1st Quarter Grades', '2023-05-04 19:09:26');
+INSERT INTO `tbl_auditteacher` VALUES ('5376', 'Teacher ', 'Viewing 1st Quarter Grades', '2023-05-04 19:09:28');
+INSERT INTO `tbl_auditteacher` VALUES ('5377', 'Teacher ', 'Viewing 1st Quarter Grades', '2023-05-04 19:09:35');
+INSERT INTO `tbl_auditteacher` VALUES ('5378', 'Teacher ', 'Viewing 1st Quarter Grades', '2023-05-04 19:10:05');
+INSERT INTO `tbl_auditteacher` VALUES ('5379', 'Teacher ', 'Viewing 1st Quarter Grades', '2023-05-04 19:10:20');
+INSERT INTO `tbl_auditteacher` VALUES ('5380', 'Teacher ', 'Viewing 1st Quarter Grades', '2023-05-04 19:10:31');
+INSERT INTO `tbl_auditteacher` VALUES ('5381', '', 'Log Out', '2023-05-04 19:10:37');
 
 -- ----------------------------
 -- Table structure for `tbl_grades`
@@ -16843,25 +17223,37 @@ CREATE TABLE `tbl_grades` (
   `Final` varchar(255) DEFAULT NULL,
   `SY` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of tbl_grades
 -- ----------------------------
-INSERT INTO `tbl_grades` VALUES ('29', 'FIL1', '1', '2', '1', null, null, null, '2025 - 2026');
-INSERT INTO `tbl_grades` VALUES ('30', 'FIL1', '1', '3', '4', null, null, null, '2025 - 2026');
+INSERT INTO `tbl_grades` VALUES ('29', 'FIL1', '1', '2', '1', null, null, null, '2022 - 2023');
+INSERT INTO `tbl_grades` VALUES ('30', 'FIL1', '1', '3', '4', null, null, null, '2022 - 2023');
 INSERT INTO `tbl_grades` VALUES ('31', 'FIL1', '1', '12', '2', null, null, null, '2025 - 2026');
 INSERT INTO `tbl_grades` VALUES ('32', 'FIL1', '1', '13', '3', null, null, null, '2025 - 2026');
-INSERT INTO `tbl_grades` VALUES ('45', 'FIl7', 'Admin', '5', '91', '99', '96', '96', '2023 - 2024');
-INSERT INTO `tbl_grades` VALUES ('46', 'FIl7', 'Admin', '10', '91', '100', '95', '96', '2023 - 2024');
-INSERT INTO `tbl_grades` VALUES ('47', 'FIl7', 'Admin', '38', '91', '98', '96', '95', '2023 - 2024');
-INSERT INTO `tbl_grades` VALUES ('48', 'FIl7', 'Admin', '39', '89', '96', '93', '97', '2023 - 2024');
-INSERT INTO `tbl_grades` VALUES ('49', 'FIl7', 'Admin', '40', '97', '95', '95', '98', '2023 - 2024');
-INSERT INTO `tbl_grades` VALUES ('50', 'FIl7', 'Admin', '41', '98', '97', '97', '96', '2023 - 2024');
-INSERT INTO `tbl_grades` VALUES ('51', 'FIl7', 'Admin', '42', '97', '98', '98', '95', '2023 - 2024');
-INSERT INTO `tbl_grades` VALUES ('52', 'FIl7', 'Admin', '43', '96', '96', '95', '94', '2023 - 2024');
-INSERT INTO `tbl_grades` VALUES ('53', 'FIl7', 'Admin', '44', '95', '95', '94', '93', '2023 - 2024');
-INSERT INTO `tbl_grades` VALUES ('54', 'FIl7', 'Admin', '45', '94', '97', '93', '95', '2023 - 2024');
+INSERT INTO `tbl_grades` VALUES ('45', 'FIl7', 'Admin', '5', '91', '99', '96', '96', '2022 - 2023');
+INSERT INTO `tbl_grades` VALUES ('46', 'FIl7', 'Admin', '10', '91', '100', '95', '96', '2022 - 2023');
+INSERT INTO `tbl_grades` VALUES ('47', 'FIl7', 'Admin', '38', '91', '98', '96', '95', '2022 - 2023');
+INSERT INTO `tbl_grades` VALUES ('48', 'FIl7', 'Admin', '39', '89', '96', '93', '97', '2022 - 2023');
+INSERT INTO `tbl_grades` VALUES ('49', 'FIl7', 'Admin', '40', '97', '95', '95', '98', '2022 - 2023');
+INSERT INTO `tbl_grades` VALUES ('50', 'FIl7', 'Admin', '41', '98', '97', '97', '96', '2022 - 2023');
+INSERT INTO `tbl_grades` VALUES ('51', 'FIl7', 'Admin', '42', '97', '98', '98', '95', '2022 - 2023');
+INSERT INTO `tbl_grades` VALUES ('52', 'FIl7', 'Admin', '43', '96', '96', '95', '94', '2022 - 2023');
+INSERT INTO `tbl_grades` VALUES ('53', 'FIl7', 'Admin', '44', '95', '95', '94', '93', '2022 - 2023');
+INSERT INTO `tbl_grades` VALUES ('54', 'FIl7', 'Admin', '45', '94', '97', '93', '95', '2022 - 2023');
+INSERT INTO `tbl_grades` VALUES ('55', 'Pro1', '10', '94', '95', '95', null, null, '2022 - 2023');
+INSERT INTO `tbl_grades` VALUES ('56', 'Pro1', '10', '95', '95', '93', null, null, '2022 - 2023');
+INSERT INTO `tbl_grades` VALUES ('57', 'Pro1', '10', '96', '95', '94', null, null, '2022 - 2023');
+INSERT INTO `tbl_grades` VALUES ('58', 'Pro1', '10', '97', '95', '95', null, null, '2022 - 2023');
+INSERT INTO `tbl_grades` VALUES ('59', 'Pro1', '10', '98', '95', '94', null, null, '2022 - 2023');
+INSERT INTO `tbl_grades` VALUES ('60', 'Pro1', '10', '99', '95', '96', null, null, '2022 - 2023');
+INSERT INTO `tbl_grades` VALUES ('61', 'Pro1', '10', '100', '95', '95', null, null, '2022 - 2023');
+INSERT INTO `tbl_grades` VALUES ('62', 'Pro1', '10', '101', '95', '96', null, null, '2022 - 2023');
+INSERT INTO `tbl_grades` VALUES ('63', 'Pro1', '10', '102', '95', '94', null, null, '2022 - 2023');
+INSERT INTO `tbl_grades` VALUES ('64', 'Pro1', '10', '103', '95', '93', null, null, '2022 - 2023');
+INSERT INTO `tbl_grades` VALUES ('65', 'Pro1', '10', '104', '95', '94', null, null, '2022 - 2023');
+INSERT INTO `tbl_grades` VALUES ('66', 'Pro1', '10', '105', '95', '95', null, null, '2022 - 2023');
 
 -- ----------------------------
 -- Table structure for `tbl_restriction`
@@ -16875,7 +17267,7 @@ CREATE TABLE `tbl_restriction` (
   `Grade_Level` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`ID`),
   UNIQUE KEY `uc_teacher_subject` (`Teacher_Code`,`Subject_Code`)
-) ENGINE=InnoDB AUTO_INCREMENT=110 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=111 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of tbl_restriction
@@ -16970,6 +17362,7 @@ INSERT INTO `tbl_restriction` VALUES ('106', '13', 'MAP10', '2023-2024', 'Grade 
 INSERT INTO `tbl_restriction` VALUES ('107', '14', 'CE10', '2023-2024', 'Grade 10');
 INSERT INTO `tbl_restriction` VALUES ('108', '15', 'COM10', '2023-2024', 'Grade 10');
 INSERT INTO `tbl_restriction` VALUES ('109', '16', 'TLE10', '2023-2024', 'Grade 10');
+INSERT INTO `tbl_restriction` VALUES ('110', '10', 'Pro1', null, 'Grade 1');
 
 -- ----------------------------
 -- Table structure for `tbl_restriction_subject`
@@ -17006,21 +17399,24 @@ CREATE TABLE `tbl_section` (
   `SY` varchar(255) DEFAULT NULL,
   `Section` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of tbl_section
 -- ----------------------------
-INSERT INTO `tbl_section` VALUES ('10', 'Love', 'Lov2324', 'Grade 1', '2023 - 2024', 'Grade 1 - Love');
-INSERT INTO `tbl_section` VALUES ('11', 'Hope', 'Hop2324', 'Grade 2', '2023 - 2024', 'Grade 2 - Hope');
-INSERT INTO `tbl_section` VALUES ('12', 'Humility', 'Hum2324', 'Grade 3', '2023 - 2024', 'Grade 3 - Humility');
-INSERT INTO `tbl_section` VALUES ('13', 'Meekness', 'Mee2324', 'Grade 4', '2023 - 2024', 'Grade 4 - Meekness');
-INSERT INTO `tbl_section` VALUES ('14', 'Gentleness', 'Gen2324', 'Grade 5', '2023 - 2024', 'Grade 5 - Gentleness');
-INSERT INTO `tbl_section` VALUES ('15', 'Patience', 'Pat2324', 'Grade 6', '2023 - 2024', 'Grade 6 - Patience');
-INSERT INTO `tbl_section` VALUES ('16', 'Generosity', 'Gen2324', 'Grade 8', '2023 - 2024', 'Grade 8 - Generosity');
-INSERT INTO `tbl_section` VALUES ('17', 'Perseverance', 'Per2324', 'Grade 7', '2023 - 2024', 'Grade 7 - Perseverance');
-INSERT INTO `tbl_section` VALUES ('18', 'Industriousness', 'Ind2324', 'Grade 9', '2023 - 2024', 'Grade 9 - Industriousness');
-INSERT INTO `tbl_section` VALUES ('19', 'Prosperity', 'Pro2324', 'Grade 10', '2023 - 2024', 'Grade 10 - Prosperity');
+INSERT INTO `tbl_section` VALUES ('10', 'Love', 'Lov2324', 'Grade 1', '2022 - 2023', 'Grade 1 - Love');
+INSERT INTO `tbl_section` VALUES ('11', 'Hope', 'Hop2324', 'Grade 2', '2022 - 2023', 'Grade 2 - Hope');
+INSERT INTO `tbl_section` VALUES ('12', 'Humility', 'Hum2324', 'Grade 3', '2022 - 2023', 'Grade 3 - Humility');
+INSERT INTO `tbl_section` VALUES ('13', 'Meekness', 'Mee2324', 'Grade 4', '2022 - 2023', 'Grade 4 - Meekness');
+INSERT INTO `tbl_section` VALUES ('14', 'Gentleness', 'Gen2324', 'Grade 5', '2022 - 2023', 'Grade 5 - Gentleness');
+INSERT INTO `tbl_section` VALUES ('15', 'Patience', 'Pat2324', 'Grade 6', '2022 - 2023', 'Grade 6 - Patience');
+INSERT INTO `tbl_section` VALUES ('16', 'Generosity', 'Gen2324', 'Grade 8', '2022 - 2023', 'Grade 8 - Generosity');
+INSERT INTO `tbl_section` VALUES ('17', 'Perseverance', 'Per2324', 'Grade 7', '2022 - 2023', 'Grade 7 - Perseverance');
+INSERT INTO `tbl_section` VALUES ('18', 'Industriousness', 'Ind2324', 'Grade 9', '2022 - 2023', 'Grade 9 - Industriousness');
+INSERT INTO `tbl_section` VALUES ('19', 'Prosperity', 'Pro2324', 'Grade 10', '2022 - 2023', 'Grade 10 - Prosperity');
+INSERT INTO `tbl_section` VALUES ('20', 'Pride', 'Pri2324', 'Grade 1', '2022 - 2023', 'Grade 1 - Pride');
+INSERT INTO `tbl_section` VALUES ('21', 'Fria', 'Fri2425', 'Grade 1', '2022 - 2023', 'Grade 1 - Fria');
+INSERT INTO `tbl_section` VALUES ('22', 'NewSy', 'New2324', 'Grade 10', '2023 - 2024', 'Grade 10 - NewSy');
 
 -- ----------------------------
 -- Table structure for `tbl_sepi_account`
@@ -17108,7 +17504,7 @@ CREATE TABLE `tbl_student` (
   `TLEF` float DEFAULT NULL,
   `STATUS` varchar(20) NOT NULL,
   PRIMARY KEY (`Stud_SID`)
-) ENGINE=InnoDB AUTO_INCREMENT=107 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=108 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of tbl_student
@@ -17219,6 +17615,7 @@ INSERT INTO `tbl_student` VALUES ('103', '', 'Matthew ', '', ' Cuadra', 'Matthew
 INSERT INTO `tbl_student` VALUES ('104', '', 'Jonathan', 'X.', ' Banico ', 'Jonathan Banico ', ' 46 Int 7 18th Ave. Cubao Q.C', 'Jonathan Banico @gmail.com', '2023', '2016-03-03', '7', 'Male', 'Grade 1 - Love', '2023 - 2024', '', 'Student', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 'Regular');
 INSERT INTO `tbl_student` VALUES ('105', '', 'Gjay', '', ' Payad ', 'Gjay Payad ', '24 Mindanao Ave Q.C', 'Gjay Payad @gmail.com', '2023', '2016-02-03', '8', 'Male', 'Grade 1 - Love', '2023 - 2024', '', 'Student', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 'Regular');
 INSERT INTO `tbl_student` VALUES ('106', '125', 'jerome', 'f', 'viloria', 'antipolo', 'jeromeviloria@student.sepi.edu.ph', '2023', '4/14/2003', '0000-00-00', '0', 'Grade 1 - Love', '2023', '243242', 'Student', '', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, '');
+INSERT INTO `tbl_student` VALUES ('107', '', 'Maka', 'ba', 'Go', 'MakaGo', 'dyan', 'MakaGo@gmail.com', '2023', '2023-05-05', '100', 'Others', 'Grade 1 - Pride', '2023 - 2024', '', 'Student', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 'Graduating');
 
 -- ----------------------------
 -- Table structure for `tbl_studentinfo`
@@ -17243,117 +17640,118 @@ CREATE TABLE `tbl_studentinfo` (
   `Role` varchar(20) NOT NULL,
   `STATUS` varchar(20) NOT NULL,
   PRIMARY KEY (`Stud_SID`)
-) ENGINE=InnoDB AUTO_INCREMENT=107 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=108 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of tbl_studentinfo
 -- ----------------------------
-INSERT INTO `tbl_studentinfo` VALUES ('1', '', 'Alexis', 'F.', 'Viloria', 'AlexisViloria', 'Antipolo', 'AlexisViloria@gmail.com', '2023', '1998-11-23', '24', 'Male', 'Grade 10 - Prosperity', '2025 - 2026', '', 'Student', 'Graduating');
-INSERT INTO `tbl_studentinfo` VALUES ('2', '', 'brian', 'O.', 'obusan', 'brianobusan', 'angono', 'brianobusan@student.sepi.edu.ph', '2023', '2001-01-05', '22', 'Male', 'Grade 1 - go', '2025 - 2026', '1234567', 'Student', '');
-INSERT INTO `tbl_studentinfo` VALUES ('3', '', 'alexis', 'a', 'vi', 'alexisvi', 'antipolo', 'alexisvi@student.sepi.edu.ph', '2023', '2001-03-01', '22', 'Male', 'Grade 1 - go', '2025 - 2026', '2345678', 'Student', '');
-INSERT INTO `tbl_studentinfo` VALUES ('4', '', 'aj', 'a', 'bautista', 'ajbautista', 'canada', 'ajbautista@student.sepi.edu.ph', '19-4718-241', '2000-05-02', '22', 'Female', 'Grade 1 - go', '2023 - 2024', '1235689', 'Student', '');
-INSERT INTO `tbl_studentinfo` VALUES ('5', '', 'alexis', 'a', 'viloria', 'alexisviloriaa', 'antipolo', 'alexisviloria@student.sepi.edu.ph', '2023', '2001-01-05', '22', 'Male', 'Grade 7 - Perseverance', '2023 - 2024', '7890234', 'Student', '');
-INSERT INTO `tbl_studentinfo` VALUES ('6', '', 'ralph', '', 'cabudao', 'ralphcabudao', 'cubao', 'ralphcabudao@student.sepi.edu.ph', '2023', '2000-03-02', '22', 'Male', 'Grade 5 - Gentleness', '2023 - 2024', '3457890', 'Student', '');
-INSERT INTO `tbl_studentinfo` VALUES ('7', '', 'paolo', '', 'david', 'paolodavid', 'teresa', 'paolodavid@student.sepi.edu.ph', '2023', '2000-05-01', '22', 'Male', 'Grade 6 - Patience', '2023 - 2024', '2345689', 'Student', '');
-INSERT INTO `tbl_studentinfo` VALUES ('8', '', 'alexis', '', 'viloria', 'alexisviloria', 'antipolo', 'alexisviloria@student.sepi.edu.ph', '2023', '2000-07-09', '22', 'Male', 'Grade 8 - Generosity', '2023 - 2024', '3456789', 'Student', '');
-INSERT INTO `tbl_studentinfo` VALUES ('9', '', 'mikaela', '', 'delprado', 'mikaeladelprado', 'antipolo', 'mikaeladelprado@student.sepi.edu.ph', '2023', '2000-03-08', '22', 'Female', 'Grade 9 - Industriousness', '2023 - 2024', '345789', 'Student', '');
-INSERT INTO `tbl_studentinfo` VALUES ('10', '', 'gio', 'i', 'leo', 'gioleo', 'antipolo', 'gioleo@gmail.com', '2023', '2010-11-17', '13', 'Male', 'Grade 7 - Perseverance', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('11', '', 'Ynna', 'A', 'Sotto', 'YnnaSotto', 'Baras Rizal', 'YnnaSotto@gmail.com', '2023', '2000-05-25', '22', 'Female', 'Grade 10 - Prosperity', '2023 - 2024', '', 'Student', 'Graduating');
-INSERT INTO `tbl_studentinfo` VALUES ('12', '', 'Maria', 'E', 'Fernando', 'MariaFernando', 'Baras Rizal', 'MariaFernando@gmail.com', '2023', '2002-01-01', '21', 'Female', 'Grade 1 - go', '2025 - 2026', '', 'Student', 'Graduating');
-INSERT INTO `tbl_studentinfo` VALUES ('13', '', 'Czerina', 'M', 'Lois', 'CzerinaLois', 'Padilla', 'CzerinaLois@gmail.com', '2023', '2002-02-23', '21', 'Female', 'Grade 1 - go', '2025 - 2026', '', 'Student', 'Graduating');
-INSERT INTO `tbl_studentinfo` VALUES ('14', '', 'Jesusan', 'U', 'Elorde', 'JesusanElorde', 'Pagrai', 'JesusanElorde@gmail.com', '2023', '2000-05-22', '22', 'Female', 'Grade 10 - Prosperity', '2023 - 2024', '', 'Student', 'Graduating');
-INSERT INTO `tbl_studentinfo` VALUES ('15', '', 'Mae', 'E', 'Ursua', 'MaeUrsua', 'Cogeo', 'MaeUrsua@gmail.com', '2023', '2000-02-05', '23', 'Female', 'Grade 10 - Prosperity', '2023 - 2024', '', 'Student', 'Graduating');
-INSERT INTO `tbl_studentinfo` VALUES ('16', '', 'Jesusan Mae', 'E', 'Bautista', 'Jesusan MaeBautista', 'Mayamot', 'Jesusan MaeBautista@gmail.com', '2023', '2002-12-16', '21', 'Female', 'Grade 10 - Prosperity', '2023 - 2024', '', 'Student', 'Graduating');
-INSERT INTO `tbl_studentinfo` VALUES ('17', '', 'Nikko', 'E', 'Espine', 'NikkoEspine', 'Corazon', 'NikkoEspine@gmail.com', '2023', '2001-01-28', '22', 'Male', 'Grade 10 - Prosperity', '2023 - 2024', '', 'Student', 'Graduating');
-INSERT INTO `tbl_studentinfo` VALUES ('18', '', 'Nikko', 'E', 'Escolano', 'NikkoEscolano', 'Antipolo', 'NikkoEscolano@gmail.com', '2023', '2000-01-23', '23', 'Male', 'Grade 10 - Prosperity', '2023 - 2024', '', 'Student', 'Graduating');
-INSERT INTO `tbl_studentinfo` VALUES ('19', '', 'Jeongni', '', 'Kim', 'JeongniKim', 'Antipolo', 'JeongniKim@gmail.com', '2023', '2000-03-23', '23', 'Male', 'Grade 10 - Prosperity', '2023 - 2024', '', 'Student', 'Graduating');
-INSERT INTO `tbl_studentinfo` VALUES ('20', '', 'Jan', 'M', 'Esco', 'JanEsco', 'Antipolo', 'JanEsco@gmail.com', '2023', '2001-12-12', '22', 'Male', 'Grade 10 - Prosperity', '2023 - 2024', '', 'Student', 'Graduating');
-INSERT INTO `tbl_studentinfo` VALUES ('21', '', 'Mark', 'A', 'Bautista', 'MarkBautista', 'Antipolo', 'MarkBautista@gmail.com', '2023', '2003-02-23', '20', 'Male', 'Grade 9 - Industriousness', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('22', '', 'Alrey', 'B', 'Añonuevo', 'AlreyAñonuevo', '', 'AlreyAñonuevo@gmail.com', '2023', '2003-10-23', '20', 'Male', 'Grade 10 - Triii', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('23', '', 'Mary', 'B', 'Cinco', 'MaryCinco', 'Cainta', 'MaryCinco@gmail.com', '2023', '2003-02-21', '20', 'Female', 'Grade 9 - Industriousness', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('24', '', 'Angeline', 'C', 'Bautista', 'AngelineBautista', 'Antipolo', 'AngelineBautista@gmail.com', '2023', '2003-03-12', '20', 'Female', 'Grade 10 - Triii', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('25', '', 'Maria', 'A', 'Rodriguez', 'MariaRodriguez', 'San Mateo', 'MariaRodriguez@gmail.com', '2023', '2003-09-01', '20', 'Female', 'Grade 10 - Triii', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('26', '', 'Juliet', 'F', 'Fernandez', 'JulietFernandez', 'Antipolo', 'JulietFernandez@gmail.com', '2023', '2003-03-26', '20', 'Female', 'Grade 10 - Triii', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('27', '', 'Almond', 'E', 'James', 'AlmondJames', 'Antipolo', 'AlmondJames@gmail.com', '2023', '2003-04-20', '20', 'Male', 'Grade 10 - Triii', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('28', '', 'Jesusa', 'U', 'Coleen', 'JesusaColeen', '', 'JesusaColeen@gmail.com', '2023', '2003-12-26', '20', 'Female', 'Grade 10 - Triii', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('29', '', 'Ron', 'L', 'Vasquez', 'RonVasquez', 'Cogeo', 'RonVasquez@gmail.com', '2023', '2004-06-15', '19', 'Male', 'Grade 8 - Generosity', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('30', '', 'Paul', 'J', 'Buendia', 'PaulBuendia', 'Paenaan', 'PaulBuendia@gmail.com', '2023', '2004-07-16', '19', 'Male', 'Grade 8 - Generosity', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('31', '', 'Lawrence', 'J', 'Liwag', 'LawrenceLiwag', 'Cogeo', 'LawrenceLiwag@gmail.com', '2023', '2004-04-22', '22', 'Male', 'Grade 8 - Generosity', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('32', '', 'John', 'L', 'Encinada', 'JohnEncinada', '', 'JohnEncinada@gmail.com', '2023', '2004-11-22', '19', 'Male', 'Grade 1 - go', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('33', '', 'Hainy', 'L', 'Pie', 'HainyPie', 'Marikina', 'HainyPie@gmail.com', '2023', '2004-03-14', '19', 'Female', 'Grade 1 - go', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('34', '', 'Lava', 'P', 'Hanes', 'LavaHanes', '', 'LavaHanes@gmail.com', '2023', '2004-10-05', '19', 'Male', 'Grade 8 - Generosity', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('35', '', 'Liyan', 'R', 'Bones', 'LiyanBones', 'Cogeo', 'LiyanBones@gmail.com', '2023', '2004-09-05', '19', 'Female', 'Grade 8 - Generosity', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('36', '', 'Timothy', 'A', 'Alvarez', 'TimothyAlvarez', 'Cainta', 'TimothyAlvarez@gmail.com', '2023', '2004-06-13', '19', 'Male', 'Grade 8 - Generosity', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('37', '', 'Steven', 'M', 'Macunte', 'StevenMacunte', 'Pililia', 'StevenMacunte@gmail.com', '2023', '2004-08-22', '19', 'Male', 'Grade 8 - Generosity', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('38', '', 'Susan', '', 'Ursua', 'SusanUrsua', 'Antipolo', 'SusanUrsua@gmail.com', '2023', '2005-06-28', '18', 'Female', 'Grade 7 - Perseverance', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('39', '', 'Jessie', 'L', 'Manal', 'JessieManal', '', 'JessieManal@gmail.com', '2023', '2005-06-19', '18', 'Male', 'Grade 7 - Perseverance', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('40', '', 'Arlani', 'M', 'Laxamana', 'ArlaniLaxamana', 'Morong', 'ArlaniLaxamana@gmail.com', '2023', '2005-12-19', '18', 'Female', 'Grade 7 - Perseverance', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('41', '', 'Fatema', 'J', 'Nagon', 'FatemaNagon', 'Taytay', 'FatemaNagon@gmail.com', '2023', '2005-03-30', '18', 'Female', 'Grade 7 - Perseverance', '2023 - 2024', '', 'Student', '');
-INSERT INTO `tbl_studentinfo` VALUES ('42', '', 'Armando', 'U', 'Elords', 'ArmandoElords', 'Angono', 'ArmandoElords@gmail.com', '2023', '2005-07-26', '18', 'Male', 'Grade 7 - Perseverance', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('43', '', 'Brizza', 'C', 'Andrada', 'BrizzaAndrada', 'Antipolo', 'BrizzaAndrada@gmail.com', '2023', '2005-09-20', '18', 'Female', 'Grade 7 - Perseverance', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('44', '', 'Ella', 'A', 'Cabasi', 'EllaCabasi', 'Antipolo', 'EllaCabasi@gmail.com', '2023', '2005-03-12', '18', 'Female', 'Grade 7 - Perseverance', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('45', '', 'Jely', 'J', 'Calvo', 'JelyCalvo', 'Padilla', 'JelyCalvo@gmail.com', '2023', '2005-02-01', '18', 'Female', 'Grade 7 - Perseverance', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('46', '', 'Gerald', 'M', 'Ronario', 'GeraldRonario', 'Antipolo', 'GeraldRonario@gmail.com', '2023', '2006-04-11', '17', 'Male', 'Grade 6 - Patience', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('47', '', 'Carla', 'S', 'Amor', 'CarlaAmor', 'Marikina', 'CarlaAmor@gmail.com', '2023', '2006-03-19', '17', 'Female', 'Grade 6 - Patience', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('48', '', 'Christian', 'D', 'Caparas', 'ChristianCaparas', 'Masinag', 'ChristianCaparas@gmail.com', '2023', '2006-01-15', '17', 'Male', 'Grade 6 - Patience', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('49', '', 'Shayne', 'C', 'Sarraga', 'ShayneSarraga', 'Pasig', 'ShayneSarraga@gmail.com', '2023', '2006-06-20', '16', 'Female', 'Grade 6 - Patience', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('50', '', 'Glory ', 'M', 'Palangan', 'Glory Palangan', 'Antipolo', 'Glory Palangan@gmail.com', '2023', '2006-03-17', '17', 'Female', 'Grade 6 - Patience', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('51', '', 'Kathrine', 'J', 'Perez', 'KathrinePerez', 'Antipolo', 'KathrinePerez@gmail.com', '2023', '2006-08-22', '16', 'Female', 'Grade 6 - Patience', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('52', '', 'Earl', '', 'Marrione', 'EarlMarrione', 'Padilla', 'EarlMarrione@gmail.com', '2023', '2006-02-02', '17', 'Male', 'Grade 6 - Patience', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('53', '', 'Cranz', 'D', 'Cabanias', 'CranzCabanias', 'Masinag', 'CranzCabanias@gmail.com', '2023', '2006-03-01', '17', 'Male', 'Grade 6 - Patience', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('54', '', 'Jerwin', '', 'Manalo', 'JerwinManalo', 'Antipolo', 'JerwinManalo@gmail.com', '2023', '2006-06-25', '16', 'Male', 'Grade 6 - Patience', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('55', '', 'Gerald', 'T', 'Payad', 'GeraldPayad', 'Padilla', 'GeraldPayad@gmail.com', '2023', '2006-12-19', '16', 'Male', 'Grade 5 - Gentleness', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('56', '', 'Leizle', 'P', 'Bayot', 'LeizleBayot', 'Antipolo', 'LeizleBayot@gmail.com', '2023', '2006-03-26', '17', 'Female', 'Grade 5 - Gentleness', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('57', '', 'Jeric', 'B', 'Destura', 'JericDestura', '', 'JericDestura@gmail.com', '2023', '2006-02-16', '17', 'Male', 'Grade 5 - Gentleness', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('58', '', 'Frankie', 'H', 'Piadopo', 'FrankiePiadopo', 'Padila', 'FrankiePiadopo@gmail.com', '2023', '2006-02-14', '17', 'Male', 'Grade 5 - Gentleness', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('59', '', 'Lester ', 'M', 'Borromeo', 'Lester Borromeo', 'Cogeo', 'Lester Borromeo@gmail.com', '2023', '2006-10-21', '16', 'Male', 'Grade 5 - Gentleness', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('60', '', 'Lionel', 'N', 'Naluz', 'LionelNaluz', 'Cogeo', 'LionelNaluz@gmail.com', '2023', '2006-04-16', '17', 'Male', 'Grade 5 - Gentleness', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('61', '', 'Dave ', '', 'Rogelio', 'Dave Rogelio', 'Siruna', 'Dave Rogelio@gmail.com', '2023', '2006-12-03', '16', 'Male', 'Grade 5 - Gentleness', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('62', '', 'Wen', '', 'Bern', 'WenBern', 'Siruna', 'WenBern@gmail.com', '2023', '2006-11-15', '16', 'Male', 'Grade 5 - Gentleness', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('63', '', 'Bernard', '', 'Reyes', 'BernardReyes', 'Antipolo', 'BernardReyes@gmail.com', '2023', '2006-09-19', '16', 'Male', 'Grade 5 - Gentleness', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('64', '', 'Elbert', '', 'Guinto', 'ElbertGuinto', 'Antipolo', 'ElbertGuinto@gmail.com', '2023', '2006-11-18', '16', 'Male', 'Grade 5 - Gentleness', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('65', '', 'Axle', 'A', 'Bautista', 'AxleBautista', 'Antipolo', 'AxleBautista@gmail.com', '2023', '2007-10-10', '14', 'Male', 'Grade 5 - Gentleness', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('66', '', 'Kim', '', 'Humarang', 'KimHumarang', 'Padilla', 'KimHumarang@gmail.com', '2023', '2007-10-09', '14', 'Female', 'Grade 4 - Meekness', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('67', '', 'Malex', 'V', 'Viva', 'MalexViva', 'Antipolo', 'MalexViva@gmail.com', '2023', '2007-02-16', '15', 'Male', 'Grade 4 - Meekness', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('68', '', 'Carlo', 'B', 'Leyson', 'CarloLeyson', 'Padilla', 'CarloLeyson@gmail.com', '2023', '2005-06-13', '14', 'Male', 'Grade 4 - Meekness', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('69', '', 'Matthew', '', 'Cuadra', 'MatthewCuadra', 'Antipolo', 'MatthewCuadra@gmail.com', '2023', '2005-11-21', '14', 'Male', 'Grade 4 - Meekness', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('70', '', 'Neri', 'A', 'Eltiro', 'NeriEltiro', 'Cogeo', 'NeriEltiro@gmail.com', '2023', '2005-06-12', '14', 'Female', 'Grade 4 - Meekness', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('71', '', 'Lloyd', 'G', 'Suarez', 'LloydSuarez', 'Siruna', 'LloydSuarez@gmail.com', '2023', '2005-04-13', '15', 'Male', 'Grade 4 - Meekness', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('72', '', 'Harold', 'B', 'Tanyag', 'HaroldTanyag', '', 'HaroldTanyag@gmail.com', '2023', '2005-12-17', '14', 'Male', 'Grade 4 - Meekness', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('73', '', 'Gyaj ', 'M', 'Payad', 'Gyaj Payad', 'Antipolo', 'Gyaj Payad@gmail.com', '2023', '2005-07-16', '14', 'Female', 'Grade 4 - Meekness', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('74', '', 'Aly', 'A', 'Bautista', 'AlyBautista', 'Antipolo', 'AlyBautista@gmail.com', '2023', '2005-09-22', '14', 'Female', 'Grade 4 - Meekness', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('75', '', 'Matthew ', 'F.', 'Cuadra ', 'Matthew Cuadra ', '24 Mindanao Ave Q.C', 'Matthew Cuadra @gmail.com', '2023', '2015-06-17', '9', 'Male', 'Grade 3 - Humility', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('76', '', 'Lyyod', 'M.', ' Suarez', 'Lyyod Suarez', '46 Int 7 18th Ave. Cubao Q.C', 'Lyyod Suarez@gmail.com', '2023', '2014-06-12', '9', 'Male', 'Grade 3 - Humility', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('77', '', 'Renz', 'D.', ' Cayetano', 'Renz Cayetano', '9 block 88 Marikina City', 'Renz Cayetano@gmail.com', '2023', '2014-01-01', '9', 'Male', 'Grade 3 - Humility', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('78', '', 'Jonathan', 'W.', ' Banico ', 'Jonathan Banico ', '2232 P Tamo Avenue 1200 Marikina City', 'Jonathan Banico @gmail.com', '2023', '2014-03-18', '9', 'Male', 'Grade 3 - Humility', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('79', '', 'Mark ', 'S.', 'Joseph', 'Mark Joseph', '1736-D Dian Street, Barangay Palanan Marikina City', 'Mark Joseph@gmail.com', '2023', '2014-03-18', '9', 'Male', 'Grade 3 - Humility', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('80', '', 'Samiel', 'A.', ' Magnaye ', 'Samiel Magnaye ', '24 Mindanao Ave Q.C', 'Samiel Magnaye @gmail.com', '2023', '2014-02-22', '9', 'Male', 'Grade 3 - Humility', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('81', '', 'John Mark ', 'S.', 'Ureta ', 'John Mark Ureta ', '46 Int 7 18th Ave. Cubao Q.C', 'John Mark Ureta @gmail.com', '2023', '2014-02-27', '9', 'Male', 'Grade 3 - Humility', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('82', '', 'Gjay', 'S.', ' Payad ', 'Gjay Payad ', '24 Mindanao Ave Q.C', 'Gjay Payad @gmail.com', '2023', '2014-12-19', '0', 'Male', 'Grade 3 - Humility', '2023 - 2024', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('1', '', 'Alexis', 'F.', 'Viloria', 'AlexisViloria', 'Antipolo', 'AlexisViloria@gmail.com', '2023', '1998-11-23', '24', 'Male', 'Grade 10 - Prosperity', '2022 - 2023', '', 'Student', 'Graduating');
+INSERT INTO `tbl_studentinfo` VALUES ('2', '', 'brian', 'O.', 'obusan', 'brianobusan', 'angono', 'brianobusan@student.sepi.edu.ph', '2023', '2001-01-05', '22', 'Male', 'Grade 1 - go', '2022 - 2023', '1234567', 'Student', '');
+INSERT INTO `tbl_studentinfo` VALUES ('3', '', 'alexis', 'a', 'vi', 'alexisvi', 'antipolo', 'alexisvi@student.sepi.edu.ph', '2023', '2001-03-01', '22', 'Male', 'Grade 1 - go', '2022 - 2023', '2345678', 'Student', '');
+INSERT INTO `tbl_studentinfo` VALUES ('4', '', 'aj', 'a', 'bautista', 'ajbautista', 'canada', 'ajbautista@student.sepi.edu.ph', '19-4718-241', '2000-05-02', '22', 'Female', 'Grade 1 - go', '2022 - 2023', '1235689', 'Student', '');
+INSERT INTO `tbl_studentinfo` VALUES ('5', '', 'alexis', 'a', 'viloria', 'alexisviloriaa', 'antipolo', 'alexisviloria@student.sepi.edu.ph', '2023', '2001-01-05', '22', 'Male', 'Grade 7 - Perseverance', '2022 - 2023', '7890234', 'Student', '');
+INSERT INTO `tbl_studentinfo` VALUES ('6', '', 'ralph', '', 'cabudao', 'ralphcabudao', 'cubao', 'ralphcabudao@student.sepi.edu.ph', '2023', '2000-03-02', '22', 'Male', 'Grade 5 - Gentleness', '2022 - 2023', '3457890', 'Student', '');
+INSERT INTO `tbl_studentinfo` VALUES ('7', '', 'paolo', '', 'david', 'paolodavid', 'teresa', 'paolodavid@student.sepi.edu.ph', '2023', '2000-05-01', '22', 'Male', 'Grade 6 - Patience', '2022 - 2023', '2345689', 'Student', '');
+INSERT INTO `tbl_studentinfo` VALUES ('8', '', 'alexis', '', 'viloria', 'alexisviloria', 'antipolo', 'alexisviloria@student.sepi.edu.ph', '2023', '2000-07-09', '22', 'Male', 'Grade 8 - Generosity', '2022 - 2023', '3456789', 'Student', '');
+INSERT INTO `tbl_studentinfo` VALUES ('9', '', 'mikaela', '', 'delprado', 'mikaeladelprado', 'antipolo', 'mikaeladelprado@student.sepi.edu.ph', '2023', '2000-03-08', '22', 'Female', 'Grade 9 - Industriousness', '2022 - 2023', '345789', 'Student', '');
+INSERT INTO `tbl_studentinfo` VALUES ('10', '', 'gio', 'i', 'leo', 'gioleo', 'antipolo', 'gioleo@gmail.com', '2023', '2010-11-17', '13', 'Male', 'Grade 7 - Perseverance', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('11', '', 'Ynna', 'A', 'Sotto', 'YnnaSotto', 'Baras Rizal', 'YnnaSotto@gmail.com', '2023', '2000-05-25', '22', 'Female', 'Grade 10 - Prosperity', '2022 - 2023', '', 'Student', 'Graduating');
+INSERT INTO `tbl_studentinfo` VALUES ('12', '', 'Maria', 'E', 'Fernando', 'MariaFernando', 'Baras Rizal', 'MariaFernando@gmail.com', '2023', '2002-01-01', '21', 'Female', 'Grade 1 - go', '2022 - 2023', '', 'Student', 'Graduating');
+INSERT INTO `tbl_studentinfo` VALUES ('13', '', 'Czerina', 'M', 'Lois', 'CzerinaLois', 'Padilla', 'CzerinaLois@gmail.com', '2023', '2002-02-23', '21', 'Female', 'Grade 1 - go', '2022 - 2023', '', 'Student', 'Graduating');
+INSERT INTO `tbl_studentinfo` VALUES ('14', '', 'Jesusan', 'U', 'Elorde', 'JesusanElorde', 'Pagrai', 'JesusanElorde@gmail.com', '2023', '2000-05-22', '22', 'Female', 'Grade 10 - Prosperity', '2022 - 2023', '', 'Student', 'Graduating');
+INSERT INTO `tbl_studentinfo` VALUES ('15', '', 'Mae', 'E', 'Ursua', 'MaeUrsua', 'Cogeo', 'MaeUrsua@gmail.com', '2023', '2000-02-05', '23', 'Female', 'Grade 10 - Prosperity', '2022 - 2023', '', 'Student', 'Graduating');
+INSERT INTO `tbl_studentinfo` VALUES ('16', '', 'Jesusan Mae', 'E', 'Bautista', 'Jesusan MaeBautista', 'Mayamot', 'Jesusan MaeBautista@gmail.com', '2023', '2002-12-16', '21', 'Female', 'Grade 10 - Prosperity', '2022 - 2023', '', 'Student', 'Graduating');
+INSERT INTO `tbl_studentinfo` VALUES ('17', '', 'Nikko', 'E', 'Espine', 'NikkoEspine', 'Corazon', 'NikkoEspine@gmail.com', '2023', '2001-01-28', '22', 'Male', 'Grade 10 - Prosperity', '2022 - 2023', '', 'Student', 'Graduating');
+INSERT INTO `tbl_studentinfo` VALUES ('18', '', 'Nikko', 'E', 'Escolano', 'NikkoEscolano', 'Antipolo', 'NikkoEscolano@gmail.com', '2023', '2000-01-23', '23', 'Male', 'Grade 10 - Prosperity', '2022 - 2023', '', 'Student', 'Graduating');
+INSERT INTO `tbl_studentinfo` VALUES ('19', '', 'Jeongni', '', 'Kim', 'JeongniKim', 'Antipolo', 'JeongniKim@gmail.com', '2023', '2000-03-23', '23', 'Male', 'Grade 10 - Prosperity', '2022 - 2023', '', 'Student', 'Graduating');
+INSERT INTO `tbl_studentinfo` VALUES ('20', '', 'Jan', 'M', 'Esco', 'JanEsco', 'Antipolo', 'JanEsco@gmail.com', '2023', '2001-12-12', '22', 'Male', 'Grade 10 - Prosperity', '2022 - 2023', '', 'Student', 'Graduating');
+INSERT INTO `tbl_studentinfo` VALUES ('21', '', 'Mark', 'A', 'Bautista', 'MarkBautista', 'Antipolo', 'MarkBautista@gmail.com', '2023', '2003-02-23', '20', 'Male', 'Grade 9 - Industriousness', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('22', '', 'Alrey', 'B', 'Añonuevo', 'AlreyAñonuevo', '', 'AlreyAñonuevo@gmail.com', '2023', '2003-10-23', '20', 'Male', 'Grade 10 - Triii', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('23', '', 'Mary', 'B', 'Cinco', 'MaryCinco', 'Cainta', 'MaryCinco@gmail.com', '2023', '2003-02-21', '20', 'Female', 'Grade 9 - Industriousness', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('24', '', 'Angeline', 'C', 'Bautista', 'AngelineBautista', 'Antipolo', 'AngelineBautista@gmail.com', '2023', '2003-03-12', '20', 'Female', 'Grade 10 - Triii', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('25', '', 'Maria', 'A', 'Rodriguez', 'MariaRodriguez', 'San Mateo', 'MariaRodriguez@gmail.com', '2023', '2003-09-01', '20', 'Female', 'Grade 10 - Triii', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('26', '', 'Juliet', 'F', 'Fernandez', 'JulietFernandez', 'Antipolo', 'JulietFernandez@gmail.com', '2023', '2003-03-26', '20', 'Female', 'Grade 10 - Triii', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('27', '', 'Almond', 'E', 'James', 'AlmondJames', 'Antipolo', 'AlmondJames@gmail.com', '2023', '2003-04-20', '20', 'Male', 'Grade 10 - Triii', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('28', '', 'Jesusa', 'U', 'Coleen', 'JesusaColeen', '', 'JesusaColeen@gmail.com', '2023', '2003-12-26', '20', 'Female', 'Grade 10 - Triii', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('29', '', 'Ron', 'L', 'Vasquez', 'RonVasquez', 'Cogeo', 'RonVasquez@gmail.com', '2023', '2004-06-15', '19', 'Male', 'Grade 8 - Generosity', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('30', '', 'Paul', 'J', 'Buendia', 'PaulBuendia', 'Paenaan', 'PaulBuendia@gmail.com', '2023', '2004-07-16', '19', 'Male', 'Grade 8 - Generosity', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('31', '', 'Lawrence', 'J', 'Liwag', 'LawrenceLiwag', 'Cogeo', 'LawrenceLiwag@gmail.com', '2023', '2004-04-22', '22', 'Male', 'Grade 8 - Generosity', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('32', '', 'John', 'L', 'Encinada', 'JohnEncinada', '', 'JohnEncinada@gmail.com', '2023', '2004-11-22', '19', 'Male', 'Grade 1 - go', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('33', '', 'Hainy', 'L', 'Pie', 'HainyPie', 'Marikina', 'HainyPie@gmail.com', '2023', '2004-03-14', '19', 'Female', 'Grade 1 - go', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('34', '', 'Lava', 'P', 'Hanes', 'LavaHanes', '', 'LavaHanes@gmail.com', '2023', '2004-10-05', '19', 'Male', 'Grade 8 - Generosity', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('35', '', 'Liyan', 'R', 'Bones', 'LiyanBones', 'Cogeo', 'LiyanBones@gmail.com', '2023', '2004-09-05', '19', 'Female', 'Grade 8 - Generosity', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('36', '', 'Timothy', 'A', 'Alvarez', 'TimothyAlvarez', 'Cainta', 'TimothyAlvarez@gmail.com', '2023', '2004-06-13', '19', 'Male', 'Grade 8 - Generosity', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('37', '', 'Steven', 'M', 'Macunte', 'StevenMacunte', 'Pililia', 'StevenMacunte@gmail.com', '2023', '2004-08-22', '19', 'Male', 'Grade 8 - Generosity', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('38', '', 'Susan', '', 'Ursua', 'SusanUrsua', 'Antipolo', 'SusanUrsua@gmail.com', '2023', '2005-06-28', '18', 'Female', 'Grade 7 - Perseverance', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('39', '', 'Jessie', 'L', 'Manal', 'JessieManal', '', 'JessieManal@gmail.com', '2023', '2005-06-19', '18', 'Male', 'Grade 7 - Perseverance', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('40', '', 'Arlani', 'M', 'Laxamana', 'ArlaniLaxamana', 'Morong', 'ArlaniLaxamana@gmail.com', '2023', '2005-12-19', '18', 'Female', 'Grade 7 - Perseverance', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('41', '', 'Fatema', 'J', 'Nagon', 'FatemaNagon', 'Taytay', 'FatemaNagon@gmail.com', '2023', '2005-03-30', '18', 'Female', 'Grade 7 - Perseverance', '2022 - 2023', '', 'Student', '');
+INSERT INTO `tbl_studentinfo` VALUES ('42', '', 'Armando', 'U', 'Elords', 'ArmandoElords', 'Angono', 'ArmandoElords@gmail.com', '2023', '2005-07-26', '18', 'Male', 'Grade 7 - Perseverance', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('43', '', 'Brizza', 'C', 'Andrada', 'BrizzaAndrada', 'Antipolo', 'BrizzaAndrada@gmail.com', '2023', '2005-09-20', '18', 'Female', 'Grade 7 - Perseverance', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('44', '', 'Ella', 'A', 'Cabasi', 'EllaCabasi', 'Antipolo', 'EllaCabasi@gmail.com', '2023', '2005-03-12', '18', 'Female', 'Grade 7 - Perseverance', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('45', '', 'Jely', 'J', 'Calvo', 'JelyCalvo', 'Padilla', 'JelyCalvo@gmail.com', '2023', '2005-02-01', '18', 'Female', 'Grade 7 - Perseverance', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('46', '', 'Gerald', 'M', 'Ronario', 'GeraldRonario', 'Antipolo', 'GeraldRonario@gmail.com', '2023', '2006-04-11', '17', 'Male', 'Grade 6 - Patience', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('47', '', 'Carla', 'S', 'Amor', 'CarlaAmor', 'Marikina', 'CarlaAmor@gmail.com', '2023', '2006-03-19', '17', 'Female', 'Grade 6 - Patience', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('48', '', 'Christian', 'D', 'Caparas', 'ChristianCaparas', 'Masinag', 'ChristianCaparas@gmail.com', '2023', '2006-01-15', '17', 'Male', 'Grade 6 - Patience', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('49', '', 'Shayne', 'C', 'Sarraga', 'ShayneSarraga', 'Pasig', 'ShayneSarraga@gmail.com', '2023', '2006-06-20', '16', 'Female', 'Grade 6 - Patience', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('50', '', 'Glory ', 'M', 'Palangan', 'Glory Palangan', 'Antipolo', 'Glory Palangan@gmail.com', '2023', '2006-03-17', '17', 'Female', 'Grade 6 - Patience', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('51', '', 'Kathrine', 'J', 'Perez', 'KathrinePerez', 'Antipolo', 'KathrinePerez@gmail.com', '2023', '2006-08-22', '16', 'Female', 'Grade 6 - Patience', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('52', '', 'Earl', '', 'Marrione', 'EarlMarrione', 'Padilla', 'EarlMarrione@gmail.com', '2023', '2006-02-02', '17', 'Male', 'Grade 6 - Patience', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('53', '', 'Cranz', 'D', 'Cabanias', 'CranzCabanias', 'Masinag', 'CranzCabanias@gmail.com', '2023', '2006-03-01', '17', 'Male', 'Grade 6 - Patience', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('54', '', 'Jerwin', '', 'Manalo', 'JerwinManalo', 'Antipolo', 'JerwinManalo@gmail.com', '2023', '2006-06-25', '16', 'Male', 'Grade 6 - Patience', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('55', '', 'Gerald', 'T', 'Payad', 'GeraldPayad', 'Padilla', 'GeraldPayad@gmail.com', '2023', '2006-12-19', '16', 'Male', 'Grade 5 - Gentleness', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('56', '', 'Leizle', 'P', 'Bayot', 'LeizleBayot', 'Antipolo', 'LeizleBayot@gmail.com', '2023', '2006-03-26', '17', 'Female', 'Grade 5 - Gentleness', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('57', '', 'Jeric', 'B', 'Destura', 'JericDestura', '', 'JericDestura@gmail.com', '2023', '2006-02-16', '17', 'Male', 'Grade 5 - Gentleness', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('58', '', 'Frankie', 'H', 'Piadopo', 'FrankiePiadopo', 'Padila', 'FrankiePiadopo@gmail.com', '2023', '2006-02-14', '17', 'Male', 'Grade 5 - Gentleness', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('59', '', 'Lester ', 'M', 'Borromeo', 'Lester Borromeo', 'Cogeo', 'Lester Borromeo@gmail.com', '2023', '2006-10-21', '16', 'Male', 'Grade 5 - Gentleness', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('60', '', 'Lionel', 'N', 'Naluz', 'LionelNaluz', 'Cogeo', 'LionelNaluz@gmail.com', '2023', '2006-04-16', '17', 'Male', 'Grade 5 - Gentleness', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('61', '', 'Dave ', '', 'Rogelio', 'Dave Rogelio', 'Siruna', 'Dave Rogelio@gmail.com', '2023', '2006-12-03', '16', 'Male', 'Grade 5 - Gentleness', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('62', '', 'Wen', '', 'Bern', 'WenBern', 'Siruna', 'WenBern@gmail.com', '2023', '2006-11-15', '16', 'Male', 'Grade 5 - Gentleness', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('63', '', 'Bernard', '', 'Reyes', 'BernardReyes', 'Antipolo', 'BernardReyes@gmail.com', '2023', '2006-09-19', '16', 'Male', 'Grade 5 - Gentleness', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('64', '', 'Elbert', '', 'Guinto', 'ElbertGuinto', 'Antipolo', 'ElbertGuinto@gmail.com', '2023', '2006-11-18', '16', 'Male', 'Grade 5 - Gentleness', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('65', '', 'Axle', 'A', 'Bautista', 'AxleBautista', 'Antipolo', 'AxleBautista@gmail.com', '2023', '2007-10-10', '14', 'Male', 'Grade 5 - Gentleness', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('66', '', 'Kim', '', 'Humarang', 'KimHumarang', 'Padilla', 'KimHumarang@gmail.com', '2023', '2007-10-09', '14', 'Female', 'Grade 4 - Meekness', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('67', '', 'Malex', 'V', 'Viva', 'MalexViva', 'Antipolo', 'MalexViva@gmail.com', '2023', '2007-02-16', '15', 'Male', 'Grade 4 - Meekness', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('68', '', 'Carlo', 'B', 'Leyson', 'CarloLeyson', 'Padilla', 'CarloLeyson@gmail.com', '2023', '2005-06-13', '14', 'Male', 'Grade 4 - Meekness', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('69', '', 'Matthew', '', 'Cuadra', 'MatthewCuadra', 'Antipolo', 'MatthewCuadra@gmail.com', '2023', '2005-11-21', '14', 'Male', 'Grade 4 - Meekness', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('70', '', 'Neri', 'A', 'Eltiro', 'NeriEltiro', 'Cogeo', 'NeriEltiro@gmail.com', '2023', '2005-06-12', '14', 'Female', 'Grade 4 - Meekness', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('71', '', 'Lloyd', 'G', 'Suarez', 'LloydSuarez', 'Siruna', 'LloydSuarez@gmail.com', '2023', '2005-04-13', '15', 'Male', 'Grade 4 - Meekness', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('72', '', 'Harold', 'B', 'Tanyag', 'HaroldTanyag', '', 'HaroldTanyag@gmail.com', '2023', '2005-12-17', '14', 'Male', 'Grade 4 - Meekness', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('73', '', 'Gyaj ', 'M', 'Payad', 'Gyaj Payad', 'Antipolo', 'Gyaj Payad@gmail.com', '2023', '2005-07-16', '14', 'Female', 'Grade 4 - Meekness', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('74', '', 'Aly', 'A', 'Bautista', 'AlyBautista', 'Antipolo', 'AlyBautista@gmail.com', '2023', '2005-09-22', '14', 'Female', 'Grade 4 - Meekness', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('75', '', 'Matthew ', 'F.', 'Cuadra ', 'Matthew Cuadra ', '24 Mindanao Ave Q.C', 'Matthew Cuadra @gmail.com', '2023', '2015-06-17', '9', 'Male', 'Grade 3 - Humility', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('76', '', 'Lyyod', 'M.', ' Suarez', 'Lyyod Suarez', '46 Int 7 18th Ave. Cubao Q.C', 'Lyyod Suarez@gmail.com', '2023', '2014-06-12', '9', 'Male', 'Grade 3 - Humility', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('77', '', 'Renz', 'D.', ' Cayetano', 'Renz Cayetano', '9 block 88 Marikina City', 'Renz Cayetano@gmail.com', '2023', '2014-01-01', '9', 'Male', 'Grade 3 - Humility', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('78', '', 'Jonathan', 'W.', ' Banico ', 'Jonathan Banico ', '2232 P Tamo Avenue 1200 Marikina City', 'Jonathan Banico @gmail.com', '2023', '2014-03-18', '9', 'Male', 'Grade 3 - Humility', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('79', '', 'Mark ', 'S.', 'Joseph', 'Mark Joseph', '1736-D Dian Street, Barangay Palanan Marikina City', 'Mark Joseph@gmail.com', '2023', '2014-03-18', '9', 'Male', 'Grade 3 - Humility', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('80', '', 'Samiel', 'A.', ' Magnaye ', 'Samiel Magnaye ', '24 Mindanao Ave Q.C', 'Samiel Magnaye @gmail.com', '2023', '2014-02-22', '9', 'Male', 'Grade 3 - Humility', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('81', '', 'John Mark ', 'S.', 'Ureta ', 'John Mark Ureta ', '46 Int 7 18th Ave. Cubao Q.C', 'John Mark Ureta @gmail.com', '2023', '2014-02-27', '9', 'Male', 'Grade 3 - Humility', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('82', '', 'Gjay', 'S.', ' Payad ', 'Gjay Payad ', '24 Mindanao Ave Q.C', 'Gjay Payad @gmail.com', '2023', '2014-12-19', '0', 'Male', 'Grade 3 - Humility', '2022 - 2023', '', 'Student', 'Regular');
 INSERT INTO `tbl_studentinfo` VALUES ('83', '', 'Harold', 'S.', ' Barcarse ', 'Harold Barcarse ', '46 Int 7 18th Ave. Cubao Q.C', 'Harold Barcarse @gmail.com', '2023', '2014-08-18', '9', 'Male', 'Grade 3 - Humility', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('84', '', 'Harold', 'N.', ' Tanyag', 'Harold Tanyag', '1736-D Dian Street, Barangay Palanan Marikina City', 'Harold Tanyag@gmail.com', '2023', '2014-04-04', '9', 'Male', 'Grade 3 - Humility', '2023 - 2024', '', 'Student', '');
-INSERT INTO `tbl_studentinfo` VALUES ('85', '', 'Jeff ', 'M.', 'Perea', 'Jeff Perea', '24 Mindanao Ave Q.C', 'Jeff Perea@gmail.com', '2023', '2013-07-25', '8', 'Male', 'Grade 2 - Hope', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('86', '', 'Zydrix', 'A.', ' Payad ', 'Zydrix Payad ', '2232 P Tamo Avenue 1200 Marikina City', 'Zydrix Payad @gmail.com', '2023', '2013-10-17', '8', 'Male', 'Grade 2 - Hope', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('87', '', 'Carl', 'Z.', ' Cabanias', 'Carl Cabanias', '46 Int 7 18th Ave. Cubao Q.C', 'Carl Cabanias@gmail.com', '2023', '2013-02-01', '8', 'Male', 'Grade 2 - Hope', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('88', '', 'Ariel', 'J.', ' Imus', 'Ariel Imus', '9 block 88 Marikina City', 'Ariel Imus@gmail.com', '2023', '2013-04-19', '8', 'Male', 'Grade 2 - Hope', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('89', '', 'Ariel ', 'G.', ' Pendon ', 'Ariel  Pendon ', '1736-D Dian Street, Barangay Palanan Marikina City', 'Ariel  Pendon @gmail.com', '2023', '2013-03-07', '8', 'Male', 'Grade 2 - Hope', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('90', '', 'Ellen', 'S.', ' Galangue ', 'Ellen Galangue ', '46 Int 7 18th Ave. Cubao Q.C', 'Ellen Galangue @gmail.com', '2023', '2013-02-06', '8', 'Female', 'Grade 2 - Hope', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('91', '', 'Joven', 'N.', ' Digo', 'Joven Digo', '2232 P Tamo Avenue 1200 Marikina City', 'Joven Digo@gmail.com', '2023', '2013-03-01', '8', 'Male', 'Grade 2 - Hope', '2023 - 2024', '', 'Student', '');
-INSERT INTO `tbl_studentinfo` VALUES ('92', '', 'Marvie', 'J.', ' Causaren ', 'Marvie Causaren ', '9 block 88 Marikina City', 'Marvie Causaren @gmail.com', '2023', '2013-07-11', '8', 'Male', 'Grade 2 - Hope', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('93', '', 'Paul ', 'H.', 'Destura', 'Paul Destura', '2232 P Tamo Avenue 1200 Marikina City', 'Paul Destura@gmail.com', '2023', '2013-02-07', '8', 'Male', 'Grade 2 - Hope', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('94', '', ' Neil', 'S.', ' Aquino ', ' Neil Aquino ', 'Dian Street, Barangay Palanan Marikina City', ' Neil Aquino @gmail.com', '2023', '2016-08-11', '7', 'Male', 'Grade 1 - Love', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('95', '', 'Ian', 'H.', ' Kyle', 'Ian Kyle', '24 Mindanao Ave Q.C', 'Ian Kyle@gmail.com', '2023', '2016-03-10', '7', 'Male', 'Grade 1 - Love', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('96', '', 'Daricel', 'V.', ' Petargue ', 'Daricel Petargue ', '9 block 88 Marikina City', 'Daricel Petargue @gmail.com', '2023', '2016-03-11', '6', 'Female', 'Grade 1 - Love', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('97', '', 'Precious', 'B.', ' Marie', 'Precious Marie', '24 Mindanao Ave Q.C', 'Precious Marie@gmail.com', '2023', '2016-03-04', '7', 'Female', 'Grade 1 - Love', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('98', '', 'Mia', 'C.', ' Siscar ', 'Mia Siscar ', '23 Street Sikatuna Antipolo City', 'Mia Siscar @gmail.com', '2023', '2016-02-11', '7', 'Female', 'Grade 1 - Love', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('99', '', 'Frelline', 'S.', ' Rica ', 'Frelline Rica ', '24 Mindanao Ave Q.C', 'Frelline Rica @gmail.com', '2023', '2016-03-10', '7', 'Female', 'Grade 1 - Love', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('100', '', 'Krisln', 'S.', ' Carreon ', 'Krisln Carreon ', '2232 P Tamo Avenue 1200 Marikina City', 'Krisln Carreon @gmail.com', '2023', '2016-03-10', '7', 'Female', 'Grade 1 - Love', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('101', '', 'Malex', 'H.', ' Viva ', 'Malex Viva ', '24 Mindanao Ave Q.C', 'Malex Viva @gmail.com', '2023', '2016-03-10', '8', 'Female', 'Grade 1 - Love', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('102', '', 'Carlo', 'B.', ' Leyson', 'Carlo Leyson', '2232 P Tamo Avenue 1200 Marikina City', 'Carlo Leyson@gmail.com', '2023', '2016-02-10', '8', 'Male', 'Grade 1 - Love', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('103', '', 'Matthew ', '', ' Cuadra', 'Matthew  Cuadra', '9 block 88 Marikina City', 'Matthew  Cuadra@gmail.com', '2023', '2016-08-12', '8', 'Male', 'Grade 1 - Love', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('104', '', 'Jonathan', 'X.', ' Banico ', 'Jonathan Banico ', ' 46 Int 7 18th Ave. Cubao Q.C', 'Jonathan Banico @gmail.com', '2023', '2016-03-03', '7', 'Male', 'Grade 1 - Love', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('105', '', 'Gjay', '', ' Payad ', 'Gjay Payad ', '24 Mindanao Ave Q.C', 'Gjay Payad @gmail.com', '2023', '2016-02-03', '8', 'Male', 'Grade 1 - Love', '2023 - 2024', '', 'Student', 'Regular');
-INSERT INTO `tbl_studentinfo` VALUES ('106', '125', 'jerome', 'f', 'viloria', 'antipolo', 'jeromeviloria@student.sepi.edu.ph', '2023', '4/14/2003', '0000-00-00', '0', 'Grade 1 - Love', '2023', '243242', 'Student', '', '');
+INSERT INTO `tbl_studentinfo` VALUES ('84', '', 'Harold', 'N.', ' Tanyag', 'Harold Tanyag', '1736-D Dian Street, Barangay Palanan Marikina City', 'Harold Tanyag@gmail.com', '2023', '2014-04-04', '9', 'Male', 'Grade 3 - Humility', '2022 - 2023', '', 'Student', '');
+INSERT INTO `tbl_studentinfo` VALUES ('85', '', 'Jeff ', 'M.', 'Perea', 'Jeff Perea', '24 Mindanao Ave Q.C', 'Jeff Perea@gmail.com', '2023', '2013-07-25', '8', 'Male', 'Grade 2 - Hope', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('86', '', 'Zydrix', 'A.', ' Payad ', 'Zydrix Payad ', '2232 P Tamo Avenue 1200 Marikina City', 'Zydrix Payad @gmail.com', '2023', '2013-10-17', '8', 'Male', 'Grade 2 - Hope', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('87', '', 'Carl', 'Z.', ' Cabanias', 'Carl Cabanias', '46 Int 7 18th Ave. Cubao Q.C', 'Carl Cabanias@gmail.com', '2023', '2013-02-01', '8', 'Male', 'Grade 2 - Hope', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('88', '', 'Ariel', 'J.', ' Imus', 'Ariel Imus', '9 block 88 Marikina City', 'Ariel Imus@gmail.com', '2023', '2013-04-19', '8', 'Male', 'Grade 2 - Hope', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('89', '', 'Ariel ', 'G.', ' Pendon ', 'Ariel  Pendon ', '1736-D Dian Street, Barangay Palanan Marikina City', 'Ariel  Pendon @gmail.com', '2023', '2013-03-07', '8', 'Male', 'Grade 2 - Hope', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('90', '', 'Ellen', 'S.', ' Galangue ', 'Ellen Galangue ', '46 Int 7 18th Ave. Cubao Q.C', 'Ellen Galangue @gmail.com', '2023', '2013-02-06', '8', 'Female', 'Grade 2 - Hope', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('91', '', 'Joven', 'N.', ' Digo', 'Joven Digo', '2232 P Tamo Avenue 1200 Marikina City', 'Joven Digo@gmail.com', '2023', '2013-03-01', '8', 'Male', 'Grade 2 - Hope', '2022 - 2023', '', 'Student', '');
+INSERT INTO `tbl_studentinfo` VALUES ('92', '', 'Marvie', 'J.', ' Causaren ', 'Marvie Causaren ', '9 block 88 Marikina City', 'Marvie Causaren @gmail.com', '2023', '2013-07-11', '8', 'Male', 'Grade 2 - Hope', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('93', '', 'Paul ', 'H.', 'Destura', 'Paul Destura', '2232 P Tamo Avenue 1200 Marikina City', 'Paul Destura@gmail.com', '2023', '2013-02-07', '8', 'Male', 'Grade 2 - Hope', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('94', '', ' Neil', 'S.', ' Aquino ', ' Neil Aquino ', 'Dian Street, Barangay Palanan Marikina City', ' Neil Aquino @gmail.com', '2023', '2016-08-11', '7', 'Male', 'Grade 1 - Love', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('95', '', 'Ian', 'H.', ' Kyle', 'Ian Kyle', '24 Mindanao Ave Q.C', 'Ian Kyle@gmail.com', '2023', '2016-03-10', '7', 'Male', 'Grade 1 - Love', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('96', '', 'Daricel', 'V.', ' Petargue ', 'Daricel Petargue ', '9 block 88 Marikina City', 'Daricel Petargue @gmail.com', '2023', '2016-03-11', '6', 'Female', 'Grade 1 - Love', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('97', '', 'Precious', 'B.', ' Marie', 'Precious Marie', '24 Mindanao Ave Q.C', 'Precious Marie@gmail.com', '2023', '2016-03-04', '7', 'Female', 'Grade 1 - Love', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('98', '', 'Mia', 'C.', ' Siscar ', 'Mia Siscar ', '23 Street Sikatuna Antipolo City', 'Mia Siscar @gmail.com', '2023', '2016-02-11', '7', 'Female', 'Grade 1 - Love', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('99', '', 'Frelline', 'S.', ' Rica ', 'Frelline Rica ', '24 Mindanao Ave Q.C', 'Frelline Rica @gmail.com', '2023', '2016-03-10', '7', 'Female', 'Grade 1 - Love', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('100', '', 'Krisln', 'S.', ' Carreon ', 'Krisln Carreon ', '2232 P Tamo Avenue 1200 Marikina City', 'Krisln Carreon @gmail.com', '2023', '2016-03-10', '7', 'Female', 'Grade 1 - Love', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('101', '', 'Malex', 'H.', ' Viva ', 'Malex Viva ', '24 Mindanao Ave Q.C', 'Malex Viva @gmail.com', '2023', '2016-03-10', '8', 'Female', 'Grade 1 - Love', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('102', '', 'Carlo', 'B.', ' Leyson', 'Carlo Leyson', '2232 P Tamo Avenue 1200 Marikina City', 'Carlo Leyson@gmail.com', '2023', '2016-02-10', '8', 'Male', 'Grade 1 - Love', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('103', '', 'Matthew ', '', ' Cuadra', 'Matthew  Cuadra', '9 block 88 Marikina City', 'Matthew  Cuadra@gmail.com', '2023', '2016-08-12', '8', 'Male', 'Grade 1 - Love', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('104', '', 'Jonathan', 'X.', ' Banico ', 'Jonathan Banico ', ' 46 Int 7 18th Ave. Cubao Q.C', 'Jonathan Banico @gmail.com', '2023', '2016-03-03', '7', 'Male', 'Grade 1 - Love', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('105', '', 'Gjay', '', ' Payad ', 'Gjay Payad ', '24 Mindanao Ave Q.C', 'Gjay Payad @gmail.com', '2023', '2016-02-03', '8', 'Male', 'Grade 1 - Love', '2022 - 2023', '', 'Student', 'Regular');
+INSERT INTO `tbl_studentinfo` VALUES ('106', '125', 'jerome', 'f', 'viloria', 'antipolo', 'jeromeviloria@student.sepi.edu.ph', '2023', '4/14/2003', '0000-00-00', '0', 'Grade 1 - Love', '2023', '2022 - 2023', 'Student', '', '');
+INSERT INTO `tbl_studentinfo` VALUES ('107', '', 'Maka', 'ba', 'Go', 'MakaGo', 'dyan', 'MakaGo@gmail.com', '2023', '2023-05-05', '100', 'Others', 'Grade 1 - Pride', '2022 - 2023', '', 'Student', 'Graduating');
 
 -- ----------------------------
 -- Table structure for `tbl_subject`
@@ -17365,7 +17763,7 @@ CREATE TABLE `tbl_subject` (
   `Subject_name` varchar(255) NOT NULL,
   `Grade_level` varchar(255) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=104 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=105 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of tbl_subject
@@ -17460,6 +17858,7 @@ INSERT INTO `tbl_subject` VALUES ('100', 'MAP10', 'Music, Arts, and Physical Edu
 INSERT INTO `tbl_subject` VALUES ('101', 'CE10', 'Computer Education', 'Grade 10');
 INSERT INTO `tbl_subject` VALUES ('102', 'COM10', 'Communication Arts', 'Grade 10');
 INSERT INTO `tbl_subject` VALUES ('103', 'TLE10', 'Technology and Livelihood Education', 'Grade 10');
+INSERT INTO `tbl_subject` VALUES ('104', 'Pro1', 'Programming', 'Grade 1');
 
 -- ----------------------------
 -- Table structure for `tbl_teacher`
@@ -17547,7 +17946,7 @@ INSERT INTO `tbl_teacher` VALUES ('45', '15', 'jerome', 'f', 'Viloria', 'JeromeV
 DROP TABLE IF EXISTS `tbl_teacherinfo`;
 CREATE TABLE `tbl_teacherinfo` (
   `TID` int(11) NOT NULL AUTO_INCREMENT,
-  `teacher_id` varchar(255) NOT NULL,
+  `Employee_ID` varchar(255) NOT NULL,
   `FNAMES` varchar(255) NOT NULL,
   `MNAMES` varchar(255) DEFAULT NULL,
   `LNAMES` varchar(255) NOT NULL,
