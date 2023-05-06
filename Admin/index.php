@@ -1,3 +1,17 @@
+<?php
+if (isset($_POST['teacher']) && !empty($_POST['teacher'])) {
+  $emails = array_filter($_POST['teacher'], 'filter_var', FILTER_VALIDATE_EMAIL);
+  if (!empty($emails)) {
+    $emailString = implode(",", $emails);
+    // Do something with the validated email addresses.
+  } else {
+    $emailString = "";
+    
+  }
+} else {
+  $emailString = "";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +25,7 @@
 </head>
 <body>
   <form class="center_absolute display_grid" action="sendmail.php" method="post">
-    <input class="w_25_rem margin_bottom_1_rem" type="email" name="email" placeholder="Email" autocomplete="off">
+    <input class="w_25_rem margin_bottom_1_rem" type="text" name="email" placeholder="Email" autocomplete="off" value="<?php echo $emailString; ?>">
     <input class="w_25_rem margin_bottom_1_rem" type="text" name="subject" placeholder="Subject" autocomplete="off">
     <textarea name="message" class="w_25_rem margin_bottom_1_rem" placeholder="Message..."></textarea>
     

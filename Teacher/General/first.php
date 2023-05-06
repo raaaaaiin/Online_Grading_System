@@ -11,7 +11,7 @@
 			{
 				$userid = $_SESSION['TID'];
 	
-				$getrecord = mysqli_query($config,"SELECT * FROM tbl_teacherinfoinfo WHERE TID ='$userid'");
+				$getrecord = mysqli_query($config,"SELECT * FROM tbl_teacherinfo WHERE TID ='$userid'");
 				while($rowedit = mysqli_fetch_assoc($getrecord))
 
 					
@@ -151,15 +151,15 @@ include "../../sepi_connect.php";
 				@$Quarter = $_POST['Quarter'];
 				@$category = $_POST['category'];
 				if($Level != NULL){
-				$sql = "SELECT Distinct tbl_studentinfoinfo.Stud_SID, tbl_studentinfoinfo.Stud_ID, tbl_studentinfoinfo.FNAME, tbl_studentinfoinfo.MNAME, tbl_studentinfoinfo.LNAME, tbl_studentinfoinfo.USERNAME, tbl_studentinfoinfo.ADDRESS, tbl_studentinfoinfo.EMAIL, tbl_studentinfoinfo.PASS, tbl_studentinfoinfo.BDAY, tbl_studentinfoinfo.AGE, tbl_studentinfoinfo.GENDER, tbl_studentinfoinfo.`LEVEL`, tbl_studentinfoinfo.`YEAR`, tbl_studentinfoinfo.LRN, tbl_studentinfoinfo.Role, tbl_studentinfoinfo.`STATUS`, tbl_grades.".$Quarter." FROM tbl_studentinfoinfo Left JOIN tbl_grades ON tbl_studentinfoinfo.Stud_SID = tbl_grades.Student_Code AND tbl_studentinfoinfo.`YEAR` = tbl_grades.SY where LEVEL = '$Level' and YEAR = '$Year' AND (tbl_grades.Subject_Code = '$subject' OR tbl_grades.Subject_Code IS NULL)"; 	
+				$sql = "SELECT Distinct tbl_studentinfo.Stud_SID, tbl_studentinfo.Stud_ID, tbl_studentinfo.FNAME, tbl_studentinfo.MNAME, tbl_studentinfo.LNAME, tbl_studentinfo.USERNAME, tbl_studentinfo.ADDRESS, tbl_studentinfo.EMAIL, tbl_studentinfo.PASS, tbl_studentinfo.BDAY, tbl_studentinfo.AGE, tbl_studentinfo.GENDER, tbl_studentinfo.`LEVEL`, tbl_studentinfo.`YEAR`, tbl_studentinfo.LRN, tbl_studentinfo.Role, tbl_studentinfo.`STATUS`, tbl_grades.".$Quarter." FROM tbl_studentinfo Left JOIN tbl_grades ON tbl_studentinfo.Stud_SID = tbl_grades.Student_Code AND tbl_studentinfo.`YEAR` = tbl_grades.SY where LEVEL = '$Level' and YEAR = '$Year' AND (tbl_grades.Subject_Code = '$subject' OR tbl_grades.Subject_Code IS NULL)"; 	
 				
 				}
 				else{
-					$sql = "SELECT * FROM tbl_studentinfoinfo ORDER BY Stud_SID";
+					$sql = "SELECT * FROM tbl_studentinfo ORDER BY Stud_SID";
 					
 					}
 				if($search !=NULL){
-				$sql = "SELECT * FROM tbl_studentinfoinfo where Stud_SID LIKE '%$search%' or 
+				$sql = "SELECT * FROM tbl_studentinfo where Stud_SID LIKE '%$search%' or 
 														FNAME LIKE '%$search%' or
 														LNAME LIKE '%$search%' or
 														USERNAME LIKE '%$search%' or
@@ -167,7 +167,7 @@ include "../../sepi_connect.php";
 														LEVEL = '$Level' and YEAR = '$Year'";
 				}
 				}else{
-				$sql = "SELECT * FROM tbl_studentinfoinfo ORDER BY Stud_SID DESC LIMIT 0";
+				$sql = "SELECT * FROM tbl_studentinfo ORDER BY Stud_SID DESC LIMIT 0";
 				
 				}
 

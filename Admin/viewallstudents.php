@@ -25,7 +25,7 @@ if(isset($_POST['search'])){
 $search = $_POST['search'];
 
 if ($search != NULL){
-$sql = "Select * from tbl_studentinfoinfo where Stud_SID like '%$search%' or 
+$sql = "Select * from tbl_studentinfo where Stud_SID like '%$search%' or 
 										Stud_ID like '%$search%' or
 										FNAME like '%$search%' or
 										MNAME like '%$search%' or
@@ -39,11 +39,11 @@ $sql = "Select * from tbl_studentinfoinfo where Stud_SID like '%$search%' or
 
 }else{
 
-$sql = "Select * from tbl_studentinfoinfo";
+$sql = "Select * from tbl_studentinfo";
 }
 }else{
 
-$sql = "Select * from tbl_studentinfoinfo";
+$sql = "Select * from tbl_studentinfo";
 }
 
 
@@ -75,7 +75,7 @@ $sql = "Select * from tbl_studentinfoinfo";
 				<p class="searchstudent">Search:</p>
 				<input type=text name=search class="studenttxtviewall">
 				
-				<input type=submit name=sub class="studentbtnviewall"> 
+				
 				<select name=category class=cat>
 <option value="">Grade Level & Section</option>
 <option>Grade 1 - Love	</option>
@@ -88,7 +88,10 @@ $sql = "Select * from tbl_studentinfoinfo";
 <option>Grade 8 - Generosity</option>
 <option>Grade 9 - Industriousness</option>
 <option>Grade 10 - Prosperity</option>
-</select>				
+</select>			
+<input type=submit name=sub class="studentbtnviewall"> 
+</form>
+<form method='POST' action='index.php'>
 				<a href="student.php" class="returnviewallbtn">Return</a>
 				<a href="import.php" class="massupdbtnviewall">Mass Upload</a>
 
@@ -101,7 +104,7 @@ if(isset($_POST['sub'])){
 	$search = $_POST['search'];
 	$category = $_POST['category'];
 	if($category != NULL){
-	$sql = "SELECT * FROM tbl_studentinfoinfo where LEVEL = '$category'";
+	$sql = "SELECT * FROM tbl_studentinfo where LEVEL = '$category'";
 	
 	}
 	else{
@@ -109,21 +112,24 @@ if(isset($_POST['sub'])){
 		
 		}
 	if($search !=NULL){
-	$sql = "SELECT * FROM tbl_studentinfoinfo where Stud_SID LIKE '%$search%' or 
+	$sql = "SELECT * FROM tbl_studentinfo where Stud_SID LIKE '%$search%' or 
 											FNAME LIKE '%$search%' or
 											LNAME LIKE '%$search%' or
 											USERNAME LIKE '%$search%' or
 											EMAIL LIKE '%$search%'";
 	}
 	}else{
-	$sql = "SELECT * FROM tbl_studentinfoinfo";
+	$sql = "SELECT * FROM tbl_studentinfo";
 	
 	}
-$result = $config -> query($sql);
-if($result -> num_rows > 0){
+	
+	
+$result = $config->query($sql);
 echo"<div class=studenttbl2 style=overflow:auto;>";
-echo"<table class=studenttbl1>";
+
+echo "<table class=studenttbl1>";
 echo "<tr>";
+echo "<th Class=studentheader4>Select";
 echo "<th Class=studentheader4>STUDENT ID";
 echo "<th Class=studentheader4>NAME";
 echo "<th Class=studentheader4>USERNAME";
@@ -135,36 +141,40 @@ echo "<th Class=studentheader4>GENDER";
 echo "<th Class=studentheader4>LEVEL";
 echo "<th Class=studentheader4>YEAR";
 echo "<th Class=studentheader4 colspan=3>ACTION";
-echo "<th Class=studentheader4>Send Email: ";
+echo "</tr>";
 
-while($row = $result -> fetch_assoc()){
-	$zero = 0;
-	$zero1 = 0;
-	$zero2 = 0;
-	$date=date_create("2023");
-	$dateformat=date_format($date,"y");
-	
-	echo "<tr>";
-	echo "<td class=studentinfo>".$dateformat."-".$zero."".$zero1."".$zero2."-".$row['Stud_SID'];
-echo "<td class=studentinfo>".$row['FNAME']." ".$row['MNAME']." ".$row['LNAME'];
-echo "<td class=studentinfo>".$row['USERNAME'];
-echo "<td class=studentinfo>".$row['EMAIL'];
-echo "<td class=studentinfo>".$row['BDAY'];
-echo "<td class=studentinfo>".$row['AGE'];
-echo "<td class=studentinfo>".$row['ADDRESS'];
-echo "<td class=studentinfo>".$row['GENDER'];
-echo "<td class=studentinfo>".$row['LEVEL'];
-echo "<td class=studentinfo>".$row['YEAR'];
-echo "<td class=studentinfo> <a href='studentupdate.php?ID=".$row['Stud_SID']."'> Update </a>";
-echo "<td class=studentinfo> <a href='studentdelete.php?ID=".$row['Stud_SID']."'> Archive </a>";
-echo "<td class=studentinfo> <a href='viewstudgrades.php?ID=".$row['Stud_SID']."'> View Grades </a>";
-echo "<td class=studentinfo> <a href='index.php'?ID=".$row['Stud_SID']."'> Send Email </a>";
-
-}	
-}else{
-echo "Empty";
-}
-?>
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+		$zero = 0;
+		$zero1 = 0;
+		$zero2 = 0;
+		$date=date_create("2023");
+		$dateformat=date_format($date,"y");
+        echo "<tr>";
+        echo "<td class=studentinfo><input type='checkbox' name='teacher[]' value='" . $row['EMAIL'] . "'>";
+        echo "<td class=studentinfo>" . $dateformat . "-" . $zero . "" . $zero1 . "" . $zero2 . "-" . $row['Stud_SID'];
+        echo "<td class=studentinfo>" . $row['FNAME'] . " " . $row['MNAME'] . " " . $row['LNAME'];
+        echo "<td class=studentinfo>" . $row['USERNAME'];
+        echo "<td class=studentinfo>" . $row['EMAIL'];
+        echo "<td class=studentinfo>" . $row['BDAY'];
+        echo "<td class=studentinfo>" . $row['AGE'];
+        echo "<td class=studentinfo>" . $row['ADDRESS'];
+        echo "<td class=studentinfo>" . $row['GENDER'];
+        echo "<td class=studentinfo>" . $row['LEVEL'];
+        echo "<td class=studentinfo>" . $row['YEAR'];
+        echo "<td class=studentinfo> <a href='studentupdate.php?ID=" . $row['Stud_SID'] . "'> Update </a>";
+        echo "<td class=studentinfo> <a href='studentdelete.php?ID=" . $row['Stud_SID'] . "'> Archive </a>";
+        echo "<td class=studentinfo> <a href='viewstudgrades.php?ID=" .$row['Stud_SID'] . "'> View Grades </a>";
+		echo "</tr>";
+		}
+		} else {
+		echo "<tr><td colspan='12'>No records found.</td></tr>";
+		}
+		echo "</table>";
+		echo "<input type='submit' name='emailButton' value='EMAIL' class='emailButton'>";
+		echo "</form>";
+		
+		?>
 
 
 

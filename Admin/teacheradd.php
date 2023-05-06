@@ -143,7 +143,7 @@ if(isset($_POST['subs'])){
 	$yearss = date("Y");
 	
 	
-	$check = mysqli_query($config,"select * from tbl_teacherinfoinfo where FNAMES='$firsts' and MNAMES='$middles' and LNAMES='$lasts'");
+	$check = mysqli_query($config,"select * from tbl_teacherinfo where FNAMES='$firsts' and MNAMES='$middles' and LNAMES='$lasts'");
 	$checkrows = mysqli_num_rows($check);
 	if($checkrows>0) 
 		{
@@ -155,7 +155,7 @@ if(isset($_POST['subs'])){
 		} 
 	else
 		{  
-	$sql = "Insert into tbl_teacherinfoinfo (FNAMES,MNAMES,LNAMES,USERNAME,ADDRESS,EMAIL,PASS,BDAYS,AGES,GENDERS,Role) values  
+	$sql = "Insert into tbl_teacherinfo (FNAMES,MNAMES,LNAMES,USERNAME,ADDRESS,EMAIL,PASS,BDAYS,AGES,GENDERS,Role) values  
 	('$firsts','$middles','$lasts','$username','$addres','$email','$yearss','$births',$aging,'$genders','$role')";
 	
 	$insert = $config->query($sql);
