@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2023-05-07 20:27:49
+Date: 2023-05-08 01:04:28
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -250,7 +250,7 @@ CREATE TABLE `tbl_audithistory` (
   `e_action` varchar(99) NOT NULL,
   `e_date` datetime NOT NULL,
   PRIMARY KEY (`e_userID`)
-) ENGINE=InnoDB AUTO_INCREMENT=9241 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=9335 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of tbl_audithistory
@@ -9495,6 +9495,100 @@ INSERT INTO `tbl_audithistory` VALUES ('9237', 'brian demesa', 'Viewing Admin Da
 INSERT INTO `tbl_audithistory` VALUES ('9238', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 19:23:32');
 INSERT INTO `tbl_audithistory` VALUES ('9239', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 19:24:10');
 INSERT INTO `tbl_audithistory` VALUES ('9240', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 19:24:27');
+INSERT INTO `tbl_audithistory` VALUES ('9241', 'brian demesa', 'Promotion', '2023-05-07 21:08:55');
+INSERT INTO `tbl_audithistory` VALUES ('9242', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 21:08:57');
+INSERT INTO `tbl_audithistory` VALUES ('9243', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 21:08:59');
+INSERT INTO `tbl_audithistory` VALUES ('9244', 'brian demesa', 'Promotion', '2023-05-07 21:09:01');
+INSERT INTO `tbl_audithistory` VALUES ('9245', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 21:09:03');
+INSERT INTO `tbl_audithistory` VALUES ('9246', 'brian demesa', 'Viewing Updating Admin Announcement', '2023-05-07 21:12:42');
+INSERT INTO `tbl_audithistory` VALUES ('9247', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 21:12:45');
+INSERT INTO `tbl_audithistory` VALUES ('9248', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 21:12:46');
+INSERT INTO `tbl_audithistory` VALUES ('9249', 'brian demesa', 'Adding Admin Announcement', '2023-05-07 21:12:55');
+INSERT INTO `tbl_audithistory` VALUES ('9250', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 21:12:57');
+INSERT INTO `tbl_audithistory` VALUES ('9251', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 21:12:59');
+INSERT INTO `tbl_audithistory` VALUES ('9252', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 21:13:01');
+INSERT INTO `tbl_audithistory` VALUES ('9253', 'brian demesa', 'Promotion', '2023-05-07 21:13:02');
+INSERT INTO `tbl_audithistory` VALUES ('9254', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 21:13:04');
+INSERT INTO `tbl_audithistory` VALUES ('9255', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 21:13:20');
+INSERT INTO `tbl_audithistory` VALUES ('9256', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 21:13:56');
+INSERT INTO `tbl_audithistory` VALUES ('9257', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 21:13:57');
+INSERT INTO `tbl_audithistory` VALUES ('9258', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 21:13:59');
+INSERT INTO `tbl_audithistory` VALUES ('9259', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 21:14:02');
+INSERT INTO `tbl_audithistory` VALUES ('9260', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 21:14:03');
+INSERT INTO `tbl_audithistory` VALUES ('9261', 'brian demesa', 'Promotion', '2023-05-07 21:14:05');
+INSERT INTO `tbl_audithistory` VALUES ('9262', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 21:14:15');
+INSERT INTO `tbl_audithistory` VALUES ('9263', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 21:14:17');
+INSERT INTO `tbl_audithistory` VALUES ('9264', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 21:14:18');
+INSERT INTO `tbl_audithistory` VALUES ('9265', 'brian demesa', 'Viewing Admin Dashboard', '2023-05-07 21:14:22');
+INSERT INTO `tbl_audithistory` VALUES ('9266', 'brian demesa', 'Viewing Admin Dashboard', '2023-05-07 21:15:00');
+INSERT INTO `tbl_audithistory` VALUES ('9267', 'brian demesa', 'Viewing Archive Records', '2023-05-07 21:17:44');
+INSERT INTO `tbl_audithistory` VALUES ('9268', 'brian demesa', 'Viewing Admin Dashboard', '2023-05-07 21:17:46');
+INSERT INTO `tbl_audithistory` VALUES ('9269', 'brian demesa', 'Viewing Archive Records', '2023-05-07 21:17:48');
+INSERT INTO `tbl_audithistory` VALUES ('9270', 'brian demesa', 'Viewing Admin Dashboard', '2023-05-07 21:17:49');
+INSERT INTO `tbl_audithistory` VALUES ('9271', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 21:17:52');
+INSERT INTO `tbl_audithistory` VALUES ('9272', 'brian demesa', 'Viewing Admin Dashboard', '2023-05-07 21:17:54');
+INSERT INTO `tbl_audithistory` VALUES ('9273', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 21:17:56');
+INSERT INTO `tbl_audithistory` VALUES ('9274', 'brian demesa', 'Viewing Admin Dashboard', '2023-05-07 21:34:23');
+INSERT INTO `tbl_audithistory` VALUES ('9275', 'brian demesa', 'Viewing Admin Dashboard', '2023-05-07 21:34:26');
+INSERT INTO `tbl_audithistory` VALUES ('9276', 'brian demesa', 'Viewing Students Information', '2023-05-07 21:46:42');
+INSERT INTO `tbl_audithistory` VALUES ('9277', 'brian demesa', 'Viewing Students Information', '2023-05-07 21:46:44');
+INSERT INTO `tbl_audithistory` VALUES ('9278', 'brian demesa', 'Viewing Students Information', '2023-05-07 21:46:45');
+INSERT INTO `tbl_audithistory` VALUES ('9279', 'brian demesa', 'Viewing Students Information', '2023-05-07 21:46:48');
+INSERT INTO `tbl_audithistory` VALUES ('9280', 'brian demesa', 'Viewing Students Information', '2023-05-07 21:47:01');
+INSERT INTO `tbl_audithistory` VALUES ('9281', 'brian demesa', 'Viewing Students Information', '2023-05-07 21:47:14');
+INSERT INTO `tbl_audithistory` VALUES ('9282', 'brian demesa', 'Viewing Students Information', '2023-05-07 21:47:20');
+INSERT INTO `tbl_audithistory` VALUES ('9283', 'brian demesa', 'Viewing Students Information', '2023-05-07 21:47:26');
+INSERT INTO `tbl_audithistory` VALUES ('9284', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 22:02:05');
+INSERT INTO `tbl_audithistory` VALUES ('9285', 'brian demesa', 'Viewing Teachers Information', '2023-05-07 22:02:09');
+INSERT INTO `tbl_audithistory` VALUES ('9286', 'brian demesa', 'Viewing Students Information', '2023-05-07 22:02:15');
+INSERT INTO `tbl_audithistory` VALUES ('9287', 'brian demesa', 'Viewing Teachers Information', '2023-05-07 22:02:16');
+INSERT INTO `tbl_audithistory` VALUES ('9288', 'brian demesa', 'Viewing Teachers Information', '2023-05-07 22:02:18');
+INSERT INTO `tbl_audithistory` VALUES ('9289', 'brian demesa', 'Viewing Teachers Information', '2023-05-07 22:02:21');
+INSERT INTO `tbl_audithistory` VALUES ('9290', 'brian demesa', 'Viewing Admin Dashboard', '2023-05-07 22:02:27');
+INSERT INTO `tbl_audithistory` VALUES ('9291', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 22:02:30');
+INSERT INTO `tbl_audithistory` VALUES ('9292', 'brian demesa', 'Adding Admin Announcement', '2023-05-07 22:02:32');
+INSERT INTO `tbl_audithistory` VALUES ('9293', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 22:02:36');
+INSERT INTO `tbl_audithistory` VALUES ('9294', 'brian demesa', 'Adding Admin Announcement', '2023-05-07 22:02:37');
+INSERT INTO `tbl_audithistory` VALUES ('9295', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 22:02:45');
+INSERT INTO `tbl_audithistory` VALUES ('9296', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 22:02:46');
+INSERT INTO `tbl_audithistory` VALUES ('9297', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 22:02:48');
+INSERT INTO `tbl_audithistory` VALUES ('9298', 'brian demesa', 'Adding Admin Announcement', '2023-05-07 22:02:50');
+INSERT INTO `tbl_audithistory` VALUES ('9299', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 22:02:51');
+INSERT INTO `tbl_audithistory` VALUES ('9300', 'brian demesa', 'Adding Admin Announcement', '2023-05-07 22:02:53');
+INSERT INTO `tbl_audithistory` VALUES ('9301', 'brian demesa', 'Viewing Admin Dashboard', '2023-05-07 22:02:54');
+INSERT INTO `tbl_audithistory` VALUES ('9302', 'brian demesa', 'Viewing Admin Announcement', '2023-05-07 22:02:55');
+INSERT INTO `tbl_audithistory` VALUES ('9303', 'brian demesa', 'Adding Admin Announcement', '2023-05-07 22:02:57');
+INSERT INTO `tbl_audithistory` VALUES ('9304', 'brian demesa', 'Adding Admin Announcement', '2023-05-07 22:03:31');
+INSERT INTO `tbl_audithistory` VALUES ('9305', 'brian demesa', 'Adding Admin Announcement', '2023-05-07 22:04:45');
+INSERT INTO `tbl_audithistory` VALUES ('9306', 'brian demesa', 'Adding Admin Announcement', '2023-05-07 22:04:58');
+INSERT INTO `tbl_audithistory` VALUES ('9307', 'brian demesa', 'Adding Admin Announcement', '2023-05-07 22:04:58');
+INSERT INTO `tbl_audithistory` VALUES ('9308', 'brian demesa', 'Adding Admin Announcement', '2023-05-07 22:05:06');
+INSERT INTO `tbl_audithistory` VALUES ('9309', 'brian demesa', 'Adding Admin Announcement', '2023-05-07 23:17:26');
+INSERT INTO `tbl_audithistory` VALUES ('9310', 'brian demesa', 'Adding Admin Grading Schedule', '2023-05-07 23:53:31');
+INSERT INTO `tbl_audithistory` VALUES ('9311', 'brian demesa', 'Adding Admin Grading Schedule', '2023-05-07 23:53:42');
+INSERT INTO `tbl_audithistory` VALUES ('9312', 'brian demesa', 'Adding Admin Grading Schedule', '2023-05-07 23:53:59');
+INSERT INTO `tbl_audithistory` VALUES ('9313', 'brian demesa', 'Adding Admin Grading Schedule', '2023-05-07 23:55:06');
+INSERT INTO `tbl_audithistory` VALUES ('9314', 'brian demesa', 'Adding Admin Grading Schedule', '2023-05-07 23:55:09');
+INSERT INTO `tbl_audithistory` VALUES ('9315', 'brian demesa', 'Adding Admin Grading Schedule', '2023-05-07 23:55:16');
+INSERT INTO `tbl_audithistory` VALUES ('9316', 'brian demesa', 'Adding Admin Announcement', '2023-05-07 23:55:22');
+INSERT INTO `tbl_audithistory` VALUES ('9317', 'brian demesa', 'Adding Admin Grading Schedule', '2023-05-07 23:55:29');
+INSERT INTO `tbl_audithistory` VALUES ('9318', 'brian demesa', 'Adding Admin Grading Schedule', '2023-05-07 23:55:34');
+INSERT INTO `tbl_audithistory` VALUES ('9319', 'brian demesa', 'Adding Admin Grading Schedule', '2023-05-07 23:55:40');
+INSERT INTO `tbl_audithistory` VALUES ('9320', 'brian demesa', 'Adding Admin Grading Schedule', '2023-05-08 00:07:48');
+INSERT INTO `tbl_audithistory` VALUES ('9321', 'brian demesa', 'Adding Admin Grading Schedule', '2023-05-08 00:08:06');
+INSERT INTO `tbl_audithistory` VALUES ('9322', 'brian demesa', 'Adding Admin Grading Schedule', '2023-05-08 00:08:14');
+INSERT INTO `tbl_audithistory` VALUES ('9323', 'brian demesa', 'Adding Admin Grading Schedule', '2023-05-08 00:08:20');
+INSERT INTO `tbl_audithistory` VALUES ('9324', 'brian demesa', 'Adding Admin Grading Schedule', '2023-05-08 00:15:38');
+INSERT INTO `tbl_audithistory` VALUES ('9325', 'brian demesa', 'Adding Admin Grading Schedule', '2023-05-08 00:16:42');
+INSERT INTO `tbl_audithistory` VALUES ('9326', 'brian demesa', 'Adding Admin Grading Schedule', '2023-05-08 00:16:47');
+INSERT INTO `tbl_audithistory` VALUES ('9327', 'brian demesa', 'Logging Out', '2023-05-08 00:18:43');
+INSERT INTO `tbl_audithistory` VALUES ('9328', '', 'Viewing Admin Dashboard', '2023-05-08 00:30:31');
+INSERT INTO `tbl_audithistory` VALUES ('9329', '', 'Logging Out', '2023-05-08 00:30:37');
+INSERT INTO `tbl_audithistory` VALUES ('9330', 'brian demesa', 'Viewing Admin Dashboard', '2023-05-08 01:02:27');
+INSERT INTO `tbl_audithistory` VALUES ('9331', 'brian demesa', 'Viewing Admin Dashboard', '2023-05-08 01:02:42');
+INSERT INTO `tbl_audithistory` VALUES ('9332', 'brian demesa', 'Viewing Admin Dashboard', '2023-05-08 01:02:44');
+INSERT INTO `tbl_audithistory` VALUES ('9333', 'brian demesa', 'Viewing Admin Dashboard', '2023-05-08 01:03:03');
+INSERT INTO `tbl_audithistory` VALUES ('9334', 'brian demesa', 'Logging Out', '2023-05-08 01:03:34');
 
 -- ----------------------------
 -- Table structure for `tbl_auditstudent`
@@ -9507,7 +9601,7 @@ CREATE TABLE `tbl_auditstudent` (
   `e_action` varchar(99) NOT NULL,
   `e_date` datetime NOT NULL,
   PRIMARY KEY (`e_userID`)
-) ENGINE=InnoDB AUTO_INCREMENT=2360 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=2361 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of tbl_auditstudent
@@ -11871,6 +11965,7 @@ INSERT INTO `tbl_auditstudent` VALUES ('2356', 'Teacher ', '', 'Viewing Student 
 INSERT INTO `tbl_auditstudent` VALUES ('2357', 'Teacher ', '', 'Viewing Student list', '2023-05-04 15:58:31');
 INSERT INTO `tbl_auditstudent` VALUES ('2358', 'Teacher ', '', 'Viewing Student list', '2023-05-04 15:58:36');
 INSERT INTO `tbl_auditstudent` VALUES ('2359', 'Teacher ', '', 'Viewing Student list', '2023-05-04 15:58:43');
+INSERT INTO `tbl_auditstudent` VALUES ('2360', 'Teacher ', '', 'Viewing Teacher Announcement', '2023-05-08 01:03:58');
 
 -- ----------------------------
 -- Table structure for `tbl_auditteacher`
@@ -11882,7 +11977,7 @@ CREATE TABLE `tbl_auditteacher` (
   `e_action` varchar(99) NOT NULL,
   `e_date` datetime NOT NULL,
   PRIMARY KEY (`e_userID`)
-) ENGINE=InnoDB AUTO_INCREMENT=5382 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=5410 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of tbl_auditteacher
@@ -17268,6 +17363,34 @@ INSERT INTO `tbl_auditteacher` VALUES ('5378', 'Teacher ', 'Viewing 1st Quarter 
 INSERT INTO `tbl_auditteacher` VALUES ('5379', 'Teacher ', 'Viewing 1st Quarter Grades', '2023-05-04 19:10:20');
 INSERT INTO `tbl_auditteacher` VALUES ('5380', 'Teacher ', 'Viewing 1st Quarter Grades', '2023-05-04 19:10:31');
 INSERT INTO `tbl_auditteacher` VALUES ('5381', '', 'Log Out', '2023-05-04 19:10:37');
+INSERT INTO `tbl_auditteacher` VALUES ('5382', 'Teacher ', 'Viewing Teacher Dashboard', '2023-05-08 00:18:53');
+INSERT INTO `tbl_auditteacher` VALUES ('5383', 'Teacher ', 'Viewing 1st Quarter Grades', '2023-05-08 00:18:57');
+INSERT INTO `tbl_auditteacher` VALUES ('5384', 'Teacher ', 'Viewing Teacher Dashboard', '2023-05-08 00:18:59');
+INSERT INTO `tbl_auditteacher` VALUES ('5385', 'Teacher ', 'Viewing Teacher Dashboard', '2023-05-08 00:30:45');
+INSERT INTO `tbl_auditteacher` VALUES ('5386', 'Teacher ', 'Viewing Teacher Dashboard', '2023-05-08 00:41:54');
+INSERT INTO `tbl_auditteacher` VALUES ('5387', 'Teacher ', 'Viewing Teacher Dashboard', '2023-05-08 00:43:37');
+INSERT INTO `tbl_auditteacher` VALUES ('5388', 'Teacher ', 'Viewing Teacher Dashboard', '2023-05-08 00:43:52');
+INSERT INTO `tbl_auditteacher` VALUES ('5389', 'Teacher ', 'Viewing Teacher Dashboard', '2023-05-08 00:45:25');
+INSERT INTO `tbl_auditteacher` VALUES ('5390', 'Teacher ', 'Viewing Teacher Dashboard', '2023-05-08 00:48:43');
+INSERT INTO `tbl_auditteacher` VALUES ('5391', 'Teacher ', 'Viewing Teacher Dashboard', '2023-05-08 00:50:04');
+INSERT INTO `tbl_auditteacher` VALUES ('5392', 'Teacher ', 'Viewing Teacher Dashboard', '2023-05-08 00:50:46');
+INSERT INTO `tbl_auditteacher` VALUES ('5393', 'Teacher ', 'Viewing Teacher Dashboard', '2023-05-08 00:50:53');
+INSERT INTO `tbl_auditteacher` VALUES ('5394', 'Teacher ', 'Viewing Teacher Dashboard', '2023-05-08 00:52:40');
+INSERT INTO `tbl_auditteacher` VALUES ('5395', 'Teacher ', 'Viewing 1st Quarter Grades', '2023-05-08 00:52:44');
+INSERT INTO `tbl_auditteacher` VALUES ('5396', 'Teacher ', 'Viewing Teacher Dashboard', '2023-05-08 00:52:45');
+INSERT INTO `tbl_auditteacher` VALUES ('5397', 'Teacher ', 'Viewing 1st Quarter Grades', '2023-05-08 00:53:48');
+INSERT INTO `tbl_auditteacher` VALUES ('5398', 'Teacher ', 'Viewing Teacher Dashboard', '2023-05-08 00:53:49');
+INSERT INTO `tbl_auditteacher` VALUES ('5399', 'Teacher ', 'Viewing 1st Quarter Grades', '2023-05-08 00:53:54');
+INSERT INTO `tbl_auditteacher` VALUES ('5400', 'Teacher ', 'Viewing Teacher Dashboard', '2023-05-08 00:58:50');
+INSERT INTO `tbl_auditteacher` VALUES ('5401', 'Teacher ', 'Viewing 1st Quarter Grades', '2023-05-08 00:58:51');
+INSERT INTO `tbl_auditteacher` VALUES ('5402', 'Teacher ', 'Viewing Teacher Dashboard', '2023-05-08 00:58:53');
+INSERT INTO `tbl_auditteacher` VALUES ('5403', 'Teacher ', 'Viewing 1st Quarter Grades', '2023-05-08 00:58:55');
+INSERT INTO `tbl_auditteacher` VALUES ('5404', 'Teacher ', 'Viewing Teacher Dashboard', '2023-05-08 00:58:58');
+INSERT INTO `tbl_auditteacher` VALUES ('5405', 'Teacher ', 'Log Out', '2023-05-08 01:02:12');
+INSERT INTO `tbl_auditteacher` VALUES ('5406', 'Teacher ', 'Viewing Teacher Dashboard', '2023-05-08 01:03:43');
+INSERT INTO `tbl_auditteacher` VALUES ('5407', 'Teacher ', 'Viewing 1st Quarter Grades', '2023-05-08 01:03:54');
+INSERT INTO `tbl_auditteacher` VALUES ('5408', 'Teacher ', 'Viewing Teacher Dashboard', '2023-05-08 01:03:59');
+INSERT INTO `tbl_auditteacher` VALUES ('5409', 'Teacher ', 'Log Out', '2023-05-08 01:04:15');
 
 -- ----------------------------
 -- Table structure for `tbl_grades`
@@ -17315,6 +17438,23 @@ INSERT INTO `tbl_grades` VALUES ('63', 'Pro1', '10', '102', '95', '94', null, nu
 INSERT INTO `tbl_grades` VALUES ('64', 'Pro1', '10', '103', '95', '93', null, null, '2022 - 2023');
 INSERT INTO `tbl_grades` VALUES ('65', 'Pro1', '10', '104', '95', '94', null, null, '2022 - 2023');
 INSERT INTO `tbl_grades` VALUES ('66', 'Pro1', '10', '105', '95', '95', null, null, '2022 - 2023');
+
+-- ----------------------------
+-- Table structure for `tbl_gradingsched`
+-- ----------------------------
+DROP TABLE IF EXISTS `tbl_gradingsched`;
+CREATE TABLE `tbl_gradingsched` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `date_from` varchar(255) DEFAULT NULL,
+  `date_to` varchar(255) DEFAULT NULL,
+  `grade` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4;
+
+-- ----------------------------
+-- Records of tbl_gradingsched
+-- ----------------------------
+INSERT INTO `tbl_gradingsched` VALUES ('8', '2023-05-07', '2023-05-30', null);
 
 -- ----------------------------
 -- Table structure for `tbl_restriction`
@@ -17844,7 +17984,7 @@ CREATE TABLE `tbl_subject` (
   `Subject_name` varchar(255) NOT NULL,
   `Grade_level` varchar(255) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=105 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=106 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of tbl_subject
@@ -17940,6 +18080,7 @@ INSERT INTO `tbl_subject` VALUES ('101', 'CE10', 'Computer Education', 'Grade 10
 INSERT INTO `tbl_subject` VALUES ('102', 'COM10', 'Communication Arts', 'Grade 10');
 INSERT INTO `tbl_subject` VALUES ('103', 'TLE10', 'Technology and Livelihood Education', 'Grade 10');
 INSERT INTO `tbl_subject` VALUES ('104', 'Pro1', 'Programming', 'Grade 1');
+INSERT INTO `tbl_subject` VALUES ('105', '', '', '');
 
 -- ----------------------------
 -- Table structure for `tbl_teacher`

@@ -10,7 +10,7 @@
 			<a href="audit.php" class="Audit"><img src="../Images/mag.png" class="auditicon">Audit Trail</a>
 			<a href="../Archive/archive.php" class="Archive"><img src="../Images/arc.png" class="archiveicon">Archive</a>
 			<a href="first.php" class="Grade"><img src="../Images/grade.svg" class="Gradeicon">Grades</a>
-			<a href="grading.php" class="Grading"><img src="../Images/grading.svg" class="Gradingicon">GradingSched</a>
+			<a href="gradingsched.php" class="Grading"><img src="../Images/grading.svg" class="Gradingicon">GradingSched</a>
 			<a href="subject.php" class="Subject"><img src="../Images/subject.svg" class="Subjecticon">Subject</a>
 			<a href="section.php" class="Section"><img src="../Images/section.svg" class="Sectionicon">Section</a>
 			<a href="restriction.php" class="Restriction"><img src="../Images/restriction.svg" class="Restrictionicon">Restriction</a>
