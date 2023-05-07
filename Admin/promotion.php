@@ -45,7 +45,7 @@
     <div class="footer">
         <h6 id="footer">© 2022 SEPI Login Form. All Rights Reserved | Designed by Excel-erator</h6>
     </div>
-    <form method=POST action="restrictionadd.php" enctype="multipart/form-data">
+    <form method=POST action="promotion.php" enctype="multipart/form-data">
         <!--<div class="dashboard">
             <img src="../Images/logo.png" class="dashboardlogocvgs">
             <a href="dashboard.php" class="Dashboardhome"><img src="../Images/homeicon.png"
@@ -69,8 +69,10 @@
         <div class="announceadddiv">
             <h1 id="announceaddfont">ADD Restriction</h1>
             <hr class="announceaddline">
-            <select name="Teacher" class="addannouncemntfield">
+            <select name="from" class="addannouncemntfield">
     <?php
+    $toSy;
+    $fromSy;
     // Get the current date and month
     $current_date = new DateTime();
     $current_year = $current_date->format('Y');
@@ -80,9 +82,9 @@
     $sy_start_year = $current_month >= 6 ? $current_year : $current_year - 1;
     $sy_end_year = $sy_start_year + 1;
     $current_sy = $sy_start_year . ' - ' . $sy_end_year;
-
+    $fromSy = $current_sy;
     // Modify the query to filter by the current school year
-    $query = "SELECT Section_Code as teacher_Code, CONCAT(Section,' ',SY) AS name, SY FROM tbl_section WHERE SY = '$current_sy'";
+    $query = "SELECT Section as teacher_Code, CONCAT(Section,' ',SY) AS name, SY FROM tbl_section WHERE SY = '$current_sy'";
     $result = mysqli_query($config, $query);
     $next_sy = "";
 
@@ -98,13 +100,15 @@
     mysqli_close($config);
     ?>
 </select>
+<input type="text" name="fromSy" value="<?php echo $fromSy ?>" hidden>
 <br>
 
 <select name="to" class="adddatfield">
     <?php
     include "../sepi_connect.php";
 
-    $query2 = "SELECT Section_Code as teacher_Code, CONCAT(Section,' ',SY) AS name FROM tbl_section WHERE SY = '$next_sy'";
+    $query2 = "SELECT Section as teacher_Code, CONCAT(Section,' ',SY) AS name FROM tbl_section WHERE SY = '$next_sy'";
+    $toSy = $next_sy;
     $result2 = mysqli_query($config, $query2);
     $num_rows = mysqli_num_rows($result2);
 
@@ -120,6 +124,7 @@
     mysqli_close($config);
     ?>
 </select>
+<input type="text" name="toSy" value="<?php echo $toSy ?>" hidden>
 
             <br>
             
@@ -129,7 +134,6 @@
             <a href="restriction.php" class="addannounceback">Back</a>
 
     </form>
-    <?php var_dump($query) ?>
 </body>
 
 </html>
@@ -137,9 +141,39 @@
 include "../sepi_connect.php";
 
 
+if (isset($_POST['sub'])) {
+    // Get the from and to section codes and school years
+    $from_section_code = $_POST['from'];
+    $to_section_code = $_POST['to'];
+    $from_sy = $_POST['fromSy'];
+    $to_sy = $_POST['toSy'];
 
-if(isset($_POST['sub'])){
-	
+    // Get the students from the current section
+    $students_query = "SELECT * FROM tbl_studentinfo WHERE LEVEL = '$from_section_code' AND YEAR = '$from_sy'";
+    $students_result = mysqli_query($config, $students_query);
+
+    $success = true;
+
+    // Loop through the students and update their section and status
+    while ($student = mysqli_fetch_assoc($students_result)) {
+        // Update the student's section, year, and set their status to 0 (inactive)
+        $update_student_query = "UPDATE tbl_studentinfo SET ACTIVE = 0 WHERE Stud_SID = {$student['Stud_SID']}";
+        $update_result = mysqli_query($config, $update_student_query);
+
+        // Insert a new record for the student with the new section, year, and set their status to 1 (active)
+        $insert_student_query = "INSERT INTO tbl_studentinfo (Stud_ID, FNAME, MNAME, LNAME, USERNAME, ADDRESS, EMAIL, PASS, BDAY, AGE, GENDER, LEVEL, YEAR, LRN, Role, STATUS, ACTIVE) VALUES ('{$student['Stud_ID']}', '{$student['FNAME']}', '{$student['MNAME']}', '{$student['LNAME']}', '{$student['USERNAME']}', '{$student['ADDRESS']}', '{$student['EMAIL']}', '{$student['PASS']}', '{$student['BDAY']}', '{$student['AGE']}', '{$student['GENDER']}', '$to_section_code', '$to_sy', '{$student['LRN']}', '{$student['Role']}', '{$student['STATUS']}', 1)";
+        $insert_result = mysqli_query($config, $insert_student_query);
+
+        if (!$update_result || !$insert_result) {
+            $success = false;
+        }
+    }
+
+    if ($success) {
+        echo "<script>alert('All students have been successfully transferred.');</script>";
+    } else {
+        echo "<script>alert('An error occurred during the transfer. Please try again.');</script>";
+    }
 }
 
 ?>
