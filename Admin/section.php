@@ -96,7 +96,6 @@ echo "<td class=announcementinfo rowspan=2>".$row['Section_Name'];
 echo "<td class=announcementinfo rowspan=2>".$row['Grade_Level'];
 	echo "<td class='announcementinfo' rowspan=2>".$row['Section_Code'];
 	echo "<td class='announcementinfo' rowspan=2>".$row['SY'];
-echo "<td class=announcementinfo> <a href='announceupdate.php?ID=".$row['ID']."'> Update </a>";
 echo "<tr>";
 echo "<td class=announcementinfo> <a href='deleteannounce.php?ID=".$row['ID']."'> Archive </a>";
 echo"<tr>";

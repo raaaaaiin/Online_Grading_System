@@ -25,6 +25,27 @@
 			}
 			$sql1 = "Insert into tbl_auditteacher (e_name,e_action,e_date) values ('$name','Viewing 1st Quarter Grades',NOW())";
 			$result1 = $config->query($sql1);
+            // Fetch the dates from tbl_gradingsched
+$date_from = ''; // Initialize date_from
+$date_to = ''; // Initialize date_to
+
+$grading_schedule_result = mysqli_query($config, "SELECT date_from, date_to FROM tbl_gradingsched");
+if ($row = mysqli_fetch_assoc($grading_schedule_result)) {
+    $date_from = strtotime($row['date_from']);
+    $date_to = strtotime($row['date_to']);
+}
+
+// Check if today's date is within the range
+$today = strtotime(date('Y-m-d'));
+$is_today_in_range = ($today >= $date_from && $today <= $date_to);
+
+// If today's date is not within the range, display an alert and redirect to dashboard.php
+if (!$is_today_in_range) {
+    echo '<script>
+            alert("Grading is not allowed today. Please see the announcement for grading schedule.");
+            window.location.href = "dashboard.php";
+          </script>';
+}
 ?>
 <html>
 <head> 
