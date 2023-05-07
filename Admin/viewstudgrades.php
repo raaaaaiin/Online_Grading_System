@@ -291,6 +291,16 @@
             </tr>-->
 
             <?php
+            
+$conduct_prelim  = 0;
+$conduct_midterm = 0;
+$conduct_prefinal = 0;
+$conduct_final = 0;
+
+$deportment_prelim = 0;
+$deportment_midterm = 0;
+$deportment_prefinal = 0;
+$deportment_final = 0;
 // Fetch the data from the query
 $query = "SELECT tbl_subject.Grade_level, tbl_subject.ID, tbl_subject.Subject_code, tbl_subject.Subject_name, tbl_grades.Prelim, tbl_grades.Midterm, tbl_grades.Prefinal, tbl_grades.Final
  FROM
@@ -301,7 +311,8 @@ $query = "SELECT tbl_subject.Grade_level, tbl_subject.ID, tbl_subject.Subject_co
  where tbl_studentinfo.Stud_SID = ".$_GET['ID'].";";
 
 $result = mysqli_query($config, $query);
-
+$subjectcount =0;
+$average = 0;
 // Loop through the results and create a table row for each subject
 while ($row = mysqli_fetch_assoc($result)) {
     $subject_name = $row['Subject_name'];
@@ -309,6 +320,17 @@ while ($row = mysqli_fetch_assoc($result)) {
     $midterm = $row['Midterm'];
     $prefinal = $row['Prefinal'];
     $final = $row['Final'];
+    
+    $conduct_prelim += $row['Prelim'];;
+    $conduct_midterm += $row['Midterm'];
+    $conduct_prefinal +=$row['Prefinal'] ;
+    $conduct_final += $row['Final'];
+
+    $deportment_prelim += $row['Prelim'];;
+    $deportment_midterm += $row['Midterm'];
+    $deportment_prefinal += $row['Prefinal'];
+    $deportment_final += $row['Final'];
+    $subjectcount += 1;
     // Calculate the total grade or any other calculations needed
    
 
@@ -317,9 +339,11 @@ while ($row = mysqli_fetch_assoc($result)) {
     if (is_int($total_grade)) {
         // If it's an integer, round it
         $grade = round($total_grade);
+        $average += $grade;
     } else {
         // If it's not an integer, use the original value
         $grade = $total_grade;
+        
     }
 
     
@@ -357,14 +381,16 @@ while ($row = mysqli_fetch_assoc($result)) {
                 <td class=datafinalgrade><input type=text name=studcefourth class=datafinalgrade1 value=""readonly></td>
             </tr>
             <tr>
-                <th class=headerfinalgrade>Conduct</th>
-                <td class=datafinalgrade><input type=text name=studcefirst class=datafinalgrade1 value="<?php echo $CONRESULT; ?>" readonly></td>
-                <td class=datafinalgrade><input type=text name=studcesecond class=datafinalgrade1 value="<?php echo $CONRESULT1; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studcethird class=datafinalgrade1 value="<?php echo $CONRESULT2; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studcefourth class=datafinalgrade1 value="<?php echo $CONRESULT3; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studcefourth class=datafinalgrade1 value=""readonly></td>
-                <td class=datafinalgrade><input type=text name=studcefourth class=datafinalgrade1 value="<?php echo $CONMARKING; ?>"readonly></td>
-            </tr>
+    <th class="headerfinalgrade">Conduct</th>
+    <td class="datafinalgrade"><input type="text" name="studcefirst" class="datafinalgrade1" value="<?php echo $conduct_prelim / $subjectcount < 1 ? '--' : $conduct_prelim / $subjectcount; ?>" readonly></td>
+<td class="datafinalgrade"><input type="text" name="studcesecond" class="datafinalgrade1" value="<?php echo $conduct_midterm / $subjectcount < 1 ? '--' : $conduct_midterm / $subjectcount; ?>" readonly></td>
+<td class="datafinalgrade"><input type="text" name="studcethird" class="datafinalgrade1" value="<?php echo $conduct_prefinal / $subjectcount < 1 ? '--' : $conduct_prefinal / $subjectcount; ?>" readonly></td>
+<td class="datafinalgrade"><input type="text" name="studcefourth" class="datafinalgrade1" value="<?php echo $conduct_final / $subjectcount < 1 ? '--' : $conduct_final / $subjectcount; ?>" readonly></td>
+<td class="datafinalgrade"><input type="text" name="studceaverage" class="datafinalgrade1" value="<?php echo ($conduct_prelim + $conduct_midterm + $conduct_prefinal + $conduct_final) / ($subjectcount ) < 1 ? '--' : ($conduct_prelim + $conduct_midterm + $conduct_prefinal + $conduct_final) / ($subjectcount ); ?>" readonly></td>
+<td class="datafinalgrade"><input type="text" name="studceaverage" class="datafinalgrade1" value="<?php $conductavg = ($conduct_prelim + $conduct_midterm + $conduct_prefinal + $conduct_final) / ($subjectcount); echo (($conduct_prelim + $conduct_midterm + $conduct_prefinal + $conduct_final) / ($subjectcount)) < 1 ? '--' : (($conduct_prelim + $conduct_midterm + $conduct_prefinal + $conduct_final) / ($subjectcount )); ?>" readonly></td>
+
+
+</tr>
             <tr>
                 <th class=headerfinalgrade>Club</th>
                 <td class=datafinalgrade><input type=text name=studcefirst class=datafinalgrade1 value="" readonly></td>
@@ -375,17 +401,19 @@ while ($row = mysqli_fetch_assoc($result)) {
                 <td class=datafinalgrade><input type=text name=studcefourth class=datafinalgrade1 value=""readonly></td>
             </tr>
             <tr>
-                <th class=headerfinalgrade>Deportment</th>
-                <td class=datafinalgrade><input type=text name=studcefirst class=datafinalgrade1 value="<?php echo $DEPO; ?>" readonly></td>
-                <td class=datafinalgrade><input type=text name=studcesecond class=datafinalgrade1 value="<?php echo $DEPO1; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studcethird class=datafinalgrade1 value="<?php echo $DEPO2; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studcefourth class=datafinalgrade1 value="<?php echo $DEPO3; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studcefourth class=datafinalgrade1 value=""readonly></td>
-                <td class=datafinalgrade><input type=text name=studcefourth class=datafinalgrade1 value="<?php echo $depograde; ?>"readonly></td>
-            </tr>
+  <th class=headerfinalgrade>Deportment</th>
+  <td class="datafinalgrade"><input type="text" name="studcefirst" class="datafinalgrade1" value="<?php echo $deportment_prelim / $subjectcount < 1 ? '--' : $deportment_prelim / $subjectcount; ?>" readonly></td>
+  <td class="datafinalgrade"><input type="text" name="studcesecond" class="datafinalgrade1" value="<?php echo $deportment_midterm / $subjectcount < 1 ? '--' : $deportment_midterm / $subjectcount; ?>" readonly></td>
+  <td class="datafinalgrade"><input type="text" name="studcethird" class="datafinalgrade1" value="<?php echo $deportment_prefinal / $subjectcount < 1 ? '--' : $deportment_prefinal / $subjectcount; ?>" readonly></td>
+  <td class="datafinalgrade"><input type="text" name="studcefourth" class="datafinalgrade1" value="<?php echo $deportment_final / $subjectcount < 1 ? '--' : $deportment_final / $subjectcount; ?>" readonly></td>
+  <td class="datafinalgrade"><input type="text" name="studceaverage" class="datafinalgrade1" value="<?php echo ($deportment_prelim + $deportment_midterm + $deportment_prefinal + $deportment_final) / ($subjectcount * 4) < 1 ? '--' : round(($deportment_prelim + $deportment_midterm + $deportment_prefinal + $deportment_final) / ($subjectcount * 4), 2); ?>" readonly></td>
+  <td class="datafinalgrade"><input type="text" name="studceremarks" class="datafinalgrade1" value="<?php $depoavg = ($deportment_prelim + $deportment_midterm + $deportment_prefinal + $deportment_final) / ($subjectcount) ;echo ($deportment_prelim + $deportment_midterm + $deportment_prefinal + $deportment_final) / ($subjectcount * 4) < 1 ? '--' : (($deportment_prelim + $deportment_midterm + $deportment_prefinal + $deportment_final) / ($subjectcount * 4) >= 75 ? 'Passed' : 'Failed'); ?>" readonly></td>
+
+</tr>
+</tr>
             <tr>
                 <th colspan=5 class=headerfinalgrade>General Average</th>
-                <th colspan=2  class=datafinalgrade><input type=text name=studcefourth class=datafinalgrade1 value="<?php echo $AVERAGE; ?>"readonly></th>
+                <th colspan=2  class=datafinalgrade><input type=text name=studcefourth class=datafinalgrade1 value="<?php $final = ($average + $depoavg + $conductavg) / ($subjectcount + 2); echo $final < 1 ? '--' : $final ?>"readonly></th>
             </tr>
         </table>
 		</div>	
