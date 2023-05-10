@@ -46,10 +46,7 @@ if(isset($_POST['importSubmit'])){
                     $config->query("UPDATE tbl_teacherinfo SET TID = '".$Employee_ID. "', FNAMES = '".$FNAMES."', MNAMES = '". $MNAMES."',LNAMES = '". $LNAMES."',
                     USERNAME = '". $UNAME."', ADDRESS = '". $ADDRESS."', EMAIL = '". $EMAIL."', PASS = '". $PASS."', BDAYS = '". $BDAYS."', AGES = '". $AGES."', 
                      GENDERS = '". $GENDERS."' WHERE TID = '".$line[0]."'");
-                    var_dump("UPDATE tbl_teacherinfo SET TID = '".$Employee_ID. "', FNAMES = '".$FNAMES."', MNAMES = '". $MNAMES."',LNAMES = '". $LNAMES."',
-                    USERNAME = '". $UNAME."', ADDRESS = '". $ADDRESS."', EMAIL = '". $EMAIL."', PASS = '". $PASS."', BDAYS = '". $BDAYS."', AGES = '". $AGES."', 
-                     GENDERS = '". $GENDERS."' WHERE TID = '".$line[0]."'");
-                }else{
+                    }else{
                     // Insert member data in the database
                     $config->query("INSERT INTO tbl_teacherinfo (TID, FNAMES, MNAMES, LNAMES, USERNAME, ADDRESS, EMAIL, PASS, BDAYS, AGES, GENDERS, Role)
                      VALUES ('".$Employee_ID. "', '".$FNAMES."', '".$MNAMES."', '".$LNAMES."' , '".$UNAME."', '". $ADDRESS."', '". $EMAIL."', '". $PASS."', '". $BDAYS."', '". $AGES."', '".$GENDERS."', '". $Role."')");
