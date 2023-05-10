@@ -38,7 +38,6 @@ if(isset($_POST['importSubmit'])){
                 
                 // Check whether member already exists in the database with the same email
                 $prevQuery = "SELECT TID FROM tbl_teacherinfo WHERE TID = '".$line[0]."'";
-                var_dump($prevQuery);
                 $prevResult = $config->query($prevQuery);
                 
                 if($prevResult->num_rows > 0){
