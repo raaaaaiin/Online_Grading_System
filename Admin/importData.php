@@ -23,6 +23,7 @@ if(isset($_POST['importSubmit'])){
             while(($line = fgetcsv($csvFile)) !== FALSE){
                 // Get row data
                 $Stud_ID   = $line[0];
+                $ID   = $line[0];
                 $FNAME   = $line[1];
                 $MNAME  = $line[2];
                 $LNAME  = $line[3];
@@ -40,19 +41,19 @@ if(isset($_POST['importSubmit'])){
 
                 
                 // Check whether member already exists in the database with the same email
-                $prevQuery = "SELECT Stud_SID FROM tbl_studentinfo WHERE Stud_ID = '".$line[0]."'";
+                $prevQuery = "SELECT Stud_SID FROM tbl_studentinfo WHERE Stud_SID = '".$Stud_ID."'";
                 $prevResult = $config->query($prevQuery);
                 
                 if($prevResult->num_rows > 0){
                     // Update member data in the database
-                    $config->query("UPDATE tbl_studentinfo SET Stud_ID = '".$Stud_ID. "', FNAME = '".$FNAME."', MNAME = '". $MNAME."',LNAME = '". $LNAME."',
+                    $config->query("UPDATE tbl_studentinfo SET Stud_SID = '".$Stud_ID. "', FNAME = '".$FNAME."', MNAME = '". $MNAME."',LNAME = '". $LNAME."',
                      USERNAME = '". $UNAME."',ADDRESS = '". $ADDRESS."', EMAIL = '". $EMAIL."', PASS = '". $PASS."', BDAY = '". $BDAY."', AGE = '". $AGE."', 
                      GENDER = '". $GENDER."', LEVEL = '". $LEVEL."', YEAR = '". $YEAR."', LRN = '". $LRN."', Role = '". $Role."' WHERE Stud_SID = '".$ID."'");
-                }else{
+                   }else{
                     // Insert member data in the database
-                    $config->query("INSERT INTO tbl_studentinfo (Stud_ID, FNAME, MNAME, LNAME, USERNAME, ADDRESS, EMAIL, PASS, BDAY, AGE, GENDER, LEVEL, YEAR, LRN, Role)
+                    $config->query("INSERT INTO tbl_studentinfo (Stud_SID, FNAME, MNAME, LNAME, USERNAME, ADDRESS, EMAIL, PASS, BDAY, AGE, GENDER, LEVEL, YEAR, LRN, Role)
                      VALUES ('".$Stud_ID. "', '".$FNAME."', '".$MNAME."', '".$LNAME."', '".$UNAME."', '". $ADDRESS."', '". $EMAIL."', '". $PASS."', '". $BDAY."', '". $AGE."', '".$GENDER."', '". $LEVEL."', '". $YEAR."', '". $LRN."', '". $Role."')");
-                }
+              }
             }
             
             // Close opened CSV file
@@ -73,7 +74,7 @@ if(isset($_POST['importSubmit'])){
     
         echo '<script>
             document.getElementById("ok-button").addEventListener("click", function () {
-                window.location.href = "teacher.php";
+                window.location.href = "student.php";
             });
         </script>';
         }else{
@@ -94,7 +95,7 @@ if(isset($_POST['importSubmit'])){
     
         echo '<script>
             document.getElementById("ok-button").addEventListener("click", function () {
-                window.location.href = "teacher.php";
+                window.location.href = "student.php";
             });
         </script>';
         }
@@ -114,7 +115,7 @@ if(isset($_POST['importSubmit'])){
     
         echo '<script>
             document.getElementById("ok-button").addEventListener("click", function () {
-                window.location.href = "teacher.php";
+                window.location.href = "student.php";
             });
         </script>';
     }
