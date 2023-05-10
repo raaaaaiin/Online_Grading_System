@@ -9,7 +9,7 @@ $delimiter = ",";
 $f = fopen('php://memory', 'w'); 
  
 // Set column headers 
-$fields = array('Stud_ID', 'FNAME', 'MNAME' ,'LNAME' ,'USERNAME', 'ADDRESS',
+$fields = array('Stud_SID', 'FNAME', 'MNAME' ,'LNAME' ,'USERNAME', 'ADDRESS',
  'EMAIL', 'PASS', 'BDAY', 'AGE', 'GENDER' , 'LEVEL' , 'YEAR' , 'LRN' , 'Role'); 
 fputcsv($f, $fields, $delimiter); 
  
@@ -18,7 +18,7 @@ $result = $config->query("SELECT * FROM tbl_studentinfo ORDER BY Stud_SID DESC")
 if($result->num_rows > 0){ 
     // Output each row of the data, format line as csv and write to file pointer 
     while($row = $result->fetch_assoc()){ 
-        $lineData = array($row['Stud_ID'], $row['FNAME'], $row['MNAME'], $row['LNAME'], $row['USERNAME'], $row['ADDRESS'], $row['EMAIL'], $row['PASS'], $row['BDAY'],$row['AGE'],
+        $lineData = array($row['Stud_SID'], $row['FNAME'], $row['MNAME'], $row['LNAME'], $row['USERNAME'], $row['ADDRESS'], $row['EMAIL'], $row['PASS'], $row['BDAY'],$row['AGE'],
          $row['GENDER'] ,$row['LEVEL'],$row['YEAR'],$row['LRN'],$row['Role']); 
         fputcsv($f, $lineData, $delimiter); 
     } 
