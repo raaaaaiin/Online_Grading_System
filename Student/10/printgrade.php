@@ -35,226 +35,7 @@
             $LEVEL = $row['LEVEL'];
 		            $YEAR = $row['YEAR'];
             
-            $FIL = $row['FIL'];
-            $FILS = $row['FILS'];
-            $FILSS = $row['FILSS'];
-            $FILF = $row['FILF'];
-            $FILFINAL = 0;
-            if((!is_null($FILF)))
-                
-                $FILFINAL = $FIL + $FILS + $FILSS + $FILF;
-                $TOTALFIL1 = $FILFINAL / 4;
-                $TOTALFIL2 = (round($TOTALFIL1));
-                if ($TOTALFIL2 >= 75)
-                    $gradefil = "Passed";
-                else if ($TOTALFIL2 <= 75 && $TOTALFIL2 >= 1)
-                    $gradefil = "Failed";
-                else if($TOTALFIL2 = "--")
-                    $gradefil = "--";
-                else
-                    $TOTALFIL2 = "--";
-
-            //ENGLISH SUBJECT GRADES           
-            $ENG = $row['ENG'];
-            $ENGS = $row['ENGS'];
-            $ENGSS = $row['ENGSS'];
-            $ENGF = $row['ENGF'];
-            $ENGFINAL = 0;
-            if((!is_null($ENGF)))
-            $ENGFINAL = $ENG + $ENGS + $ENGSS + $ENGF;
-            $TOTALENG1 = $ENGFINAL / 4;
-            $TOTALENG2 = (round($TOTALENG1));
-            if ($TOTALENG2 >= 75)
-                $gradeeng = "Passed";
-            else if ($TOTALENG2 <= 75 && $TOTALENG2 >= 1)
-                $gradeeng = "Failed";
-            else if($TOTALENG2 = "--")
-                $gradeeng = "--";
-            else
-                $TOTALENG2 = "--";
-
- 
-            //MATHEMATICS SUBJECT GRADES                           
-            $MATH = $row['MATH'];
-            $MATHS = $row['MATHS'];
-            $MATHSS = $row['MATHSS'];
-            $MATHF = $row['MATHF'];
-            $TOTALMATH = 0;
-            if((!is_null($MATHF)))
-            $TOTALMATH = $MATH + $MATHS + $MATHSS + $MATHF;
-            $TOTALMATH1 = $TOTALMATH / 4;
-            $TOTALMATH2 = (round($TOTALMATH1));
-            if ($TOTALMATH2 >= 75)
-                $grademath = "Passed";
-            else if ($TOTALMATH2 <= 75 && $TOTALMATH2 >= 1)
-                $grademath = "Failed";
-            else if($TOTALMATH2 = "--")
-                $grademath = "--";
-            else
-                $TOTALMATH2 = "--"; 
-                
-            //SCIENCE SUBJECT GRADES
-            $SCI = $row['SCI'];
-            $SCIS = $row['SCIS'];
-            $SCISS = $row['SCISS'];
-            $SCIF = $row['SCIF'];
-            $TOTALSCI = 0;
-            if((!is_null($SCIF)))
-                
-                $TOTALSCI = $SCI + $SCIS + $SCISS + $SCIF;
-                $TOTALSCI1 = $TOTALSCI / 4;
-                $SCIFINAL = (round($TOTALSCI1));
-                if ($SCIFINAL >= 75)
-                    $gradesci = "Passed";
-                else if ($SCIFINAL <= 75 && $SCIFINAL >= 1)
-                    $gradesci = "Failed";
-                else if($SCIFINAL = "--")
-                    $gradesci = "--";
-                else
-                    $SCIFINAL = "--";
            
-
-            //AP SUBJECT GRADES           
-            $AP = $row['AP'];
-            $APS = $row['APS'];
-            $APSS = $row['APSS'];
-            $APF = $row['APF'];
-            $TOTALAP = 0;
-            if((!is_null($APF)))
-                
-                $TOTALAP = $AP + $APS + $APSS + $APF;
-                $TOTALAP1 = $TOTALSCI / 4;
-                $APFINAL = (round($TOTALAP1));
-                if ($APFINAL >= 75)
-                    $gradeap = "Passed";
-                else if ($APFINAL <= 75 && $APFINAL >= 1)
-                    $gradeap = "Failed";
-                else if($APFINAL = "--")
-                    $gradeap = "--";
-                else
-                    $APFINAL = "--";
-
-            //TLE SUBJECT GRADES           
-            $TLE = $row['TLE'];
-            $TLES = $row['TLES'];
-            $TLESS = $row['TLESS'];
-            $TLEF = $row['TLEF'];
-            $TOTALTLE = 0;
-            if((!is_null($TLEF)))
-                
-            $TOTALTLE = $TLE + $TLES + $TLESS + $TLEF;
-                $TOTALTLE1 = $TOTALTLE / 4;
-                $TOTALTLE2 = (round($TOTALTLE1));
-                if ($TOTALTLE2 >= 75)
-                    $gradetle = "Passed";
-                else if ($TOTALTLE2 <= 75 && $TOTALTLE2 >= 1)
-                    $gradetle = "Failed";
-                else if($TOTALTLE2 = "--")
-                    $gradetle = "--";
-                else
-                    $TOTALTLE2 = "--";
-
-            //MAPEH SUBJECT GRADES           
-            $MAP = $row['MAP'];
-            $MAPS = $row['MAPS'];
-            $MAPSS = $row['MAPSS'];
-            $MAPF = $row['MAPF'];
-            $TOTALMAP = 0;
-            if((!is_null($MAPF)))
-                
-                $TOTALMAP = $MAP + $MAPS + $MAPSS + $MAPF;
-                $TOTALMAP1 = $TOTALSCI / 4;
-                $MAPFINAL = (round($TOTALMAP1));
-                if ($MAPFINAL >= 75)
-                    $grademap = "Passed";
-                else if ($MAPFINAL <= 75 && $MAPFINAL >= 1)
-                    $grademap = "Failed";
-                else if($MAPFINAL = "--")
-                    $grademap = "--";
-                else
-                    $MAPFINAL = "--";
-
-            //Edukasyon sa Pagpapakatao	 SUBJECT GRADES           
-            $CE = $row['CE'];
-            $CES = $row['CES'];
-            $CESS = $row['CESS'];
-            $CEF = $row['CEF'];
-            $TOTALCE = 0;
-            if((!is_null($MAPF)))
-                
-                $TOTALCE = $CE + $CE + $CE + $CE;
-                $TOTALCE1 = $TOTALCE / 4;
-                $CEFINAL = (round($TOTALCE1));
-                
-                if ($CEFINAL >= 75)
-                    $gradece = "Passed";
-                else if ($CEFINAL <= 75 && $CEFINAL >= 1)
-                    $gradece = "Failed";
-                else if($CEFINAL = "--")
-                    $gradece = "--";
-                else
-                    $CEFINAL = "--";
-
-                    $DEP = 0;
-                    if(((!is_null($FIL) && !is_null($MATH) && !is_null($SCI) &&  !is_null($ENG) &&  !is_null($AP) && !is_null($TLE) &&  !is_null($MAP) && !is_null($CE))))     
-                    $DEP = (int)$FIL + (int)$MATH + (int)$SCI + (int)$ENG + (int)$AP + (int)$TLE + (int)$MAP + (int)$CE;
-                    $DEP1 = $DEP / 8;
-                    $DEPO = number_format($DEP1,0);
-                    if ($DEPO >= 75)
-                    $depograde1 = "";
-                    else if($DEPO = "--")
-                        $depograde1 = "--";
-    
-                    $DEP5 = 0;
-                    if(((!is_null($FILS) && !is_null($MATHS) && !is_null($SCIS) &&  !is_null($ENGS) &&  !is_null($APS) && !is_null($TLES) &&  !is_null($MAPS) && !is_null($CES))))     
-                    $DEP5 = (int)$FILS + (int)$MATHS + (int)$SCIS + (int)$ENGS + (int)$APS + (int)$TLES + (int)$MAPS  + (int)$CES;
-                    $DEP2 = $DEP5 / 8;
-                    $DEPO1 = number_format($DEP2,0);
-                    if ($DEPO1 >= 75)
-                    $depograde1 = "";
-                    else if($DEPO1 = "--")
-                        $depograde1 = "--";
-                    
-                    $DEP6 = 0;
-                    if(((!is_null($FILSS) && !is_null($MATHSS) && !is_null($SCISS) &&  !is_null($ENGSS) &&  !is_null($APSS) && !is_null($TLESS) &&  !is_null($MAPSS) && !is_null($CESS))))     
-                    $DEP6 = (int)$FILSS + (int)$MATHSS + (int)$SCISS + (int)$ENGSS + (int)$APSS + (int)$TLESS + (int)$MAPSS + (int)$CESS;
-                    $DEP3 = $DEP6 / 8;
-                    $DEPO2 = number_format($DEP3,0);
-                    if ($DEPO2 >= 75)
-                    $depograde1 = "";
-                    else if($DEPO2 = "--")
-                        $depograde1 = "--";
-    
-                    $DEP7 = 0;
-                    if(((!is_null($FILF) && !is_null($MATHF) && !is_null($SCIF) &&  !is_null($ENGF) &&  !is_null($APF) && !is_null($TLEF) &&  !is_null($MAPF) && !is_null($CEF))))     
-                    $DEP7 = (int)$FILF + (int)$MATHF + (int)$SCIF + (int)$ENGF + (int)$APF + (int)$TLEF + (int)$MAPF + (int)$CEF;
-                    $DEP4 = $DEP7 / 8;
-                    $DEPO3 = number_format($DEP4,0);
-
-                    if ($DEPO3 >= 75)
-                        $depograde = "Passed";
-                    else if ($DEPO3 <= 75 && $DEPO3 >= 1)
-                        $depograde = "Failed";
-                    else if($DEPO3 = "--")
-                        $depograde = "--";
-                    else
-                        $DEPO3 = "--";
-                    
-                        
-                if(((!is_null($TOTALFIL2) && !is_null($TOTALENG2) && !is_null($TOTALMATH2) &&  !is_null($SCIFINAL) &&  
-                !is_null($APFINAL) &&  !is_null($TOTALTLE2) &&  !is_null($MAPFINAL) && !is_null($CEFINAL))))   
-                $AVERA = 0;  
-                    $AVERA = (int)$CEFINAL + (int)$MAPFINAL + (int)$APFINAL + (int)$SCIFINAL + (int)$TOTALMATH2 + (int)$TOTALENG2 + (int)$TOTALFIL2 + (int)$TOTALTLE2;
-                    $AVERAG = $AVERA / 8;
-                    $AVERAGE = number_format($AVERAG,2);
-                    
-                    if ($AVERAGE >= 75)
-                        $depograde = "";
-                    else if($AVERAGE = "--")
-                        $depograde = "--";
-                    else
-                        $AVERAGE = "--";
-
 
 ?>
 
@@ -283,115 +64,297 @@
 <div class=finalgradediv1>
 
 <table  class=tablefinalgrade border="0">
-            <tr>
-                <th class=headerfinalgrade>Student Name:</th>
-                <td colspan=3 class=datafinalgrade><input type=text name=studname class=datafnamefinalgrade value="<?php echo $FULLNAME; ?>"readonly></td>
-                <th class=headerfinalgrade>LEVEL:</th>
-                <th colspan=2 class=datafinalgrade><input type=text name=studlevel class=datalvlfinalgrade value="<?php echo $LEVEL; ?>"readonly></th>
-            </tr>
-            <tr>
-                <th rowspan=2 class=headerfinalgrade>Subjects</th>
-                <th colspan=4 class=headerfinalgrade>QUARTER</th>
-                <th rowspan=2 class=headerfinalgrade>Final Grade</th>
-                <th rowspan=2 class=headerfinalgrade>Remarks</th>
-            </tr>
-            <tr>
-                <th class=headerfinalgrade>1</th>
-                <th class=headerfinalgrade>2</th>
-                <th class=headerfinalgrade>3</th>
-                <th class=headerfinalgrade>4</th>
-            </tr>
-            <tr>
-                <th class=headerfinalgrade>Mathematics</th>
-                <td class=datafinalgrade><input type=text name=studmathfirst class=datafinalgrade1 value="<?php echo $MATH; ?>" readonly></td>
-                <td class=datafinalgrade><input type=text name=studmathsecond class=datafinalgrade1 value="<?php echo $MATHS; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studmaththird class=datafinalgrade1 value="<?php echo $MATHSS; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studmathfourth class=datafinalgrade1 value="<?php echo $MATHF; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studmathfourth class=datafinalgrade1 value="<?php echo $TOTALMATH2; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studmathfourth class=datafinalgrade1 value="<?php echo $grademath; ?>"readonly></td>
-            </tr>
-            <tr>
-                <th class=headerfinalgrade>Science</th>
-                <td class=datafinalgrade><input type=text name=studscifirst class=datafinalgrade1 value="<?php echo $SCI; ?>" readonly></td>
-                <td class=datafinalgrade><input type=text name=studscisecond class=datafinalgrade1 value="<?php echo $SCIS; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studscithird class=datafinalgrade1 value="<?php echo $SCISS; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studscifourth class=datafinalgrade1 value="<?php echo $SCIF; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studscifourth class=datafinalgrade1 value="<?php echo $SCIFINAL; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studscifourth class=datafinalgrade1 value="<?php echo $gradesci; ?>"readonly></td>
-
-            </tr>
-            <tr>
-                <th class=headerfinalgrade>English</th>
-                <td class=datafinalgrade><input type=text name=studengfirst class=datafinalgrade1 value="<?php echo $ENG; ?>" readonly></td>
-                <td class=datafinalgrade><input type=text name=studengsecond class=datafinalgrade1 value="<?php echo $ENGS; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studengthird class=datafinalgrade1 value="<?php echo $ENGSS; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studengfourth class=datafinalgrade1 value="<?php echo $ENGF; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studengfourth class=datafinalgrade1 value="<?php echo $TOTALENG2; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studengfourth class=datafinalgrade1 value="<?php echo $gradeeng; ?>"readonly></td>
-            </tr>
-            <tr>
-                <th class=headerfinalgrade>Filipino</th>
-                <td class=datafinalgrade><input type=text name=studfilfirst class=datafinalgrade1 value="<?php echo $FIL; ?>" readonly></td>
-                <td class=datafinalgrade><input type=text name=studfilsecond class=datafinalgrade1 value="<?php echo $FILS; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studfilthird class=datafinalgrade1 value="<?php echo $FILSS; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studfilfourth class=datafinalgrade1 value="<?php echo $FILF; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studfilfourth class=datafinalgrade1 value="<?php echo $TOTALFIL2;?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studfilfourth class=datafinalgrade1 value="<?php echo $gradefil;?>"readonly></td>
-            </tr>
-            <tr>
-                <th class=headerfinalgrade>Araling Panlipunan</th>
-                <td class=datafinalgrade><input type=text name=studapfirst class=datafinalgrade1 value="<?php echo $AP; ?>" readonly></td>
-                <td class=datafinalgrade><input type=text name=studapsecond class=datafinalgrade1 value="<?php echo $APS; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studapthird class=datafinalgrade1 value="<?php echo $APSS; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studapfourth class=datafinalgrade1 value="<?php echo $APF; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studapfourth class=datafinalgrade1 value="<?php echo $APFINAL; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studapfourth class=datafinalgrade1 value="<?php echo $gradeap; ?>"readonly></td>
-
-            </tr>
-            <tr>
-                <th class=headerfinalgrade>T.L.E.</th>
-                <td class=datafinalgrade><input type=text name=studmapehfirst class=datafinalgrade1 value="<?php echo $TLE; ?>" readonly></td>
-                <td class=datafinalgrade><input type=text name=studmapehsecond class=datafinalgrade1 value="<?php echo $TLES; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studmapehthird class=datafinalgrade1 value="<?php echo $TLESS; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studmapehfourth class=datafinalgrade1 value="<?php echo $TLEF; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studmapehfourth class=datafinalgrade1 value="<?php echo $TOTALTLE2; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studmapehfourth class=datafinalgrade1 value="<?php echo $gradetle; ?>"readonly></td>
-
-            </tr>
-            <tr>
-                <th class=headerfinalgrade>MAPEH</th>
-                <td class=datafinalgrade><input type=text name=studmapehfirst class=datafinalgrade1 value="<?php echo $MAP; ?>" readonly></td>
-                <td class=datafinalgrade><input type=text name=studmapehsecond class=datafinalgrade1 value="<?php echo $MAPS; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studmapehthird class=datafinalgrade1 value="<?php echo $MAPSS; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studmapehfourth class=datafinalgrade1 value="<?php echo $MAPF; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studmapehfourth class=datafinalgrade1 value="<?php echo $MAPFINAL; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studmapehfourth class=datafinalgrade1 value="<?php echo $grademap; ?>"readonly></td>
-
-            </tr>
-            <tr>
-                <th class=headerfinalgrade>Edukasyon sa Pagpapakatao</th>
-                <td class=datafinalgrade><input type=text name=studcefirst class=datafinalgrade1 value="<?php echo $CE; ?>" readonly></td>
-                <td class=datafinalgrade><input type=text name=studcesecond class=datafinalgrade1 value="<?php echo $CES; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studcethird class=datafinalgrade1 value="<?php echo $CESS; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studcefourth class=datafinalgrade1 value="<?php echo $CEF; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studcefourth class=datafinalgrade1 value="<?php echo $CEFINAL; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studcefourth class=datafinalgrade1 value="<?php echo $gradece; ?>"readonly></td>
-
-            </tr>
-            <tr>
-                <th class=headerfinalgrade>Deportment</th>
-                <td class=datafinalgrade><input type=text name=studcefirst class=datafinalgrade1 value="<?php echo $DEPO; ?>" readonly></td>
-                <td class=datafinalgrade><input type=text name=studcesecond class=datafinalgrade1 value="<?php echo $DEPO1; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studcethird class=datafinalgrade1 value="<?php echo $DEPO2; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studcefourth class=datafinalgrade1 value="<?php echo $DEPO3; ?>"readonly></td>
-                <td class=datafinalgrade><input type=text name=studcefourth class=datafinalgrade1 value=""readonly></td>
-                <td class=datafinalgrade><input type=text name=studcefourth class=datafinalgrade1 value="<?php echo $depograde; ?>"readonly></td>
-            </tr>
-            <tr>
-                <th colspan=5 class=headerfinalgrade>General Average</th>
-                <th colspan=2  class=datafinalgrade><input type=text name=studcefourth class=datafinalgrade1 value="<?php echo $AVERAGE; ?>"readonly></th>
-            </tr>
-        </table>
+                <tr>
+                    <th class=headerfinalgrade>Student Name:</th>
+                    <td colspan=3 class=datafinalgrade><input type=text name=studname class=datafnamefinalgrade value="<?php echo $FULLNAME; ?>"readonly></td>
+                    <th class=headerfinalgrade>GRADE:</th>
+                    <th colspan=2 class=datafinalgrade><input type=text name=studlevel class=datalvlfinalgrade value="<?php echo $LEVEL; ?>"readonly></th>
+                </tr>
+                <tr>
+                    <th rowspan=2 class=headerfinalgrade>Learning Areas</th>
+                    <th colspan=4 class=headerfinalgrade>QUARTER</th>
+                    <th rowspan=2 class=headerfinalgrade>Final Grade</th>
+                    <th rowspan=2 class=headerfinalgrade>Remarks</th>
+                </tr>
+                <tr>
+                    <th class=headerfinalgrade>1</th>
+                    <th class=headerfinalgrade>2</th>
+                    <th class=headerfinalgrade>3</th>
+                    <th class=headerfinalgrade>4</th>
+                </tr>
+    
+                <!--<tr>
+                    <th class=headerfinalgrade>Mathematics</th>
+                    <td class=datafinalgrade><input type=text name=studmathfirst class=datafinalgrade1 value="<?php echo $MATH; ?>" readonly></td>
+                    <td class=datafinalgrade><input type=text name=studmathsecond class=datafinalgrade1 value="<?php echo $MATHS; ?>"readonly></td>
+                    <td class=datafinalgrade><input type=text name=studmaththird class=datafinalgrade1 value="<?php echo $MATHSS; ?>"readonly></td>
+                    <td class=datafinalgrade><input type=text name=studmathfourth class=datafinalgrade1 value="<?php echo $MATHF; ?>"readonly></td>
+                    <td class=datafinalgrade><input type=text name=studmathfourth class=datafinalgrade1 value="<?php echo $TOTALMATH2; ?>"readonly></td>
+                    <td class=datafinalgrade><input type=text name=studmathfourth class=datafinalgrade1 value="<?php echo $grademath; ?>"readonly></td>
+                </tr>
+                <tr>
+                    <th class=headerfinalgrade>Science</th>
+                    <td class=datafinalgrade><input type=text name=studscifirst class=datafinalgrade1 value="<?php echo $SCI; ?>" readonly></td>
+                    <td class=datafinalgrade><input type=text name=studscisecond class=datafinalgrade1 value="<?php echo $SCIS; ?>"readonly></td>
+                    <td class=datafinalgrade><input type=text name=studscithird class=datafinalgrade1 value="<?php echo $SCISS; ?>"readonly></td>
+                    <td class=datafinalgrade><input type=text name=studscifourth class=datafinalgrade1 value="<?php echo $SCIF; ?>"readonly></td>
+                    <td class=datafinalgrade><input type=text name=studscifourth class=datafinalgrade1 value="<?php echo $SCIFINAL; ?>"readonly></td>
+                    <td class=datafinalgrade><input type=text name=studscifourth class=datafinalgrade1 value="<?php echo $gradesci; ?>"readonly></td>
+    
+                </tr>
+                <tr>
+                    <th class=headerfinalgrade>English</th>
+                    <td class=datafinalgrade><input type=text name=studengfirst class=datafinalgrade1 value="<?php echo $ENG; ?>" readonly></td>
+                    <td class=datafinalgrade><input type=text name=studengsecond class=datafinalgrade1 value="<?php echo $ENGS; ?>"readonly></td>
+                    <td class=datafinalgrade><input type=text name=studengthird class=datafinalgrade1 value="<?php echo $ENGSS; ?>"readonly></td>
+                    <td class=datafinalgrade><input type=text name=studengfourth class=datafinalgrade1 value="<?php echo $ENGF; ?>"readonly></td>
+                    <td class=datafinalgrade><input type=text name=studengfourth class=datafinalgrade1 value="<?php echo $TOTALENG2; ?>"readonly></td>
+                    <td class=datafinalgrade><input type=text name=studengfourth class=datafinalgrade1 value="<?php echo $gradeeng; ?>"readonly></td>
+                </tr>
+                <tr>
+                    <th class=headerfinalgrade>Filipino</th>
+                    <td class=datafinalgrade><input type=text name=studfilfirst class=datafinalgrade1 value="<?php echo $FIL; ?>" readonly></td>
+                    <td class=datafinalgrade><input type=text name=studfilsecond class=datafinalgrade1 value="<?php echo $FILS; ?>"readonly></td>
+                    <td class=datafinalgrade><input type=text name=studfilthird class=datafinalgrade1 value="<?php echo $FILSS; ?>"readonly></td>
+                    <td class=datafinalgrade><input type=text name=studfilfourth class=datafinalgrade1 value="<?php echo $FILF; ?>"readonly></td>
+                    <td class=datafinalgrade><input type=text name=studfilfourth class=datafinalgrade1 value="<?php echo $TOTALFIL2;?>"readonly></td>
+                    <td class=datafinalgrade><input type=text name=studfilfourth class=datafinalgrade1 value="<?php echo $gradefil;?>"readonly></td>
+                </tr>
+                <tr>
+                    <th class=headerfinalgrade>Araling Panlipunan</th>
+                    <td class=datafinalgrade><input type=text name=studapfirst class=datafinalgrade1 value="<?php echo $AP; ?>" readonly></td>
+                    <td class=datafinalgrade><input type=text name=studapsecond class=datafinalgrade1 value="<?php echo $APS; ?>"readonly></td>
+                    <td class=datafinalgrade><input type=text name=studapthird class=datafinalgrade1 value="<?php echo $APSS; ?>"readonly></td>
+                    <td class=datafinalgrade><input type=text name=studapfourth class=datafinalgrade1 value="<?php echo $APF; ?>"readonly></td>
+                    <td class=datafinalgrade><input type=text name=studapfourth class=datafinalgrade1 value="<?php echo $APFINAL; ?>"readonly></td>
+                    <td class=datafinalgrade><input type=text name=studapfourth class=datafinalgrade1 value="<?php echo $gradeap; ?>"readonly></td>
+    
+                </tr>
+                
+                <tr>
+                    <th class=headerfinalgrade>MAPEH</th>
+                    <td class=datafinalgrade><input type=text name=studmapehfirst class=datafinalgrade1 value="<?php echo $MAP; ?>" readonly></td>
+                    <td class=datafinalgrade><input type=text name=studmapehsecond class=datafinalgrade1 value="<?php echo $MAPS; ?>"readonly></td>
+                    <td class=datafinalgrade><input type=text name=studmapehthird class=datafinalgrade1 value="<?php echo $MAPSS; ?>"readonly></td>
+                    <td class=datafinalgrade><input type=text name=studmapehfourth class=datafinalgrade1 value="<?php echo $MAPF; ?>"readonly></td>
+                    <td class=datafinalgrade><input type=text name=studmapehfourth class=datafinalgrade1 value="<?php echo $MAPFINAL; ?>"readonly></td>
+                    <td class=datafinalgrade><input type=text name=studmapehfourth class=datafinalgrade1 value="<?php echo $grademap; ?>"readonly></td>
+    
+                </tr>
+                <tr>
+                    <th class=headerfinalgrade>Edukasyon sa Pagpapakatao</th>
+                    <td class=datafinalgrade><input type=text name=studcefirst class=datafinalgrade1 value="<?php echo $CE; ?>" readonly></td>
+                    <td class=datafinalgrade><input type=text name=studcesecond class=datafinalgrade1 value="<?php echo $CES; ?>"readonly></td>
+                    <td class=datafinalgrade><input type=text name=studcethird class=datafinalgrade1 value="<?php echo $CESS; ?>"readonly></td>
+                    <td class=datafinalgrade><input type=text name=studcefourth class=datafinalgrade1 value="<?php echo $CEF; ?>"readonly></td>
+                    <td class=datafinalgrade><input type=text name=studcefourth class=datafinalgrade1 value="<?php echo $CEFINAL; ?>"readonly></td>
+                    <td class=datafinalgrade><input type=text name=studcefourth class=datafinalgrade1 value="<?php echo $gradece; ?>"readonly></td>
+                </tr>-->
+    
+                <?php
+                
+    $conduct_prelim  = 0;
+    $conduct_midterm = 0;
+    $conduct_prefinal = 0;
+    $conduct_final = 0;
+    
+    $deportment_prelim = 0;
+    $deportment_midterm = 0;
+    $deportment_prefinal = 0;
+    $deportment_final = 0;
+    // Fetch the data from the query
+    $query = "SELECT tbl_subject.Grade_level, tbl_subject.ID, tbl_subject.Subject_code, tbl_subject.Subject_name, tbl_grades.Prelim, tbl_grades.Midterm, tbl_grades.Prefinal, tbl_grades.Final
+     FROM
+     tbl_studentinfo
+     LEFT JOIN tbl_section ON tbl_studentinfo.`LEVEL` = tbl_section.Section
+     LEFT JOIN tbl_subject ON tbl_section.Grade_Level = tbl_subject.Grade_level
+     LEFT JOIN tbl_grades ON tbl_subject.Subject_code = tbl_grades.Subject_Code AND tbl_studentinfo.Stud_SID = tbl_grades.Student_Code
+     where tbl_studentinfo.Stud_SID = ".$_SESSION['Stud_SID'].";";
+    
+    $result = mysqli_query($config, $query);
+    $subjectcount =0;
+    $average = 0;
+    $finalPrelim = array();
+    $finalMidterm = array();
+    $finalPrefinal = array();
+    $finalFinal = array();
+    // Loop through the results and create a table row for each subject
+    while ($row = mysqli_fetch_assoc($result)) {
+        $subject_name = $row['Subject_name'];
+        $prelim = $row['Prelim'];
+        $midterm = $row['Midterm'];
+        $prefinal = $row['Prefinal'];
+        $final = $row['Final'];
+    $isPrelim = isset($prelim) && $prelim >= 1 ? true : false;
+    $isMidterm = isset($midterm) && $midterm >= 1 ? true : false;
+    $isPrefi = isset($prefinal) && $prefinal >= 1 ? true : false;
+    $isFinal = isset($final) && $final >= 1 ? true : false;
+        
+    array_push($finalPrelim,$prelim);
+    array_push($finalMidterm,$midterm);
+    array_push($finalPrefinal,$prefinal);
+    array_push($finalFinal,$final);
+    
+        $conduct_prelim += $row['Prelim'];;
+        $conduct_midterm += $row['Midterm'];
+        $conduct_prefinal +=$row['Prefinal'] ;
+        $conduct_final += $row['Final'];
+    
+        $deportment_prelim += $row['Prelim'];;
+        $deportment_midterm += $row['Midterm'];
+        $deportment_prefinal += $row['Prefinal'];
+        $deportment_final += $row['Final'];
+        $subjectcount += 1;
+        // Calculate the total grade or any other calculations needed
+       
+    
+        $total_grade = ($prelim + $midterm + $prefinal + $final)/4 == 0 ? "--" : ($prelim + $midterm + $prefinal + $final)/4;
+       
+        if (is_int($total_grade)) {
+            // If it's an integer, round it
+            $grade = round($total_grade);
+            $average += $grade;
+        } else {
+            // If it's not an integer, use the original value
+            $grade = $total_grade;
+            
+        }
+    
+        
+        if ($grade >= 75)
+            $remarks = "Passed";
+        else if ($grade <= 75 && $grade >= 1)
+            $remarks = "Failed";
+        else if($grade = "--")
+            $remarks = "--";
+        else
+            $remarks = "--";
+    
+    
+    
+    
+    
+        echo "<tr>";
+        echo "<th class='headerfinalgrade'>$subject_name</th>";
+        echo "<td class='datafinalgrade'><input type='text' name='stud{$subject_name}first' class='datafinalgrade1' value='$prelim' readonly></td>";
+        echo "<td class='datafinalgrade'><input type='text' name='stud{$subject_name}second' class='datafinalgrade1' value='$midterm' readonly></td>";
+        echo "<td class='datafinalgrade'><input type='text' name='stud{$subject_name}third' class='datafinalgrade1' value='$prefinal' readonly></td>";
+        echo "<td class='datafinalgrade'><input type='text' name='stud{$subject_name}fourth' class='datafinalgrade1' value='$final' readonly></td>";
+        if($isPrefi == true && $isMidterm == true && $isPrefi == true && $isFinal == true){
+            echo "<td class='datafinalgrade'><input type='text' name='stud{$subject_name}fourth' class='datafinalgrade1' value='$total_grade' readonly></td>";
+            echo "<td class='datafinalgrade'><input type='text' name='stud{$subject_name}fourth' class='datafinalgrade1' value='$remarks' readonly></td>";
+            
+        }else{
+            echo "<td class='datafinalgrade'><input type='text' name='stud{$subject_name}fourth' class='datafinalgrade1' value='' readonly></td>";
+            echo "<td class='datafinalgrade'><input type='text' name='stud{$subject_name}fourth' class='datafinalgrade1' value='' readonly></td>";
+            
+        }
+       echo "</tr>";
+    }
+    ?>
+                <tr>
+                    <th class=headerfinalgrade></th>
+                    <td class=datafinalgrade><input type=text name=studcefirst class=datafinalgrade1 value="" readonly></td>
+                    <td class=datafinalgrade><input type=text name=studcesecond class=datafinalgrade1 value=""readonly></td>
+                    <td class=datafinalgrade><input type=text name=studcethird class=datafinalgrade1 value=""readonly></td>
+                    <td class=datafinalgrade><input type=text name=studcefourth class=datafinalgrade1 value=""readonly></td>
+                    <td class=datafinalgrade><input type=text name=studcefourth class=datafinalgrade1 value=""readonly></td>
+                    <td class=datafinalgrade><input type=text name=studcefourth class=datafinalgrade1 value=""readonly></td>
+                </tr>
+                <tr>
+        <th class="headerfinalgrade">Conduct</th>
+        <?php
+        $prelimAverage = in_array('', $finalPrelim) || in_array(null, $finalPrelim) || array_sum($finalPrelim) < $subjectcount ? '' : round(array_sum($finalPrelim) / $subjectcount);
+        $midtermAverage = in_array('', $finalMidterm) || in_array(null, $finalMidterm) || array_sum($finalMidterm) < $subjectcount ? '' : round(array_sum($finalMidterm) / $subjectcount);
+        $prefinalAverage = in_array('', $finalPrefinal) || in_array(null, $finalPrefinal) || array_sum($finalPrefinal) < $subjectcount ? '' : round(array_sum($finalPrefinal) / $subjectcount);
+        $finalAverage = in_array('', $finalFinal) || in_array(null, $finalFinal) || array_sum($finalFinal) < $subjectcount ? '' : round(array_sum($finalFinal) / $subjectcount);
+        
+        echo '<td class="datafinalgrade"><input type="text" name="studcefirst" class="datafinalgrade1" value="' . $prelimAverage . '" readonly></td>';
+        echo '<td class="datafinalgrade"><input type="text" name="studcesecond" class="datafinalgrade1" value="' . $midtermAverage . '" readonly></td>';
+        echo '<td class="datafinalgrade"><input type="text" name="studcethird" class="datafinalgrade1" value="' . $prefinalAverage . '" readonly></td>';
+        echo '<td class="datafinalgrade"><input type="text" name="studcefourth" class="datafinalgrade1" value="' . $finalAverage . '" readonly></td>';
+        
+        $conductsum = array_sum($finalPrelim) + array_sum($finalMidterm) + array_sum($finalPrefinal) + array_sum($finalFinal);
+        $conductcount = count(array_filter($finalPrelim)) + count(array_filter($finalMidterm)) + count(array_filter($finalPrefinal)) + count(array_filter($finalFinal));
+        $conductAverage = in_array('', $finalPrelim) || in_array(null, $finalPrelim) || in_array('', $finalMidterm) || in_array(null, $finalMidterm) || in_array('', $finalPrefinal) || in_array(null, $finalPrefinal) || in_array('', $finalFinal) || in_array(null, $finalFinal) || $conductsum < $subjectcount * 4 ? '' : $conductsum / $conductcount;
+        
+        echo '<td class="datafinalgrade"><input type="text" name="studceaverage" class="datafinalgrade1" value="' . round($conductAverage) . '" readonly></td>';
+        
+        $remarks = $conductAverage !== '' ? ($conductAverage >= 75 ? 'Passed' : 'Failed') : '';
+        echo '<td class="datafinalgrade"><input type="text" name="studceaverage" class="datafinalgrade1" value="' . $remarks . '" readonly></td>';
+        
+        
+        ?>
+        
+    
+    </tr>
+                <tr>
+                    <th class=headerfinalgrade>Club</th>
+                    <td class=datafinalgrade><input type=text name=studcefirst class=datafinalgrade1 value="" readonly></td>
+                    <td class=datafinalgrade><input type=text name=studcesecond class=datafinalgrade1 value=""readonly></td>
+                    <td class=datafinalgrade><input type=text name=studcethird class=datafinalgrade1 value=""readonly></td>
+                    <td class=datafinalgrade><input type=text name=studcefourth class=datafinalgrade1 value=""readonly></td>
+                    <td class=datafinalgrade><input type=text name=studcefourth class=datafinalgrade1 value=""readonly></td>
+                    <td class=datafinalgrade><input type=text name=studcefourth class=datafinalgrade1 value=""readonly></td>
+                </tr>
+                <tr>
+      <th class=headerfinalgrade>Deportment</th>
+      <?php
+      $prelimAverage = in_array('', $finalPrelim) || in_array(null, $finalPrelim) || array_sum($finalPrelim) < $subjectcount ? '' : round(array_sum($finalPrelim) / $subjectcount);
+      $midtermAverage = in_array('', $finalMidterm) || in_array(null, $finalMidterm) || array_sum($finalMidterm) < $subjectcount ? '' : round(array_sum($finalMidterm) / $subjectcount);
+      $prefinalAverage = in_array('', $finalPrefinal) || in_array(null, $finalPrefinal) || array_sum($finalPrefinal) < $subjectcount ? '' : round(array_sum($finalPrefinal) / $subjectcount);
+      $finalAverage = in_array('', $finalFinal) || in_array(null, $finalFinal) || array_sum($finalFinal) < $subjectcount ? '' : round(array_sum($finalFinal) / $subjectcount);
+      
+      echo '<td class="datafinalgrade"><input type="text" name="studcefirst" class="datafinalgrade1" value="' . $prelimAverage . '" readonly></td>';
+      echo '<td class="datafinalgrade"><input type="text" name="studcesecond" class="datafinalgrade1" value="' . $midtermAverage . '" readonly></td>';
+      echo '<td class="datafinalgrade"><input type="text" name="studcethird" class="datafinalgrade1" value="' . $prefinalAverage . '" readonly></td>';
+      echo '<td class="datafinalgrade"><input type="text" name="studcefourth" class="datafinalgrade1" value="' . $finalAverage . '" readonly></td>';
+      
+      $conductsum = array_sum($finalPrelim) + array_sum($finalMidterm) + array_sum($finalPrefinal) + array_sum($finalFinal);
+      $conductcount = count(array_filter($finalPrelim)) + count(array_filter($finalMidterm)) + count(array_filter($finalPrefinal)) + count(array_filter($finalFinal));
+      $DeportmentAverage = in_array('', $finalPrelim) || in_array(null, $finalPrelim) || in_array('', $finalMidterm) || in_array(null, $finalMidterm) || in_array('', $finalPrefinal) || in_array(null, $finalPrefinal) || in_array('', $finalFinal) || in_array(null, $finalFinal) || $conductsum < $subjectcount * 4 ? '' : $conductsum / $conductcount;
+      
+      echo '<td class="datafinalgrade"><input type="text" name="studceaverage" class="datafinalgrade1" value="' . round($DeportmentAverage) . '" readonly></td>';
+      
+      $remarks = $conductAverage !== '' ? ($conductAverage >= 75 ? 'Passed' : 'Failed') : '';
+      echo '<td class="datafinalgrade"><input type="text" name="studceremarks" class="datafinalgrade1" value="' . $remarks . '" readonly></td>';
+      ?>
+    </tr>
+    </tr>
+                <tr>
+                    <th colspan=5 class=headerfinalgrade>General Average</th>
+                    <?php
+    $prelimAverage = in_array('', $finalPrelim) || in_array(null, $finalPrelim) || array_sum($finalPrelim) < $subjectcount ? '' : round(array_sum($finalPrelim) / $subjectcount);
+    $midtermAverage = in_array('', $finalMidterm) || in_array(null, $finalMidterm) || array_sum($finalMidterm) < $subjectcount ? '' : round(array_sum($finalMidterm) / $subjectcount);
+    $prefinalAverage = in_array('', $finalPrefinal) || in_array(null, $finalPrefinal) || array_sum($finalPrefinal) < $subjectcount ? '' : round(array_sum($finalPrefinal) / $subjectcount);
+    $finalAverage = in_array('', $finalFinal) || in_array(null, $finalFinal) || array_sum($finalFinal) < $subjectcount ? '' : round(array_sum($finalFinal) / $subjectcount);
+    
+    if ($prelimAverage !== '' && $midtermAverage !== '' && $prefinalAverage !== '' && $finalAverage !== '') {
+        $average = ($prelimAverage + $midtermAverage + $prefinalAverage + $finalAverage) / 4;
+    } else {
+        $average = '';
+    }
+    
+    if ($average !== '') {
+        $DeportmentAverage = in_array('', $finalPrelim) || in_array(null, $finalPrelim) || in_array('', $finalMidterm) || in_array(null, $finalMidterm) || in_array('', $finalPrefinal) || in_array(null, $finalPrefinal) || in_array('', $finalFinal) || in_array(null, $finalFinal) || $conductsum < $subjectcount * 4 ? '' : $conductsum / $conductcount;
+        $conductsum = array_sum($finalPrelim) + array_sum($finalMidterm) + array_sum($finalPrefinal) + array_sum($finalFinal);
+        $conductcount = count(array_filter($finalPrelim)) + count(array_filter($finalMidterm)) + count(array_filter($finalPrefinal)) + count(array_filter($finalFinal));
+        $conductAverage = in_array('', $finalPrelim) || in_array(null, $finalPrelim) || in_array('', $finalMidterm) || in_array(null, $finalMidterm) || in_array('', $finalPrefinal) || in_array(null, $finalPrefinal) || in_array('', $finalFinal) || in_array(null, $finalFinal) || $conductsum < $subjectcount * 4 ? '' : $conductsum / $conductcount;
+    
+        $final = ($average + $DeportmentAverage + $conductAverage)  /3;
+        $finalAverage = $final < 1 ? '--' : round($final);
+    
+        if (!empty($finalAverage)) {
+            echo '<th colspan=2 class=datafinalgrade><input type=text name=studcefourth class=datafinalgrade1 value="' . $finalAverage . '" readonly></th>';
+        }else{
+            echo '<th colspan=2 class=datafinalgrade><input type=text name=studcefourth class=datafinalgrade1 value="" readonly></th>';
+           
+        }
+    }
+    
+                    ?>
+                      </tr>
+            </table>
     </div>
     </div>
 </body>
